@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+summary: 'Saiba o que há de novo com os recursos de administração do Workload Factory: Credenciais de provedor de nuvem, melhorias no Codebox e muito mais.' 
+---
+= O que há de novo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Saiba o que há de novo com os recursos de administração do Workload Factory: Credenciais de provedor de nuvem, melhorias no Codebox e muito mais.
+
+
+
+== 1 de setembro de 2024
+
+
+
+=== Subscrição RSS
+
+A subscrição RSS está disponível no link:https://console.workloads.netapp.com/["Console de fábrica da carga de trabalho"^]. Usar um feed RSS é uma maneira fácil de consumir e estar ciente das mudanças na fábrica de cargas de trabalho do BlueXP .
+
+image:screenshot-rss-subscribe-button.png["Captura de tela do menu suspenso de ajuda do console do Workload Factory. Um novo botão para se inscrever no RSS aparece como uma opção no menu suspenso."]
+
+
+
+=== Suporte para uma única política de permissão por workload
+
+Ao adicionar credenciais da AWS no Workload Factory, agora é possível selecionar uma única política de permissão, seja no modo de leitura ou automação, para cada gerenciamento de storage e workload.
+
+image:screenshot-single-permission-policy-support.png["Captura de tela da seção de configuração de permissões na página credenciais, na qual você pode selecionar políticas de permissões de leitura ou automação para gerenciamento de storage, cargas de trabalho de IA, cargas de trabalho de bancos de dados e cargas de trabalho VMware."]
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Adicione credenciais da AWS ao Workload Factory"^]
+
+
+
+== 4 de agosto de 2024
+
+
+
+=== Suporte ao Terraform
+
+O suporte Terraform está disponível para implantação do sistema de arquivos do Amazon FSX for NetApp ONTAP e criação de VM de armazenamento. O guia de configuração e administração agora tem instruções sobre como usar o Terraform na Codebox.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["Use o Terraform do Codebox"^]
+
+
+
+== 7 de julho de 2024
+
+
+
+=== Lançamento inicial do Workload Factory
+
+O BlueXP  Workload Factory para AWS é uma poderosa plataforma de gerenciamento de ciclo de vida projetada para ajudá-lo a otimizar suas cargas de trabalho usando os sistemas de arquivos do Amazon FSX para NetApp ONTAP. As cargas de trabalho que podem ser otimizadas usando o Workload Factory e o FSX for ONTAP incluem bancos de dados, migrações VMware para VMware Cloud na AWS, chatbots de IA e muito mais.

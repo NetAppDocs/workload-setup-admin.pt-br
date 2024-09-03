@@ -1,0 +1,11 @@
+= Suporte ao Terraform
+:allow-uri-read: 
+
+
+
+
+=== Suporte ao Terraform
+
+O suporte Terraform está disponível para implantação do sistema de arquivos do Amazon FSX for NetApp ONTAP e criação de VM de armazenamento. O guia de configuração e administração agora tem instruções sobre como usar o Terraform na Codebox.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["Use o Terraform do Codebox"^]

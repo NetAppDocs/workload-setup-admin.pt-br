@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: log-in.html 
+keywords: logging in, log in, sign in, signing in, user account, login with netapp, log in with netapp, sign up, create account 
+summary: Depois de se inscrever no Workload Factory, você pode fazer login a qualquer momento a partir do console baseado na Web para começar a gerenciar suas cargas de trabalho e os sistemas de arquivos FSX for ONTAP. 
+---
+= Inicie sessão no Workload Factory
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Depois de se inscrever no Workload Factory, você pode fazer login a qualquer momento a partir do console baseado na Web para começar a gerenciar suas cargas de trabalho e os sistemas de arquivos FSX for ONTAP.
+
+.Sobre esta tarefa
+Você pode fazer login no console baseado na Web do Workload Factory usando uma das seguintes opções:
+
+* Suas credenciais existentes do site de suporte da NetApp (NSS)
+* Um login na nuvem do NetApp usando seu endereço de e-mail e uma senha
+
+
+.Passos
+. Abra um navegador da Web e vá para o https://console.workloads.netapp.com["Console de fábrica da carga de trabalho"^].
+. Na página *Log in*, insira o endereço de e-mail associado ao seu login.
+. Dependendo do método de autenticação associado ao seu login, você será solicitado a inserir suas credenciais:
++
+** Credenciais de nuvem do NetApp: Insira sua senha
+** Usuário federado: Insira suas credenciais de identidade federada
+** Conta do site de suporte da NetApp: Insira suas credenciais do site de suporte da NetApp
+
+
+. Selecione *Iniciar sessão*.
++
+Se você fez login com sucesso no passado, verá a página inicial do Workload Factory e usará a conta padrão.
+
++
+Se esta for a primeira vez que você se logou, você será direcionado para a página *conta*.
+
++
+** Se você é membro de uma única conta, selecione *continuar*.
+** Se você for membro de várias contas, selecione a conta e selecione *continuar*.
+
+
+
+
+.Resultado
+Agora você está logado e pode começar a usar o Workload Factory para gerenciar os sistemas de arquivos do FSX for ONTAP e suas cargas de trabalho.

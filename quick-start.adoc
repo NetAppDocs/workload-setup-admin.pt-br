@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: quick-start.html 
+keywords: quick start 
+summary: Comece a usar o Workload Factory preparando a rede para o console do Workload Factory, inscrevendo-se e criando uma conta e adicionando credenciais para que o Workload Factory possa gerenciar os recursos da AWS diretamente. 
+---
+= Início rápido para Workload Factory
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Comece a usar o Workload Factory inscrevendo-se e criando uma conta, adicionando credenciais para que o Workload Factory possa gerenciar recursos da AWS diretamente e, em seguida, otimizar suas cargas de trabalho usando o Amazon FSX for NetApp ONTAP.
+
+O Workload Factory é acessível aos usuários como um serviço de nuvem a partir do console baseado na Web. Antes de começar, você deve ter uma compreensão de link:workload-factory-overview.html["Fábrica da carga de trabalho"] e link:operational-modes.html["modos operacionais"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"] Cadastre-se e crie uma conta
+[role="quick-margin-para"]
+Aceda ao https://console.workloads.netapp.com["Console de fábrica da carga de trabalho"^], registe-se e crie uma conta.
+
+[role="quick-margin-para"]
+link:sign-up-saas.html["Saiba como se inscrever e criar uma conta"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"] Adicione credenciais da AWS ao Workload Factory
+[role="quick-margin-para"]
+Este passo é opcional. Você pode usar o Workload Factory no modo _Basic_ sem adicionar credenciais para acessar sua conta da AWS. Adicionar credenciais da AWS ao Workload Factory no modo _Read_ ou no modo _Automate_ dá à sua conta do Workload Factory as permissões necessárias para criar e gerenciar o FSX for ONTAP sistemas de arquivos e para implantar e gerenciar cargas de trabalho específicas, como bancos de dados e GenAI.
+
+[role="quick-margin-para"]
+link:add-credentials.html["Saiba como adicionar credenciais à sua conta"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Três"] Otimize suas cargas de trabalho usando o FSX for ONTAP
+[role="quick-margin-para"]
+Agora que você se inscreveu, criou uma conta e, opcionalmente, adicionou credenciais da AWS, você pode começar a usar o Workload Factory para otimizar suas cargas de trabalho usando o FSX for ONTAP. Use os links abaixo para seguir instruções passo a passo para cada tipo de carga de trabalho.
+
+[role="quick-margin-list"]
+* https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX para NetApp ONTAP"^]
++
+Avalie e analise as propriedades de dados atuais para possíveis economias de custo usando o FSX for ONTAP como a infraestrutura de armazenamento, o provisionamento e a templatize as implantações do FSX for ONTAP com base nas práticas recomendadas e acesse recursos avançados de gerenciamento.
+
+* https://docs.netapp.com/us-en/workload-genai/index.html["GenAI"^]
++
+Implante e gerencie uma infraestrutura de geração de recuperação aumentada (RAG) para melhorar a precisão e a singularidade de suas aplicações de IA. Crie uma base de conhecimento RAG no FSX for ONTAP com segurança e conformidade de dados incorporados.
+
+* https://docs.netapp.com/us-en/workload-databases/index.html["Workloads de banco de dados"^]
++
+Detecte seu estado de banco de dados existente na AWS, avalie possíveis economias de custo com o FSX for ONTAP, implante bancos de dados de ponta a ponta com práticas recomendadas incorporadas para otimização e automatize a thin cloning para pipelines de CI/CD.
+
+* https://docs.netapp.com/us-en/workload-vmware/index.html["Workloads da VMware"^]
++
+Simplifique migrações e operações com recomendações inteligentes e correção automática. Implante backups eficientes e recuperação de desastres robusta. Monitore e solucione problemas de VMs.
+
+

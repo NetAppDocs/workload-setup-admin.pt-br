@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: whats-next.html 
+keywords: what you can do 
+summary: Agora que você fez login e configurou o Workload Factory, você pode criar e gerenciar o FSX para sistemas de arquivos ONTAP e usar outros recursos do Workload Factory. 
+---
+= O que você pode fazer a seguir
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Agora que você fez login e configurou o Workload Factory, você pode começar a usar vários recursos do Workload Factory, como criar sistemas de arquivos do Amazon FSX for ONTAP, implantar bancos de dados nos sistemas de arquivos do FSX for ONTAP e migrar configurações de máquina virtual para o VMware Cloud na AWS usando o FSX for ONTAP como armazenamentos de dados externos.
+
+* https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX para NetApp ONTAP"^]
++
+Avalie e analise as propriedades de dados atuais para possíveis economias de custo usando o FSX for ONTAP como a infraestrutura de armazenamento, o provisionamento e a templatize as implantações do FSX for ONTAP com base nas práticas recomendadas e acesse recursos avançados de gerenciamento.
+
+* https://docs.netapp.com/us-en/workload-genai/index.html["GenAI"^]
++
+Implante e gerencie uma infraestrutura de geração de recuperação aumentada (RAG) para melhorar a precisão e a singularidade de suas aplicações de IA. Crie uma base de conhecimento RAG no FSX for ONTAP com segurança e conformidade de dados incorporados.
+
+* https://docs.netapp.com/us-en/workload-databases/index.html["Workloads de banco de dados"^]
++
+Detecte seu estado de banco de dados existente na AWS, avalie possíveis economias de custo movendo-se para o FSX for ONTAP, implante bancos de dados de ponta a ponta com práticas recomendadas incorporadas para otimização e automatize a thin cloning para pipelines de CI/CD.
+
+* https://docs.netapp.com/us-en/workload-vmware/index.html["Workloads da VMware"^]
++
+Simplifique migrações e operações com recomendações inteligentes e correção automática. Implante backups eficientes e recuperação de desastres robusta. Monitore e solucione problemas de VMs.
+
+

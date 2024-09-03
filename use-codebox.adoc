@@ -1,0 +1,131 @@
+---
+sidebar: sidebar 
+permalink: use-codebox.html 
+keywords: codebox, automation, cloudformation, rest api, aws cli, permissions 
+summary: Você pode usar Codebox para gerar o código necessário para executar qualquer operação suportada pelo Workload Factory. Você pode gerar código que pode ser consumido e executado usando as APIs REST do Workload Factory, a CLI da AWS e o AWS CloudFormation. 
+---
+= Use Codebox para automação
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode usar Codebox para gerar o código necessário para executar qualquer operação suportada pelo Workload Factory. Você pode gerar código que pode ser consumido e executado usando as APIs REST do Workload Factory, a CLI da AWS e o AWS CloudFormation.
+
+O Codebox está alinhado com os modos de operação de fábrica de carga de trabalho (Básico, leitura e automatização) preenchendo os dados apropriados no código com base nas permissões da AWS fornecidas na conta de fábrica de carga de trabalho para cada usuário. O código pode ser usado como um modelo onde você pode preencher informações ausentes (por exemplo, credenciais) ou personalizar determinados dados antes de executar o código.
+
+
+
+== Como usar Codebox
+
+À medida que você insere valores nos assistentes da IU do Workload Factory, você pode ver a atualização de dados no Codebox ao completar cada campo. Quando você concluir o assistente, mas antes de selecionar o botão *criar* na parte inferior da página, image:button-copy-codebox.png["o botão copy (cópia)"]selecione para copiar no Codebox para capturar o código necessário para criar sua configuração. Por exemplo, essa captura de tela da criação de um novo Microsoft SQL Server mostra as entradas do assistente para VPC e zonas de disponibilidade e as entradas equivalentes no Codebox para uma implementação de API REST.
+
+image:screenshot-codebox-example1.png["Uma captura de tela mostrando como criar um Microsoft SQL Server na IU e as entradas correspondentes para VPC e zonas de disponibilidade no Codebox."]
+
+Com alguns formatos de código, você também pode selecionar o botão Download para salvar o código em um arquivo que você pode trazer para outro sistema. Se necessário, você pode editar o código após o download para que possa adaptá-lo a outras contas da AWS.
+
+
+
+== Use o código do CloudFormation do Codebox
+
+Você pode copiar o código do CloudFormation gerado pelo Codebox e, em seguida, iniciar a pilha do Amazon Web Services CloudFormation na sua conta da AWS. O CloudFormation executará as ações que você definiu na IU do Workload Factory.
+
+As etapas para usar o código CLoudFormation podem ser diferentes dependendo se você está implantando um sistema de arquivos FSX for ONTAP, criando credenciais de conta ou executando outras ações de fábrica de carga de trabalho.
+
+Observe que o código dentro de um arquivo YAML gerado pelo CloudFormation expira após 7 dias por motivos de segurança.
+
+.Antes de começar
+* Você precisará ter credenciais para fazer login na sua conta da AWS.
+* Você precisará ter as seguintes permissões de usuário para usar uma pilha do CloudFormation:
++
+[%collapsible]
+====
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:CreateStack",
+                "cloudformation:UpdateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:DescribeChangeSet",
+                "cloudformation:ExecuteChangeSet",
+                "cloudformation:ListStacks",
+                "cloudformation:ListStackResources",
+                "cloudformation:GetTemplate",
+                "cloudformation:ValidateTemplate",
+                "lambda:InvokeFunction",
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:UpdateAssumeRolePolicy",
+                "iam:AttachRolePolicy",
+                "iam:CreateServiceLinkedRole"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+----
+====
+
+
+.Passos
+. Depois de usar a IU para definir a operação que você deseja executar, copie o código na caixa de código.
+. Selecione *Redirecionar para o CloudFormation* e a página Redirecionar para o CloudFormation será exibida.
+. Abra outra janela do navegador e faça login no Console de Gerenciamento da AWS.
+. Selecione *continuar* na página Redirecionar para o CloudFormation.
+. Faça login na conta da AWS onde o código deve ser executado.
+. Na página de pilha de criação rápida, em recursos, selecione *Eu reconheço que o AWS CloudFormation pode...*.
+. Selecione *criar pilha*.
+. Monitore o progresso da AWS ou do Workload Factory.
+
+
+
+
+== Use o código API REST do Codebox
+
+Você pode usar as APIs REST de fábrica de carga de trabalho geradas pelo Codebox para implantar e gerenciar seus sistemas de arquivos FSX for ONTAP e outros recursos da AWS.
+
+Você pode executar as APIs de qualquer host que suporte curl e que tenha conetividade com a Internet.
+
+Observe que os tokens de autenticação estão ocultos no Codebox, mas eles são preenchidos quando você copia e cola a chamada da API.
+
+.Passos
+. Depois de usar a IU para definir a operação que você deseja executar, copie o código da API na caixa de código.
+. Cole o código e execute-o em seu sistema host.
+
+
+
+
+== Use o código AWS CLI do Codebox
+
+Você pode usar a CLI do Amazon Web Services gerada pelo Codebox para implantar e gerenciar seus sistemas de arquivos FSX for ONTAP e outros recursos da AWS.
+
+.Passos
+. Depois de usar a IU para definir a operação que deseja executar, copie a CLI da AWS na caixa de código.
+. Abra outra janela do navegador e faça login no Console de Gerenciamento da AWS.
+. Cole o código e execute-o.
+
+
+
+
+== Use o Terraform do Codebox
+
+Você pode usar o Terraform para implantar e gerenciar seus sistemas de arquivos FSX for ONTAP e outros recursos da AWS.
+
+.Antes de começar
+* Você precisará de um servidor Terraform para executar os comandos.
+* Você precisará ter credenciais para fazer login na sua conta da AWS.
+
+
+.Passos
+. Depois de usar a IU para definir a operação que deseja executar, copie ou baixe o código Terraform na caixa Codebox.
+. Conete-se ao seu servidor.
+. Cole o código e execute-o.
+
