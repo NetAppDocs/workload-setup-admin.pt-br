@@ -424,9 +424,6 @@
   <block id="1b2b6bf8e053a2f8088251c3a2cc65f9" category="list-text">Depois de usar a IU para definir a operação que deseja executar, copie a CLI da AWS na caixa de código.</block>
   <block id="b28a0d67dfa6e54814b9650389eea71b" category="list-text">Cole o código e execute-o.</block>
   <block id="a5a1cedd11df4667bf63eec57c1622aa" category="paragraph">Você pode usar o Terraform para implantar e gerenciar seus sistemas de arquivos FSX for ONTAP e outros recursos da AWS.</block>
-  <block id="372393cee3187826465089e7fa3db98e" category="list-text">Você precisará de um servidor Terraform para executar os comandos.</block>
-  <block id="90d8257298c061974c94790388e32bbd" category="list-text">Depois de usar a IU para definir a operação que deseja executar, copie ou baixe o código Terraform na caixa Codebox.</block>
-  <block id="a2417f4d64bad3dff09f2bdbce4dc0e2" category="list-text">Conete-se ao seu servidor.</block>
   <block id="3c9ee3abb878e5099cd76beeedcb2d04" category="summary">Saiba o que há de novo com os recursos de administração do Workload Factory: Credenciais de provedor de nuvem, melhorias no Codebox e muito mais.</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">O que há de novo</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">1 de setembro de 2024</block>
@@ -518,4 +515,8 @@
   <block id="3700c3dfbf95d68b06191b4a4cbb7592" category="sidebar">Automatize tarefas usando Codebox</block>
   <block id="733ae60890dc5503303e1f5780ac5c9b" category="sidebar">Use Codebox para gerar código</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conhecimento e apoio</block>
+  <block id="6e9e8f336be02f99477adc019bfcd183" category="list-text">Você precisará de um sistema onde o Terraform esteja instalado (Windows/Mac/Linux).</block>
+  <block id="613670bc7ca8a45f31728d87474749ac" category="list-text">Depois de usar a interface do usuário para definir a operação que você deseja executar, baixe o código Terraform na caixa Codebox.</block>
+  <block id="53e9887aa73e6bb1fcf6b5b002e7f175" category="list-text">Copie o arquivo de script baixado para o sistema em que o Terraform está instalado.</block>
+  <block id="8db9de1de3844107194be0555d5ceb7c" category="list-text">Extraia o arquivo zip e siga as etapas no arquivo README.md.</block>
 </blocks>
