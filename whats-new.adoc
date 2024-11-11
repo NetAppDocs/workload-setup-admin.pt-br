@@ -23,7 +23,7 @@ Saiba o que há de novo com os recursos de administração de fábrica de carga 
 
 Agora você pode usar a fábrica de carga de trabalho do link:https://console.bluexp.netapp.com["Consola BlueXP"^]. A experiência do console do BlueXP  fornece a mesma funcionalidade que o console de fábrica da carga de trabalho.
 
-link:https://docs.netapp.com/workload-setup-admin/console-experiences.html["Saiba como acessar a fábrica da carga de trabalho a partir do console BlueXP "]
+link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Saiba como acessar a fábrica da carga de trabalho a partir do console BlueXP "]
 
 
 
