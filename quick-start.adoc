@@ -2,36 +2,36 @@
 sidebar: sidebar 
 permalink: quick-start.html 
 keywords: quick start 
-summary: Comece a usar o Workload Factory preparando a rede para o console do Workload Factory, inscrevendo-se e criando uma conta e adicionando credenciais para que o Workload Factory possa gerenciar os recursos da AWS diretamente. 
+summary: Comece com a fábrica de cargas de trabalho preparando a rede para o console de fábrica de cargas de trabalho, inscrevendo-se e criando uma conta e adicionando credenciais para que a fábrica de cargas de trabalho possa gerenciar os recursos da AWS diretamente. 
 ---
-= Início rápido para Workload Factory
+= Início rápido para o workload de BlueXP  de fábrica
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Comece a usar o Workload Factory inscrevendo-se e criando uma conta, adicionando credenciais para que o Workload Factory possa gerenciar recursos da AWS diretamente e, em seguida, otimizar suas cargas de trabalho usando o Amazon FSX for NetApp ONTAP.
+Comece com a fábrica de cargas de trabalho inscrevendo-se e criando uma conta, adicionando credenciais para que a fábrica de cargas de trabalho possa gerenciar os recursos da AWS diretamente e, em seguida, otimizar suas cargas de trabalho usando o Amazon FSX for NetApp ONTAP.
 
-O Workload Factory é acessível aos usuários como um serviço de nuvem a partir do console baseado na Web. Antes de começar, você deve ter uma compreensão de link:workload-factory-overview.html["Fábrica da carga de trabalho"] e link:operational-modes.html["modos operacionais"].
+A fábrica de workloads é acessível aos usuários como um serviço de nuvem a partir do console baseado na Web. Antes de começar, você deve ter uma compreensão de link:workload-factory-overview.html["fábrica de carga de trabalho"] e link:operational-modes.html["modos operacionais"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"] Cadastre-se e crie uma conta
 [role="quick-margin-para"]
-Aceda ao https://console.workloads.netapp.com["Console de fábrica da carga de trabalho"^], registe-se e crie uma conta.
+Aceda ao https://console.workloads.netapp.com["console de fábrica do workload"^], registe-se e crie uma conta.
 
 [role="quick-margin-para"]
 link:sign-up-saas.html["Saiba como se inscrever e criar uma conta"].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"] Adicione credenciais da AWS ao Workload Factory
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"] Adicione credenciais da AWS à fábrica do workload
 [role="quick-margin-para"]
-Este passo é opcional. Você pode usar o Workload Factory no modo _Basic_ sem adicionar credenciais para acessar sua conta da AWS. Adicionar credenciais da AWS ao Workload Factory no modo _Read_ ou no modo _Automate_ dá à sua conta do Workload Factory as permissões necessárias para criar e gerenciar o FSX for ONTAP sistemas de arquivos e para implantar e gerenciar cargas de trabalho específicas, como bancos de dados e GenAI.
+Este passo é opcional. Você pode usar a fábrica de carga de trabalho no modo _Basic_ sem adicionar credenciais para acessar sua conta da AWS. Adicionar credenciais da AWS à fábrica de carga de trabalho no modo _Read_ ou _Automate_ dá à sua conta de fábrica de carga de trabalho as permissões necessárias para criar e gerenciar sistemas de arquivos FSX for ONTAP e para implantar e gerenciar cargas de trabalho específicas, como bancos de dados e GenAI.
 
 [role="quick-margin-para"]
 link:add-credentials.html["Saiba como adicionar credenciais à sua conta"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Três"] Otimize suas cargas de trabalho usando o FSX for ONTAP
 [role="quick-margin-para"]
-Agora que você se inscreveu, criou uma conta e, opcionalmente, adicionou credenciais da AWS, você pode começar a usar o Workload Factory para otimizar suas cargas de trabalho usando o FSX for ONTAP. Use os links abaixo para seguir instruções passo a passo para cada tipo de carga de trabalho.
+Agora que você se inscreveu, criou uma conta e, opcionalmente, adicionou credenciais da AWS, você pode começar a usar a fábrica de carga de trabalho para otimizar suas cargas de trabalho usando o FSX for ONTAP. Use os links abaixo para seguir instruções passo a passo para cada tipo de carga de trabalho.
 
 [role="quick-margin-list"]
 * https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX para NetApp ONTAP"^]

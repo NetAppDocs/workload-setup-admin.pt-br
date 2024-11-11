@@ -2,26 +2,26 @@
 sidebar: sidebar 
 permalink: log-in.html 
 keywords: logging in, log in, sign in, signing in, user account, login with netapp, log in with netapp, sign up, create account 
-summary: Depois de se inscrever no Workload Factory, você pode fazer login a qualquer momento a partir do console baseado na Web para começar a gerenciar suas cargas de trabalho e os sistemas de arquivos FSX for ONTAP. 
+summary: Depois de se inscrever na fábrica de cargas de trabalho, você pode fazer login a qualquer momento a partir do console baseado na Web para começar a gerenciar suas cargas de trabalho e os sistemas de arquivos FSX for ONTAP. 
 ---
-= Inicie sessão no Workload Factory
+= Faça login na fábrica de workloads da BlueXP 
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Depois de se inscrever no Workload Factory, você pode fazer login a qualquer momento a partir do console baseado na Web para começar a gerenciar suas cargas de trabalho e os sistemas de arquivos FSX for ONTAP.
+Depois de se inscrever na fábrica de carga de trabalho do BlueXP , você pode fazer login a qualquer momento a partir do console baseado na Web para começar a gerenciar suas cargas de trabalho e os sistemas de arquivos FSX for ONTAP.
 
 .Sobre esta tarefa
-Você pode fazer login no console baseado na Web do Workload Factory usando uma das seguintes opções:
+Você pode fazer login no console baseado na Web de fábrica de carga de trabalho usando uma das seguintes opções:
 
 * Suas credenciais existentes do site de suporte da NetApp (NSS)
 * Um login na nuvem do NetApp usando seu endereço de e-mail e uma senha
 
 
 .Passos
-. Abra um navegador da Web e vá para o https://console.workloads.netapp.com["Console de fábrica da carga de trabalho"^].
+. Abra um navegador da Web e vá para o https://console.workloads.netapp.com["console de fábrica do workload"^].
 . Na página *Log in*, insira o endereço de e-mail associado ao seu login.
 . Dependendo do método de autenticação associado ao seu login, você será solicitado a inserir suas credenciais:
 +
@@ -32,7 +32,7 @@ Você pode fazer login no console baseado na Web do Workload Factory usando uma 
 
 . Selecione *Iniciar sessão*.
 +
-Se você fez login com sucesso no passado, verá a página inicial do Workload Factory e usará a conta padrão.
+Se você fez login com sucesso no passado, verá a página inicial de fábrica da carga de trabalho e usará a conta padrão.
 
 +
 Se esta for a primeira vez que você se logou, você será direcionado para a página *conta*.
@@ -45,4 +45,4 @@ Se esta for a primeira vez que você se logou, você será direcionado para a p�
 
 
 .Resultado
-Agora você está logado e pode começar a usar o Workload Factory para gerenciar os sistemas de arquivos do FSX for ONTAP e suas cargas de trabalho.
+Agora você está logado e pode começar a usar a fábrica de cargas de trabalho para gerenciar os sistemas de arquivos do FSX for ONTAP e suas cargas de trabalho.

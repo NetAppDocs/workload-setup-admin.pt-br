@@ -23,21 +23,23 @@ sidebar:
     entries:
     - title: Aprenda o básico
       entries:
-      - title: Visão geral da fábrica da carga de trabalho
+      - title: Visão geral de fábrica do workload
         url: "/workload-factory-overview.html"
       - title: Modos operacionais
         url: "/operational-modes.html"
+      - title: Experiências de console
+        url: "/console-experiences.html"
     - title: Início rápido
       url: "/quick-start.html"
-    - title: Inscreva-se no Workload Factory
+    - title: Inscreva-se na fábrica da carga de trabalho
       url: "/sign-up-saas.html"
     - title: Adicionar credenciais da AWS
       url: "/add-credentials.html"
     - title: O que você pode fazer a seguir
       url: "/whats-next.html"
-  - title: Administrar o Workload Factory
+  - title: Administrar o workload de fábrica
     entries:
-    - title: Inicie sessão no Workload Factory
+    - title: Faça login na fábrica da carga de trabalho
       url: "/log-in.html"
     - title: Automatize tarefas usando Codebox
       entries:
@@ -56,5 +58,5 @@ sidebar:
   - title: Avisos legais
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP Workload Factory for AWS
+  name: BlueXP workload factory
   repo: workload-family

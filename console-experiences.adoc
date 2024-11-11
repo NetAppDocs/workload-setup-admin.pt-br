@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: console-experiences.html 
+keywords: console, consoles, access, saas, workload factory, bluexp, bluexp workload factory 
+summary: A fábrica de workloads do BlueXP  é acessível por dois consoles baseados na Web. 
+---
+= Experiências de console
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+A fábrica de workloads do BlueXP  é acessível por dois consoles baseados na Web. Saiba como acessar a fábrica da carga de trabalho do BlueXP  usando o console de fábrica da carga de trabalho do BlueXP  e o console do BlueXP .
+
+Você pode usar dois consoles para acessar a fábrica do workload do BlueXP .
+
+* * BlueXP  console*: Oferece uma experiência híbrida onde você pode gerenciar seus ambientes de trabalho e cargas de trabalho no mesmo local.
+* * Console de fábrica de carga de trabalho*: Oferece uma experiência de fábrica de carga de trabalho dedicada focada em cargas de trabalho executadas no Amazon FSX for NetApp ONTAP.
+
+
+
+
+== Acesse a fábrica do workload no console BlueXP 
+
+Você pode acessar o workload de fábrica a partir do BlueXP . Além de usar o BluXP Workload Factory para capacidade de armazenamento e carga de trabalho da AWS, você também pode acessar outros serviços da plataforma BlueXP , como cópia e sincronização, carteira digital e muito mais.
+
+.Passos
+. Inicie sessão no link:https://console.workloads.netapp.com["console de fábrica do workload"^]
+. Navegue até a carga de trabalho que deseja usar e selecione uma opção para começar.
+
+
+
+
+== Acesse a fábrica da carga de trabalho no console do Workload Factory
+
+Você pode acessar a fábrica da carga de trabalho a partir do console do Workload Factory.
+
+.Passos
+. Inicie sessão no link:https://console.bluexp.netapp.com["Consola BlueXP"^]
+. Selecione *cargas de trabalho* na navegação à esquerda.
+. Selecione *Home* para visualizar todas as cargas de trabalho ou selecione uma carga de trabalho como *Storage* ou *Databases*.
+. Selecione uma opção para começar na carga de trabalho.
+
