@@ -1,0 +1,11 @@
+= Suporte para contas de serviço na fábrica de workloads do BlueXP 
+:allow-uri-read: 
+
+
+
+
+=== Suporte para contas de serviço na fábrica de workloads do BlueXP 
+
+Agora, as contas de serviço são compatíveis na fábrica de workloads do BlueXP . Você pode criar contas de serviço para atuar como usuários de máquina que automatizam as operações de infraestrutura.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-service-accounts.html["Criar e gerenciar contas de serviço"]

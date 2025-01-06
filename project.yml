@@ -41,6 +41,8 @@ sidebar:
     entries:
     - title: Faça login na fábrica da carga de trabalho
       url: "/log-in.html"
+    - title: Gerenciar contas de serviço
+      url: "/manage-service-accounts.html"
     - title: Automatize tarefas usando Codebox
       entries:
       - title: Saiba mais sobre Codebox

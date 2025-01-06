@@ -15,6 +15,18 @@ Saiba o que há de novo com os recursos de administração de fábrica de carga 
 
 
 
+== 05 de janeiro de 2025
+
+
+
+=== Suporte para contas de serviço na fábrica de workloads do BlueXP 
+
+Agora, as contas de serviço são compatíveis na fábrica de workloads do BlueXP . Você pode criar contas de serviço para atuar como usuários de máquina que automatizam as operações de infraestrutura.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-service-accounts.html["Criar e gerenciar contas de serviço"]
+
+
+
 == 11 de novembro de 2024
 
 
