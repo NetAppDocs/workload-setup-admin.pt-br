@@ -1688,6 +1688,9 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 | Mostre os modelos de fundação disponíveis em uma região | Bedrock:ListFoundationModels | Implantação | Automatizar 
 
 
+| Verifique o acesso ao modelo da base | Bedrock:GetFoundationModelAvailability | Implantação | Automatizar 
+
+
 | Obtenha regiões compatíveis com FSX e bedrock durante o assistente do mecanismo de AI | ssm:GetParametersByPath | Implantação | Automatizar 
 
 
@@ -1782,9 +1785,6 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 
 
 | Logs:TagResource | Implantação | Automatizar 
-
-
-| Verifique o acesso ao modelo da base | Bedrock:GetFoundationModelAvailability | Solução de problemas | Automatizar 
 |===
 ====
 
