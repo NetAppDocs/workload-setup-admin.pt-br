@@ -315,10 +315,18 @@ A tabela a seguir exibe as permissões para armazenamento.
 .3+| Obtenha os detalhes das chaves do KMS e use a criptografia FSX for ONTAP | Kms:CreateGrant | Implantação | Automatizar 
 
 
-| Kms: Descrever* | Implantação | Automatizar 
+| Kms: Descrever* | Implantação  a| 
+* Leia
+* Automatizar
 
 
-| Kms:Lista* | Implantação | Automatizar 
+
+
+| Kms:Lista* | Implantação  a| 
+* Leia
+* Automatizar
+
+
 
 
 | Descrever o Elastic File System na calculadora de economia | Elasticfilesystem:describe* | Explore as poupanças | Leia 
