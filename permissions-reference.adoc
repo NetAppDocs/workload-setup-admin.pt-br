@@ -1373,7 +1373,11 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 | Separe a função do perfil de instância do EC2 provisionado | IAM:RemoveRoleFromInstanceProfile | Implantação | Automatizar 
 
 
-| Valide as permissões disponíveis na função e compare com as permissões necessárias | IAM:SimulatePrincipalPolicy | Implantação | Automatizar 
+| Valide as permissões disponíveis na função e compare com as permissões necessárias | IAM:SimulatePrincipalPolicy | Implantação  a| 
+* Leia
+* Automatizar
+
+
 |===
 . A permissão é restrita a recursos que começam com WLMDB.
 . "IAM:CreateServiceLinkRole" limitado por "iam:AWSServiceName": "ec2.amazonaws.com"*
@@ -2073,3 +2077,9 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 == Alterar registo
 
 À medida que as permissões são adicionadas e removidas, vamos anotá-las nas seções abaixo.
+
+
+
+=== 3 de fevereiro de 2025
+
+A seguinte permissão está agora disponível no modo _read_ para bancos de dados: `iam:SimulatePrincipalPolicy`.

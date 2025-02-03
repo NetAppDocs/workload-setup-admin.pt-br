@@ -15,6 +15,12 @@ Saiba o que há de novo com os recursos de administração de fábrica de carga 
 
 
 
+== 02 de fevereiro de 2025
+
+incluir: _whatsnew/2025-02-02.adoc[]
+
+
+
 == 22 de janeiro de 2025
 
 
@@ -27,7 +33,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 
 
-== 05 de janeiro de 2025
+== 5 de janeiro de 2025
 
 
 

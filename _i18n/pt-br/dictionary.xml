@@ -595,7 +595,6 @@
   <block id="897945ecf5c18d38834da2efd9b74699" category="list-text">Na caixa de diálogo Excluir conta de serviço, digite *delete* na caixa de texto.</block>
   <block id="6b7a52834d577f2e4ac4d587036728f4" category="list-text">Selecione *Excluir* para confirmar a exclusão.</block>
   <block id="0b296fc415fe75b2e0eb7ea5db103354" category="paragraph">A conta de serviço é eliminada.</block>
-  <block id="37b8354fe553b0151888468751ea8eb0" category="section-title">05 de janeiro de 2025</block>
   <block id="99b22223be957cc9c37eee0aecb2007b" category="list-text">Contas de serviço para promover a automação</block>
   <block id="cb62deea87371902deaeb1b0a009e387" category="list-text">Use contas de serviço para automatizar as operações de fábrica do workload da BlueXP  com segurança e confiabilidade. As contas de serviço fornecem uma automação confiável e duradoura sem quaisquer restrições de gerenciamento de usuários e são mais seguras, pois fornecem acesso somente à API.</block>
   <block id="13b1a844b08d2d7b8144e4c0db6b5552" category="paragraph">Quando você cria uma conta, você é o único usuário _Account admin_ dessa conta.</block>
@@ -963,4 +962,86 @@
   <block id="3133cc4fd29893a0163684e3e3f59633" category="paragraph">À medida que as permissões são adicionadas e removidas, vamos anotá-las nas seções abaixo.</block>
   <block id="009d2060a609114df262eff04e83f241" category="section-title">22 de janeiro de 2025</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="sidebar">Permissões</block>
+  <block id="e2cc7d8ef2a865dce7c7e225dd72d92c" category="doc">CloudShell disponível no console de fábrica da carga de trabalho do BlueXP </block>
+  <block id="7f1ab9d2ad99562dfd8cff4cb4c70b29" category="paragraph">O CloudShell está disponível em qualquer lugar no console de fábrica de carga de trabalho do BlueXP . O CloudShell permite que você use as credenciais da AWS e do ONTAP fornecidas na sua conta do BlueXP  e execute os comandos da CLI da AWS ou da CLI do ONTAP em um ambiente semelhante ao shell.</block>
+  <block id="4ab00ae468588a563b956d814954695d" category="inline-link-macro">Use o CloudShell</block>
+  <block id="2004b4ad1feb57e1e4505f5888cfbb60" category="paragraph"><block ref="2004b4ad1feb57e1e4505f5888cfbb60" category="inline-link-macro-rx"></block></block>
+  <block id="f3a98886e89c22ab1a8df16ff87d5b3c" category="section-title">Atualização de permissões para bancos de dados</block>
+  <block id="0d8e78270e3796caacf42c07616b7e32" category="paragraph">A seguinte permissão está agora disponível no modo _read_ para bancos de dados:<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>.</block>
+  <block id="6cff628e35cc5d429a57e4a125a0bf6b" category="inline-link-macro">Log de alteração de referência de permissões</block>
+  <block id="86fbb6c90e401f3291e15bdc1398509c" category="paragraph"><block ref="86fbb6c90e401f3291e15bdc1398509c" category="inline-link-macro-rx"></block></block>
+  <block id="3528b115bbe0e91f700d310d0ea17581" category="section-title">3 de fevereiro de 2025</block>
+  <block id="f178e0fd9fcc4b5a6fc2d338458b6cd3" category="summary">Você pode usar o CloudShell de qualquer lugar na interface de usuário de fábrica de carga de trabalho do BlueXP  para emitir comandos da AWS ou da ONTAP CLI.</block>
+  <block id="922fc3bba93bebc201e0899daa104cdf" category="doc">Use o CloudShell na fábrica de cargas de trabalho do BlueXP </block>
+  <block id="d59a89cea13e89eca14a0cc511502b8f" category="paragraph">Abra o CloudShell para executar comandos de CLI da AWS ou do ONTAP de qualquer lugar na interface de usuário de fábrica de carga de trabalho do BlueXP .</block>
+  <block id="04c6abdf6dfbe761a16c8603f6d0f6f2" category="paragraph">O CloudShell permite que você execute comandos de CLI da AWS ou comandos de CLI do ONTAP em um ambiente semelhante a shell a partir da interface de usuário de fábrica de carga de trabalho do BlueXP . Ele simula sessões de terminal no navegador, fornecendo recursos de terminal e mensagens de proxy através do back-end da fábrica de carga de trabalho. Ele permite que você use as credenciais da AWS e as credenciais do ONTAP fornecidas na sua conta do BlueXP .</block>
+  <block id="65b336958c485c86a0de553a015bdd0d" category="paragraph">Os recursos do CloudShell incluem:</block>
+  <block id="a7a0775c1947243b3a6c24c48bdea382" category="list-text">Várias sessões do CloudShell: Implante várias sessões do CloudShell ao mesmo tempo para emitir várias sequências de comandos em paralelo,</block>
+  <block id="d62fc5a6d3868c32bb1ab00a844b9d65" category="list-text">Múltiplas visualizações: Divida sessões de guia do CloudShell para que você possa exibir duas ou mais guias horizontalmente ou verticalmente ao mesmo tempo</block>
+  <block id="cc086be288b80495cadf609c200395fd" category="list-text">Renomeação da sessão: Renomeie as sessões conforme necessário</block>
+  <block id="8971c7670b135c8f559b79a967c153d7" category="list-text">Persistência do conteúdo da última sessão: Reabra a última sessão se você a fechar por engano</block>
+  <block id="063f6a4e6ec0e1b2436c14b2b5aec12a" category="list-text">Preferências de configurações: Altere o tamanho da fonte e o tipo de saída</block>
+  <block id="7ecafb2a126ddd20e4af39475aaaa9e2" category="paragraph">O CloudShell funciona no contexto de suas credenciais da AWS. Para usar o CloudShell, você deve fornecer pelo menos uma credencial da AWS.</block>
+  <block id="3fd37cbd3ed011cecdd18aadab5eafb3" category="admonition">O CloudShell está disponível para você executar qualquer comando AWS ou ONTAP CLI. No entanto, se você quiser trabalhar dentro do contexto de um sistema de arquivos FSX for ONTAP, certifique-se de emitir o seguinte comando:<block ref="c984027e1f41d301c7393346780a9c16" prefix=" " category="inline-code"></block>.</block>
+  <block id="29c424808b1ff1c13d6bb81e6a7b5b05" category="section-title">Implante o CloudShell</block>
+  <block id="0fdd6dc99919df7360b4ae27d37e8f3e" category="paragraph">Você pode implantar o CloudShell de qualquer lugar no console de fábrica de carga de trabalho do BlueXP . Você também pode implantar o CloudShell a partir do armazenamento a partir de um sistema de arquivos FSX for ONTAP.</block>
+  <block id="323c6e4cf955d16e1bbc9adae1670cc3" category="open-title">Implante a partir do console de fábrica do workload</block>
+  <block id="09ce4b6ae45502f8fa436097be0ef8b5" category="list-text">Abra o CloudShell na barra de navegação superior.</block>
+  <block id="cad3d7ac91ea604173406c363b1c63e6" category="inline-image-macro">Captura de tela que mostra o ícone do CloudShell na barra de navegação superior.</block>
+  <block id="f2aa98d11c37bcff3a3e0de6af22abc7" category="paragraph"><block ref="f2aa98d11c37bcff3a3e0de6af22abc7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="22d4fda2b81cb432d82aec18ba8a3c56" category="list-text">Selecione credenciais e região para a sessão do CloudShell e, em seguida, selecione a seta para continuar.</block>
+  <block id="646a59dbe0b61f54c34bfd556c65da3b" category="inline-image-macro">Captura de tela que mostra uma nova sessão do CloudShell.</block>
+  <block id="700a03c5329ddd167df74b66d20ca912" category="paragraph"><block ref="700a03c5329ddd167df74b66d20ca912" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3435647271a6f955b1a9177ac9e55baf" category="list-text">Digite<block ref="657f8b8da628ef83cf69101b6817150a" prefix=" " category="inline-code"></block> para exibir os comandos e as instruções disponíveis do CloudShell ou consulte os seguintes documentos de referência da CLI para obter os comandos disponíveis:</block>
+  <block id="ad66291ec1106821b643e94161ce6191" category="inline-link-macro">Referência do CLI da AWS</block>
+  <block id="46f635b4cd68f38d7206ff7454204e70" category="list-text"><block ref="2f97a9fa9f38cdeb484a5dd5f6b91a96" category="inline-link-macro-rx"></block>: Para comandos relacionados ao fsx for ONTAP, selecione *fsx*.</block>
+  <block id="37888f4436a67135b7af33cedc29e2a9" category="inline-link-macro">Referência do CLI da ONTAP</block>
+  <block id="007f7ecbc75b3fc0bafefe8712e42e55" category="list-text"><block ref="007f7ecbc75b3fc0bafefe8712e42e55" category="inline-link-macro-rx"></block></block>
+  <block id="c344cbcae2dab0cb8147a60d8f43f903" category="list-text">Emita comandos dentro da sessão do CloudShell.</block>
+  <block id="2103942a2c420bdeb15390d88e350838" category="open-title">Implante a partir do Storage</block>
+  <block id="b8613e46a68d4b177aeb2fe1cdab9b07" category="list-text">Em *armazenamento*, selecione *ir para inventário de armazenamento*.</block>
+  <block id="a1c8ad0ac4339ad1c44f047ff8456c56" category="list-text">Na guia *FSX for ONTAP*, selecione o menu de três pontos do sistema de arquivos e selecione *abrir o CloudShell*.</block>
+  <block id="b15f76b63a4ca4ca1577f8fc396e80d3" category="paragraph">Uma sessão do CloudShell é aberta no contexto do sistema de arquivos selecionado.</block>
+  <block id="207a95a0a302452a35a77c4fbbf38905" category="paragraph">As tarefas do CloudShell mostradas nesta captura de tela podem ser concluídas selecionando o menu de três pontos de uma guia de sessão aberta do CloudShell. Segue-se as instruções para cada uma destas tarefas.</block>
+  <block id="54fb61e4e09baa57bff32158fe5c05cb" category="inline-image-macro">Captura de tela que mostra o menu de três pontos do CloudShell Tab com opções como renomear, duplicar, fechar outras guias e fechar tudo.</block>
+  <block id="81a9e8038945d6142798001db5770332" category="paragraph"><block ref="81a9e8038945d6142798001db5770332" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3efc66df7492b3ffcca7a9721a7b5bcc" category="section-title">Renomeie uma guia de sessão do CloudShell</block>
+  <block id="633842af0eac9ec747edc78eddad128c" category="paragraph">Você pode renomear uma guia de sessão do CloudShell para ajudá-lo a identificar a sessão.</block>
+  <block id="cfd31b2e21a02f206d5c236d2b9cddf2" category="list-text">Selecione o menu de três pontos da guia sessão do CloudShell.</block>
+  <block id="6f8614f1580cf2c6afb8b45a067936bf" category="list-text">Selecione *Renomear*.</block>
+  <block id="9cf2d3245c37df3eca3de9544c3be83f" category="list-text">Insira um novo nome para a guia sessão e clique fora do nome da guia para definir o novo nome.</block>
+  <block id="85a4b155e3f69dff8dc321d64a863777" category="paragraph">O novo nome aparece na guia sessão do CloudShell.</block>
+  <block id="6f5df5463043b5950f21e2038f72f759" category="section-title">Guia de sessão duplicada do CloudShell</block>
+  <block id="4430066cba5e021308c2bf62f61c68fb" category="paragraph">Você pode duplicar uma guia de sessão do CloudShell para criar uma nova sessão com o mesmo nome, credenciais e região. O código da guia original não é duplicado na guia duplicada.</block>
+  <block id="3cf3a984f792c68d00d0ddbaa1549d75" category="list-text">Selecione *duplicar*.</block>
+  <block id="ef0a97806db7327ef0ffc41183dfb3ff" category="paragraph">O novo separador é apresentado com o mesmo nome que o separador original.</block>
+  <block id="b5e93baec9c74e7bd6b5a08deee3472e" category="section-title">Feche as guias de sessão do CloudShell</block>
+  <block id="f7dad63311508db89de89b4d4c87204f" category="paragraph">Você pode fechar as guias do CloudShell uma de cada vez, fechar outras guias nas quais não está trabalhando ou fechar todas as guias de uma vez.</block>
+  <block id="36ddaebda56a8c215a8dfff5eb57566d" category="list-text">Selecione uma das seguintes opções:</block>
+  <block id="e94cd98358b7ef706b5e6a1eb425d7a4" category="list-text">Selecione "X" na janela da guia CloudShell para fechar uma guia de cada vez.</block>
+  <block id="20bd292386015ab9bbf9bdc545a29f61" category="list-text">Selecione *Fechar outras guias* para fechar todas as outras guias abertas, exceto aquela em que você está trabalhando.</block>
+  <block id="a821da3cfb5781e50da687cb8168975d" category="list-text">Selecione *Fechar todas as guias* para fechar todas as guias.</block>
+  <block id="11d45033000825cfe02455065881779c" category="paragraph">As guias de sessão do CloudShell selecionadas são fechadas.</block>
+  <block id="eb36a9996d7071d8a3bc88081958259f" category="section-title">Dividir guias de sessão do CloudShell</block>
+  <block id="2abf2b468b90d47cd40da1682f6e0bc4" category="paragraph">Você pode dividir as guias de sessão do CloudShell para exibir duas ou mais guias ao mesmo tempo.</block>
+  <block id="48c7c41b72e1d678923ce3571aa65b2d" category="paragraph-title">Passo</block>
+  <block id="f70a8087804334c46314b7b22718eba7" category="paragraph">Arraste e solte as guias de sessão do CloudShell para a parte superior, inferior, esquerda ou direita da janela do CloudShell para dividir a exibição.</block>
+  <block id="b4473fd670e2ec43e4f656fe655a4c35" category="inline-image-macro">Captura de tela que mostra duas guias do CloudShell divididas horizontalmente. As patilhas aparecem lado a lado.</block>
+  <block id="541a26908a416cf0911d9e5231d0ef74" category="paragraph"><block ref="541a26908a416cf0911d9e5231d0ef74" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="15bbc14ab214ce8d22cbbdfdf319d828" category="section-title">Reabra sua última sessão do CloudShell</block>
+  <block id="240c3daa75057ab498529c248f565139" category="paragraph">Se por acaso você fechar sua sessão do CloudShell, você pode reabri-la.</block>
+  <block id="470f69d1d15931435b3d98ec0fa93480" category="paragraph">Selecione o ícone CloudShell na barra de navegação superior.</block>
+  <block id="d6bae394f1010742fdae7b1244f45c40" category="paragraph">As últimas sessões do CloudShell são abertas.</block>
+  <block id="dfaeb18551197bed5eec6a2801accd3b" category="section-title">Atualize as configurações para uma sessão do CloudShell</block>
+  <block id="433acad846fd0b916086af8f4f657288" category="paragraph">Você pode atualizar as configurações de tipo de fonte e saída para sessões do CloudShell.</block>
+  <block id="7e043e4b9a91037ca7facea7bf7d8146" category="list-text">Implante uma sessão do CloudShell.</block>
+  <block id="50cb43a7d46bd9c81dad143a5e033ab1" category="list-text">Na guia CloudShell, selecione o ícone de configurações.</block>
+  <block id="6269d6cf5220cae8555012542cd08042" category="paragraph">É apresentada a caixa de diálogo de definições.</block>
+  <block id="42298888a13205e4322dcd9225293f7d" category="list-text">Atualize o tamanho da fonte e o tipo de saída conforme necessário.</block>
+  <block id="8fe373598a4f9c7a1934291e23665c0d" category="admonition">A saída enriquecida aplica-se a objetos JSON e formatação de tabela. Todas as outras saídas aparecem como texto simples.</block>
+  <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">Selecione *aplicar*.</block>
+  <block id="e266fd38895bd2f3c549295f4bc59641" category="paragraph">As configurações do CloudShell são atualizadas.</block>
+  <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">02 de fevereiro de 2025</block>
+  <block id="3bc27c585525ff1458c1330314a77ebb" category="paragraph">incluir: _whatsnew/2025-02-02.adoc[]</block>
+  <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">5 de janeiro de 2025</block>
 </blocks>

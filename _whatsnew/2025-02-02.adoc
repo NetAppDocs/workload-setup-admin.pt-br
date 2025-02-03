@@ -1,0 +1,19 @@
+= CloudShell disponível no console de fábrica da carga de trabalho do BlueXP 
+:allow-uri-read: 
+
+
+
+
+=== CloudShell disponível no console de fábrica da carga de trabalho do BlueXP 
+
+O CloudShell está disponível em qualquer lugar no console de fábrica de carga de trabalho do BlueXP . O CloudShell permite que você use as credenciais da AWS e do ONTAP fornecidas na sua conta do BlueXP  e execute os comandos da CLI da AWS ou da CLI do ONTAP em um ambiente semelhante ao shell.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["Use o CloudShell"]
+
+
+
+=== Atualização de permissões para bancos de dados
+
+A seguinte permissão está agora disponível no modo _read_ para bancos de dados: `iam:SimulatePrincipalPolicy`.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["Log de alteração de referência de permissões"]
