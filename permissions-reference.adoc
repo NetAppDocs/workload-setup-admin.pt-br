@@ -1652,6 +1652,15 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 | Identifique os recursos criados pela criação da pilha do mecanismo de AI durante as operações de implantação e reconstrução | EC2:CreateTags | Implantação | Automatizar 
 
 
+.2+| Publique eventos criptografados para o backend WLMAI a partir da pilha de ai-Engine | Kms:GenerateDataKey | Implantação | Automatizar 
+
+
+| Kms:desencriptar | Implantação | Automatizar 
+
+
+| Para publicar eventos e recursos personalizados no backend WLMAI a partir da pilha de ai-Engine | sns:publicar | Implantação | Automatizar 
+
+
 | Listar VPCs durante o assistente de implantação do mecanismo de IA | EC2: DescribeVPCs | Implantação | Automatizar 
 
 
@@ -1706,6 +1715,9 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 | Verifique o acesso ao modelo da base | Bedrock:GetFoundationModelAvailability | Implantação | Automatizar 
 
 
+| Verifique a necessidade de criar o grupo de log do CloudWatch durante as operações de implantação e reconstrução | Logs:DescribeLogGroups | Implantação | Automatizar 
+
+
 | Obtenha regiões compatíveis com FSX e bedrock durante o assistente do mecanismo de AI | ssm:GetParametersByPath | Implantação | Automatizar 
 
 
@@ -1715,13 +1727,10 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 | Obtenha a resposta SSM do comando enviado ao mecanismo de IA | ssm:GetCommandInvocation | Implantação | Automatizar 
 
 
-.3+| Verifique a ligação SSM ao motor AI | ssm:SendCommand | Implantação | Automatizar 
+.2+| Verifique a ligação SSM ao motor AI | ssm:SendCommand | Implantação | Automatizar 
 
 
 | ssm:GetConnectionStatus | Implantação | Automatizar 
-
-
-| ssm:SendCommand | Implantação | Automatizar 
 
 
 .8+| Crie um perfil de instância do mecanismo de AI durante a criação de stack durante as operações de implantação e reconstrução | IAM:CreateRole | Implantação | Automatizar 
@@ -1773,9 +1782,6 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 
 
 | ssm: PutParameter | Implantação | Automatizar 
-
-
-| Verifique a necessidade de criar o grupo de log do CloudWatch durante as operações de implantação e reconstrução | Logs:DescribeLogGroups | Implantação | Automatizar 
 
 
 .2+| Envie os logs do mecanismo de IA para o grupo de logs do CloudWatch durante as operações de implantação e reconstrução | Logs:CreateLogGroup | Implantação | Automatizar 
@@ -1917,6 +1923,30 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 | Finalidade | Ação | Onde usado | Modo 
 
 
+| Anexe grupos de segurança e modifique regras para os nós provisionados | EC2:AutorizeSecurityGroupIngress | Implantação | Automatizar 
+
+
+| Criar volumes EBS | EC2:Createvolume | Implantação | Automatizar 
+
+
+| Marque valores personalizados para os recursos do FSX for NetApp ONTAP criados pelas cargas de trabalho da VMware | fsx:TagResource | Implantação | Automatizar 
+
+
+| Crie e valide o modelo do CloudFormation | Formação de nuvens: CreateStack | Implantação | Automatizar 
+
+
+| Gerencie tags e segurança de rede em instâncias criadas | EC2:CreateSecurityGroup | Implantação | Automatizar 
+
+
+| Inicie as instâncias criadas | EC2:RunInstances | Implantação | Automatizar 
+
+
+| Obtenha detalhes da instância do EC2 | EC2: DescribeInstances | Implantação | Automatizar 
+
+
+| Listar imagens durante a criação da pilha durante as operações de implantação e reconstrução | EC2: DescribeImages | Implantação | Automatizar 
+
+
 | Obtenha os VPCs no ambiente selecionado para preencher o formulário de implantação | EC2: DescribeVPCs  a| 
 * Implantação
 * Inventário
@@ -2021,13 +2051,16 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 | Automatizar 
 
 
-.4+| Obtenha detalhes das chaves do KMS e use a criptografia do Amazon FSX for NetApp ONTAP | Kms:CreateGrant | Implantação | Automatizar 
+.5+| Obtenha detalhes das chaves do KMS e use a criptografia do Amazon FSX for NetApp ONTAP | Kms:CreateGrant | Implantação | Automatizar 
 
 
 | Kms: Descrever* | Implantação | Automatizar 
 
 
 | Kms:Lista* | Implantação | Automatizar 
+
+
+| Kms:desencriptar | Implantação | Automatizar 
 
 
 | Kms:GenerateDataKey | Implantação | Automatizar 
