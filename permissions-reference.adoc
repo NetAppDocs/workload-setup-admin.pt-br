@@ -763,6 +763,9 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 
 
+| Crie endpoints VPC se eles não existirem para serviços necessários, independentemente da conetividade de rede pública em instâncias EC2 | EC2:CreateVpcEndpoint | Implantação | Automatizar 
+
+
 | Obter tipos de instância disponíveis na região para nós de validação (T2.micro/T3.micro) | EC2:DescribeInstanceTypeOfferings | Implantação  a| 
 * Leia
 * Automatizar
@@ -810,6 +813,13 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 
 | Obtenha uma lista de pilhas do CloudFormation em execução no ambiente para verificar o limite de cota | Cloudformation:ListStacks | Implantação  a| 
+* Leia
+* Automatizar
+
+
+
+
+| Verifique os limites de conta para recursos antes de acionar a implantação | Cloudformation:DescribeAccountLimits | Implantação  a| 
 * Leia
 * Automatizar
 
@@ -948,6 +958,48 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Automatizar
 
 
+
+
+| Verifique se a conta está inscrita no AWS Compute Optimizer | Otimizador de computação:GetEnrollmentStatus  a| 
+* Explore as poupanças
+* Otimização
+
+| Automatizar 
+
+
+| Atualize uma preferência de recomendação existente no AWS Compute Optimizer para personalizar sugestões para cargas de trabalho do servidor SQL | Otimizador de computação:PutRecommendationPreferences  a| 
+* Explore as poupanças
+* Otimização
+
+| Automatizar 
+
+
+| Obtenha preferências de recomendação que estão em vigor para um determinado recurso do AWS Compute Optimizer | Compute-Optimizer:GetEffectiveRecommendationPreferences  a| 
+* Explore as poupanças
+* Otimização
+
+| Automatizar 
+
+
+| Obtenha recomendações que o AWS Compute Optimizer gera para instâncias do Amazon Elastic Compute Cloud (Amazon EC2) | Otimizador de computação:GetEC2InstanceRecommendations  a| 
+* Explore as poupanças
+* Otimização
+
+| Automatizar 
+
+
+.2+| Verifique a associação de instância aos grupos de dimensionamento automático | Dimensionamento automático:DescribeAutoScalingGroups  a| 
+* Explore as poupanças
+* Otimização
+
+| Automatizar 
+
+
+| Dimensionamento automático:DescribeAutoScalingInstances  a| 
+* Explore as poupanças
+* Otimização
+
+| Automatizar 
 
 
 .4+| Obtenha, liste, crie e exclua parâmetros SSM para credenciais de usuário do AD, FSX for ONTAP e SQL usadas durante a implantação ou gerenciadas em sua conta da AWS | ssm: GetParameter 1  a| 

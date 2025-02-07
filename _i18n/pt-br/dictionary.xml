@@ -1054,4 +1054,18 @@
   <block id="043622d556b2884b98fb152bcf740dcd" category="cell">Crie e valide o modelo do CloudFormation</block>
   <block id="7396fdf6f4dfc93451cc96093ccbe43e" category="cell">Obtenha detalhes da instância do EC2</block>
   <block id="1be679c04c8e52e60ad090d4b7848d64" category="cell">Listar imagens durante a criação da pilha durante as operações de implantação e reconstrução</block>
+  <block id="4dcec483cf1f239f85db3400f495b54a" category="cell">Crie endpoints VPC se eles não existirem para serviços necessários, independentemente da conetividade de rede pública em instâncias EC2</block>
+  <block id="5e5a90d60662f7306336a047b5b3b7f6" category="cell">Verifique os limites de conta para recursos antes de acionar a implantação</block>
+  <block id="da7dbf1119bff3389296d7d9a38be487" category="cell">Cloudformation:DescribeAccountLimits</block>
+  <block id="e0db06144a611c9dacbb1cbdc47398a2" category="cell">Verifique se a conta está inscrita no AWS Compute Optimizer</block>
+  <block id="68f6ffe8302b37908ab1031d603a8537" category="cell">Otimizador de computação:GetEnrollmentStatus</block>
+  <block id="e1b0fb1c7834e30cc2855e9e5978a6b2" category="cell">Atualize uma preferência de recomendação existente no AWS Compute Optimizer para personalizar sugestões para cargas de trabalho do servidor SQL</block>
+  <block id="e7878b5da7a61064cc75fec0ae2842c4" category="cell">Otimizador de computação:PutRecommendationPreferences</block>
+  <block id="e1faa0bf56d94349eb5128478fc9e6c9" category="cell">Obtenha preferências de recomendação que estão em vigor para um determinado recurso do AWS Compute Optimizer</block>
+  <block id="f4003017b8bd9e7024276d1eae7c252d" category="cell">Compute-Optimizer:GetEffectiveRecommendationPreferences</block>
+  <block id="bb90c212b52ea746f2de78f88fd32dfa" category="cell">Obtenha recomendações que o AWS Compute Optimizer gera para instâncias do Amazon Elastic Compute Cloud (Amazon EC2)</block>
+  <block id="1b9183fc54789ff2117d927730975ee9" category="cell">Otimizador de computação:GetEC2InstanceRecommendations</block>
+  <block id="38b28dd168a209df2daf8eaf5b0fc216" category="cell">Verifique a associação de instância aos grupos de dimensionamento automático</block>
+  <block id="841ea3d3891ce9dc21992730680d4dac" category="cell">Dimensionamento automático:DescribeAutoScalingGroups</block>
+  <block id="9d85d66bd60c64faffe2799f428cd8b3" category="cell">Dimensionamento automático:DescribeAutoScalingInstances</block>
 </blocks>
