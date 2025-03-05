@@ -3,7 +3,6 @@
   <block id="efa42d5c66cb9948f402ee559611e12d" category="doc">Suporte ao Terraform</block>
   <block id="1571710cf3c95e6290fc41ea04917d42" category="paragraph">O suporte Terraform está disponível para implantação do sistema de arquivos do Amazon FSX for NetApp ONTAP e criação de VM de armazenamento. O guia de configuração e administração agora tem instruções sobre como usar o Terraform na Codebox.</block>
   <block id="2532cd63354e6e99119077d45134b5ef" category="inline-link-macro">Use o Terraform do Codebox</block>
-  <block id="11cb17d1b990bbf37a24337d5692efa1" category="paragraph"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
   <block id="2fd1745cefcdce50d6467d96e693f6b7" category="doc">Subscrição RSS</block>
   <block id="80f4b5aa553e3a44455088c83954a088" category="section-title">Suporte para uma única política de permissão por workload</block>
   <block id="41b3a089d4fbacfb53e9a5634cfc6647" category="inline-image-macro">Captura de tela da seção de configuração de permissões na página credenciais, na qual você pode selecionar políticas de permissões de leitura ou automação para gerenciamento de storage, cargas de trabalho de IA, cargas de trabalho de bancos de dados e cargas de trabalho VMware.</block>
@@ -379,15 +378,12 @@
   <block id="ebcd96574a726227b2c1017e8efe81c1" category="doc">Lançamento inicial de fábrica de workloads da BlueXP </block>
   <block id="d2587bb8ad424cee3050c3b7958dd388" category="paragraph">O BlueXP  Workload Factory é uma poderosa plataforma de gerenciamento de ciclo de vida projetada para ajudá-lo a otimizar suas cargas de trabalho usando os sistemas de arquivos do Amazon FSX for NetApp ONTAP. As cargas de trabalho que podem ser otimizadas usando a fábrica de workloads e o FSX for ONTAP incluem bancos de dados, migrações VMware para VMware Cloud na AWS, chatbots de IA e muito mais.</block>
   <block id="e5d3c7248ff4540f88c13fbf9252d0a3" category="inline-link-macro">console de fábrica do workload</block>
-  <block id="3171014553de64cf509a3b587c8baeb3" category="paragraph">A subscrição RSS está disponível no <block ref="9d5ad87a67c1830e37fdd19a7a179db6" category="inline-link-macro-rx"></block>. Usar um feed RSS é uma maneira fácil de consumir e estar ciente das mudanças na fábrica de carga de trabalho do BlueXP .</block>
   <block id="0796995437665af1d920169e03b4542b" category="inline-image-macro">Captura de tela do menu suspenso de ajuda do console de fábrica de carga de trabalho. Um novo botão para se inscrever no RSS aparece como uma opção no menu suspenso.</block>
   <block id="482a329f24c123c31a109c24729cb2cd" category="paragraph"><block ref="482a329f24c123c31a109c24729cb2cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4e47b743d0cc8e0b8906e37286d9b43b" category="paragraph">Ao adicionar credenciais da AWS na fábrica de workloads, agora você pode selecionar uma única política de permissão, seja no modo de leitura ou automação, para cada workload e gerenciamento de storage.</block>
   <block id="9f46892803d8b6c63d3b7f51fd44a421" category="inline-link-macro">Adicione credenciais da AWS à fábrica do workload</block>
-  <block id="d9dd14fb1d1e7ca9c6da6770d9176783" category="paragraph"><block ref="d9dd14fb1d1e7ca9c6da6770d9176783" category="inline-link-macro-rx"></block></block>
   <block id="dfc4a97a3fe947a314ae908cf036cbfe" category="doc">Integração de fábrica do workload no console BlueXP </block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">Consola BlueXP</block>
-  <block id="d2feef96259a41a7842dc5e7af577d63" category="paragraph">Agora você pode usar a fábrica de carga de trabalho do <block ref="391de7a3bac2bc77fa53dffb3f53801a" category="inline-link-macro-rx"></block>. A experiência do console do BlueXP  fornece a mesma funcionalidade que o console de fábrica da carga de trabalho.</block>
   <block id="717f9c6475fbb39a24ab9942c1a903c0" category="inline-link-macro">Saiba como acessar a fábrica da carga de trabalho a partir do console BlueXP </block>
   <block id="4fa2f246a664251a157926c2e11e1eb3" category="summary">Adicione credenciais da AWS para que a fábrica de workloads tenha as permissões necessárias para implantar e gerenciar recursos de nuvem em suas contas da AWS.</block>
   <block id="188c7f44ffe17186c8dcbc38640d54e1" category="paragraph">Adicione e gerencie credenciais da AWS para que a fábrica de workloads tenha as permissões necessárias para implantar e gerenciar recursos de nuvem em suas contas da AWS.</block>
@@ -1068,4 +1064,8 @@
   <block id="38b28dd168a209df2daf8eaf5b0fc216" category="cell">Verifique a associação de instância aos grupos de dimensionamento automático</block>
   <block id="841ea3d3891ce9dc21992730680d4dac" category="cell">Dimensionamento automático:DescribeAutoScalingGroups</block>
   <block id="9d85d66bd60c64faffe2799f428cd8b3" category="cell">Dimensionamento automático:DescribeAutoScalingInstances</block>
+  <block id="7115d78353263dbb2dbe063624f9f601" category="paragraph"><block ref="7115d78353263dbb2dbe063624f9f601" category="inline-link-macro-rx"></block></block>
+  <block id="bf2cca138f5e3f74f2e6b73d8e8b2452" category="paragraph">A subscrição RSS está disponível no <block ref="a65cf6b405017af965199f55f7b4fce1" category="inline-link-macro-rx"></block>. Usar um feed RSS é uma maneira fácil de consumir e estar ciente das mudanças na fábrica de carga de trabalho do BlueXP .</block>
+  <block id="1a88151efda7b7ae7945b1161fe70fdc" category="paragraph"><block ref="1a88151efda7b7ae7945b1161fe70fdc" category="inline-link-macro-rx"></block></block>
+  <block id="cf1f4a083afa7ccb1141e827deb4cdc2" category="paragraph">Agora você pode usar a fábrica de carga de trabalho do <block ref="4623dd80d89c29fbf0d2b04387a56c33" category="inline-link-macro-rx"></block>. A experiência do console do BlueXP  fornece a mesma funcionalidade que o console de fábrica da carga de trabalho.</block>
 </blocks>

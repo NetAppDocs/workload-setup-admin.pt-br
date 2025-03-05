@@ -65,7 +65,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/manage-service-accounts.
 
 === Integração de fábrica do workload no console BlueXP 
 
-Agora você pode usar a fábrica de carga de trabalho do link:https://console.bluexp.netapp.com["Consola BlueXP"^]. A experiência do console do BlueXP  fornece a mesma funcionalidade que o console de fábrica da carga de trabalho.
+Agora você pode usar a fábrica de carga de trabalho do link:https://console.bluexp.netapp.com["Consola BlueXP"]. A experiência do console do BlueXP  fornece a mesma funcionalidade que o console de fábrica da carga de trabalho.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Saiba como acessar a fábrica da carga de trabalho a partir do console BlueXP "]
 
@@ -77,7 +77,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html
 
 === Subscrição RSS
 
-A subscrição RSS está disponível no link:https://console.workloads.netapp.com/["console de fábrica do workload"^]. Usar um feed RSS é uma maneira fácil de consumir e estar ciente das mudanças na fábrica de carga de trabalho do BlueXP .
+A subscrição RSS está disponível no link:https://console.workloads.netapp.com/["console de fábrica do workload"]. Usar um feed RSS é uma maneira fácil de consumir e estar ciente das mudanças na fábrica de carga de trabalho do BlueXP .
 
 image:screenshot-rss-subscribe-button.png["Captura de tela do menu suspenso de ajuda do console de fábrica de carga de trabalho. Um novo botão para se inscrever no RSS aparece como uma opção no menu suspenso."]
 
@@ -89,7 +89,7 @@ Ao adicionar credenciais da AWS na fábrica de workloads, agora você pode selec
 
 image:screenshot-single-permission-policy-support.png["Captura de tela da seção de configuração de permissões na página credenciais, na qual você pode selecionar políticas de permissões de leitura ou automação para gerenciamento de storage, cargas de trabalho de IA, cargas de trabalho de bancos de dados e cargas de trabalho VMware."]
 
-link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Adicione credenciais da AWS à fábrica do workload"^]
+link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Adicione credenciais da AWS à fábrica do workload"]
 
 
 
@@ -101,7 +101,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Ad
 
 O suporte Terraform está disponível para implantação do sistema de arquivos do Amazon FSX for NetApp ONTAP e criação de VM de armazenamento. O guia de configuração e administração agora tem instruções sobre como usar o Terraform na Codebox.
 
-link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["Use o Terraform do Codebox"^]
+link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["Use o Terraform do Codebox"]
 
 
 
