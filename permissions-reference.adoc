@@ -1558,6 +1558,7 @@ As políticas do GenAI IAM só estão disponíveis no modo de operação:
         "bedrock:InvokeModelWithResponseStream",
         "bedrock:InvokeModel",
         "bedrock:ListFoundationModels",
+        "bedrock:GetFoundationModel",
         "bedrock:GetFoundationModelAvailability",
         "bedrock:GetModelInvocationLoggingConfiguration"
       ],
@@ -1762,6 +1763,9 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 
 
 | Mostre os modelos de fundação disponíveis em uma região | Bedrock:ListFoundationModels | Implantação | Automatizar 
+
+
+| Obtenha informações sobre um modelo de fundação | Bedrock:GetFoundationModel | Implantação | Automatizar 
 
 
 | Verifique o acesso ao modelo da base | Bedrock:GetFoundationModelAvailability | Implantação | Automatizar 
@@ -2165,6 +2169,12 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 == Alterar registo
 
 À medida que as permissões são adicionadas e removidas, vamos anotá-las nas seções abaixo.
+
+
+
+=== 2 de março de 2025
+
+A seguinte permissão está agora disponível no modo _read_ para bancos de dados: `iam:SimulatePrincipalPolicy`.
 
 
 

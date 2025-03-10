@@ -895,7 +895,6 @@
   <block id="65294ced72c6aa8f05b632194559e081" category="cell">Mostre os modelos de fundação disponíveis em uma região</block>
   <block id="66613086b6208ec265a60220a21ff40a" category="cell">Bedrock:ListFoundationModels</block>
   <block id="77771f1732da043133eab422a7e43291" category="cell">Obtenha regiões compatíveis com FSX e bedrock durante o assistente do mecanismo de AI</block>
-  <block id="d4f0fee980f03c8a663dda4a1d3623de" category="cell">Obtenha a imagem mais recente do Amazon Linux para a implantação do mecanismo de IA durante as operações de implantação e reconstrução</block>
   <block id="302112cb321a929a6d9830e917817acb" category="cell">ssm:GetParameters</block>
   <block id="37cc48b6baed18a8130ec18d97544390" category="cell">Obtenha a resposta SSM do comando enviado ao mecanismo de IA</block>
   <block id="97128676550f404369a4900a6b92a6a7" category="cell">Verifique a ligação SSM ao motor AI</block>
@@ -1068,4 +1067,8 @@
   <block id="bf2cca138f5e3f74f2e6b73d8e8b2452" category="paragraph">A subscrição RSS está disponível no <block ref="a65cf6b405017af965199f55f7b4fce1" category="inline-link-macro-rx"></block>. Usar um feed RSS é uma maneira fácil de consumir e estar ciente das mudanças na fábrica de carga de trabalho do BlueXP .</block>
   <block id="1a88151efda7b7ae7945b1161fe70fdc" category="paragraph"><block ref="1a88151efda7b7ae7945b1161fe70fdc" category="inline-link-macro-rx"></block></block>
   <block id="cf1f4a083afa7ccb1141e827deb4cdc2" category="paragraph">Agora você pode usar a fábrica de carga de trabalho do <block ref="4623dd80d89c29fbf0d2b04387a56c33" category="inline-link-macro-rx"></block>. A experiência do console do BlueXP  fornece a mesma funcionalidade que o console de fábrica da carga de trabalho.</block>
+  <block id="fb2b74ed81679192134e9c2c07019b42" category="cell">Obtenha informações sobre um modelo de fundação</block>
+  <block id="1311c4cbbe5b925c15d25fe5ff7b022b" category="cell">Bedrock:GetFoundationModel</block>
+  <block id="dec23cffbd0de1b8096bc26072eb0b7d" category="cell">Obtenha a imagem mais recente do Amazon Linux para a implantação do mecanismo de IA durante as operações de implantação e reconstrução</block>
+  <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2 de março de 2025</block>
 </blocks>
