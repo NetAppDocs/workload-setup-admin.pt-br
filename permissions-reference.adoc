@@ -2174,7 +2174,7 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 
 === 2 de março de 2025
 
-A seguinte permissão está agora disponível no modo _read_ para bancos de dados: `iam:SimulatePrincipalPolicy`. A seguinte permissão está agora disponível no modo _Automate_ para o GenAI: `bedrock:GetFoundationModel`.
+A seguinte permissão está agora disponível no modo _Automate_ para o GenAI: `bedrock:GetFoundationModel`.
 
 
 
