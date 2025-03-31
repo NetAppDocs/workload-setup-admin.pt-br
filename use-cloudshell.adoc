@@ -26,6 +26,57 @@ Os recursos do CloudShell incluem:
 * Renomeação da sessão: Renomeie as sessões conforme necessário
 * Persistência do conteúdo da última sessão: Reabra a última sessão se você a fechar por engano
 * Preferências de configurações: Altere o tamanho da fonte e o tipo de saída
+* Respostas de erro geradas por IA para comandos da CLI do ONTAP
+
+
+
+
+=== Comandos do CloudShell
+
+Na interface GUI do CloudShell, você pode entrar `help` para exibir os comandos do CloudShell disponíveis. Depois de emitir o `help` comando, aparece a seguinte referência.
+
+Descrição:: O NetApp CloudShell é uma interface GUI integrada à fábrica de cargas de trabalho do BlueXP  que permite executar comandos de CLI da AWS ou comandos de CLI do ONTAP em um ambiente semelhante a um shell. Ele simula sessões de terminal no navegador, fornecendo recursos de terminal e mensagens de proxy através do back-end na fábrica de carga de trabalho. Ele permite que você use as credenciais da AWS e as credenciais do ONTAP fornecidas na sua conta do BlueXP .
+Comandos disponíveis::
++
+--
+* `clear`
+* `help`
+* `[--fsx <fsxId>] <ontap-command> [parameters]`
+* `aws <aws-command> <aws-sub-command> [parameters]`
+
+
+--
+Contexto:: Cada sessão de terminal é executada em um contexto específico: Credenciais, região e, opcionalmente, o sistema de arquivos FSX for ONTAP.
++
+--
+Todos os comandos da AWS são executados no contexto fornecido. Os comandos da AWS só serão bem-sucedidos se as credenciais fornecidas tiverem permissões na região especificada.
+
+Você pode especificar comandos ONTAP com um opcional `fsxId`. Se você fornecer um `fsxId` comando ONTAP individual, esse ID substituirá o ID no contexto. Se a sessão do terminal não tiver um contexto de ID do sistema de arquivos FSX for ONTAP, você deve fornecer `fsxId` cada comando ONTAP.
+
+Para atualizar diferentes especificidades de contexto, faça o seguinte: * Para alterar credenciais: "Usando credenciais <credentialId>" * para alterar a região: "Usando região <regionCode>" * para alterar o sistema de arquivos fsx for ONTAP: "Usando o fsx <fileSystemId>"
+
+--
+Mostrando itens::
++
+--
+* Para mostrar credenciais disponíveis: "Mostrar credenciais"
+* Para mostrar as regiões disponíveis: "Mostrar regiões"
+* Para mostrar o histórico de comandos: "Show history"
+
+
+--
+Variáveis:: A seguir estão exemplos de configuração e uso de variáveis. Se um valor de variável contiver espaços, você deve configurá-lo dentro de aspas.
++
+--
+* Para definir uma variável: <variable>: <value>
+* Para usar uma variável: <variable>
+* Exemplo definindo uma variável: svm1 USD svm123
+* Exemplo usando uma variável: --fsx filesystem-1 volumes show --vserver USD svm1
+* Exemplo definindo uma variável com valor de string comment1
+
+
+--
+Operadores:: Os operadores de shell, como pipe `|`, execução em segundo plano `&` e redirecionamento, `>` não são suportados. A execução do comando falhará se você incluir esses operadores.
 
 
 
@@ -54,13 +105,16 @@ Você pode implantar o CloudShell de qualquer lugar no console de fábrica de ca
 +
 image:screenshot-deploy-cloudshell-session.png["Captura de tela que mostra uma nova sessão do CloudShell."]
 
-. Digite `help` para exibir os comandos e as instruções disponíveis do CloudShell ou consulte os seguintes documentos de referência da CLI para obter os comandos disponíveis:
+. Entre `help` para ver as instruções disponíveis  e disponíveis <<Comandos do CloudShell,Comandos do CloudShell>>ou consulte os seguintes documentos de referência da CLI para obter os comandos disponíveis:
 +
 ** link:https://docs.aws.amazon.com/cli/latest/reference/["Referência do CLI da AWS"^]: Para comandos relacionados ao fsx for ONTAP, selecione *fsx*.
 ** link:https://docs.netapp.com/us-en/ontap-cli/["Referência do CLI da ONTAP"^]
 
 
 . Emita comandos dentro da sessão do CloudShell.
++
+Se ocorrer um erro após a emissão de um comando ONTAP CLI, selecione o ícone de lâmpada para obter uma breve resposta de erro gerada por IA com uma descrição da falha, a causa da falha e uma resolução detalhada. Selecione *Leia mais* para mais detalhes.
+
 
 
 --
@@ -80,6 +134,9 @@ Uma sessão do CloudShell é aberta no contexto do sistema de arquivos seleciona
 
 
 . Emita comandos dentro da sessão do CloudShell.
++
+Se ocorrer um erro após a emissão de um comando ONTAP CLI, selecione o ícone de lâmpada para obter uma breve resposta de erro gerada por IA com uma descrição da falha, a causa da falha e uma resolução detalhada. Selecione *Leia mais* para mais detalhes.
+
 
 
 --

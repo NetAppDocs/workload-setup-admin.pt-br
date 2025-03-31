@@ -24,6 +24,8 @@ Modo de leitura:: Melhora a experiência do modo básico adicionando permissões
 Modo de automação:: Representa um relacionamento de confiança total para que a fábrica da carga de trabalho seja atribuída com permissões completas. Isso permite que a fábrica de carga de trabalho execute e automatize operações na AWS em seu nome, juntamente com as credenciais atribuídas que têm as permissões necessárias para execução.
 
 
+Saiba mais link:https://review.docs.netapp.com/us-en/workload-setup-admin_simulation-permission-update/permissions-reference.html["Permissões para a fábrica de carga de trabalho do BlueXP "]sobre o .
+
 
 
 === Funções do modo operacional

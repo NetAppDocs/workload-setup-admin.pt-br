@@ -1,0 +1,19 @@
+= O CloudShell relata erros gerados por IA para comandos da CLI do ONTAP
+:allow-uri-read: 
+
+
+
+
+=== O CloudShell relata erros gerados por IA para comandos da CLI do ONTAP
+
+Ao usar o CloudShell, cada vez que você emite um comando ONTAP CLI e um erro ocorre, você pode obter respostas de erro geradas por IA que incluem uma descrição da falha, a causa da falha e uma resolução detalhada.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["Use o CloudShell"]
+
+
+
+=== IAM:Atualização de permissão SimulatePermissionPolicy
+
+Agora você pode gerenciar a `iam:SimulatePrincipalPolicy` permissão no console de fábrica de workload ao adicionar credenciais adicionais de conta da AWS ou adicionar uma nova funcionalidade de workload, como o workload do GenAI.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["Log de alteração de referência de permissões"]
