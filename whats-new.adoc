@@ -19,7 +19,7 @@ Saiba o que há de novo com os recursos de administração de fábrica de carga 
 
 
 
-=== O CloudShell relata erros gerados por IA para comandos da CLI do ONTAP
+=== O CloudShell relata respostas de erro geradas por IA para os comandos da CLI do ONTAP
 
 Ao usar o CloudShell, cada vez que você emite um comando ONTAP CLI e um erro ocorre, você pode obter respostas de erro geradas por IA que incluem uma descrição da falha, a causa da falha e uma resolução detalhada.
 
