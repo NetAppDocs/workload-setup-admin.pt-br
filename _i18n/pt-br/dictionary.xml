@@ -1126,4 +1126,8 @@
   <block id="bc7864e70344eae19121f3e6408c5e04" category="list-text">Entre<block ref="657f8b8da628ef83cf69101b6817150a" prefix=" " category="inline-code"></block> para ver as instruções disponíveis  e disponíveis <block ref="0bdecf44265be755040a6284b4703b71" category="inline-xref-macro-rx"></block>ou consulte os seguintes documentos de referência da CLI para obter os comandos disponíveis:</block>
   <block id="34b14d4981e88ee13798aea3eecf0674" category="paragraph">Se ocorrer um erro após a emissão de um comando ONTAP CLI, selecione o ícone de lâmpada para obter uma breve resposta de erro gerada por IA com uma descrição da falha, a causa da falha e uma resolução detalhada. Selecione *Leia mais* para mais detalhes.</block>
   <block id="ef74d01649997b60252254da8a1573fd" category="doc">O CloudShell relata respostas de erro geradas por IA para os comandos da CLI do ONTAP</block>
+  <block id="e388026a0cea886de58a344e102aff29" category="cell">Buscar status de associação SSM para um grupo de instâncias EC2 gerenciadas (nós SQL)</block>
+  <block id="3320749a6854264e1889d72d7f41a0bf" category="cell">ssm:DescribeInstanceInformation</block>
+  <block id="99e26a6b02df18a6d3fcaa201c832eff" category="section-title">2 de abril de 2025</block>
+  <block id="3721724ce177d539f2733638cda0c562" category="paragraph">A seguinte permissão está agora disponível em _read mode_ para bancos de dados: 'sm:DescribeInstanceInformation'.</block>
 </blocks>
