@@ -23,7 +23,7 @@ sidebar:
     entries:
     - title: Aprenda o básico
       entries:
-      - title: Visão geral de fábrica do workload
+      - title: Saiba mais sobre a fábrica de carga de trabalho da BlueXP 
         url: "/workload-factory-overview.html"
       - title: Modos operacionais
         url: "/operational-modes.html"
