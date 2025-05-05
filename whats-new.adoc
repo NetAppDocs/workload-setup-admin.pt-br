@@ -15,6 +15,22 @@ Saiba o que há de novo com os recursos de administração de fábrica de carga 
 
 
 
+== 04 de maio de 2025
+
+
+
+=== Suporte autocompleto do CloudShell
+
+Ao usar o CloudShell de fábrica de carga de trabalho do BlueXP , você pode começar a digitar um comando e pressionar a tecla Tab para exibir as opções disponíveis. Se houver várias possibilidades, a CLI exibirá uma lista de sugestões. Esse recurso aumenta a produtividade minimizando erros e acelerando a execução de comandos.
+
+
+
+=== Terminologia de permissões atualizada
+
+A interface do usuário e a documentação de fábrica da carga de trabalho agora usam "somente leitura" para se referir a permissões de leitura e "leitura-gravação" para se referir a permissões de automação.
+
+
+
 == 30 de março de 2025
 
 

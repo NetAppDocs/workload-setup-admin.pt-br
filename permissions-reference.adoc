@@ -20,7 +20,7 @@ Para usar os recursos e serviços de fábrica do workload do BlueXP , você pre
 
 == Por que usar permissões
 
-Quando você fornece permissões de modo de leitura ou automação, a fábrica de carga de trabalho anexa uma política à instância com permissões para gerenciar recursos e processos dentro dessa conta da AWS. Isso permite que a fábrica de workloads execute várias operações, desde a descoberta de seus ambientes de storage até a implantação de recursos da AWS, como sistemas de arquivos no gerenciamento de storage ou bases de conhecimento para workloads da GenAI.
+Quando você fornece permissões de modo somente leitura ou leitura/gravação, a fábrica de carga de trabalho anexa uma política à instância com permissões para gerenciar recursos e processos dentro dessa conta da AWS. Isso permite que a fábrica de workloads execute várias operações, desde a descoberta de seus ambientes de storage até a implantação de recursos da AWS, como sistemas de arquivos no gerenciamento de storage ou bases de conhecimento para workloads da GenAI.
 
 Para cargas de trabalho de banco de dados, por exemplo, quando a fábrica de carga de trabalho é concedida com as permissões necessárias, ele verifica todas as instâncias EC2 em uma determinada conta e região e filtra todas as máquinas baseadas no Windows. Se o AWS Systems Manager (SSM) Agent estiver instalado e em execução na rede do host e do System Manager estiver configurado corretamente, a fábrica de carga de trabalho poderá acessar a máquina Windows e verificar se o software SQL Server está instalado ou não.
 
@@ -43,7 +43,7 @@ Selecione o modo operacional para visualizar as políticas do IAM necessárias:
 ====
 [role="tabbed-block"]
 =====
-.Modo de leitura
+.Modo só de leitura
 --
 [source, json]
 ----
@@ -75,7 +75,7 @@ Selecione o modo operacional para visualizar as políticas do IAM necessárias:
 }
 ----
 --
-.Modo de automação
+.Modo de leitura/escrita
 --
 [source, json]
 ----
@@ -133,22 +133,22 @@ A tabela a seguir exibe as permissões para armazenamento.
 | Finalidade | Ação | Onde usado | Modo 
 
 
-| Crie um sistema de arquivos FSX for ONTAP | fsx:CreateFileSystem* | Implantação | Automatizar 
+| Crie um sistema de arquivos FSX for ONTAP | fsx:CreateFileSystem* | Implantação | Leitura/escrita 
 
 
-| Crie um grupo de segurança para um sistema de arquivos FSX for ONTAP | EC2:CreateSecurityGroup | Implantação | Automatizar 
+| Crie um grupo de segurança para um sistema de arquivos FSX for ONTAP | EC2:CreateSecurityGroup | Implantação | Leitura/escrita 
 
 
-| Adicione tags a um grupo de segurança para um sistema de arquivos FSX for ONTAP | EC2:CreateTags | Implantação | Automatizar 
+| Adicione tags a um grupo de segurança para um sistema de arquivos FSX for ONTAP | EC2:CreateTags | Implantação | Leitura/escrita 
 
 
-.2+| Autorize a saída do grupo de segurança e a entrada para um sistema de arquivos FSX for ONTAP | EC2:AutorizeSecurityGroupEgress | Implantação | Automatizar 
+.2+| Autorize a saída do grupo de segurança e a entrada para um sistema de arquivos FSX for ONTAP | EC2:AutorizeSecurityGroupEgress | Implantação | Leitura/escrita 
 
 
-| EC2:AutorizeSecurityGroupIngress | Implantação | Automatizar 
+| EC2:AutorizeSecurityGroupIngress | Implantação | Leitura/escrita 
 
 
-| A função concedida fornece comunicação entre o FSX for ONTAP e outros serviços da AWS | IAM:CreateServiceLinkRole | Implantação | Automatizar 
+| A função concedida fornece comunicação entre o FSX for ONTAP e outros serviços da AWS | IAM:CreateServiceLinkRole | Implantação | Leitura/escrita 
 
 
 .7+| Obtenha detalhes para preencher o formulário de implantação do sistema de arquivos FSX for ONTAP | EC2: DescribeVPCs  a| 
@@ -156,8 +156,8 @@ A tabela a seguir exibe as permissões para armazenamento.
 * Explore as poupanças
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -167,8 +167,8 @@ A tabela a seguir exibe as permissões para armazenamento.
 * Explore as poupanças
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -178,8 +178,8 @@ A tabela a seguir exibe as permissões para armazenamento.
 * Explore as poupanças
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -189,8 +189,8 @@ A tabela a seguir exibe as permissões para armazenamento.
 * Explore as poupanças
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -200,8 +200,8 @@ A tabela a seguir exibe as permissões para armazenamento.
 * Explore as poupanças
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -211,8 +211,8 @@ A tabela a seguir exibe as permissões para armazenamento.
 * Explore as poupanças
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -222,25 +222,25 @@ A tabela a seguir exibe as permissões para armazenamento.
 * Explore as poupanças
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
-.3+| Obtenha os detalhes das chaves do KMS e use a criptografia FSX for ONTAP | Kms:CreateGrant | Implantação | Automatizar 
+.3+| Obtenha os detalhes das chaves do KMS e use a criptografia FSX for ONTAP | Kms:CreateGrant | Implantação | Leitura/escrita 
 
 
 | Kms: Descrever* | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Kms:Lista* | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -250,112 +250,112 @@ A tabela a seguir exibe as permissões para armazenamento.
 * Explore as poupanças
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Obtenha detalhes para instâncias EC2 | EC2: DescribeInstances | Explore as poupanças  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
-| Descrever o Elastic File System na calculadora de economia | Elasticfilesystem:describe* | Explore as poupanças | Leia 
+| Descrever o Elastic File System na calculadora de economia | Elasticfilesystem:describe* | Explore as poupanças | Somente leitura 
 
 
 | Listar tags para recursos do FSX for ONTAP | fsx:ListTagsForResource | Inventário  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
-.2+| Gerencie a saída do grupo de segurança e o ingresso para um sistema de arquivos FSX for ONTAP | EC2:RevokeSecurityGroupIngress | Operações de gerenciamento | Automatizar 
+.2+| Gerencie a saída do grupo de segurança e o ingresso para um sistema de arquivos FSX for ONTAP | EC2:RevokeSecurityGroupIngress | Operações de gerenciamento | Leitura/escrita 
 
 
-| EC2:DeleteSecurityGroup | Operações de gerenciamento | Automatizar 
+| EC2:DeleteSecurityGroup | Operações de gerenciamento | Leitura/escrita 
 
 
-.16+| Crie, visualize e gerencie recursos do sistema de arquivos FSX for ONTAP | fsx:Createvolume* | Operações de gerenciamento | Automatizar 
+.16+| Crie, visualize e gerencie recursos do sistema de arquivos FSX for ONTAP | fsx:Createvolume* | Operações de gerenciamento | Leitura/escrita 
 
 
-| fsx:TagResource* | Operações de gerenciamento | Automatizar 
+| fsx:TagResource* | Operações de gerenciamento | Leitura/escrita 
 
 
-| fsx:CreateStorageVirtualMachine* | Operações de gerenciamento | Automatizar 
+| fsx:CreateStorageVirtualMachine* | Operações de gerenciamento | Leitura/escrita 
 
 
-| fsx:DeleteFileSystem* | Operações de gerenciamento | Automatizar 
+| fsx:DeleteFileSystem* | Operações de gerenciamento | Leitura/escrita 
 
 
-| fsx:DeleteStorageVirtualMachine* | Operações de gerenciamento | Automatizar 
+| fsx:DeleteStorageVirtualMachine* | Operações de gerenciamento | Leitura/escrita 
 
 
 | fsx:DescribeFileSystems* | Inventário  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | fsx:DescribeStorageVirtualMachines* | Inventário  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
-| fsx:UpdateFileSystem* | Operações de gerenciamento | Automatizar 
+| fsx:UpdateFileSystem* | Operações de gerenciamento | Leitura/escrita 
 
 
-| fsx:UpdateStorageVirtualMachine* | Operações de gerenciamento | Automatizar 
+| fsx:UpdateStorageVirtualMachine* | Operações de gerenciamento | Leitura/escrita 
 
 
 | fsx:DescribeVolumes* | Inventário  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
-| fsx:Updatevolume* | Operações de gerenciamento | Automatizar 
+| fsx:Updatevolume* | Operações de gerenciamento | Leitura/escrita 
 
 
-| fsx:Deletevolume* | Operações de gerenciamento | Automatizar 
+| fsx:Deletevolume* | Operações de gerenciamento | Leitura/escrita 
 
 
-| fsx:UntagResource* | Operações de gerenciamento | Automatizar 
+| fsx:UntagResource* | Operações de gerenciamento | Leitura/escrita 
 
 
 | fsx:DescribeBackups* | Operações de gerenciamento  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
-| fsx:CreateBackup* | Operações de gerenciamento | Automatizar 
+| fsx:CreateBackup* | Operações de gerenciamento | Leitura/escrita 
 
 
-| fsx:CreateVolumeFromBackup* | Operações de gerenciamento | Automatizar 
+| fsx:CreateVolumeFromBackup* | Operações de gerenciamento | Leitura/escrita 
 
 
-| Relatar métricas do CloudWatch | cloudwatch: PutMetricData | Operações de gerenciamento | Automatizar 
+| Relatar métricas do CloudWatch | cloudwatch: PutMetricData | Operações de gerenciamento | Leitura/escrita 
 
 
 .2+| Obtenha métricas de volume e sistema de arquivos | cloudwatch: GetMetricData | Operações de gerenciamento  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | cloudwatch:GetMetricStatistics | Operações de gerenciamento  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 |===
@@ -373,7 +373,7 @@ Selecione o modo operacional para visualizar as políticas do IAM necessárias:
 ====
 [role="tabbed-block"]
 =====
-.Modo de leitura
+.Modo só de leitura
 --
 [source, json]
 ----
@@ -438,6 +438,15 @@ Selecione o modo operacional para visualizar as políticas do IAM necessárias:
       "Resource": "arn:aws:ssm:*:*:parameter/netapp/wlmdb/*"
     },
     {
+      "Sid": "SSMResponseCloudWatch",
+      "Effect": "Allow",
+      "Action": [
+        "logs:GetLogEvents",
+        "logs:PutRetentionPolicy"
+      ],
+      "Resource": "arn:aws:logs:*:*:log-group:netapp/wlmdb/*"
+    },
+    {
       "Effect": "Allow",
       "Action": [
         "iam:SimulatePrincipalPolicy"
@@ -448,7 +457,7 @@ Selecione o modo operacional para visualizar as políticas do IAM necessárias:
 }
 ----
 --
-.Modo de automação
+.Modo de leitura/escrita
 --
 [source, json]
 ----
@@ -607,8 +616,7 @@ Selecione o modo operacional para visualizar as políticas do IAM necessárias:
         "iam:GetRolePolicy",
         "iam:GetUser",
         "iam:PutRolePolicy",
-        "iam:RemoveRoleFromInstanceProfile",
-        "iam:SimulatePrincipalPolicy"
+        "iam:RemoveRoleFromInstanceProfile"
       ],
       "Resource": "*"
     },
@@ -644,6 +652,13 @@ Selecione o modo operacional para visualizar as políticas do IAM necessárias:
         "ssm:DeleteParameters"
       ],
       "Resource": "arn:aws:ssm:*:*:parameter/netapp/wlmdb/*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:SimulatePrincipalPolicy"
+      ],
+      "Resource": "*"
     }
   ]
 }
@@ -661,20 +676,31 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 | Finalidade | Ação | Onde usado | Modo 
 
 
+| A fábrica da carga de trabalho muda para os logs do Amazon CloudWatch para a instância SQL ao encontrar truncamento de saída SSM. | Logs:GetLogEvents  a| 
+* Avaliação de storage
+* Inventário
+
+ a| 
+* Somente leitura
+* Leitura/escrita
+
+
+
+
 | Obtenha estatísticas métricas para o FSX para ONTAP, EBS e FSX para servidor de arquivos do Windows | cloudwatch:GetMetricStatistics  a| 
 * Inventário
 * Explore as poupanças
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Listar e definir gatilhos para eventos | sns:ListTopics | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -684,22 +710,22 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Explore as poupanças
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | EC2: DescribeKeyPairs | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | EC2:DescribeNetworkInterfaces | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -709,8 +735,8 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Explore as poupanças
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -720,8 +746,8 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Inventário
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -731,29 +757,29 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Inventário
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | EC2:DescribeSecurityGroups | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | EC2: DescribeImages | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | EC2:DescribeRegiões | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -763,8 +789,8 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Inventário
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -774,25 +800,25 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Inventário
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
-| Crie endpoints VPC se eles não existirem para serviços necessários, independentemente da conetividade de rede pública em instâncias EC2 | EC2:CreateVpcEndpoint | Implantação | Automatizar 
+| Crie endpoints VPC se eles não existirem para serviços necessários, independentemente da conetividade de rede pública em instâncias EC2 | EC2:CreateVpcEndpoint | Implantação | Leitura/escrita 
 
 
 | Obter tipos de instância disponíveis na região para nós de validação (T2.micro/T3.micro) | EC2:DescribeInstanceTypeOfferings | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Obtenha detalhes de snapshot de cada volume EBS anexado para estimativa de preços e economia | EC2:DescribeSnapshots | Explore as poupanças  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -802,50 +828,50 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Explore as poupanças
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 .3+| Obtenha detalhes da chave do KMS para criptografia do sistema de arquivos FSX for ONTAP | Kms:ListAliases | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Kms: ListKeys | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Kms:DescribeKey | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Obtenha uma lista de pilhas do CloudFormation em execução no ambiente para verificar o limite de cota | Cloudformation:ListStacks | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Verifique os limites de conta para recursos antes de acionar a implantação | Cloudformation:DescribeAccountLimits | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Obtenha a lista de diretórios ativos gerenciados pela AWS na região | ds:DescribeDirectories | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -855,8 +881,8 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Explore a economia
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -866,8 +892,8 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Explore a economia
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -878,8 +904,8 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Inventário
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -891,29 +917,29 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Explore as poupanças
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | fsx:ListTagsForResource | Gerenciar operações  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Obtenha limites de cota de serviço para o CloudFormation e a VPC | Servicequotas:ListServiceQuotes | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Use a consulta com base no SSM para obter a lista atualizada de regiões compatíveis com o FSX para ONTAP | ssm:GetParametersByPath | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -925,8 +951,8 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Otimização
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -938,8 +964,8 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Otimização
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -950,8 +976,8 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Otimização
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -960,22 +986,22 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 
 | Obtenha a lista de linhas de base de patch disponíveis para avaliação de patches do sistema operacional | ssm:DescribePatchBaselines | Otimização  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Obtenha o estado de correção em instâncias do Windows EC2 para avaliação de patches do sistema operacional | ssm:DescribeInstancePatchStates | Otimização  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Listar comandos executados pelo AWS Patch Manager em instâncias do EC2 para gerenciamento de patches do sistema operacional | ssm:ListCommands | Otimização  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -984,42 +1010,42 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Explore as poupanças
 * Otimização
 
-| Automatizar 
+| Leitura/escrita 
 
 
 | Atualize uma preferência de recomendação existente no AWS Compute Optimizer para personalizar sugestões para cargas de trabalho do servidor SQL | Otimizador de computação:PutRecommendationPreferences  a| 
 * Explore as poupanças
 * Otimização
 
-| Automatizar 
+| Leitura/escrita 
 
 
 | Obtenha preferências de recomendação que estão em vigor para um determinado recurso do AWS Compute Optimizer | Compute-Optimizer:GetEffectiveRecommendationPreferences  a| 
 * Explore as poupanças
 * Otimização
 
-| Automatizar 
+| Leitura/escrita 
 
 
 | Obtenha recomendações que o AWS Compute Optimizer gera para instâncias do Amazon Elastic Compute Cloud (Amazon EC2) | Otimizador de computação:GetEC2InstanceRecommendations  a| 
 * Explore as poupanças
 * Otimização
 
-| Automatizar 
+| Leitura/escrita 
 
 
 .2+| Verifique a associação de instância aos grupos de dimensionamento automático | Dimensionamento automático:DescribeAutoScalingGroups  a| 
 * Explore as poupanças
 * Otimização
 
-| Automatizar 
+| Leitura/escrita 
 
 
 | Dimensionamento automático:DescribeAutoScalingInstances  a| 
 * Explore as poupanças
 * Otimização
 
-| Automatizar 
+| Leitura/escrita 
 
 
 .4+| Obtenha, liste, crie e exclua parâmetros SSM para credenciais de usuário do AD, FSX for ONTAP e SQL usadas durante a implantação ou gerenciadas em sua conta da AWS | ssm: GetParameter 1  a| 
@@ -1027,15 +1053,15 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Gerenciar operações
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | ssm: GetParameters 1 | Gerenciar operações  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -1045,183 +1071,183 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Gerenciar operações
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | ssm:DeleteParameters 1 | Gerenciar operações  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
-.9+| Associe recursos de rede a nós SQL e nós de validação e adicione IPs secundários adicionais a nós SQL | EC2:AllocateAddress 1 | Implantação | Automatizar 
+.9+| Associe recursos de rede a nós SQL e nós de validação e adicione IPs secundários adicionais a nós SQL | EC2:AllocateAddress 1 | Implantação | Leitura/escrita 
 
 
-| EC2:AllocateHosts 1 | Implantação | Automatizar 
+| EC2:AllocateHosts 1 | Implantação | Leitura/escrita 
 
 
-| EC2:AssignPrivateIpAddresses 1 | Implantação | Automatizar 
+| EC2:AssignPrivateIpAddresses 1 | Implantação | Leitura/escrita 
 
 
-| EC2:AssociateAddress 1 | Implantação | Automatizar 
+| EC2:AssociateAddress 1 | Implantação | Leitura/escrita 
 
 
-| EC2:AssociateRouteTable 1 | Implantação | Automatizar 
+| EC2:AssociateRouteTable 1 | Implantação | Leitura/escrita 
 
 
-| EC2:AssociateSubnetCidrBlock 1 | Implantação | Automatizar 
+| EC2:AssociateSubnetCidrBlock 1 | Implantação | Leitura/escrita 
 
 
-| EC2:AssociateVpcCidrBlock 1 | Implantação | Automatizar 
+| EC2:AssociateVpcCidrBlock 1 | Implantação | Leitura/escrita 
 
 
-| EC2:AttachInternetGateway 1 | Implantação | Automatizar 
+| EC2:AttachInternetGateway 1 | Implantação | Leitura/escrita 
 
 
-| EC2:AttacNetworkInterface 1 | Implantação | Automatizar 
+| EC2:AttacNetworkInterface 1 | Implantação | Leitura/escrita 
 
 
-| Anexe volumes EBS necessários aos nós SQL para implantação | EC2: Attachvolume | Implantação | Automatizar 
+| Anexe volumes EBS necessários aos nós SQL para implantação | EC2: Attachvolume | Implantação | Leitura/escrita 
 
 
-.2+| Anexe grupos de segurança e modifique regras para os nós provisionados | EC2:AutorizeSecurityGroupEgress | Implantação | Automatizar 
+.2+| Anexe grupos de segurança e modifique regras para os nós provisionados | EC2:AutorizeSecurityGroupEgress | Implantação | Leitura/escrita 
 
 
-| EC2:AutorizeSecurityGroupIngress | Implantação | Automatizar 
+| EC2:AutorizeSecurityGroupIngress | Implantação | Leitura/escrita 
 
 
-| Crie volumes EBS necessários para os nós SQL para implantação | EC2:Createvolume | Implantação | Automatizar 
+| Crie volumes EBS necessários para os nós SQL para implantação | EC2:Createvolume | Implantação | Leitura/escrita 
 
 
-.11+| Remova os nós de validação temporária criados do tipo T2.micro e para reversão ou tentativa de reversão de nós SQL EC2 com falha | EC2:DeleteNetworkInterface | Implantação | Automatizar 
+.11+| Remova os nós de validação temporária criados do tipo T2.micro e para reversão ou tentativa de reversão de nós SQL EC2 com falha | EC2:DeleteNetworkInterface | Implantação | Leitura/escrita 
 
 
-| EC2:DeleteSecurityGroup | Implantação | Automatizar 
+| EC2:DeleteSecurityGroup | Implantação | Leitura/escrita 
 
 
-| EC2:DeleteTags | Implantação | Automatizar 
+| EC2:DeleteTags | Implantação | Leitura/escrita 
 
 
-| EC2:Deletevolume | Implantação | Automatizar 
+| EC2:Deletevolume | Implantação | Leitura/escrita 
 
 
-| EC2: DetachNetworkInterface | Implantação | Automatizar 
+| EC2: DetachNetworkInterface | Implantação | Leitura/escrita 
 
 
-| EC2: Detachvolume | Implantação | Automatizar 
+| EC2: Detachvolume | Implantação | Leitura/escrita 
 
 
-| EC2:Endereço Desassociativo | Implantação | Automatizar 
+| EC2:Endereço Desassociativo | Implantação | Leitura/escrita 
 
 
-| EC2:DesassociateIamInstanceProfile | Implantação | Automatizar 
+| EC2:DesassociateIamInstanceProfile | Implantação | Leitura/escrita 
 
 
-| EC2:DesassociateRouteTable | Implantação | Automatizar 
+| EC2:DesassociateRouteTable | Implantação | Leitura/escrita 
 
 
-| EC2:DesassociateSubnetCidrBlock | Implantação | Automatizar 
+| EC2:DesassociateSubnetCidrBlock | Implantação | Leitura/escrita 
 
 
-| EC2:DesassociateVpcCidrBlock | Implantação | Automatizar 
+| EC2:DesassociateVpcCidrBlock | Implantação | Leitura/escrita 
 
 
-.7+| Modifique atributos para instâncias SQL criadas. Apenas aplicável a nomes que começam com WLMDB. | EC2:ModifyInstanceAttribute | Implantação | Automatizar 
+.7+| Modifique atributos para instâncias SQL criadas. Apenas aplicável a nomes que começam com WLMDB. | EC2:ModifyInstanceAttribute | Implantação | Leitura/escrita 
 
 
-| EC2:ModifyInstancePlacement | Implantação | Automatizar 
+| EC2:ModifyInstancePlacement | Implantação | Leitura/escrita 
 
 
-| EC2:ModifyNetworkInterfaceAttribute | Implantação | Automatizar 
+| EC2:ModifyNetworkInterfaceAttribute | Implantação | Leitura/escrita 
 
 
-| EC2:ModifySubnetAttribute | Implantação | Automatizar 
+| EC2:ModifySubnetAttribute | Implantação | Leitura/escrita 
 
 
-| EC2:Modifyvolume | Implantação | Automatizar 
+| EC2:Modifyvolume | Implantação | Leitura/escrita 
 
 
-| EC2:ModifyVolumeAtributo | Implantação | Automatizar 
+| EC2:ModifyVolumeAtributo | Implantação | Leitura/escrita 
 
 
-| EC2:ModifyVpcAttribute | Implantação | Automatizar 
+| EC2:ModifyVpcAttribute | Implantação | Leitura/escrita 
 
 
-.5+| Desassocie e destrua instâncias de validação | EC2: Endereço de entrega | Implantação | Automatizar 
+.5+| Desassocie e destrua instâncias de validação | EC2: Endereço de entrega | Implantação | Leitura/escrita 
 
 
-| EC2:ReplaceRoute | Implantação | Automatizar 
+| EC2:ReplaceRoute | Implantação | Leitura/escrita 
 
 
-| EC2:ReplaceRouteAssociation | Implantação | Automatizar 
+| EC2:ReplaceRouteAssociation | Implantação | Leitura/escrita 
 
 
-| EC2:RevokeSecurityGroupEgress | Implantação | Automatizar 
+| EC2:RevokeSecurityGroupEgress | Implantação | Leitura/escrita 
 
 
-| EC2:RevokeSecurityGroupIngress | Implantação | Automatizar 
+| EC2:RevokeSecurityGroupIngress | Implantação | Leitura/escrita 
 
 
-| Inicie as instâncias implantadas | EC2: StartInstances | Implantação | Automatizar 
+| Inicie as instâncias implantadas | EC2: StartInstances | Implantação | Leitura/escrita 
 
 
-| Pare as instâncias implantadas | EC2:StopInstances | Implantação | Automatizar 
+| Pare as instâncias implantadas | EC2:StopInstances | Implantação | Leitura/escrita 
 
 
 | Marque valores personalizados para os recursos do Amazon FSX for NetApp ONTAP criados pelo WLMDB para obter detalhes de cobrança durante o gerenciamento de recursos | Bem-vindo ao site 1  a| 
 * Implantação
 * Gerenciar operações
 
-| Automatizar 
+| Leitura/escrita 
 
 
-.5+| Crie e valide o modelo do CloudFormation para implantação | Formação de nuvens: CreateStack | Implantação | Automatizar 
+.5+| Crie e valide o modelo do CloudFormation para implantação | Formação de nuvens: CreateStack | Implantação | Leitura/escrita 
 
 
-| Cloudformation:DescribeStackEvents | Implantação | Automatizar 
+| Cloudformation:DescribeStackEvents | Implantação | Leitura/escrita 
 
 
-| Cloudformation:DescribeStacks | Implantação | Automatizar 
+| Cloudformation:DescribeStacks | Implantação | Leitura/escrita 
 
 
-| Cloudformation:ListStacks | Implantação | Automatizar 
+| Cloudformation:ListStacks | Implantação | Leitura/escrita 
 
 
-| Cloudformation:ValidateTemplate | Implantação | Automatizar 
+| Cloudformation:ValidateTemplate | Implantação | Leitura/escrita 
 
 
-| Buscar métricas para recomendação de otimização de computação | cloudwatch:GetMetricStatistics | Explore as poupanças | Automatizar 
+| Buscar métricas para recomendação de otimização de computação | cloudwatch:GetMetricStatistics | Explore as poupanças | Leitura/escrita 
 
 
-| Buscar diretórios disponíveis na região | ds:DescribeDirectories | Implantação | Automatizar 
+| Buscar diretórios disponíveis na região | ds:DescribeDirectories | Implantação | Leitura/escrita 
 
 
-.2+| Adicione regras para o Grupo de Segurança anexado a instâncias EC2 provisionadas | EC2:AutorizeSecurityGroupEgress | Implantação | Automatizar 
+.2+| Adicione regras para o Grupo de Segurança anexado a instâncias EC2 provisionadas | EC2:AutorizeSecurityGroupEgress | Implantação | Leitura/escrita 
 
 
-| EC2:AutorizeSecurityGroupIngress | Implantação | Automatizar 
+| EC2:AutorizeSecurityGroupIngress | Implantação | Leitura/escrita 
 
 
-.2+| Crie modelos de pilha aninhados para tentar novamente e reverter | EC2:CreateLaunchTemplate | Implantação | Automatizar 
+.2+| Crie modelos de pilha aninhados para tentar novamente e reverter | EC2:CreateLaunchTemplate | Implantação | Leitura/escrita 
 
 
-| EC2:CreateLaunchTemplateVersion | Implantação | Automatizar 
+| EC2:CreateLaunchTemplateVersion | Implantação | Leitura/escrita 
 
 
-.3+| Gerencie tags e segurança de rede em instâncias criadas | EC2: CreateNetworkInterface | Implantação | Automatizar 
+.3+| Gerencie tags e segurança de rede em instâncias criadas | EC2: CreateNetworkInterface | Implantação | Leitura/escrita 
 
 
-| EC2:CreateSecurityGroup | Implantação | Automatizar 
+| EC2:CreateSecurityGroup | Implantação | Leitura/escrita 
 
 
-| EC2:CreateTags | Implantação | Automatizar 
+| EC2:CreateTags | Implantação | Leitura/escrita 
 
 
-| Exclua o Grupo de Segurança criado temporariamente para nós de validação | EC2:DeleteSecurityGroup | Implantação | Automatizar 
+| Exclua o Grupo de Segurança criado temporariamente para nós de validação | EC2:DeleteSecurityGroup | Implantação | Leitura/escrita 
 
 
 .2+| Obter detalhes da instância para provisionamento | EC2:descrever*  a| 
@@ -1229,7 +1255,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Inventário
 * Explore as poupanças
 
-| Automatizar 
+| Leitura/escrita 
 
 
 | EC2:obter*  a| 
@@ -1237,29 +1263,29 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Inventário
 * Explore as poupanças
 
-| Automatizar 
+| Leitura/escrita 
 
 
-| Inicie as instâncias criadas | EC2:RunInstances | Implantação | Automatizar 
+| Inicie as instâncias criadas | EC2:RunInstances | Implantação | Leitura/escrita 
 
 
 | O Systems Manager usa o endpoint do serviço de entrega de mensagens da AWS para operações de API | ec2messages:*  a| 
 * Implantação *Inventário
 
-| Automatizar 
+| Leitura/escrita 
 
 
-.3+| Crie recursos do FSX for ONTAP necessários para o provisionamento. Para sistemas FSX para ONTAP existentes, um novo SVM foi criado para hospedar volumes SQL. | fsx:CreateFileSystem | Implantação | Automatizar 
+.3+| Crie recursos do FSX for ONTAP necessários para o provisionamento. Para sistemas FSX para ONTAP existentes, um novo SVM foi criado para hospedar volumes SQL. | fsx:CreateFileSystem | Implantação | Leitura/escrita 
 
 
-| fsx:CreateStorageVirtualMachine | Implantação | Automatizar 
+| fsx:CreateStorageVirtualMachine | Implantação | Leitura/escrita 
 
 
 | fsx:Createvolume  a| 
 * Implantação
 * Gerenciar operações
 
-| Automatizar 
+| Leitura/escrita 
 
 
 .2+| Obtenha os detalhes do FSX for ONTAP | fsx:descrever*  a| 
@@ -1268,88 +1294,88 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Gerenciar operações
 * Explore as poupanças
 
-| Automatizar 
+| Leitura/escrita 
 
 
 | fsx:Lista*  a| 
 * Implantação
 * Inventário
 
-| Automatizar 
+| Leitura/escrita 
 
 
-| Redimensione o sistema de arquivos FSX for ONTAP para corrigir o espaço livre do sistema de arquivos | fsx:UpdateFilesystem | Otimização | Automatizar 
+| Redimensione o sistema de arquivos FSX for ONTAP para corrigir o espaço livre do sistema de arquivos | fsx:UpdateFilesystem | Otimização | Leitura/escrita 
 
 
-| Redimensione volumes para corrigir os tamanhos de unidades de log e TempDB | fsx:Updatevolume | Otimização | Automatizar 
+| Redimensione volumes para corrigir os tamanhos de unidades de log e TempDB | fsx:Updatevolume | Otimização | Leitura/escrita 
 
 
-.4+| Obtenha os detalhes das chaves do KMS e use a criptografia FSX for ONTAP | Kms:CreateGrant | Implantação | Automatizar 
+.4+| Obtenha os detalhes das chaves do KMS e use a criptografia FSX for ONTAP | Kms:CreateGrant | Implantação | Leitura/escrita 
 
 
-| Kms: Descrever* | Implantação | Automatizar 
+| Kms: Descrever* | Implantação | Leitura/escrita 
 
 
-| Kms:Lista* | Implantação | Automatizar 
+| Kms:Lista* | Implantação | Leitura/escrita 
 
 
-| Kms:GenerateDataKey | Implantação | Automatizar 
+| Kms:GenerateDataKey | Implantação | Leitura/escrita 
 
 
-.7+| Crie logs do CloudWatch para scripts de validação e provisionamento executados em instâncias do EC2 | Logs:CreateLogGroup | Implantação | Automatizar 
+.7+| Crie logs do CloudWatch para scripts de validação e provisionamento executados em instâncias do EC2 | Logs:CreateLogGroup | Implantação | Leitura/escrita 
 
 
-| Logs:CreateLogStream | Implantação | Automatizar 
+| Logs:CreateLogStream | Implantação | Leitura/escrita 
 
 
-| Logs:DescribeLog* | Implantação | Automatizar 
+| Logs:DescribeLog* | Implantação | Leitura/escrita 
 
 
-| Logs:GetLog* | Implantação | Automatizar 
+| Logs:GetLog* | Implantação | Leitura/escrita 
 
 
-| Registos:ListLogDeliveries | Implantação | Automatizar 
+| Registos:ListLogDeliveries | Implantação | Leitura/escrita 
 
 
 | Logs:PutLogEvents  a| 
 * Implantação
 * Gerenciar operações
 
-| Automatizar 
+| Leitura/escrita 
 
 
-| Logs:TagResource | Implantação | Automatizar 
+| Logs:TagResource | Implantação | Leitura/escrita 
 
 
-| Crie segredos em uma conta de usuário para as credenciais fornecidas para SQL, domínio e FSX para ONTAP | Servicequotas:ListServiceQuotes | Implantação | Automatizar 
+| Crie segredos em uma conta de usuário para as credenciais fornecidas para SQL, domínio e FSX para ONTAP | Servicequotas:ListServiceQuotes | Implantação | Leitura/escrita 
 
 
-.2+| Liste os tópicos do SNS do cliente e publique no SNS de back-end do WLMDB, bem como no SNS do cliente, se selecionado | sns:ListTopics | Implantação | Automatizar 
+.2+| Liste os tópicos do SNS do cliente e publique no SNS de back-end do WLMDB, bem como no SNS do cliente, se selecionado | sns:ListTopics | Implantação | Leitura/escrita 
 
 
-| sns:publicar | Implantação | Automatizar 
+| sns:publicar | Implantação | Leitura/escrita 
 
 
-.11+| Permissões de SSM necessárias para executar o script de descoberta em instâncias SQL provisionadas e buscar a lista mais recente de regiões AWS compatíveis com o FSX para ONTAP. | ssm:descrever* | Implantação | Automatizar 
+.11+| Permissões de SSM necessárias para executar o script de descoberta em instâncias SQL provisionadas e buscar a lista mais recente de regiões AWS compatíveis com o FSX para ONTAP. | ssm:descrever* | Implantação | Leitura/escrita 
 
 
 | ssm:obter*  a| 
 * Implantação
 * Gerenciar operações
 
-| Automatizar 
+| Leitura/escrita 
 
 
-| ssm:Lista* | Implantação | Automatizar 
+| ssm:Lista* | Implantação | Leitura/escrita 
 
 
-| ssm: Aplicação de segurança | Implantação | Automatizar 
+| ssm: Aplicação de segurança | Implantação | Leitura/escrita 
 
 
-| ssm:PutConfigurePackageResult | Implantação | Automatizar 
+| ssm:PutConfigurePackageResult | Implantação | Leitura/escrita 
 
 
-| ssm:Stock | Implantação | Automatizar 
+| ssm:Stock | Implantação | Leitura/escrita 
 
 
 | ssm:SendCommand  a| 
@@ -1357,16 +1383,16 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Inventário
 * Gerenciar operações
 
-| Automatizar 
+| Leitura/escrita 
 
 
-| ssm:UpdateAssociationStatus | Implantação | Automatizar 
+| ssm:UpdateAssociationStatus | Implantação | Leitura/escrita 
 
 
-| ssm:UpdateInstanceAssociationStatus | Implantação | Automatizar 
+| ssm:UpdateInstanceAssociationStatus | Implantação | Leitura/escrita 
 
 
-| ssm:UpdateInstanceInformation | Implantação | Automatizar 
+| ssm:UpdateInstanceInformation | Implantação | Leitura/escrita 
 
 
 | mensagens:*  a| 
@@ -1374,7 +1400,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Inventário
 * Gerenciar operações
 
-| Automatizar 
+| Leitura/escrita 
 
 
 .4+| Salvar credenciais para o FSX for ONTAP, ative Directory e usuário SQL (apenas para autenticação de usuário SQL) | ssm: GetParameter 1  a| 
@@ -1382,75 +1408,75 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Gerenciar operações
 * Inventário
 
-| Automatizar 
+| Leitura/escrita 
 
 
 | ssm: GetParameters 1  a| 
 * Implantação
 * Inventário
 
-| Automatizar 
+| Leitura/escrita 
 
 
 | ssm: PutParameter 1  a| 
 * Implantação
 * Gerenciar operações
 
-| Automatizar 
+| Leitura/escrita 
 
 
 | ssm:DeleteParameters 1  a| 
 * Implantação
 * Gerenciar operações
 
-| Automatizar 
+| Leitura/escrita 
 
 
-| Sinalize a pilha do CloudFormation com sucesso ou falha. | Cloudformation: SignalResource 1 | Implantação | Automatizar 
+| Sinalize a pilha do CloudFormation com sucesso ou falha. | Cloudformation: SignalResource 1 | Implantação | Leitura/escrita 
 
 
-| Adicione a função EC2 criada por modelo ao perfil de instância do EC2 para permitir que scripts no EC2 acessem os recursos necessários para implantação. | IAM:AddRoleToInstanceProfile | Implantação | Automatizar 
+| Adicione a função EC2 criada por modelo ao perfil de instância do EC2 para permitir que scripts no EC2 acessem os recursos necessários para implantação. | IAM:AddRoleToInstanceProfile | Implantação | Leitura/escrita 
 
 
-| Crie o perfil de instância para EC2 e anexe a função EC2 criada. | IAM:CreateInstanceProfile | Implantação | Automatizar 
+| Crie o perfil de instância para EC2 e anexe a função EC2 criada. | IAM:CreateInstanceProfile | Implantação | Leitura/escrita 
 
 
-| Crie uma função EC2D através de modelo com as permissões listadas abaixo | IAM:CreateRole | Implantação | Automatizar 
+| Crie uma função EC2D através de modelo com as permissões listadas abaixo | IAM:CreateRole | Implantação | Leitura/escrita 
 
 
-| Criar função vinculada ao serviço EC2 | ISO:CreateServiceLinkRole 2 | Implantação | Automatizar 
+| Criar função vinculada ao serviço EC2 | ISO:CreateServiceLinkRole 2 | Implantação | Leitura/escrita 
 
 
-| Excluir perfil de instância criado durante a implantação especificamente para os nós de validação | IAM:DeleteInstanceProfile | Implantação | Automatizar 
+| Excluir perfil de instância criado durante a implantação especificamente para os nós de validação | IAM:DeleteInstanceProfile | Implantação | Leitura/escrita 
 
 
-.5+| Obtenha os detalhes da função e da política para determinar quaisquer lacunas na permissão e validar para a implantação | IAM:GetPolicy | Implantação | Automatizar 
+.5+| Obtenha os detalhes da função e da política para determinar quaisquer lacunas na permissão e validar para a implantação | IAM:GetPolicy | Implantação | Leitura/escrita 
 
 
-| IAM:GetPolicyVersion | Implantação | Automatizar 
+| IAM:GetPolicyVersion | Implantação | Leitura/escrita 
 
 
-| IAM: GetRole | Implantação | Automatizar 
+| IAM: GetRole | Implantação | Leitura/escrita 
 
 
-| IAM:GetRolePolicy | Implantação | Automatizar 
+| IAM:GetRolePolicy | Implantação | Leitura/escrita 
 
 
-| IAM:GetUser | Implantação | Automatizar 
+| IAM:GetUser | Implantação | Leitura/escrita 
 
 
-| Passe a função criada para a instância EC2 | 3 | Implantação | Automatizar 
+| Passe a função criada para a instância EC2 | 3 | Implantação | Leitura/escrita 
 
 
-| Adicione a política com as permissões necessárias à função EC2 criada | IAM:PutRolePolicy | Implantação | Automatizar 
+| Adicione a política com as permissões necessárias à função EC2 criada | IAM:PutRolePolicy | Implantação | Leitura/escrita 
 
 
-| Separe a função do perfil de instância do EC2 provisionado | IAM:RemoveRoleFromInstanceProfile | Implantação | Automatizar 
+| Separe a função do perfil de instância do EC2 provisionado | IAM:RemoveRoleFromInstanceProfile | Implantação | Leitura/escrita 
 
 
 | Simule operações de carga de trabalho para validar permissões disponíveis e compare com as permissões de conta da AWS necessárias | IAM:SimulatePrincipalPolicy | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 |===
@@ -1466,7 +1492,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 As políticas do IAM para cargas de trabalho VMware fornecem as permissões que a fábrica de cargas de trabalho da VMware precisa para gerenciar recursos e processos em seu ambiente de nuvem pública com base no modo operacional em que você opera.
 
-As políticas do GenAI IAM só estão disponíveis no modo de operação:
+As políticas do IAM do GenAI só estão disponíveis no modo leitura/gravação:
 
 .Políticas do IAM para workloads do GenAI
 [%collapsible]
@@ -1527,7 +1553,6 @@ As políticas do GenAI IAM só estão disponíveis no modo de operação:
       "Effect": "Allow",
       "Action": [
         "iam:CreateRole",
-        "iam:CreatePolicy",
         "iam:CreateInstanceProfile",
         "iam:AddRoleToInstanceProfile",
         "iam:PutRolePolicy",
@@ -1701,6 +1726,22 @@ As políticas do GenAI IAM só estão disponíveis no modo de operação:
       "Resource": "arn:aws:iam::*:role/NetApp_AI_Bedrock*"
     },
     {
+      "Sid": "BedrockLoggingIamOperations",
+      "Effect": "Allow",
+      "Action": [
+        "iam:CreatePolicy"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "QBusiness",
+      "Effect": "Allow",
+      "Action": [
+        "qbusiness:ListApplications"
+      ],
+      "Resource": "*"
+    },
+    {
       "Effect": "Allow",
       "Action": [
         "iam:SimulatePrincipalPolicy"
@@ -1721,196 +1762,202 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 | Finalidade | Ação | Onde usado | Modo 
 
 
-| Crie uma pilha de formação de nuvem do mecanismo de AI durante as operações de implantação e recriação | Formação de nuvens: CreateStack | Implantação | Automatizar 
+| Crie uma pilha de formação de nuvem do mecanismo de AI durante as operações de implantação e recriação | Formação de nuvens: CreateStack | Implantação | Leitura/escrita 
 
 
-| Crie a pilha de formação de nuvem do mecanismo de AI | Cloudformation:DescribeStacks | Implantação | Automatizar 
+| Crie a pilha de formação de nuvem do mecanismo de AI | Cloudformation:DescribeStacks | Implantação | Leitura/escrita 
 
 
-| Listar regiões para o assistente de implantação do mecanismo de IA | EC2:DescribeRegiões | Implantação | Automatizar 
+| Listar regiões para o assistente de implantação do mecanismo de IA | EC2:DescribeRegiões | Implantação | Leitura/escrita 
 
 
-| Exibir tags de mecanismo AI | EC2: DescribeTags | Implantação | Automatizar 
+| Exibir tags de mecanismo AI | EC2: DescribeTags | Implantação | Leitura/escrita 
 
 
-| Listar os endpoints da VPC antes da criação da pilha do mecanismo de IA | EC2:CreateVpcEndpoint | Implantação | Automatizar 
+| Listar os endpoints da VPC antes da criação da pilha do mecanismo de IA | EC2:CreateVpcEndpoint | Implantação | Leitura/escrita 
 
 
-| Crie um grupo de segurança do mecanismo de AI durante a criação da stack de mecanismos de AI durante as operações de implantação e reconstrução | EC2:CreateSecurityGroup | Implantação | Automatizar 
+| Crie um grupo de segurança do mecanismo de AI durante a criação da stack de mecanismos de AI durante as operações de implantação e reconstrução | EC2:CreateSecurityGroup | Implantação | Leitura/escrita 
 
 
-| Identifique os recursos criados pela criação da pilha do mecanismo de AI durante as operações de implantação e reconstrução | EC2:CreateTags | Implantação | Automatizar 
+| Identifique os recursos criados pela criação da pilha do mecanismo de AI durante as operações de implantação e reconstrução | EC2:CreateTags | Implantação | Leitura/escrita 
 
 
-.2+| Publique eventos criptografados no backend WLMAI da pilha de mecanismos de IA | Kms:GenerateDataKey | Implantação | Automatizar 
+.2+| Publique eventos criptografados no backend WLMAI da pilha de mecanismos de IA | Kms:GenerateDataKey | Implantação | Leitura/escrita 
 
 
-| Kms:desencriptar | Implantação | Automatizar 
+| Kms:desencriptar | Implantação | Leitura/escrita 
 
 
-| Publique eventos e recursos personalizados no backend WLMAI a partir da pilha de ai-Engine | sns:publicar | Implantação | Automatizar 
+| Publique eventos e recursos personalizados no backend WLMAI a partir da pilha de ai-Engine | sns:publicar | Implantação | Leitura/escrita 
 
 
-| Listar VPCs durante o assistente de implantação do mecanismo de IA | EC2: DescribeVPCs | Implantação | Automatizar 
+| Listar VPCs durante o assistente de implantação do mecanismo de IA | EC2: DescribeVPCs | Implantação | Leitura/escrita 
 
 
-| Liste sub-redes no assistente de implantação do AI-Engine | EC2: DescribeSubnets | Implantação | Automatizar 
+| Liste sub-redes no assistente de implantação do AI-Engine | EC2: DescribeSubnets | Implantação | Leitura/escrita 
 
 
-| Obtenha tabelas de rota durante a implantação e reconstrução do mecanismo de IA | EC2:DescribeRouteTables | Implantação | Automatizar 
+| Obtenha tabelas de rota durante a implantação e reconstrução do mecanismo de IA | EC2:DescribeRouteTables | Implantação | Leitura/escrita 
 
 
-| Listar pares de chaves durante o assistente de implantação do mecanismo de IA | EC2: DescribeKeyPairs | Implantação | Automatizar 
+| Listar pares de chaves durante o assistente de implantação do mecanismo de IA | EC2: DescribeKeyPairs | Implantação | Leitura/escrita 
 
 
-| Listar grupos de segurança durante a criação da pilha do mecanismo de IA (para localizar grupos de segurança nos endpoints privados) | EC2:DescribeSecurityGroups | Implantação | Automatizar 
+| Listar grupos de segurança durante a criação da pilha do mecanismo de IA (para localizar grupos de segurança nos endpoints privados) | EC2:DescribeSecurityGroups | Implantação | Leitura/escrita 
 
 
-| Obtenha endpoints de VPC para determinar se algum deve ser criado durante a implantação do mecanismo de AI | EC2:DescribeVpcEndpoints | Implantação | Automatizar 
+| Obtenha endpoints de VPC para determinar se algum deve ser criado durante a implantação do mecanismo de AI | EC2:DescribeVpcEndpoints | Implantação | Leitura/escrita 
 
 
-| Liste instâncias para descobrir o estado do mecanismo de IA | EC2: DescribeInstances | Solução de problemas | Automatizar 
+| Liste os aplicativos do Amazon Q Business | Qbusiness:ListAplicações | Implantação | Leitura/escrita 
 
 
-| Listar imagens durante a criação da pilha do mecanismo de AI durante as operações de implantação e reconstrução | EC2: DescribeImages | Implantação | Automatizar 
+| Liste instâncias para descobrir o estado do mecanismo de IA | EC2: DescribeInstances | Solução de problemas | Leitura/escrita 
 
 
-.2+| Crie e atualize instâncias de IA e grupo de segurança de endpoint privado durante a criação da pilha de instâncias de IA durante as operações de implantação e reconstrução | EC2:RevokeSecurityGroupEgress | Implantação | Automatizar 
+| Listar imagens durante a criação da pilha do mecanismo de AI durante as operações de implantação e reconstrução | EC2: DescribeImages | Implantação | Leitura/escrita 
 
 
-| EC2:RevokeSecurityGroupIngress | Implantação | Automatizar 
+.2+| Crie e atualize instância de IA e grupo de segurança de endpoint privado durante a criação da pilha de instâncias de IA durante as operações de implantação e reconstrução | EC2:RevokeSecurityGroupEgress | Implantação | Leitura/escrita 
 
 
-| Execute o mecanismo de AI durante a criação da stack de cloudformation durante as operações de implantação e recriação | EC2:RunInstances | Implantação | Automatizar 
+| EC2:RevokeSecurityGroupIngress | Implantação | Leitura/escrita 
 
 
-.2+| Anexe o grupo de segurança e modifique as regras do mecanismo de AI durante a criação da stack durante as operações de implantação e recriação | EC2:AutorizeSecurityGroupEgress | Implantação | Automatizar 
+| Execute o mecanismo de AI durante a criação da stack de cloudformation durante as operações de implantação e recriação | EC2:RunInstances | Implantação | Leitura/escrita 
 
 
-| EC2:AutorizeSecurityGroupIngress | Implantação | Automatizar 
+.2+| Anexe o grupo de segurança e modifique as regras do mecanismo de AI durante a criação da stack durante as operações de implantação e recriação | EC2:AutorizeSecurityGroupEgress | Implantação | Leitura/escrita 
 
 
-| Consulte o status de Registro do Amazon bedrock / Amazon CloudWatch durante a implantação do mecanismo de IA | Bedrock:GetModelInvocationLoggingConfiguration | Implantação | Automatizar 
+| EC2:AutorizeSecurityGroupIngress | Implantação | Leitura/escrita 
 
 
-| Inicie a solicitação de bate-papo para um dos modelos básicos | Bedrock:InvokeModelWithResponseStream | Implantação | Automatizar 
+| Consulte o status de Registro do Amazon bedrock / Amazon CloudWatch durante a implantação do mecanismo de IA | Bedrock:GetModelInvocationLoggingConfiguration | Implantação | Leitura/escrita 
 
 
-| Inicie a solicitação de bate-papo/incorporação para modelos de base | Bedrock:modelo InvokeModel | Implantação | Automatizar 
+| Inicie a solicitação de bate-papo para um dos modelos básicos | Bedrock:InvokeModelWithResponseStream | Implantação | Leitura/escrita 
 
 
-| Mostre os modelos de fundação disponíveis em uma região | Bedrock:ListFoundationModels | Implantação | Automatizar 
+| Inicie a solicitação de bate-papo/incorporação para modelos de base | Bedrock:modelo InvokeModel | Implantação | Leitura/escrita 
 
 
-| Verifique o acesso ao modelo da base | Bedrock:GetFoundationModelAvailability | Implantação | Automatizar 
+| Mostre os modelos de fundação disponíveis em uma região | Bedrock:ListFoundationModels | Implantação | Leitura/escrita 
 
 
-| Verifique a necessidade de criar o grupo de log do Amazon CloudWatch durante as operações de implantação e reconstrução | Logs:DescribeLogGroups | Implantação | Automatizar 
+| Obtenha informações sobre um modelo de fundação | Bedrock:GetFoundationModel | Implantação | Leitura/escrita 
 
 
-| Obtenha regiões compatíveis com FSX e Amazon bedrock durante o assistente do mecanismo de AI | ssm:GetParametersByPath | Implantação | Automatizar 
+| Verifique o acesso ao modelo da base | Bedrock:GetFoundationModelAvailability | Implantação | Leitura/escrita 
 
 
-| Obtenha a imagem mais recente do Amazon Linux para a implantação do mecanismo de IA durante as operações de implantação e reconstrução | ssm:GetParameters | Implantação | Automatizar 
+| Verifique a necessidade de criar o grupo de log do Amazon CloudWatch durante as operações de implantação e reconstrução | Logs:DescribeLogGroups | Implantação | Leitura/escrita 
 
 
-| Obtenha a resposta SSM do comando enviado ao mecanismo de IA | ssm:GetCommandInvocation | Implantação | Automatizar 
+| Obtenha regiões compatíveis com FSX e Amazon bedrock durante o assistente do mecanismo de AI | ssm:GetParametersByPath | Implantação | Leitura/escrita 
 
 
-.2+| Verifique a ligação SSM ao motor AI | ssm:SendCommand | Implantação | Automatizar 
+| Obtenha a imagem mais recente do Amazon Linux para a implantação do mecanismo de IA durante as operações de implantação e reconstrução | ssm:GetParameters | Implantação | Leitura/escrita 
 
 
-| ssm:GetConnectionStatus | Implantação | Automatizar 
+| Obtenha a resposta SSM do comando enviado ao mecanismo de IA | ssm:GetCommandInvocation | Implantação | Leitura/escrita 
 
 
-.8+| Crie um perfil de instância do mecanismo de AI durante a criação de stack durante as operações de implantação e reconstrução | IAM:CreateRole | Implantação | Automatizar 
+.2+| Verifique a ligação SSM ao motor AI | ssm:SendCommand | Implantação | Leitura/escrita 
 
 
-| IAM:CreateInstanceProfile | Implantação | Automatizar 
+| ssm:GetConnectionStatus | Implantação | Leitura/escrita 
 
 
-| IAM:AddRoleToInstanceProfile | Implantação | Automatizar 
+.8+| Crie um perfil de instância do mecanismo de AI durante a criação de stack durante as operações de implantação e reconstrução | IAM:CreateRole | Implantação | Leitura/escrita 
 
 
-| IAM:PutRolePolicy | Implantação | Automatizar 
+| IAM:CreateInstanceProfile | Implantação | Leitura/escrita 
 
 
-| IAM:GetRolePolicy | Implantação | Automatizar 
+| IAM:AddRoleToInstanceProfile | Implantação | Leitura/escrita 
 
 
-| IAM: GetRole | Implantação | Automatizar 
+| IAM:PutRolePolicy | Implantação | Leitura/escrita 
 
 
-| IAM:TagRole | Implantação | Automatizar 
+| IAM:GetRolePolicy | Implantação | Leitura/escrita 
 
 
-| IAM:PassRole | Implantação | Automatizar 
+| IAM: GetRole | Implantação | Leitura/escrita 
 
 
-| Simule operações de carga de trabalho para validar permissões disponíveis e compare com as permissões de conta da AWS necessárias | IAM:SimulatePrincipalPolicy | Implantação | Automatizar 
+| IAM:TagRole | Implantação | Leitura/escrita 
 
 
-| Liste o FSX para sistemas de arquivos ONTAP durante o assistente "criar base de conhecimento" | fsx:DescribeVolumes | Criação da base de conhecimento | Automatizar 
+| IAM:PassRole | Implantação | Leitura/escrita 
 
 
-| Liste os volumes do sistema de arquivos do FSX for ONTAP durante o assistente "criar base de conhecimento" | fsx:DescribeFileSystems | Criação da base de conhecimento | Automatizar 
+| Simule operações de carga de trabalho para validar permissões disponíveis e compare com as permissões de conta da AWS necessárias | IAM:SimulatePrincipalPolicy | Implantação | Leitura/escrita 
 
 
-| Gerencie bases de conhecimento no mecanismo de AI durante as operações de reconstrução | fsx:ListTagsForResource | Solução de problemas | Automatizar 
+| Liste o FSX para sistemas de arquivos ONTAP durante o assistente "criar base de conhecimento" | fsx:DescribeVolumes | Criação da base de conhecimento | Leitura/escrita 
 
 
-| Liste as máquinas virtuais de armazenamento do sistema de arquivos do FSX for ONTAP durante o assistente "criar base de conhecimento" | fsx:DescribeStorageVirtualMachines | Implantação | Automatizar 
+| Liste os volumes do sistema de arquivos do FSX for ONTAP durante o assistente "criar base de conhecimento" | fsx:DescribeFileSystems | Criação da base de conhecimento | Leitura/escrita 
 
 
-| Mova a base de conhecimento para uma nova instância | fsx:UntagResource | Solução de problemas | Automatizar 
+| Gerencie bases de conhecimento no mecanismo de AI durante as operações de reconstrução | fsx:ListTagsForResource | Solução de problemas | Leitura/escrita 
 
 
-| Gerencie a base de conhecimento no mecanismo de IA durante a reconstrução | fsx:TagResource | Solução de problemas | Automatizar 
+| Liste as máquinas virtuais de armazenamento do sistema de arquivos do FSX for ONTAP durante o assistente "criar base de conhecimento" | fsx:DescribeStorageVirtualMachines | Implantação | Leitura/escrita 
 
 
-.2+| Salve segredos SSM (token ECR, credenciais CIFS, chaves de contas de serviço de locação) de forma segura | ssm: GetParameter | Implantação | Automatizar 
+| Mova a base de conhecimento para uma nova instância | fsx:UntagResource | Solução de problemas | Leitura/escrita 
 
 
-| ssm: PutParameter | Implantação | Automatizar 
+| Gerencie a base de conhecimento no mecanismo de IA durante a reconstrução | fsx:TagResource | Solução de problemas | Leitura/escrita 
 
 
-.2+| Envie os logs do mecanismo de IA para o grupo de logs do Amazon CloudWatch durante as operações de implantação e reconstrução | Logs:CreateLogGroup | Implantação | Automatizar 
+.2+| Salve segredos SSM (token ECR, credenciais CIFS, chaves de contas de serviço de locação) de forma segura | ssm: GetParameter | Implantação | Leitura/escrita 
 
 
-| Logs:PutRetentationPolicy | Implantação | Automatizar 
+| ssm: PutParameter | Implantação | Leitura/escrita 
 
 
-| Envie os logs do mecanismo de IA para o grupo de logs do Amazon CloudWatch | Logs:TagResource | Solução de problemas | Automatizar 
+.2+| Envie os logs do mecanismo de IA para o grupo de logs do Amazon CloudWatch durante as operações de implantação e reconstrução | Logs:CreateLogGroup | Implantação | Leitura/escrita 
 
 
-| Obtenha resposta SSM do Amazon CloudWatch (quando a resposta for muito longa) | Logs:DescribeLogStreams | Solução de problemas | Automatizar 
+| Logs:PutRetentationPolicy | Implantação | Leitura/escrita 
 
 
-| Obtenha a resposta SSM do Amazon CloudWatch | Logs:GetLogEvents | Solução de problemas | Automatizar 
+| Envie os logs do mecanismo de IA para o grupo de logs do Amazon CloudWatch | Logs:TagResource | Solução de problemas | Leitura/escrita 
 
 
-.3+| Crie um grupo de log do Amazon CloudWatch para logs do Amazon bedrock durante a reação da pilha durante as operações de implantação e reconstrução | Logs:CreateLogGroup | Implantação | Automatizar 
+| Obtenha resposta SSM do Amazon CloudWatch (quando a resposta for muito longa) | Logs:DescribeLogStreams | Solução de problemas | Leitura/escrita 
 
 
-| Logs:PutRetentationPolicy | Implantação | Automatizar 
+| Obtenha a resposta SSM do Amazon CloudWatch | Logs:GetLogEvents | Solução de problemas | Leitura/escrita 
 
 
-| Logs:TagResource | Implantação | Automatizar 
+.3+| Crie um grupo de log do Amazon CloudWatch para logs do Amazon bedrock durante a criação da pilha durante as operações de implantação e reconstrução | Logs:CreateLogGroup | Implantação | Leitura/escrita 
 
 
-| Envie logs bedrock para o Amazon CloudWatch | Bedrock:PutModelInvocationLoggingConfiguration | Solução de problemas | Automatizar 
+| Logs:PutRetentationPolicy | Implantação | Leitura/escrita 
 
 
-| Crie a função que permite o envio de logs do Amazon bedrock para o Amazon CloudWatch | IAM:AttachRolePolicy | Solução de problemas | Automatizar 
+| Logs:TagResource | Implantação | Leitura/escrita 
 
 
-| Crie a função que permite o envio de logs do Amazon bedrock para o Amazon CloudWatch | IAM:PassRole | Solução de problemas | Automatizar 
+| Envie logs bedrock para o Amazon CloudWatch | Bedrock:PutModelInvocationLoggingConfiguration | Solução de problemas | Leitura/escrita 
 
 
-| Crie a função que permite o envio de logs do Amazon bedrock para o Amazon CloudWatch | iam:createPolicy | Solução de problemas | Automatizar 
+| Crie a função que permite o envio de logs do Amazon bedrock para o Amazon CloudWatch | IAM:AttachRolePolicy | Solução de problemas | Leitura/escrita 
 
 
-| Listar perfis de inferência para o modelo | Bedrock:ListInferenceProfiles | Solução de problemas | Automatizar 
+| Crie a função que permite o envio de logs do Amazon bedrock para o Amazon CloudWatch | IAM:PassRole | Solução de problemas | Leitura/escrita 
+
+
+| Crie a função que permite o envio de logs do Amazon bedrock para o Amazon CloudWatch | iam:createPolicy | Solução de problemas | Leitura/escrita 
+
+
+| Listar perfis de inferência para o modelo | Bedrock:ListInferenceProfiles | Solução de problemas | Leitura/escrita 
 |===
 ====
 
@@ -1926,7 +1973,7 @@ Selecione o modo operacional para visualizar as políticas do IAM necessárias:
 ====
 [role="tabbed-block"]
 =====
-.Modo de leitura
+.Modo só de leitura
 --
 [source, json]
 ----
@@ -1959,7 +2006,7 @@ Selecione o modo operacional para visualizar as políticas do IAM necessárias:
 }
 ----
 --
-.Modo de automação
+.Modo de leitura/escrita
 --
 [source, json]
 ----
@@ -2040,28 +2087,28 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 | Finalidade | Ação | Onde usado | Modo 
 
 
-| Anexe grupos de segurança e modifique regras para os nós provisionados | EC2:AutorizeSecurityGroupIngress | Implantação | Automatizar 
+| Anexe grupos de segurança e modifique regras para os nós provisionados | EC2:AutorizeSecurityGroupIngress | Implantação | Leitura/escrita 
 
 
-| Criar volumes EBS | EC2:Createvolume | Implantação | Automatizar 
+| Criar volumes EBS | EC2:Createvolume | Implantação | Leitura/escrita 
 
 
-| Marque valores personalizados para os recursos do FSX for NetApp ONTAP criados pelas cargas de trabalho da VMware | fsx:TagResource | Implantação | Automatizar 
+| Marque valores personalizados para os recursos do FSX for NetApp ONTAP criados pelas cargas de trabalho da VMware | fsx:TagResource | Implantação | Leitura/escrita 
 
 
-| Crie e valide o modelo do CloudFormation | Formação de nuvens: CreateStack | Implantação | Automatizar 
+| Crie e valide o modelo do CloudFormation | Formação de nuvens: CreateStack | Implantação | Leitura/escrita 
 
 
-| Gerencie tags e segurança de rede em instâncias criadas | EC2:CreateSecurityGroup | Implantação | Automatizar 
+| Gerencie tags e segurança de rede em instâncias criadas | EC2:CreateSecurityGroup | Implantação | Leitura/escrita 
 
 
-| Inicie as instâncias criadas | EC2:RunInstances | Implantação | Automatizar 
+| Inicie as instâncias criadas | EC2:RunInstances | Implantação | Leitura/escrita 
 
 
-| Obtenha detalhes da instância do EC2 | EC2: DescribeInstances | Implantação | Automatizar 
+| Obtenha detalhes da instância do EC2 | EC2: DescribeInstances | Implantação | Leitura/escrita 
 
 
-| Listar imagens durante a criação da pilha durante as operações de implantação e reconstrução | EC2: DescribeImages | Implantação | Automatizar 
+| Listar imagens durante a criação da pilha durante as operações de implantação e reconstrução | EC2: DescribeImages | Implantação | Leitura/escrita 
 
 
 | Obtenha os VPCs no ambiente selecionado para preencher o formulário de implantação | EC2: DescribeVPCs  a| 
@@ -2069,8 +2116,8 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 * Inventário
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -2080,15 +2127,15 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 * Inventário
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Obtenha os grupos de segurança no ambiente selecionado para preencher o formulário de implantação | EC2:DescribeSecurityGroups | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
@@ -2098,58 +2145,58 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 * Inventário
 
  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Obtenha as regiões com o suporte do Amazon FSX para NetApp ONTAP | EC2:DescribeRegiões | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Obtenha aliases de chaves KMS para serem usadas para criptografia do Amazon FSX para NetApp ONTAP | Kms:ListAliases | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Obtenha chaves KMS para serem usadas para criptografia do Amazon FSX for NetApp ONTAP | Kms: ListKeys | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | Obtenha os detalhes de expiração das chaves KMS a serem usados para a criptografia do Amazon FSX for NetApp ONTAP | Kms:DescribeKey | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
 | A consulta baseada em SSM é usada para obter a lista atualizada de regiões compatíveis com o Amazon FSX para NetApp ONTAP | ssm:GetParametersByPath | Implantação  a| 
-* Leia
-* Automatizar
+* Somente leitura
+* Leitura/escrita
 
 
 
 
-.3+| Crie os recursos do Amazon FSX for NetApp ONTAP necessários para o provisionamento | fsx:CreateFileSystem | Implantação | Automatizar 
+.3+| Crie os recursos do Amazon FSX for NetApp ONTAP necessários para o provisionamento | fsx:CreateFileSystem | Implantação | Leitura/escrita 
 
 
-| fsx:CreateStorageVirtualMachine | Implantação | Automatizar 
+| fsx:CreateStorageVirtualMachine | Implantação | Leitura/escrita 
 
 
 | fsx:Createvolume  a| 
 * Implantação
 * Operações de gerenciamento
 
-| Automatizar 
+| Leitura/escrita 
 
 
 .2+| Obtenha detalhes do Amazon FSX para NetApp ONTAP | fsx:descrever*  a| 
@@ -2158,42 +2205,42 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 * Operações de gerenciamento
 * Explore as poupanças
 
-| Automatizar 
+| Leitura/escrita 
 
 
 | fsx:Lista*  a| 
 * Implantação
 * Inventário
 
-| Automatizar 
+| Leitura/escrita 
 
 
-.5+| Obtenha detalhes das chaves do KMS e use a criptografia do Amazon FSX for NetApp ONTAP | Kms:CreateGrant | Implantação | Automatizar 
+.5+| Obtenha detalhes das chaves do KMS e use a criptografia do Amazon FSX for NetApp ONTAP | Kms:CreateGrant | Implantação | Leitura/escrita 
 
 
-| Kms: Descrever* | Implantação | Automatizar 
+| Kms: Descrever* | Implantação | Leitura/escrita 
 
 
-| Kms:Lista* | Implantação | Automatizar 
+| Kms:Lista* | Implantação | Leitura/escrita 
 
 
-| Kms:desencriptar | Implantação | Automatizar 
+| Kms:desencriptar | Implantação | Leitura/escrita 
 
 
-| Kms:GenerateDataKey | Implantação | Automatizar 
+| Kms:GenerateDataKey | Implantação | Leitura/escrita 
 
 
-| Liste os tópicos do SNS do cliente e publique no SNS de back-end do WLMVMC, bem como no SNS do cliente, se selecionado | sns:publicar | Implantação | Automatizar 
+| Liste os tópicos do SNS do cliente e publique no SNS de back-end do WLMVMC, bem como no SNS do cliente, se selecionado | sns:publicar | Implantação | Leitura/escrita 
 
 
 | Usado para buscar a lista mais recente de regiões AWS compatíveis com o Amazon FSX para NetApp ONTAP | ssm:obter*  a| 
 * Implantação
 * Operações de gerenciamento
 
-| Automatizar 
+| Leitura/escrita 
 
 
-| Simule operações de carga de trabalho para validar permissões disponíveis e compare com as permissões de conta da AWS necessárias | IAM:SimulatePrincipalPolicy | Implantação | Automatizar 
+| Simule operações de carga de trabalho para validar permissões disponíveis e compare com as permissões de conta da AWS necessárias | IAM:SimulatePrincipalPolicy | Implantação | Leitura/escrita 
 
 
 .4+| O armazenamento de parâmetros SSM é usado para salvar credenciais do Amazon FSX for NetApp ONTAP | ssm: GetParameter  a| 
@@ -2201,28 +2248,28 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 * Operações de gerenciamento
 * Inventário
 
-| Automatizar 
+| Leitura/escrita 
 
 
 | ssm:parâmetros de entrada  a| 
 * Implantação
 * Inventário
 
-| Automatizar 
+| Leitura/escrita 
 
 
 | ssm: PutParameter  a| 
 * Implantação
 * Operações de gerenciamento
 
-| Automatizar 
+| Leitura/escrita 
 
 
 | ssm:DeleteParameters  a| 
 * Implantação
 * Operações de gerenciamento
 
-| Automatizar 
+| Leitura/escrita 
 |===
 ====
 
@@ -2233,9 +2280,17 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 
 
 
+=== 4 de maio de 2025
+
+A seguinte permissão está agora disponível no modo _Read/Write_ para o GenAI: `qbusiness:ListApplications`.
+
+A seguinte permissão está agora disponível no modo _somente leitura_ para bancos de dados: `logs:GetLogEvents`.
+
+
+
 === 2 de abril de 2025
 
-A seguinte permissão está agora disponível em _read mode_ para bancos de dados: `ssm:DescribeInstanceInformation`.
+A seguinte permissão está agora disponível no modo _somente leitura_ para bancos de dados: `ssm:DescribeInstanceInformation`.
 
 
 
@@ -2245,7 +2300,7 @@ A seguinte permissão está agora disponível em _read mode_ para bancos de dado
 
 ==== Atualização das permissões de workload do GenAI
 
-As seguintes permissões estão agora disponíveis em _Automate mode_ para o GenAI:
+As seguintes permissões estão agora disponíveis no _modo de leitura/gravação_ para o GenAI:
 
 * `bedrock:PutModelInvocationLoggingConfiguration`
 * `iam:AttachRolePolicy`
@@ -2254,7 +2309,7 @@ As seguintes permissões estão agora disponíveis em _Automate mode_ para o Gen
 * `bedrock:ListInferenceProfiles`
 
 
-A seguinte permissão foi removida de _automate mode_ para o GenAI: `Bedrock:GetFoundationModel`.
+A seguinte permissão foi removida do _modo de leitura/escrita_ para o GenAI `Bedrock:GetFoundationModel`: .
 
 
 
@@ -2266,10 +2321,10 @@ A `iam:SimulatePrincipalPolicy` permissão faz parte de todas as políticas de p
 
 === 2 de março de 2025
 
-A seguinte permissão está agora disponível no modo _Automate_ para o GenAI: `bedrock:GetFoundationModel`.
+A seguinte permissão está agora disponível no modo _Read/Write_ para o GenAI: `bedrock:GetFoundationModel`.
 
 
 
 === 3 de fevereiro de 2025
 
-A seguinte permissão está agora disponível no modo _read_ para bancos de dados: `iam:SimulatePrincipalPolicy`.
+A seguinte permissão está agora disponível no modo _somente leitura_ para bancos de dados: `iam:SimulatePrincipalPolicy`.

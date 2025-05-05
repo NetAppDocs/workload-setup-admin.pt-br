@@ -87,8 +87,8 @@ link:manage-service-accounts.html["Saiba como gerenciar contas de serviço"].
 A fábrica de workloads fornece três modos operacionais que permitem controlar cuidadosamente o acesso ao seu estado de nuvem e atribuir confiança incremental à fábrica de workload com base em suas políticas DE TI.
 
 * *O modo básico* representa uma relação de confiança zero e é projetado para exploração antecipada da fábrica de carga de trabalho e uso dos vários assistentes para criar a infraestrutura necessária como código. Esse código pode ser copiado e usado manualmente pelo usuário, juntamente com suas credenciais relevantes da AWS.
-* *Modo de leitura* melhora a experiência do modo Básico, auxiliando o usuário na deteção de vários recursos e ferramentas e, consequentemente, ajudando a completar assistentes relevantes.
-* *Automate mode* representa um relacionamento de confiança total e foi projetado para executar e automatizar em nome do usuário, juntamente com as credenciais atribuídas que têm as permissões necessárias e validadas para execução.
+* *Modo somente leitura* melhora a experiência do modo Básico, auxiliando o usuário na deteção de vários recursos e ferramentas e, consequentemente, ajudando a completar assistentes relevantes.
+* *O modo de leitura/gravação* representa uma relação de confiança total e foi projetado para executar e automatizar em nome do usuário, juntamente com as credenciais atribuídas que têm as permissões necessárias e validadas para execução.
 
 
 link:operational-modes.html["Saiba mais sobre os modos operacionais de fábrica da carga de trabalho"].
@@ -127,18 +127,7 @@ A fábrica de carga de trabalho fornece calculadoras de economia para que você 
 * link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["Saiba como explorar a economia para suas cargas de trabalho de banco de dados"^]
 
 
-
-
-== Ferramentas para usar o workload de fábrica
-
-Você pode usar a fábrica do workload do BlueXP  com as seguintes ferramentas:
-
-* *Console de fábrica do Workload*: O console de fábrica da carga de trabalho fornece uma interface visual que oferece uma visão holística de seus aplicativos e projetos
-* * BlueXP  console*: O console BlueXP  oferece uma experiência de interface híbrida para que você possa usar a carga de trabalho BlueXP  de fábrica junto com outros serviços BlueXP
-* *API REST*: As APIs REST de fábrica de carga de trabalho permitem implantar e gerenciar seus sistemas de arquivos FSX for ONTAP e outros recursos da AWS
-* *CloudFormation*: O código do AWS CloudFormation permite que você execute as ações definidas no console de fábrica de carga de trabalho para modelar, provisionar e gerenciar recursos da AWS e de terceiros a partir da pilha do CloudFormation em sua conta da AWS
-* *Fornecedor de fábrica de carga de trabalho do Terraform BlueXP *: O Terraform permite criar e gerenciar fluxos de trabalho de infraestrutura gerados no console de fábrica de carga de trabalho
-
+https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
 
 
 

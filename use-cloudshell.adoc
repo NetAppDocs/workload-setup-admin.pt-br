@@ -27,6 +27,7 @@ Os recursos do CloudShell incluem:
 * Persistência do conteúdo da última sessão: Reabra a última sessão se você a fechar por engano
 * Preferências de configurações: Altere o tamanho da fonte e o tipo de saída
 * Respostas de erro geradas por IA para comandos da CLI do ONTAP
+* Suporte a conclusão automática: Comece a digitar um comando e use a tecla *Tab* para ver as opções disponíveis
 
 
 

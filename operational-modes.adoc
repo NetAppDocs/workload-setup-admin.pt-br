@@ -20,8 +20,8 @@ A fábrica de workloads oferece três modos operacionais que permitem controlar 
 Os modos operacionais fornecem uma organização lógica da funcionalidade e dos recursos fornecidos pela fábrica da carga de trabalho, conforme correlacionados ao nível de confiança que você atribui. O principal objetivo nos modos operacionais é comunicar claramente quais tarefas a fábrica de carga de trabalho pode ou não executar em sua conta da AWS.
 
 Modo básico:: Representa um relacionamento de confiança zero em que nenhuma permissão da AWS é atribuída à fábrica de carga de trabalho. Ele é projetado para exploração precoce da fábrica de carga de trabalho e uso dos vários assistentes para criar a infraestrutura necessária como código (IAC). Você pode copiar o código e usá-lo na AWS inserindo suas credenciais da AWS manualmente.
-Modo de leitura:: Melhora a experiência do modo básico adicionando permissões somente leitura para que os modelos IAC sejam preenchidos com suas variáveis específicas (por exemplo, VPC, grupos de segurança, etc.). Isso permite que você execute o IAC diretamente da sua conta da AWS sem fornecer permissões de modificação para a fábrica de carga de trabalho.
-Modo de automação:: Representa um relacionamento de confiança total para que a fábrica da carga de trabalho seja atribuída com permissões completas. Isso permite que a fábrica de carga de trabalho execute e automatize operações na AWS em seu nome, juntamente com as credenciais atribuídas que têm as permissões necessárias para execução.
+Modo só de leitura:: Melhora a experiência do modo básico adicionando permissões somente leitura para que os modelos IAC sejam preenchidos com suas variáveis específicas (por exemplo, VPC, grupos de segurança, etc.). Isso permite que você execute o IAC diretamente da sua conta da AWS sem fornecer permissões de modificação para a fábrica de carga de trabalho.
+Modo de leitura/escrita:: Representa um relacionamento de confiança total para que a fábrica da carga de trabalho seja atribuída com permissões completas. Isso permite que a fábrica de carga de trabalho execute e automatize operações na AWS em seu nome, juntamente com as credenciais atribuídas que têm as permissões necessárias para execução.
 
 
 Saiba mais link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Permissões para a fábrica de carga de trabalho do BlueXP "]sobre o .
@@ -40,10 +40,10 @@ Os recursos disponíveis usando cada um dos modos aumentam com cada modo.
 | Básico | Não | Modelo IAC minimamente completo | Não | Não 
 
 
-| Leia | Não | Modelo IAC moderadamente completo | Sim | Sim 
+| Somente leitura | Não | Modelo IAC moderadamente completo | Sim | Sim 
 
 
-| Automatizar | Automação completa | Modelo IAC completo com automação completa | Sim | Sim 
+| Leitura/escrita | Automação completa | Modelo IAC completo com automação completa | Sim | Sim 
 |===
 
 
@@ -59,10 +59,10 @@ Não há nenhum seletor que você precise definir na fábrica da carga de trabal
 | Básico | Não é necessário | Não é necessário 
 
 
-| Leia | Somente leitura | Não é necessário 
+| Somente leitura | Somente leitura | Não é necessário 
 
 
-| Automatizar | Credenciais de leitura-gravação | Obrigatório 
+| Leitura/escrita | Credenciais de leitura-gravação | Obrigatório 
 |===
 https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["Saiba mais sobre links"^]
 
@@ -70,7 +70,7 @@ https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["Saiba mais
 
 === Exemplos de modo operacional
 
-Você pode configurar suas credenciais para fornecer um modo para um componente de carga de trabalho e outro modo para outro componente. Por exemplo, você pode configurar o modo de automação para operações em que você está implantando e gerenciando sistemas de arquivos FSX for ONTAP, mas apenas configurar o modo de leitura para criar e implantar cargas de trabalho de banco de dados usando a fábrica de carga de trabalho.
+Você pode configurar suas credenciais para fornecer um modo para um componente de carga de trabalho e outro modo para outro componente. Por exemplo, você pode configurar o modo de leitura/gravação para operações em que você está implantando e gerenciando sistemas de arquivos FSX for ONTAP, mas apenas configurar o modo de leitura para criar e implantar cargas de trabalho de banco de dados usando a fábrica de carga de trabalho.
 
 Você pode fornecer esses recursos em um único conjunto de credenciais em uma conta de fábrica de workload ou criar vários conjuntos de credenciais quando cada credencial fornece recursos exclusivos de implantação de workload.
 
@@ -78,11 +78,11 @@ Você pode fornecer esses recursos em um único conjunto de credenciais em uma c
 
 ==== Exemplo 1
 
-Os usuários de conta que usam as credenciais que receberam as seguintes permissões terão controle total (modo automático) para criar o FSX para sistemas de arquivos ONTAP, implantar bancos de dados e visualizar outros tipos de armazenamento da AWS usados na conta.
+Os usuários de conta que usam as credenciais que receberam as seguintes permissões terão controle total (modo leitura/gravação) para criar o FSX para sistemas de arquivos ONTAP, implantar bancos de dados e visualizar outros tipos de armazenamento da AWS usados na conta.
 
 image:screenshot-credentials1.png["Uma captura de tela mostrando um conjunto de credenciais que fornecem dois tipos de permissões de carga de trabalho."]
 
-No entanto, eles não terão controles de automação para criar e implantar cargas de trabalho VMware (modo básico) da fábrica de cargas de trabalho. Se quiserem criar cargas de trabalho VMware, precisarão copiar o código da caixa de código, fazer login na conta da AWS manualmente e preencher manualmente as entradas ausentes no código gerado para usar essa funcionalidade.
+No entanto, eles não terão controles de automação para criar e implantar cargas de trabalho VMware (modo básico) a partir da fábrica de cargas de trabalho. Se quiserem criar cargas de trabalho VMware, precisarão copiar o código da caixa de código, fazer login na conta da AWS manualmente e preencher manualmente as entradas ausentes no código gerado para usar essa funcionalidade.
 
 
 
