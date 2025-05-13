@@ -1116,8 +1116,6 @@
   <block id="c0ee691320caa89b529bc0bcaf9cc696" category="paragraph">No entanto, eles não terão controles de automação para criar e implantar cargas de trabalho VMware (modo básico) a partir da fábrica de cargas de trabalho. Se quiserem criar cargas de trabalho VMware, precisarão copiar o código da caixa de código, fazer login na conta da AWS manualmente e preencher manualmente as entradas ausentes no código gerado para usar essa funcionalidade.</block>
   <block id="b91c58f3e94e0488074053d96cd4bbec" category="paragraph">Quando você fornece permissões de modo somente leitura ou leitura/gravação, a fábrica de carga de trabalho anexa uma política à instância com permissões para gerenciar recursos e processos dentro dessa conta da AWS. Isso permite que a fábrica de workloads execute várias operações, desde a descoberta de seus ambientes de storage até a implantação de recursos da AWS, como sistemas de arquivos no gerenciamento de storage ou bases de conhecimento para workloads da GenAI.</block>
   <block id="4d372922f30597b3e046274dbb3cecd2" category="list-text">Somente leitura</block>
-  <block id="d066bc059c61c75a41706f175a5b3f8b" category="cell">A fábrica da carga de trabalho muda para os logs do Amazon CloudWatch para a instância SQL ao encontrar truncamento de saída SSM.</block>
-  <block id="2e50818bd890a03b645105690ca2ee60" category="list-text">Avaliação de storage</block>
   <block id="38ef2c2517cd341233b9181c09ba8071" category="paragraph">As políticas do IAM do GenAI só estão disponíveis no modo leitura/gravação:</block>
   <block id="123ce9aa4e0770ecb435c005fa9b436c" category="cell">Liste os aplicativos do Amazon Q Business</block>
   <block id="4f3c534c90392632c7d275f54d5b35a0" category="cell">Qbusiness:ListAplicações</block>
@@ -1127,7 +1125,6 @@
   <block id="9dd35b54afccc27a1cc96eab777dbc8e" category="cell">Crie um grupo de log do Amazon CloudWatch para logs do Amazon bedrock durante a criação da pilha durante as operações de implantação e reconstrução</block>
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">4 de maio de 2025</block>
   <block id="b1351fb22e71d3c2b886e8e0819e632f" category="paragraph">A seguinte permissão está agora disponível no modo _Read/Write_ para o GenAI:<block ref="4f3c534c90392632c7d275f54d5b35a0" prefix=" " category="inline-code"></block>.</block>
-  <block id="17cf827d0ea669f390d3f954ed27424d" category="paragraph">A seguinte permissão está agora disponível no modo _somente leitura_ para bancos de dados:<block ref="6d952035baa97bd601f4d280f10fcc53" prefix=" " category="inline-code"></block>.</block>
   <block id="83300e091c617144cede34b6c898e63b" category="paragraph">A seguinte permissão está agora disponível no modo _somente leitura_ para bancos de dados:<block ref="3320749a6854264e1889d72d7f41a0bf" prefix=" " category="inline-code"></block>.</block>
   <block id="be999711faeee231a254e996141ed09f" category="paragraph">As seguintes permissões estão agora disponíveis no _modo de leitura/gravação_ para o GenAI:</block>
   <block id="9f4fc0ded0d1671253e5c8e38cd9464f" category="paragraph">A seguinte permissão foi removida do _modo de leitura/escrita_ para o GenAI<block ref="8a44b1c8d2e06b1acd7404fbb70437cc" prefix=" " category="inline-code"></block>: .</block>
@@ -1140,4 +1137,12 @@
   <block id="7a0e532396f167d85a7b425f941d0613" category="list-text">*Modo somente leitura* melhora a experiência do modo Básico, auxiliando o usuário na deteção de vários recursos e ferramentas e, consequentemente, ajudando a completar assistentes relevantes.</block>
   <block id="4951a0172d4fd2c8116296e71073f31c" category="list-text">*O modo de leitura/gravação* representa uma relação de confiança total e foi projetado para executar e automatizar em nome do usuário, juntamente com as credenciais atribuídas que têm as permissões necessárias e validadas para execução.</block>
   <block id="1c9640aa9075334712c6c2b922771c50" category="paragraph"><block ref="1c9640aa9075334712c6c2b922771c50" category="inline-link-rx"></block></block>
+  <block id="5474924c6e07cdae5b2fb3dcc561d06d" category="cell">A fábrica da carga de trabalho muda para os logs do Amazon CloudWatch para a instância SQL ao encontrar truncamento de saída SSM</block>
+  <block id="5d1d5ff6c3c427c682d491550e8f89b3" category="list-text">Avaliação de armazenamento (otimização)</block>
+  <block id="515b5649d13529809187e8bce4dca692" category="cell">Permita que a fábrica do workload obtenha grupos de log atuais e verifique se a retenção está definida para grupos de log criados pela fábrica do workload</block>
+  <block id="c1fe33a4a51fbfbc7672aeed10dd19b9" category="cell">Permite que a fábrica da carga de trabalho defina uma política de retenção de um dia para grupos de log criados pela fábrica da carga de trabalho para evitar o acúmulo desnecessário de fluxos de log para saídas de comando SSM</block>
+  <block id="19c89da108a378e8d938a37afe67bcab" category="paragraph">As seguintes permissões estão agora disponíveis no modo _somente leitura_ para bancos de dados:</block>
+  <block id="1636ccb01570c55081666deb02ddfb9c" category="list-text"><block ref="6d952035baa97bd601f4d280f10fcc53" prefix="" category="inline-code"></block></block>
+  <block id="c4a094604e7db845f5356b4563efc223" category="list-text"><block ref="99a70cb6d5b807589a0a1aa9bbcfea7d" prefix="" category="inline-code"></block></block>
+  <block id="555669c70b999168141bdf48d9c2de24" category="paragraph">A seguinte permissão está agora disponível no modo _Read/Write_ para bancos de dados:<block ref="9c72603737d6e2074ae7fab048b5d3d1" prefix=" " category="inline-code"></block>.</block>
 </blocks>

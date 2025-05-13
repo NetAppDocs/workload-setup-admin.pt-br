@@ -421,6 +421,7 @@ Selecione o modo operacional para visualizar as políticas do IAM necessárias:
         "ssm:ListCommands",
         "ssm:DescribeInstanceInformation",
         "fsx:ListTagsForResource"
+        "logs:DescribeLogGroups"
       ],
       "Resource": [
         "*"
@@ -568,6 +569,7 @@ Selecione o modo operacional para visualizar as políticas do IAM necessárias:
         "logs:ListLogDeliveries",
         "logs:PutLogEvents",
         "logs:TagResource",
+        "logs:PutRetentionPolicy",
         "servicequotas:ListServiceQuotas",
         "sns:ListTopics",
         "sns:Publish",
@@ -674,17 +676,6 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 [cols="2, 2, 1, 1"]
 |===
 | Finalidade | Ação | Onde usado | Modo 
-
-
-| A fábrica da carga de trabalho muda para os logs do Amazon CloudWatch para a instância SQL ao encontrar truncamento de saída SSM. | Logs:GetLogEvents  a| 
-* Avaliação de storage
-* Inventário
-
- a| 
-* Somente leitura
-* Leitura/escrita
-
-
 
 
 | Obtenha estatísticas métricas para o FSX para ONTAP, EBS e FSX para servidor de arquivos do Windows | cloudwatch:GetMetricStatistics  a| 
@@ -1345,6 +1336,35 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 
 | Logs:TagResource | Implantação | Leitura/escrita 
+
+
+| A fábrica da carga de trabalho muda para os logs do Amazon CloudWatch para a instância SQL ao encontrar truncamento de saída SSM | Logs:GetLogEvents  a| 
+* Avaliação de armazenamento (otimização)
+* Inventário
+
+ a| 
+* Somente leitura
+* Leitura/escrita
+
+
+
+
+| Permita que a fábrica do workload obtenha grupos de log atuais e verifique se a retenção está definida para grupos de log criados pela fábrica do workload | Logs:DescribeLogGroups  a| 
+* Avaliação de armazenamento (otimização)
+* Inventário
+
+| Somente leitura 
+
+
+| Permite que a fábrica da carga de trabalho defina uma política de retenção de um dia para grupos de log criados pela fábrica da carga de trabalho para evitar o acúmulo desnecessário de fluxos de log para saídas de comando SSM | Logs:PutRetentationPolicy  a| 
+* Avaliação de armazenamento (otimização)
+* Inventário
+
+ a| 
+* Somente leitura
+* Leitura/escrita
+
+
 
 
 | Crie segredos em uma conta de usuário para as credenciais fornecidas para SQL, domínio e FSX para ONTAP | Servicequotas:ListServiceQuotes | Implantação | Leitura/escrita 
@@ -2284,7 +2304,14 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 
 A seguinte permissão está agora disponível no modo _Read/Write_ para o GenAI: `qbusiness:ListApplications`.
 
-A seguinte permissão está agora disponível no modo _somente leitura_ para bancos de dados: `logs:GetLogEvents`.
+As seguintes permissões estão agora disponíveis no modo _somente leitura_ para bancos de dados:
+
+* `logs:GetLogEvents`
+* `logs:DescribeLogGroups`
+
+
+A seguinte permissão está agora disponível no modo _Read/Write_ para bancos de dados:
+`logs:PutRetentionPolicy`.
 
 
 
