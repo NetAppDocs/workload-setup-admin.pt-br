@@ -1356,7 +1356,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 | Somente leitura 
 
 
-| Permite que a fábrica da carga de trabalho defina uma política de retenção de um dia para grupos de log criados pela fábrica da carga de trabalho para evitar o acúmulo desnecessário de fluxos de log para saídas de comando SSM | Logs:PutRetentationPolicy  a| 
+| Permita que a fábrica da carga de trabalho defina uma política de retenção de um dia para grupos de log criados pela fábrica da carga de trabalho para evitar o acúmulo desnecessário de fluxos de log para saídas de comando SSM | Logs:PutRetentationPolicy  a| 
 * Avaliação de armazenamento (otimização)
 * Inventário
 
