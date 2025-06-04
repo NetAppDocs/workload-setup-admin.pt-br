@@ -1762,6 +1762,14 @@ As políticas do IAM do GenAI só estão disponíveis no modo leitura/gravação
       "Resource": "*"
     },
     {
+      "Sid": "S3",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListAllMyBuckets"
+      ],
+      "Resource": "*"
+    },
+    {
       "Effect": "Allow",
       "Action": [
         "iam:SimulatePrincipalPolicy"
@@ -1792,6 +1800,9 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 
 
 | Exibir tags de mecanismo AI | EC2: DescribeTags | Implantação | Leitura/escrita 
+
+
+| Listar buckets S3 | S3:ListAllMyBuckets | Implantação | Leitura/escrita 
 
 
 | Listar os endpoints da VPC antes da criação da pilha do mecanismo de IA | EC2:CreateVpcEndpoint | Implantação | Leitura/escrita 
@@ -2297,6 +2308,12 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 == Alterar registo
 
 À medida que as permissões são adicionadas e removidas, vamos anotá-las nas seções abaixo.
+
+
+
+=== 3 de junho de 2025
+
+A seguinte permissão está agora disponível no modo _Read/Write_ para o GenAI: `s3:ListAllMyBuckets`.
 
 
 

@@ -1152,5 +1152,9 @@
   <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">*CLI do CloudShell*: A fábrica de carga de trabalho inclui uma CLI do CloudShell para gerenciar e operar ambientes AWS e NetApp em contas a partir de uma única CLI baseada em navegador. Acesse o CloudShell a partir da barra superior do console de fábrica de carga de trabalho.</block>
   <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">*API REST*: Use as APIs REST de fábrica de carga de trabalho para implantar e gerenciar seus sistemas de arquivos FSX for ONTAP e outros recursos da AWS.</block>
   <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">*CloudFormation*: Use o código do AWS CloudFormation para executar as ações definidas no console de fábrica de carga de trabalho para modelar, provisionar e gerenciar recursos da AWS e de terceiros a partir da pilha do CloudFormation em sua conta da AWS.</block>
-  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">*Fornecedor de fábrica de carga de trabalho do Terraform BlueXP *: Use o Terraform para criar e gerenciar fluxos de trabalho de infraestrutura gerados no console de fábrica de carga de trabalho.</block>
+  <block id="beec07f99f03a1aa1948ba788ce7e6c1" category="cell">Listar buckets S3</block>
+  <block id="e21c94a36c6dbf24001a64bddce9456f" category="cell">S3:ListAllMyBuckets</block>
+  <block id="c34c5eed5692ab9466e57060b06ae6ae" category="section-title">3 de junho de 2025</block>
+  <block id="c918d3e0e49fdadeab4e77e3905135bd" category="paragraph">A seguinte permissão está agora disponível no modo _Read/Write_ para o GenAI:<block ref="e21c94a36c6dbf24001a64bddce9456f" prefix=" " category="inline-code"></block>.</block>
+  <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">*Fornecedor de fábrica de carga de trabalho do Terraform BlueXP *: Use o Terraform para criar e gerenciar fluxos de trabalho de infraestrutura gerados no console de fábrica de carga de trabalho.</block>
 </blocks>
