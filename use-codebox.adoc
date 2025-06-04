@@ -13,7 +13,7 @@ summary: Você pode usar o Codebox para gerar o código necessário para executa
 [role="lead"]
 Você pode usar o Codebox para gerar o código necessário para executar qualquer operação suportada pela fábrica de carga de trabalho do BlueXP . Você pode gerar código que pode ser consumido e executado usando APIs REST de fábrica de workloads, a CLI da AWS e o AWS CloudFormation.
 
-O Codebox está alinhado com os modos de operação de fábrica da carga de trabalho (Básico, somente leitura e leitura/gravação) preenchendo os dados apropriados no código com base nas permissões da AWS fornecidas na conta de fábrica da carga de trabalho para cada usuário. O código pode ser usado como um modelo onde você pode preencher informações ausentes (por exemplo, credenciais) ou personalizar determinados dados antes de executar o código.
+O Codebox é alinhado com os modos de operação da fábrica de carga de trabalho (_básico_, _somente leitura_ e _leitura/gravação_) preenchendo os dados apropriados no código com base nas permissões da AWS fornecidas na conta da fábrica de carga de trabalho para cada usuário. O código pode ser usado como um modelo onde você pode preencher informações ausentes (por exemplo, credenciais) ou personalizar determinados dados antes de executar o código.
 
 
 

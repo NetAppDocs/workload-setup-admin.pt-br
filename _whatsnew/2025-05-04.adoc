@@ -12,4 +12,4 @@ Ao usar o CloudShell de fábrica de carga de trabalho do BlueXP , você pode co
 
 === Terminologia de permissões atualizada
 
-A interface do usuário e a documentação de fábrica da carga de trabalho agora usam "somente leitura" para se referir a permissões de leitura e "leitura-gravação" para se referir a permissões de automação.
+A interface do usuário e a documentação do Workload Factory agora usam "somente leitura" para se referir às permissões de leitura e "leitura/gravação" para se referir às permissões de automação.

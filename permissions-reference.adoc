@@ -20,7 +20,7 @@ Para usar os recursos e serviços de fábrica do workload do BlueXP , você pre
 
 == Por que usar permissões
 
-Quando você fornece permissões de modo somente leitura ou leitura/gravação, a fábrica de carga de trabalho anexa uma política à instância com permissões para gerenciar recursos e processos dentro dessa conta da AWS. Isso permite que a fábrica de workloads execute várias operações, desde a descoberta de seus ambientes de storage até a implantação de recursos da AWS, como sistemas de arquivos no gerenciamento de storage ou bases de conhecimento para workloads da GenAI.
+Quando você fornece permissões de modo _somente leitura_ ou _leitura/gravação_, o workload factory anexa uma política à instância com permissões para gerenciar recursos e processos dentro dessa conta da AWS. Isso permite que a fábrica de workloads execute várias operações, desde a descoberta de seus ambientes de storage até a implantação de recursos da AWS, como sistemas de arquivos no gerenciamento de storage ou bases de conhecimento para workloads da GenAI.
 
 Para cargas de trabalho de banco de dados, por exemplo, quando a fábrica de carga de trabalho é concedida com as permissões necessárias, ele verifica todas as instâncias EC2 em uma determinada conta e região e filtra todas as máquinas baseadas no Windows. Se o AWS Systems Manager (SSM) Agent estiver instalado e em execução na rede do host e do System Manager estiver configurado corretamente, a fábrica de carga de trabalho poderá acessar a máquina Windows e verificar se o software SQL Server está instalado ou não.
 
@@ -1512,7 +1512,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 As políticas do IAM para cargas de trabalho VMware fornecem as permissões que a fábrica de cargas de trabalho da VMware precisa para gerenciar recursos e processos em seu ambiente de nuvem pública com base no modo operacional em que você opera.
 
-As políticas do IAM do GenAI só estão disponíveis no modo leitura/gravação:
+As políticas do GenAI IAM estão disponíveis somente no modo _leitura/gravação_:
 
 .Políticas do IAM para workloads do GenAI
 [%collapsible]
@@ -2327,14 +2327,14 @@ As seguintes permissões estão agora disponíveis no modo _somente leitura_ par
 * `logs:DescribeLogGroups`
 
 
-A seguinte permissão está agora disponível no modo _Read/Write_ para bancos de dados:
-`logs:PutRetentionPolicy`.
+A seguinte permissão agora está disponível no modo _leitura/gravação_ para bancos de dados: 
+`logs:PutRetentionPolicy` .
 
 
 
 === 2 de abril de 2025
 
-A seguinte permissão está agora disponível no modo _somente leitura_ para bancos de dados: `ssm:DescribeInstanceInformation`.
+A seguinte permissão agora está disponível no modo _somente leitura_ para bancos de dados:  `ssm:DescribeInstanceInformation` .
 
 
 
@@ -2344,7 +2344,7 @@ A seguinte permissão está agora disponível no modo _somente leitura_ para ban
 
 ==== Atualização das permissões de workload do GenAI
 
-As seguintes permissões estão agora disponíveis no _modo de leitura/gravação_ para o GenAI:
+As seguintes permissões agora estão disponíveis no _modo de leitura/gravação_ para GenAI:
 
 * `bedrock:PutModelInvocationLoggingConfiguration`
 * `iam:AttachRolePolicy`
@@ -2353,7 +2353,7 @@ As seguintes permissões estão agora disponíveis no _modo de leitura/gravaçã
 * `bedrock:ListInferenceProfiles`
 
 
-A seguinte permissão foi removida do _modo de leitura/escrita_ para o GenAI `Bedrock:GetFoundationModel`: .
+A seguinte permissão foi removida do _modo de leitura/gravação_ para GenAI:  `Bedrock:GetFoundationModel` .
 
 
 
@@ -2365,10 +2365,10 @@ A `iam:SimulatePrincipalPolicy` permissão faz parte de todas as políticas de p
 
 === 2 de março de 2025
 
-A seguinte permissão está agora disponível no modo _Read/Write_ para o GenAI: `bedrock:GetFoundationModel`.
+A seguinte permissão agora está disponível no modo _leitura/gravação_ para GenAI:  `bedrock:GetFoundationModel` .
 
 
 
 === 3 de fevereiro de 2025
 
-A seguinte permissão está agora disponível no modo _somente leitura_ para bancos de dados: `iam:SimulatePrincipalPolicy`.
+A seguinte permissão agora está disponível no modo _somente leitura_ para bancos de dados:  `iam:SimulatePrincipalPolicy` .
