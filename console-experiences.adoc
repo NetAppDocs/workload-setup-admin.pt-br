@@ -23,10 +23,10 @@ Você pode usar dois consoles para acessar a fábrica do workload do BlueXP .
 
 == Acesse a fábrica do workload no console BlueXP 
 
-Você pode acessar o workload de fábrica a partir do BlueXP . Além de usar o BluXP Workload Factory para capacidade de armazenamento e carga de trabalho da AWS, você também pode acessar outros serviços da plataforma BlueXP , como cópia e sincronização, carteira digital e muito mais.
+Você pode acessar o workload de fábrica a partir do BlueXP . Além de usar o BlueXP Workload Factory para recursos de armazenamento e carga de trabalho da AWS, você também pode acessar outros serviços da plataforma BlueXP, como Copiar e Sincronizar, Carteira Digital e muito mais.
 
 .Passos
-. Inicie sessão no link:https://console.workloads.netapp.com["console de fábrica do workload"^]
+. Inicie sessão no link:https://console.workloads.netapp.com["console de fábrica do workload"^].
 . Navegue até a carga de trabalho que deseja usar e selecione uma opção para começar.
 
 
@@ -37,7 +37,7 @@ Você pode acessar o workload de fábrica a partir do BlueXP . Além de usar o 
 Você pode acessar a fábrica da carga de trabalho a partir do console do Workload Factory.
 
 .Passos
-. Inicie sessão no link:https://console.bluexp.netapp.com["Consola BlueXP"^]
+. Inicie sessão no link:https://console.bluexp.netapp.com["Consola BlueXP"^].
 . Selecione *cargas de trabalho* na navegação à esquerda.
 . Selecione *Home* para visualizar todas as cargas de trabalho ou selecione uma carga de trabalho como *Storage* ou *Databases*.
 . Selecione uma opção para começar na carga de trabalho.
