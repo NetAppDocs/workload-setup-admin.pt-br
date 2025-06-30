@@ -362,13 +362,13 @@ A tabela a seguir exibe as permissões para armazenamento.
 ====
 
 
-=== Permissões para workloads de bancos de dados
+=== Permissões para cargas de trabalho de banco de dados
 
-As políticas do IAM disponíveis para cargas de trabalho de bancos de dados fornecem as permissões que a fábrica de carga de trabalho precisa para gerenciar recursos e processos em seu ambiente de nuvem pública com base no modo operacional no qual você opera.
+As políticas do IAM disponíveis para cargas de trabalho do banco de dados fornecem as permissões que a fábrica de carga de trabalho precisa para gerenciar recursos e processos dentro do seu ambiente de nuvem pública com base no modo operacional em que você opera.
 
 Selecione o modo operacional para visualizar as políticas do IAM necessárias:
 
-.Políticas do IAM para workloads de bancos de dados
+.Políticas de IAM para cargas de trabalho de banco de dados
 [%collapsible]
 ====
 [role="tabbed-block"]
@@ -385,6 +385,7 @@ Selecione o modo operacional para visualizar as políticas do IAM necessárias:
       "Effect": "Allow",
       "Action": [
         "cloudwatch:GetMetricStatistics",
+        "cloudwatch:GetMetricData",
         "sns:ListTopics",
         "ec2:DescribeInstances",
         "ec2:DescribeVpcs",
@@ -678,7 +679,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 | Finalidade | Ação | Onde usado | Modo 
 
 
-| Obtenha estatísticas métricas para o FSX para ONTAP, EBS e FSX para servidor de arquivos do Windows | cloudwatch:GetMetricStatistics  a| 
+| Obtenha estatísticas métricas para FSx para ONTAP, EBS e FSx para Windows File Server e para recomendação de otimização de computação | cloudwatch:GetMetricStatistics  a| 
 * Inventário
 * Explore as poupanças
 
@@ -687,6 +688,9 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 * Leitura/escrita
 
 
+
+
+| Reúna métricas de desempenho salvas no Amazon CloudWatch a partir de nós SQL registrados. Os dados são gerados em gráficos de tendências de desempenho na tela de gerenciamento de instâncias SQL registradas. | cloudwatch: GetMetricData | Inventário | Somente leitura 
 
 
 | Listar e definir gatilhos para eventos | sns:ListTopics | Implantação  a| 
@@ -1209,9 +1213,6 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 
 | Cloudformation:ValidateTemplate | Implantação | Leitura/escrita 
-
-
-| Buscar métricas para recomendação de otimização de computação | cloudwatch:GetMetricStatistics | Explore as poupanças | Leitura/escrita 
 
 
 | Buscar diretórios disponíveis na região | ds:DescribeDirectories | Implantação | Leitura/escrita 
@@ -2311,17 +2312,23 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 
 
 
+=== 29 de junho de 2025
+
+A seguinte permissão agora está disponível no modo _somente leitura_ para bancos de dados:  `cloudwatch:GetMetricData` .
+
+
+
 === 3 de junho de 2025
 
-A seguinte permissão está agora disponível no modo _Read/Write_ para o GenAI: `s3:ListAllMyBuckets`.
+A seguinte permissão agora está disponível no modo _leitura/gravação_ para GenAI:  `s3:ListAllMyBuckets` .
 
 
 
 === 4 de maio de 2025
 
-A seguinte permissão está agora disponível no modo _Read/Write_ para o GenAI: `qbusiness:ListApplications`.
+A seguinte permissão agora está disponível no modo _leitura/gravação_ para GenAI:  `qbusiness:ListApplications` .
 
-As seguintes permissões estão agora disponíveis no modo _somente leitura_ para bancos de dados:
+As seguintes permissões agora estão disponíveis no modo _somente leitura_ para bancos de dados:
 
 * `logs:GetLogEvents`
 * `logs:DescribeLogGroups`

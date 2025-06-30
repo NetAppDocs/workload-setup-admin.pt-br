@@ -1,6 +1,14 @@
-= Suporte ao serviço de notificação de fábrica de carga de trabalho BlueXP
+= Atualização de permissões para bancos de dados
 :allow-uri-read: 
 
+
+
+
+=== Atualização de permissões para bancos de dados
+
+A seguinte permissão agora está disponível no modo _somente leitura_ para bancos de dados:  `cloudwatch:GetMetricData` .
+
+https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["Log de alteração de referência de permissões"]
 
 
 

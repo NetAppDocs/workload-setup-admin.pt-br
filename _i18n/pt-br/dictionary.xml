@@ -640,12 +640,8 @@
   <block id="9fd6274c053251e7fdd752215a510290" category="cell">Obtenha métricas de volume e sistema de arquivos</block>
   <block id="f63e0d20057299c9c16bd0c2c9e92a5c" category="cell">cloudwatch: GetMetricData</block>
   <block id="3a902f1e8a6db9861a0a7608e2c5f711" category="cell">cloudwatch:GetMetricStatistics</block>
-  <block id="659cdc74d03020d9c8bbdcda0749ab88" category="section-title">Permissões para workloads de bancos de dados</block>
-  <block id="2ceb20f97dd8f727dfbba8dbbe9a3496" category="paragraph">As políticas do IAM disponíveis para cargas de trabalho de bancos de dados fornecem as permissões que a fábrica de carga de trabalho precisa para gerenciar recursos e processos em seu ambiente de nuvem pública com base no modo operacional no qual você opera.</block>
-  <block id="6f652f163aedad876c63ce0e89417171" category="example-title">Políticas do IAM para workloads de bancos de dados</block>
   <block id="685902496cc1b2431527838eb3dd51f8" category="paragraph">A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados.</block>
   <block id="0647b03c182e6a539e314bf5657eba2e" category="example-title">Tabela de permissões para workloads de banco de dados</block>
-  <block id="8fb4617a750c0b3b751013d02219f99b" category="cell">Obtenha estatísticas métricas para o FSX para ONTAP, EBS e FSX para servidor de arquivos do Windows</block>
   <block id="9d0f530f355f04b5462f43ae04528fde" category="cell">Listar e definir gatilhos para eventos</block>
   <block id="124f2c65b8b708241b7552a865ae2f29" category="cell">sns:ListTopics</block>
   <block id="b561747f1044749aaeab8082f02c0c2f" category="cell">EC2: DescribeKeyPairs</block>
@@ -746,7 +742,6 @@
   <block id="da044dbe1821a39f63f98e823344b062" category="cell">Cloudformation:DescribeStackEvents</block>
   <block id="f404fc6d0850472807e4fcd86203a313" category="cell">Cloudformation:DescribeStacks</block>
   <block id="6f25bb2faea408ecb06dc30a96791ac2" category="cell">Cloudformation:ValidateTemplate</block>
-  <block id="039c0d5ce3b1eaded6c4634f95b0978c" category="cell">Buscar métricas para recomendação de otimização de computação</block>
   <block id="6ecc76cab2e7449f332b847599e62d5f" category="cell">Buscar diretórios disponíveis na região</block>
   <block id="f4e46229f95e1a17f96ebacbac65751b" category="cell">Adicione regras para o Grupo de Segurança anexado a instâncias EC2 provisionadas</block>
   <block id="1f4dd9a69501cc464524fc5da8bcd1b7" category="cell">Crie modelos de pilha aninhados para tentar novamente e reverter</block>
@@ -1108,7 +1103,6 @@
   <block id="1311c4cbbe5b925c15d25fe5ff7b022b" category="cell">Bedrock:GetFoundationModel</block>
   <block id="9dd35b54afccc27a1cc96eab777dbc8e" category="cell">Crie um grupo de log do Amazon CloudWatch para logs do Amazon bedrock durante a criação da pilha durante as operações de implantação e reconstrução</block>
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">4 de maio de 2025</block>
-  <block id="b1351fb22e71d3c2b886e8e0819e632f" category="paragraph">A seguinte permissão está agora disponível no modo _Read/Write_ para o GenAI:<block ref="4f3c534c90392632c7d275f54d5b35a0" prefix=" " category="inline-code"></block>.</block>
   <block id="bf0dcc34b100cf0ff91c26bbd98029f7" category="list-text">Suporte a conclusão automática: Comece a digitar um comando e use a tecla *Tab* para ver as opções disponíveis</block>
   <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">04 de maio de 2025</block>
   <block id="7a0e532396f167d85a7b425f941d0613" category="list-text">*Modo somente leitura* melhora a experiência do modo Básico, auxiliando o usuário na deteção de vários recursos e ferramentas e, consequentemente, ajudando a completar assistentes relevantes.</block>
@@ -1116,7 +1110,6 @@
   <block id="5474924c6e07cdae5b2fb3dcc561d06d" category="cell">A fábrica da carga de trabalho muda para os logs do Amazon CloudWatch para a instância SQL ao encontrar truncamento de saída SSM</block>
   <block id="5d1d5ff6c3c427c682d491550e8f89b3" category="list-text">Avaliação de armazenamento (otimização)</block>
   <block id="515b5649d13529809187e8bce4dca692" category="cell">Permita que a fábrica do workload obtenha grupos de log atuais e verifique se a retenção está definida para grupos de log criados pela fábrica do workload</block>
-  <block id="19c89da108a378e8d938a37afe67bcab" category="paragraph">As seguintes permissões estão agora disponíveis no modo _somente leitura_ para bancos de dados:</block>
   <block id="1636ccb01570c55081666deb02ddfb9c" category="list-text"><block ref="6d952035baa97bd601f4d280f10fcc53" prefix="" category="inline-code"></block></block>
   <block id="c4a094604e7db845f5356b4563efc223" category="list-text"><block ref="99a70cb6d5b807589a0a1aa9bbcfea7d" prefix="" category="inline-code"></block></block>
   <block id="b29cc709bba52572eccdff0248448fed" category="cell">Permita que a fábrica da carga de trabalho defina uma política de retenção de um dia para grupos de log criados pela fábrica da carga de trabalho para evitar o acúmulo desnecessário de fluxos de log para saídas de comando SSM</block>
@@ -1131,7 +1124,6 @@
   <block id="beec07f99f03a1aa1948ba788ce7e6c1" category="cell">Listar buckets S3</block>
   <block id="e21c94a36c6dbf24001a64bddce9456f" category="cell">S3:ListAllMyBuckets</block>
   <block id="c34c5eed5692ab9466e57060b06ae6ae" category="section-title">3 de junho de 2025</block>
-  <block id="c918d3e0e49fdadeab4e77e3905135bd" category="paragraph">A seguinte permissão está agora disponível no modo _Read/Write_ para o GenAI:<block ref="e21c94a36c6dbf24001a64bddce9456f" prefix=" " category="inline-code"></block>.</block>
   <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">*Fornecedor de fábrica de carga de trabalho do Terraform BlueXP *: Use o Terraform para criar e gerenciar fluxos de trabalho de infraestrutura gerados no console de fábrica de carga de trabalho.</block>
   <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">A interface do usuário e a documentação do Workload Factory agora usam "somente leitura" para se referir às permissões de leitura e "leitura/gravação" para se referir às permissões de automação.</block>
   <block id="db17079394a3464c0d2748f3f16fbfbf" category="paragraph">A fábrica de carga de trabalho funcionará no modo _Basic_, a menos que você adicione credenciais de conta da AWS. Você pode adicionar credenciais para habilitar outros modos de operação, como o modo _somente leitura_ e o modo _leitura/gravação_. <block ref="3ecbe38d325fe0025957d871a4619a77" category="inline-link-macro-rx"></block>.</block>
@@ -1163,4 +1155,14 @@
   <block id="2e600fc81eb21acd31aa44d1697dc84f" category="list-text">Inicie sessão no <block ref="fe6e1b2479e1125e03c713ad62b5343f" category="inline-link-macro-rx"></block>.</block>
   <block id="cec87015738d7f42431131824e107880" category="paragraph">Você pode acessar o workload de fábrica a partir do BlueXP . Além de usar o BlueXP Workload Factory para recursos de armazenamento e carga de trabalho da AWS, você também pode acessar outros serviços da plataforma BlueXP, como Copiar e Sincronizar, Carteira Digital e muito mais.</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">29 de junho de 2025</block>
+  <block id="cb30bdb55bb8a7a0530a31a5e6cdd0bb" category="paragraph">A seguinte permissão agora está disponível no modo _somente leitura_ para bancos de dados: <block ref="f63e0d20057299c9c16bd0c2c9e92a5c" prefix=" " category="inline-code"></block> .</block>
+  <block id="e429c7230e4b94caf26e6020e5ea6f7a" category="paragraph"><block ref="e429c7230e4b94caf26e6020e5ea6f7a" category="inline-link-rx"></block></block>
+  <block id="4da84f2c396b854d2e6828b8992fe2a6" category="section-title">Permissões para cargas de trabalho de banco de dados</block>
+  <block id="a1de7ac981533bac2ba982c9a691d511" category="paragraph">As políticas do IAM disponíveis para cargas de trabalho do banco de dados fornecem as permissões que a fábrica de carga de trabalho precisa para gerenciar recursos e processos dentro do seu ambiente de nuvem pública com base no modo operacional em que você opera.</block>
+  <block id="b09fc7726cc5650dddd20718f2586995" category="example-title">Políticas de IAM para cargas de trabalho de banco de dados</block>
+  <block id="3399757d7ea2a9e2fd7770bc1e6f5aa1" category="cell">Obtenha estatísticas métricas para FSx para ONTAP, EBS e FSx para Windows File Server e para recomendação de otimização de computação</block>
+  <block id="c79482c3221294b91b9c5eeecca327a6" category="cell">Reúna métricas de desempenho salvas no Amazon CloudWatch a partir de nós SQL registrados. Os dados são gerados em gráficos de tendências de desempenho na tela de gerenciamento de instâncias SQL registradas.</block>
+  <block id="bf8eef80d28e69579638cd56629c94fb" category="paragraph">A seguinte permissão agora está disponível no modo _leitura/gravação_ para GenAI: <block ref="e21c94a36c6dbf24001a64bddce9456f" prefix=" " category="inline-code"></block> .</block>
+  <block id="b8be7a72d02de0cfb42fb93375981cdb" category="paragraph">A seguinte permissão agora está disponível no modo _leitura/gravação_ para GenAI: <block ref="4f3c534c90392632c7d275f54d5b35a0" prefix=" " category="inline-code"></block> .</block>
+  <block id="bebb3c7ec8a634b68ad1060e27e7dc42" category="paragraph">As seguintes permissões agora estão disponíveis no modo _somente leitura_ para bancos de dados:</block>
 </blocks>
