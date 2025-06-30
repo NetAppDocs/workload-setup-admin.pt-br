@@ -1,0 +1,11 @@
+= Suporte ao serviço de notificação de fábrica de carga de trabalho BlueXP
+:allow-uri-read: 
+
+
+
+
+=== Suporte ao serviço de notificação de fábrica de carga de trabalho BlueXP
+
+O serviço de notificação da fábrica de carga de trabalho do BlueXP permite que a fábrica de carga de trabalho envie notificações para o serviço de alertas do BlueXP ou para um tópico do Amazon SNS. As notificações enviadas para os alertas do BlueXP aparecem no painel de alertas do BlueXP. Quando a fábrica de carga de trabalho publica notificações para um tópico do Amazon SNS, os assinantes do tópico (como pessoas ou outros aplicativos) recebem as notificações nos endpoints configurados para o tópico (como e-mail ou mensagens SMS).
+
+https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Configurar notificações de fábrica de carga de trabalho do BlueXP"]
