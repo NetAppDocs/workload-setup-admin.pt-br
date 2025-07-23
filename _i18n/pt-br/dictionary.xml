@@ -1219,4 +1219,10 @@
   <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">Documentação do BlueXP</block>
   <block id="7572b4e37ed025014a17bc1ae86c60a9" category="paragraph">Para obter mais informações sobre como filtrar notificações no BlueXP, consulte o <block ref="f8c744992c7f60894906e0753601fc52" category="inline-link-rx"></block> .</block>
   <block id="19a5158f1235c29843008925adb7baf8" category="sidebar">Configurar notificações</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="section-title">Segurança</block>
+  <block id="de7642ec23585171e85481d37460d1b2" category="inline-link-macro">Recursos de segurança da AWS</block>
+  <block id="6ff7732866355a577fee1c91a01a3561" category="inline-link-macro">Conformidade com SOC2 Tipo 1</block>
+  <block id="eece9c219f85d9ffb785cea21dafab78" category="paragraph">A segurança da BlueXP workload factory é uma prioridade máxima para a NetApp. Todas as cargas de trabalho na fábrica de cargas de trabalho são executadas no Amazon FSx for NetApp ONTAP. Além de tudo <block ref="ccc35ad3502dffbee7f06fd01d3728f9" category="inline-link-macro-rx"></block> , a BlueXP workload factory recebeu <block ref="87b5f9f30f065d1ad679fca208226814" category="inline-link-macro-rx"></block> .</block>
+  <block id="5bc45c9bf327952786de480d68cc107d" category="inline-link-macro">Solução AWS para implantação de aplicativos corporativos</block>
+  <block id="8097660ab0d3d7b21c8c1e1937f57a7a" category="paragraph">A fábrica de carga de trabalho Amazon FSx for NetApp ONTAP para BlueXP workload factory é uma <block ref="eada645bedd6ca3d760173ba22baf6b0" category="inline-link-macro-rx"></block> que foi criado com as melhores práticas bem arquitetadas em mente.</block>
 </blocks>
