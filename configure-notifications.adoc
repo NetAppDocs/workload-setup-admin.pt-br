@@ -98,11 +98,79 @@ Você pode reduzir o tráfego de notificações desnecessário e direcionar tipo
 
 === Filtrar notificações do Amazon SNS
 
-Ao assinar um tópico do Amazon SNS, você recebe todas as notificações publicadas nesse tópico por padrão. Se quiser receber apenas notificações específicas do tópico, você pode usar uma política de filtro para controlar quais notificações você recebe.
+Ao assinar um tópico do Amazon SNS, você recebe todas as notificações publicadas naquele tópico por padrão.  Se quiser receber apenas notificações específicas do tópico, você pode usar uma política de filtro para controlar quais notificações você recebe.  As políticas de filtro fazem com que o Amazon SNS entregue ao assinante somente as notificações que correspondem à política de filtro.
 
-Para obter mais informações sobre a criação de políticas de filtro, consulte o  https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html["Documentação do Amazon SNS"^] .
+Você pode filtrar notificações do Amazon SNS pelos seguintes critérios:
 
-Para exemplos de políticas de filtro, consulte  https://docs.aws.amazon.com/sns/latest/dg/example-filter-policies.html["Políticas de filtro de exemplo do Amazon SNS"^] .
+[cols="3*"]
+|===
+| Descrição | Nome do campo de política de filtro | Valores possíveis 
+
+
+| Tipo de recurso | `resourceType`  a| 
+* `DB`
+* `Microsoft SQL Server host`
+* `PostgreSQL Server host`
+
+
+
+
+| Workload | `workload` | `WLMDB` 
+
+
+| Prioridade | `priority`  a| 
+* `Success`
+* `Info`
+* `Recommendation`
+* `Warning`
+* `Error`
+* `Critical`
+
+
+
+
+| Tipo de notificação | `notificationType`  a| 
+* `Deployment`
+* `Well-architected`
+
+
+|===
+.Passos
+. No console do Amazon SNS, edite os detalhes da assinatura para o tópico do SNS.
+. Na área *Política de filtro de assinatura*, selecione filtrar por *Atributos de mensagem*.
+. Habilite a opção *Política de filtro de assinatura*.
+. Insira uma política de filtro JSON na caixa *Editor JSON*.
++
+Por exemplo, a seguinte política de filtro JSON aceita notificações do recurso do Microsoft SQL Server que estão relacionadas à carga de trabalho do WLMDB, têm prioridade de Sucesso ou Erro e fornecem detalhes sobre o status Bem-arquitetado:
+
++
+[source, json]
+----
+{
+  "accountId": [
+    "account-a"
+  ],
+  "resourceType": [
+    "Microsoft SQL Server host"
+  ],
+  "workload": [
+    "WLMDB"
+  ],
+  "priority": [
+    "Success",
+    "Error"
+  ],
+  "notificationType": [
+    "Well-architected"
+  ]
+}
+----
+. Selecione *Salvar alterações*.
+
+
+Para outros exemplos de políticas de filtro, consulte https://docs.aws.amazon.com/sns/latest/dg/example-filter-policies.html["Políticas de filtro de exemplo do Amazon SNS"^] .
+
+Para obter mais informações sobre a criação de políticas de filtro, consulte o https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html["Documentação do Amazon SNS"^] .
 
 
 
