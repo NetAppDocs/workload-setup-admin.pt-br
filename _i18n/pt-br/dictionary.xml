@@ -1251,4 +1251,13 @@
   <block id="302ef561e28f7d7cd13d1042cece78e1" category="list-text">Selecione *Salvar alterações*.</block>
   <block id="179469fcde96eae5af1f559799d08b2a" category="paragraph">Para outros exemplos de políticas de filtro, consulte<block ref="7c3f3bfbc0dabec1aca15cb9aeb0e326" category="inline-link-rx"></block> .</block>
   <block id="b52828f726867aaf1bf7b2a16b29e5e2" category="paragraph">Para obter mais informações sobre a criação de políticas de filtro, consulte o<block ref="c589c7fc86bb393dc58d099c6c8ea47e" category="inline-link-rx"></block> .</block>
+  <block id="f06afead014f9779fefbb6d2a2224bfd" category="cell">Falha na criação do relacionamento de replicação</block>
+  <block id="4d99e7fabf8a3228a9ae1e670f61053c" category="cell">A criação de um relacionamento de replicação do SnapMirror falhou.  Para mais informações, acesse o Tracker.</block>
+  <block id="8c340dc334134096f68b880b42a8692c" category="cell">Replicação</block>
+  <block id="278d01e5af56273bae1bb99a98b370cd" category="cell">Crítico</block>
+  <block id="c31576c9f98b33a8fa810835cefa86d2" category="cell">Armazenamento geral</block>
+  <block id="36df1b975561708b246ef1801ea416e5" category="cell">FSx para ONTAP</block>
+  <block id="521987edc4d9059fc32abee2d3f5d6ae" category="cell">Falha na criação do FSx para ONTAP</block>
+  <block id="dd34477f0a88e199c56ea0813db3e18d" category="cell">O processo de criação do sistema de arquivos FSx para ONTAP falhou.  Para mais informações, acesse o Tracker.</block>
+  <block id="dfe4f4248d3875aa3b31ac02e60b0e87" category="cell">Ação do sistema de arquivos FSx para ONTAP</block>
 </blocks>

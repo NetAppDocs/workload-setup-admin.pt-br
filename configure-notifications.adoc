@@ -31,6 +31,12 @@ A fábrica de carga de trabalho envia notificações para os seguintes eventos:
 
 
 | Falha na implantação do servidor Microsoft SQL Server/PostgreSQL | A implantação do host Microsoft SQL Server ou PostgreSQL falhou. Para mais informações, acesse o monitoramento de tarefas. | Implantação | Erro | Bancos de dados | FSx para ONTAP, host de banco de dados 
+
+
+| Falha na criação do relacionamento de replicação | A criação de um relacionamento de replicação do SnapMirror falhou.  Para mais informações, acesse o Tracker. | Replicação | Crítico | Armazenamento geral | FSx para ONTAP 
+
+
+| Falha na criação do FSx para ONTAP | O processo de criação do sistema de arquivos FSx para ONTAP falhou.  Para mais informações, acesse o Tracker. | Ação do sistema de arquivos FSx para ONTAP | Crítico | Armazenamento geral | FSx para ONTAP 
 |===
 
 
