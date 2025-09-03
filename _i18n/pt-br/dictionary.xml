@@ -234,7 +234,6 @@
   <block id="1ab964190acf4217fadb080cfcbe361f" category="paragraph">Implante e gerencie uma infraestrutura de geração de recuperação aumentada (RAG) para melhorar a precisão e a singularidade de suas aplicações de IA. Crie uma base de conhecimento RAG no FSX for ONTAP com segurança e conformidade de dados incorporados.</block>
   <block id="38bd169945a371832b0b65c9086b1792" category="inline-link">Workloads de banco de dados</block>
   <block id="7c05124c7bff1277e0dd98967825f03a" category="list-text"><block ref="7c05124c7bff1277e0dd98967825f03a" category="inline-link-rx"></block></block>
-  <block id="0b65135cac08d591d73cff9785b28f30" category="paragraph">Detecte seu estado de banco de dados existente na AWS, avalie possíveis economias de custo com o FSX for ONTAP, implante bancos de dados de ponta a ponta com práticas recomendadas incorporadas para otimização e automatize a thin cloning para pipelines de CI/CD.</block>
   <block id="a76e64a0fbf98a083080351e4cb67566" category="inline-link">Workloads da VMware</block>
   <block id="e555278247527c688d390729e5f7e123" category="list-text"><block ref="e555278247527c688d390729e5f7e123" category="inline-link-rx"></block></block>
   <block id="bc9eaabfc00230f2aa0ab1f9dfcfb994" category="paragraph">Simplifique migrações e operações com recomendações inteligentes e correção automática. Implante backups eficientes e recuperação de desastres robusta. Monitore e solucione problemas de VMs.</block>
@@ -318,7 +317,6 @@
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">1 de setembro de 2024</block>
   <block id="691e71734464aaf43017f5b033e54559" category="section-title">4 de agosto de 2024</block>
   <block id="1d949c7c5600289e10795f178278edd1" category="section-title">7 de julho de 2024</block>
-  <block id="d0a7edff5cd82c23f3d1c18e0779ccbc" category="doc">O que você pode fazer a seguir</block>
   <block id="452c8a300642b831148cf770baf1cd2f" category="paragraph">Detecte seu estado de banco de dados existente na AWS, avalie possíveis economias de custo movendo-se para o FSX for ONTAP, implante bancos de dados de ponta a ponta com práticas recomendadas incorporadas para otimização e automatize a thin cloning para pipelines de CI/CD.</block>
   <block id="462c14d3e045d4b0b69cee0781df3207" category="paragraph">Um workload engloba uma combinação de recursos, código e serviços ou aplicações, desenvolvidos para atender a uma meta de negócios. Isso pode ser qualquer coisa, desde um aplicativo voltado para o cliente até um processo de back-end. As cargas de trabalho podem envolver um subconjunto de recursos em uma única conta da AWS ou abranger várias contas.</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">Caraterísticas</block>
@@ -443,7 +441,6 @@
   <block id="70d0aaf5f480c6663d11cba807745150" category="paragraph">A fábrica de workloads é acessível aos usuários como um serviço de nuvem a partir do console baseado na Web. Antes de começar, você deve ter uma compreensão de <block ref="e8fd0c1fcb8ab0b007f06daaaaad1620" category="inline-link-macro-rx"></block> e <block ref="232f97f76b2e1af290ebde69715d8d8f" category="inline-link-macro-rx"></block>.</block>
   <block id="5aef544885f83ccc840e539c33cb1025" category="paragraph">Aceda ao<block ref="c88df82826d36e57e6bb9062bf07b8b2" category="inline-link-rx"></block>, registe-se e crie uma conta.</block>
   <block id="60606490df41979dfeb5466c4c9f1288" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Adicione credenciais da AWS à fábrica do workload</block>
-  <block id="51ff16c71246f19573efec76f8f088e4" category="paragraph">Agora que você se inscreveu, criou uma conta e, opcionalmente, adicionou credenciais da AWS, você pode começar a usar a fábrica de carga de trabalho para otimizar suas cargas de trabalho usando o FSX for ONTAP. Use os links abaixo para seguir instruções passo a passo para cada tipo de carga de trabalho.</block>
   <block id="9ec9485bf8174a52fd8f6a62564d8738" category="summary">A fábrica de workloads é acessível a partir de um console baseado na Web. Quando você começa a trabalhar com a fábrica de workloads, sua primeira etapa é se inscrever usando as credenciais existentes do site de suporte da NetApp ou criando um login na nuvem do NetApp.</block>
   <block id="a51339d19908e6fdb3902e2656db64d1" category="doc">Inscreva-se na fábrica de workloads da BlueXP </block>
   <block id="b63dadbd087bac2ed3df3e51784c2a44" category="paragraph">A fábrica de workloads do BlueXP  é acessível a partir de um console baseado na Web. Quando você começa a trabalhar com a fábrica de workloads, sua primeira etapa é se inscrever usando as credenciais existentes do site de suporte da NetApp ou criando um login na nuvem do NetApp.</block>
@@ -465,9 +462,6 @@
   <block id="2613fa59d7805a53043306264e81ba1a" category="summary">Saiba o que há de novo com os recursos de administração de fábrica de carga de trabalho: Credenciais de provedor de nuvem, aprimoramentos de Codebox e muito mais.</block>
   <block id="15653101633b93b4e086ba27efda4eae" category="doc">Novidades com os recursos de administração de fábrica do workload do BlueXP </block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">11 de novembro de 2024</block>
-  <block id="442602a2c8f7770016d621549f7964c6" category="summary">Agora que você fez login e configurou a fábrica da carga de trabalho, você pode criar e gerenciar os sistemas de arquivos FSX for ONTAP e usar outros recursos de fábrica de carga de trabalho.</block>
-  <block id="a2f53a8457ed9acfd2f72c4ae30c45de" category="doc">O que você pode fazer a seguir com a fábrica de carga de trabalho do BlueXP </block>
-  <block id="d6753fe2bb46e06b1aa2e353e485eca7" category="paragraph">Agora que você fez login e configurou a fábrica de carga de trabalho do BlueXP , você pode começar a usar vários recursos de fábrica de carga de trabalho, como criar sistemas de arquivos do Amazon FSX for ONTAP, implantar bancos de dados nos sistemas de arquivos do FSX for ONTAP e migrar configurações de máquina virtual para o VMware Cloud na AWS usando o FSX for ONTAP como armazenamentos de dados externos.</block>
   <block id="008afcec5c1c0f2fb38f3e66b5aa4738" category="summary">O BlueXP  Workload Factory é uma poderosa plataforma de gerenciamento de ciclo de vida projetada para ajudá-lo a otimizar suas cargas de trabalho usando os sistemas de arquivos do Amazon FSX for NetApp ONTAP.</block>
   <block id="023c9a2badb62edd0fd5c78e596a5be9" category="doc">Saiba mais sobre a fábrica de carga de trabalho da BlueXP </block>
   <block id="81b33a2e792e396aa73e06306a69815c" category="paragraph">O Amazon FSX para NetApp ONTAP fornece volumes de armazenamento NFS, SMB/CIFS e iSCSI nativos da AWS totalmente gerenciados para aplicações de missão crítica, bancos de dados, contêineres, armazenamentos de dados do VMware Cloud e arquivos de usuário. Você pode gerenciar o FSX for ONTAP por meio de fábrica de workloads e usando ferramentas nativas de gerenciamento da AWS.</block>
@@ -1260,4 +1254,10 @@
   <block id="521987edc4d9059fc32abee2d3f5d6ae" category="cell">Falha na criação do FSx para ONTAP</block>
   <block id="dd34477f0a88e199c56ea0813db3e18d" category="cell">O processo de criação do sistema de arquivos FSx para ONTAP falhou.  Para mais informações, acesse o Tracker.</block>
   <block id="dfe4f4248d3875aa3b31ac02e60b0e87" category="cell">Ação do sistema de arquivos FSx para ONTAP</block>
+  <block id="a819fc88b2635577c915933ee456de25" category="paragraph">Depois de se inscrever, criar uma conta e, opcionalmente, adicionar credenciais da AWS, você pode começar a usar o Workload Factory para otimizar suas cargas de trabalho usando o FSx for ONTAP.</block>
+  <block id="6a636f3ce643c351748a032eeaaa11b0" category="inline-link-macro">Otimize suas cargas de trabalho com FSx para ONTAP</block>
+  <block id="9f2ac12605258d5b9c839500e3fc7770" category="paragraph"><block ref="efcfd21ad3a99d834cf77c9ab08b5664" category="inline-link-macro-rx"></block> .</block>
+  <block id="d579c4b11db5f291683e63ef986a0f5e" category="summary">Depois de efetuar login e configurar o workload factory, você pode criar e gerenciar sistemas de arquivos FSx for ONTAP e usar outros recursos do workload factory.</block>
+  <block id="0a5d504d75a20cbec4103187ecd3e699" category="doc">Otimize cargas de trabalho com a fábrica de cargas de trabalho</block>
+  <block id="cc851373181948e2ac9056f188882266" category="paragraph">Depois de efetuar login e configurar o workload factory, você pode começar a usar vários recursos do workload factory, como criar o Amazon FSx para sistemas de arquivos ONTAP , implantar bancos de dados no FSx para sistemas de arquivos ONTAP e migrar configurações de máquinas virtuais para o VMware Cloud on AWS usando o FSx para sistemas de arquivos ONTAP como armazenamentos de dados externos.</block>
 </blocks>
