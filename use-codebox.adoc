@@ -2,36 +2,36 @@
 sidebar: sidebar 
 permalink: use-codebox.html 
 keywords: codebox, automation, cloudformation, rest api, aws cli, permissions 
-summary: Você pode usar o Codebox para gerar o código necessário para executar qualquer operação suportada pela fábrica de carga de trabalho do BlueXP . 
+summary: Você pode usar o Codebox para gerar o código necessário para executar qualquer operação suportada pelo NetApp Workload Factory. 
 ---
-= Use o Codebox para automação na fábrica de cargas de trabalho do BlueXP 
+= Use o Codebox para automação no NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Você pode usar o Codebox para gerar o código necessário para executar qualquer operação suportada pela fábrica de carga de trabalho do BlueXP . Você pode gerar código que pode ser consumido e executado usando APIs REST de fábrica de workloads, a CLI da AWS e o AWS CloudFormation.
+Você pode usar o Codebox para gerar o código necessário para executar qualquer operação suportada pelo NetApp Workload Factory.  Você pode gerar código que pode ser consumido e executado usando APIs REST do Workload Factory, a AWS CLI e o AWS CloudFormation.
 
-O Codebox é alinhado com os modos de operação da fábrica de carga de trabalho (_básico_, _somente leitura_ e _leitura/gravação_) preenchendo os dados apropriados no código com base nas permissões da AWS fornecidas na conta da fábrica de carga de trabalho para cada usuário. O código pode ser usado como um modelo onde você pode preencher informações ausentes (por exemplo, credenciais) ou personalizar determinados dados antes de executar o código.
+O Codebox está alinhado com os modos de operação do Workload Factory (_básico_, _somente leitura_ e _leitura/gravação_) preenchendo os dados apropriados no código com base nas permissões da AWS fornecidas na conta do Workload Factory para cada usuário.  O código pode ser usado como um modelo onde você pode preencher informações ausentes (por exemplo, credenciais) ou personalizar determinados dados antes de executar o código.
 
 
 
 == Como usar Codebox
 
-À medida que você insere valores nos assistentes de IU de fábrica da carga de trabalho, você pode ver a atualização de dados no Codebox ao concluir cada campo. Quando você concluir o assistente, mas antes de selecionar o botão *criar* na parte inferior da página, image:button-copy-codebox.png["o botão copy (cópia)"]selecione para copiar no Codebox para capturar o código necessário para criar sua configuração. Por exemplo, essa captura de tela da criação de um novo Microsoft SQL Server mostra as entradas do assistente para VPC e zonas de disponibilidade e as entradas equivalentes no Codebox para uma implementação de API REST.
+À medida que você insere valores nos assistentes da interface do usuário do Workload Factory, você pode ver a atualização dos dados no Codebox conforme preenche cada campo.  Quando você concluir o assistente, mas antes de selecionar o botão *Criar* na parte inferior da página, selecioneimage:button-copy-codebox.png["o botão copy (cópia)"] para copiar no Codebox para capturar o código necessário para construir sua configuração.  Por exemplo, esta captura de tela da criação de um novo Microsoft SQL Server mostra as entradas do assistente para VPC e zonas de disponibilidade e as entradas equivalentes no Codebox para uma implementação de API REST.
 
 image:screenshot-codebox-example1.png["Uma captura de tela mostrando como criar um Microsoft SQL Server na IU e as entradas correspondentes para VPC e zonas de disponibilidade no Codebox."]
 
-Com alguns formatos de código, você também pode selecionar o botão Download para salvar o código em um arquivo que você pode trazer para outro sistema. Se necessário, você pode editar o código após o download para que possa adaptá-lo a outras contas da AWS.
+Com alguns formatos de código, você também pode selecionar o botão de download para salvar o código em um arquivo que pode ser levado para outro sistema.  Se necessário, você pode editar o código após o download para adaptá-lo a outras contas da AWS.
 
 
 
 == Use o código do CloudFormation do Codebox
 
-Você pode copiar o código do CloudFormation gerado pelo Codebox e, em seguida, iniciar a pilha do Amazon Web Services CloudFormation na sua conta da AWS. O CloudFormation executará as ações que você definiu na IU de fábrica da carga de trabalho.
+Você pode copiar o código do CloudFormation gerado pelo Codebox e então iniciar a pilha do Amazon Web Services CloudFormation na sua conta da AWS.  O CloudFormation executará as ações que você definiu na interface do usuário do Workload Factory.
 
-As etapas para usar o código CLoudFormation podem ser diferentes dependendo se você está implantando um sistema de arquivos FSX for ONTAP, criando credenciais de conta ou executando outras ações de fábrica de carga de trabalho.
+As etapas para usar o código do CloudFormation podem ser diferentes dependendo se você está implantando um sistema de arquivos FSx para ONTAP , criando credenciais de conta ou executando outras ações do Workload Factory.
 
 Observe que o código dentro de um arquivo YAML gerado pelo CloudFormation expira após 7 dias por motivos de segurança.
 
@@ -76,28 +76,28 @@ Observe que o código dentro de um arquivo YAML gerado pelo CloudFormation expir
 
 
 .Passos
-. Depois de usar a IU para definir a operação que você deseja executar, copie o código na caixa de código.
+. Depois de usar o console do Workload Factory para definir a operação que deseja executar, copie o código no Codebox.
 . Selecione *Redirecionar para o CloudFormation* e a página Redirecionar para o CloudFormation será exibida.
 . Abra outra janela do navegador e faça login no Console de Gerenciamento da AWS.
 . Selecione *continuar* na página Redirecionar para o CloudFormation.
 . Faça login na conta da AWS onde o código deve ser executado.
 . Na página de pilha de criação rápida, em recursos, selecione *Eu reconheço que o AWS CloudFormation pode...*.
 . Selecione *criar pilha*.
-. Monitore o progresso da AWS ou da fábrica da carga de trabalho.
+. Monitore o progresso da AWS ou do Workload Factory.
 
 
 
 
 == Use o código API REST do Codebox
 
-Você pode usar as APIs REST de fábrica de carga de trabalho geradas pelo Codebox para implantar e gerenciar seus sistemas de arquivos FSX for ONTAP e outros recursos da AWS.
+Você pode usar as APIs REST do Workload Factory geradas pelo Codebox para implantar e gerenciar seus sistemas de arquivos FSx for ONTAP e outros recursos da AWS.
 
 Você pode executar as APIs de qualquer host que suporte curl e que tenha conetividade com a Internet.
 
 Observe que os tokens de autenticação estão ocultos no Codebox, mas eles são preenchidos quando você copia e cola a chamada da API.
 
 .Passos
-. Depois de usar a IU para definir a operação que você deseja executar, copie o código da API na caixa de código.
+. Depois de usar o console do Workload Factory para definir a operação que deseja executar, copie o código da API no Codebox.
 . Cole o código e execute-o em seu sistema host.
 
 
@@ -108,7 +108,7 @@ Observe que os tokens de autenticação estão ocultos no Codebox, mas eles são
 Você pode usar a CLI do Amazon Web Services gerada pelo Codebox para implantar e gerenciar seus sistemas de arquivos FSX for ONTAP e outros recursos da AWS.
 
 .Passos
-. Depois de usar a IU para definir a operação que deseja executar, copie a CLI da AWS na caixa de código.
+. Depois de usar o console do Workload Factory para definir a operação que deseja executar, copie a AWS CLI no Codebox.
 . Abra outra janela do navegador e faça login no Console de Gerenciamento da AWS.
 . Cole o código e execute-o.
 
@@ -125,7 +125,7 @@ Você pode usar o Terraform para implantar e gerenciar seus sistemas de arquivos
 
 
 .Passos
-. Depois de usar a interface do usuário para definir a operação que você deseja executar, baixe o código Terraform na caixa Codebox.
+. Depois de usar o console do Workload Factory para definir a operação que deseja executar, baixe o código do Terraform do Codebox.
 . Copie o arquivo de script baixado para o sistema em que o Terraform está instalado.
 . Extraia o arquivo zip e siga as etapas no arquivo README.md.
 

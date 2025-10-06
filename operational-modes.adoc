@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: operational-modes.html 
 keywords: modes, zero-trust, full-trust, read-only, basic, read/write, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
-summary: A fábrica de workloads oferece três modos operacionais que permitem controlar cuidadosamente o acesso entre a fábrica de workloads e o estado da nuvem com base em suas políticas DE TI. 
+summary: O NetApp Workload Factory fornece três modos operacionais que permitem controlar cuidadosamente o acesso entre o Workload Factory e seu ambiente de nuvem com base em suas políticas de TI. 
 ---
 = Saiba mais sobre os modos operacionais e as credenciais da AWS
 :allow-uri-read: 
@@ -11,20 +11,20 @@ summary: A fábrica de workloads oferece três modos operacionais que permitem c
 
 
 [role="lead"]
-A fábrica de workloads oferece três modos operacionais que permitem controlar cuidadosamente o acesso entre a fábrica de workloads e o estado da nuvem com base em suas políticas DE TI. O modo operacional usado é determinado pelo nível de permissões da AWS que você fornece à fábrica de carga de trabalho.
+O NetApp Workload Factory fornece três modos operacionais que permitem controlar cuidadosamente o acesso entre o Workload Factory e seu ambiente de nuvem com base em suas políticas de TI.  O modo operacional que você usa é determinado pelo nível de permissões da AWS que você fornece ao Workload Factory.
 
 
 
 == Modos operacionais
 
-Os modos operacionais fornecem uma organização lógica da funcionalidade e dos recursos fornecidos pela fábrica da carga de trabalho, conforme correlacionados ao nível de confiança que você atribui. O principal objetivo nos modos operacionais é comunicar claramente quais tarefas a fábrica de carga de trabalho pode ou não executar em sua conta da AWS.
+Os modos operacionais fornecem uma organização lógica da funcionalidade e dos recursos fornecidos pelo Workload Factory, correlacionados ao nível de confiança que você atribui.  O principal objetivo nos modos operacionais é comunicar claramente quais tarefas o Workload Factory pode ou não executar na sua conta da AWS.
 
-Modo básico:: Representa um relacionamento de confiança zero em que nenhuma permissão da AWS é atribuída à fábrica de carga de trabalho. Ele é projetado para exploração precoce da fábrica de carga de trabalho e uso dos vários assistentes para criar a infraestrutura necessária como código (IAC). Você pode copiar o código e usá-lo na AWS inserindo suas credenciais da AWS manualmente.
-Modo só de leitura:: Melhora a experiência do modo básico adicionando permissões somente leitura para que os modelos IAC sejam preenchidos com suas variáveis específicas (por exemplo, VPC, grupos de segurança, etc.). Isso permite que você execute o IAC diretamente da sua conta da AWS sem fornecer permissões de modificação para a fábrica de carga de trabalho.
-Modo de leitura/escrita:: Representa um relacionamento de confiança total para que a fábrica da carga de trabalho seja atribuída com permissões completas. Isso permite que a fábrica de carga de trabalho execute e automatize operações na AWS em seu nome, juntamente com as credenciais atribuídas que têm as permissões necessárias para execução.
+Modo básico:: Representa um relacionamento de confiança zero em que nenhuma permissão da AWS é atribuída ao Workload Factory.  Ele foi projetado para exploração inicial do Workload Factory e uso de vários assistentes para criar a infraestrutura como código (IaC) necessária.  Você pode copiar o código e usá-lo na AWS inserindo suas credenciais da AWS manualmente.
+Modo só de leitura:: Melhora a experiência do modo básico adicionando permissões somente leitura para que os modelos IaC sejam preenchidos com suas variáveis específicas (por exemplo, VPC, grupos de segurança, etc.).  Isso permite que você execute o IaC diretamente da sua conta da AWS sem fornecer nenhuma permissão de modificação ao Workload Factory.
+Modo de leitura/escrita:: Representa uma relação de confiança total para que o Workload Factory receba permissões totais.  Isso permite que o Workload Factory execute e automatize operações na AWS em seu nome, juntamente com as credenciais atribuídas que têm as permissões necessárias para execução.
 
 
-Saiba mais link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Permissões para a fábrica de carga de trabalho do BlueXP "]sobre o .
+Saiba mais sobre link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["permissões para NetApp Workload Factory"] .
 
 
 
@@ -34,7 +34,7 @@ Os recursos disponíveis usando cada um dos modos aumentam com cada modo.
 
 [cols="12h,22,22,22,22"]
 |===
-| Modo | Automação de fábrica de workloads | Automação na AWS usando IAC | Descoberta de recursos da AWS e conclusão automática | Monitorização do progresso 
+| Modo | Automação da Workload Factory | Automação na AWS usando IAC | Descoberta de recursos da AWS e conclusão automática | Monitorização do progresso 
 
 
 | Básico | Não | Modelo IAC minimamente completo | Não | Não 
@@ -49,7 +49,7 @@ Os recursos disponíveis usando cada um dos modos aumentam com cada modo.
 
 === Requisitos do modo operacional
 
-Não há nenhum seletor que você precise definir na fábrica da carga de trabalho para identificar qual modo você está planejando usar. O modo é determinado com base nas credenciais e permissões da AWS que você atribui à sua conta de fábrica de carga de trabalho.
+Não há nenhum seletor que você precise definir no Workload Factory para identificar qual modo você planeja usar.  O modo é determinado com base nas credenciais e permissões da AWS que você atribui à sua conta do Workload Factory.
 
 [cols="16h,35,35"]
 |===
@@ -70,9 +70,9 @@ https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["Saiba mais
 
 === Exemplos de modo operacional
 
-Você pode configurar suas credenciais para fornecer um modo para um componente de carga de trabalho e outro modo para outro componente. Por exemplo, você pode configurar o modo de leitura/gravação para operações nas quais está implantando e gerenciando o FSx para sistemas de arquivos ONTAP, mas configurar apenas o modo somente leitura para criar e implantar cargas de trabalho de banco de dados usando o workload factory.
+Você pode configurar suas credenciais para fornecer um modo para um componente de carga de trabalho e outro modo para outro componente.  Por exemplo, você pode configurar o modo de leitura/gravação para operações nas quais está implantando e gerenciando o FSx para sistemas de arquivos ONTAP , mas configurar apenas o modo somente leitura para criar e implantar cargas de trabalho de banco de dados usando o Workload Factory.
 
-Você pode fornecer esses recursos em um único conjunto de credenciais em uma conta de fábrica de workload ou criar vários conjuntos de credenciais quando cada credencial fornece recursos exclusivos de implantação de workload.
+Você pode fornecer esses recursos em um único conjunto de credenciais em uma conta do Workload Factory ou pode criar vários conjuntos de credenciais quando cada credencial fornecer recursos exclusivos de implantação de carga de trabalho.
 
 
 
@@ -82,7 +82,7 @@ Os usuários da conta que utilizarem as credenciais que receberam as seguintes p
 
 image:screenshot-credentials1.png["Uma captura de tela mostrando um conjunto de credenciais que fornecem dois tipos de permissões de carga de trabalho."]
 
-No entanto, eles não terão controles de automação para criar e implantar cargas de trabalho VMware (modo básico) a partir da fábrica de cargas de trabalho. Se quiserem criar cargas de trabalho VMware, precisarão copiar o código da caixa de código, fazer login na conta da AWS manualmente e preencher manualmente as entradas ausentes no código gerado para usar essa funcionalidade.
+No entanto, eles não terão controles de automação para criar e implantar cargas de trabalho do VMware (modo Básico) do Workload Factory.  Se quiserem criar cargas de trabalho do VMware, eles precisarão copiar o código do Codebox, fazer login na conta da AWS manualmente e preencher manualmente as entradas ausentes no código gerado para usar essa funcionalidade.
 
 
 
@@ -115,10 +115,10 @@ Nós projetamos um fluxo de Registro de credenciais do AWS assumir a função qu
 
 === Uma ou mais credenciais da AWS
 
-Ao usar sua primeira funcionalidade de fábrica de workload (ou recursos), você precisará criar as credenciais usando as permissões necessárias para esses recursos de workload. Você adicionará as credenciais à fábrica da carga de trabalho, mas precisará acessar o Console de Gerenciamento da AWS para criar a função e a política do IAM. Essas credenciais estarão disponíveis na sua conta ao usar qualquer funcionalidade na fábrica de carga de trabalho.
+Ao usar seu primeiro recurso (ou recursos) do Workload Factory, você precisará criar as credenciais usando as permissões necessárias para esses recursos de carga de trabalho.  Você adicionará as credenciais ao Workload Factory, mas precisará acessar o AWS Management Console para criar a função e a política do IAM.  Essas credenciais estarão disponíveis na sua conta ao usar qualquer recurso do Workload Factory.
 
 Seu conjunto inicial de credenciais da AWS pode incluir uma política do IAM para uma funcionalidade ou para vários recursos. Depende apenas das suas necessidades de negócio.
 
-Adicionar mais de um conjunto de credenciais da AWS à fábrica de workloads fornece permissões adicionais necessárias para usar recursos adicionais, como os sistemas de arquivos FSX for ONTAP, implantar bancos de dados no FSX for ONTAP, migrar cargas de trabalho VMware e muito mais.
+Adicionar mais de um conjunto de credenciais da AWS ao Workload Factory fornece permissões adicionais necessárias para usar recursos adicionais, como FSx para sistemas de arquivos ONTAP , implantar bancos de dados no FSx para ONTAP, migrar cargas de trabalho do VMware e muito mais.
 
-link:add-credentials.html["Saiba como adicionar credenciais da AWS à fábrica de cargas de trabalho"].
+link:add-credentials.html["Aprenda como adicionar credenciais da AWS ao Workload Factory"] .

@@ -1,23 +1,23 @@
 ---
 sidebar: sidebar 
 permalink: use-cloudshell.html 
-keywords: cloudshell, command line, aws cli, ontap cli, bluexp workload factory, workload factory 
-summary: Você pode usar o CloudShell de qualquer lugar na interface de usuário de fábrica de carga de trabalho do BlueXP  para emitir comandos da AWS ou da ONTAP CLI. 
+keywords: cloudshell, command line, aws cli, ontap cli, NetApp Workload Factory, Workload Factory 
+summary: Você pode usar o CloudShell de qualquer lugar na interface do usuário do NetApp Workload Factory para emitir comandos AWS ou ONTAP CLI. 
 ---
-= Use o CloudShell na fábrica de cargas de trabalho do BlueXP 
+= Usar o CloudShell no NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Abra o CloudShell para executar comandos de CLI da AWS ou do ONTAP de qualquer lugar na interface de usuário de fábrica de carga de trabalho do BlueXP .
+Abra o CloudShell para executar comandos AWS ou ONTAP CLI de qualquer lugar no console do NetApp Workload Factory.
 
 
 
 == Sobre esta tarefa
 
-O CloudShell permite que você execute comandos de CLI da AWS ou comandos de CLI do ONTAP em um ambiente semelhante a shell a partir da interface de usuário de fábrica de carga de trabalho do BlueXP . Ele simula sessões de terminal no navegador, fornecendo recursos de terminal e mensagens de proxy através do back-end da fábrica de carga de trabalho. Ele permite que você use as credenciais da AWS e as credenciais do ONTAP fornecidas na sua conta do BlueXP .
+O CloudShell permite que você execute comandos AWS CLI ou ONTAP CLI em um ambiente semelhante a um shell a partir do console do Workload Factory.  Ele simula sessões de terminal no navegador, fornecendo recursos de terminal e enviando mensagens por meio do backend do Workload Factory.  Ele permite que você use as credenciais da AWS e as credenciais do ONTAP que você forneceu na sua conta NetApp .
 
 Os recursos do CloudShell incluem:
 
@@ -32,53 +32,42 @@ Os recursos do CloudShell incluem:
 
 
 
-=== Comandos do CloudShell
+== Comandos do CloudShell
 
 Na interface GUI do CloudShell, você pode entrar `help` para exibir os comandos do CloudShell disponíveis. Depois de emitir o `help` comando, aparece a seguinte referência.
 
-Descrição:: O NetApp CloudShell é uma interface GUI integrada à fábrica de cargas de trabalho do BlueXP  que permite executar comandos de CLI da AWS ou comandos de CLI do ONTAP em um ambiente semelhante a um shell. Ele simula sessões de terminal no navegador, fornecendo recursos de terminal e mensagens de proxy através do back-end na fábrica de carga de trabalho. Ele permite que você use as credenciais da AWS e as credenciais do ONTAP fornecidas na sua conta do BlueXP .
-Comandos disponíveis::
-+
---
+.Descrição
+O NetApp CloudShell é uma interface GUI incorporada ao NetApp Workload Factory que permite executar comandos AWS CLI ou ONTAP CLI em um ambiente semelhante a um shell.  Ele simula sessões de terminal no navegador, fornecendo recursos de terminal e enviando mensagens por meio do backend no Workload Factory.  Ele permite que você use as credenciais da AWS e as credenciais do ONTAP que você forneceu na sua conta NetApp .
+
+.Comandos disponíveis
 * `clear`
 * `help`
 * `[--fsx <fsxId>] <ontap-command> [parameters]`
 * `aws <aws-command> <aws-sub-command> [parameters]`
 
 
---
-Contexto:: Cada sessão de terminal é executada em um contexto específico: Credenciais, região e, opcionalmente, o sistema de arquivos FSX for ONTAP.
-+
---
-Todos os comandos da AWS são executados no contexto fornecido. Os comandos da AWS só serão bem-sucedidos se as credenciais fornecidas tiverem permissões na região especificada.
+.Contexto
+Cada sessão de terminal é executada em um contexto específico: Credenciais, região e, opcionalmente, o sistema de arquivos FSX for ONTAP.
 
-Você pode especificar comandos ONTAP com um opcional `fsxId`. Se você fornecer um `fsxId` comando ONTAP individual, esse ID substituirá o ID no contexto. Se a sessão do terminal não tiver um contexto de ID do sistema de arquivos FSX for ONTAP, você deve fornecer `fsxId` cada comando ONTAP.
++ Todos os comandos da AWS são executados no contexto fornecido.  Os comandos da AWS só terão sucesso se as credenciais fornecidas tiverem permissões na região especificada.
 
-Para atualizar diferentes especificidades de contexto, faça o seguinte: * Para alterar credenciais: "Usando credenciais <credentialId>" * para alterar a região: "Usando região <regionCode>" * para alterar o sistema de arquivos fsx for ONTAP: "Usando o fsx <fileSystemId>"
++ Você pode especificar comandos ONTAP com um opcional `fsxId` .  Se você fornecer um `fsxId` com um comando ONTAP individual, esse ID substitui o ID no contexto.  Se a sessão do terminal não tiver um contexto de ID do sistema de arquivos FSx para ONTAP , você deverá fornecer `fsxId` com cada comando ONTAP .
 
---
-Mostrando itens::
-+
---
++ Para atualizar diferentes especificidades de contexto, faça o seguinte: * Para alterar credenciais: "usando credenciais <credentialId>" * Para alterar região: "usando região <regionCode>" * Para alterar FSx para sistema de arquivos ONTAP : "usando fsx <fileSystemId>"
+
+.Mostrando itens
 * Para mostrar credenciais disponíveis: "Mostrar credenciais"
 * Para mostrar as regiões disponíveis: "Mostrar regiões"
 * Para mostrar o histórico de comandos: "Show history"
 
 
---
-Variáveis:: A seguir estão exemplos de configuração e uso de variáveis. Se um valor de variável contiver espaços, você deve configurá-lo dentro de aspas.
-+
---
-* Para definir uma variável: <variable>: <value>
-* Para usar uma variável: <variable>
-* Exemplo definindo uma variável: svm1 USD svm123
-* Exemplo usando uma variável: --fsx filesystem-1 volumes show --vserver USD svm1
-* Exemplo definindo uma variável com valor de string comment1
+.Variáveis
+A seguir estão exemplos de configuração e uso de variáveis. Se um valor de variável contiver espaços, você deve configurá-lo dentro de aspas.
 
++ * Para definir uma variável: $<variável> = <valor> * Para usar uma variável: $<variável> * Exemplo de configuração de uma variável: $svm1 = svm123 * Exemplo de uso de uma variável: --fsx FileSystem-1 volumes show --vserver $svm1 * Exemplo de configuração de uma variável com valor de string $comment1 = "Um comentário com espaços"
 
---
-Operadores:: Os operadores de shell, como pipe `|`, execução em segundo plano `&` e redirecionamento, `>` não são suportados. A execução do comando falhará se você incluir esses operadores.
-
+.Operadores
+Os operadores de shell, como pipe `|`, execução em segundo plano `&` e redirecionamento, `>` não são suportados. A execução do comando falhará se você incluir esses operadores.
 
 
 
@@ -93,15 +82,15 @@ NOTE: O CloudShell está disponível para você executar qualquer comando AWS ou
 
 == Implante o CloudShell
 
-Você pode implantar o CloudShell de qualquer lugar no console de fábrica de carga de trabalho do BlueXP . Você também pode implantar o CloudShell a partir do armazenamento a partir de um sistema de arquivos FSX for ONTAP.
+Você pode implantar o CloudShell de qualquer lugar no console do NetApp Workload Factory.  Você também pode implantar o CloudShell a partir do NetApp Console.
 
 [role="tabbed-block"]
 ====
-.Implante a partir do console de fábrica do workload
+.Implantar a partir do console do Workload Factory
 --
 .Passos
-. Inicie sessão utilizando uma das link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
-. Abra o CloudShell image:cloudshell-icon.png["Captura de tela do ícone cloudshell"]na barra de navegação superior.
+. Faça login no https://console.workloads.netapp.com["Console da Workload Factory"^] .
+. No menu, selecione *Administração* e depois *CloudShell*.
 . Na janela do CloudShell, selecione credenciais e região para a sessão do CloudShell e, em seguida, selecione a seta para continuar.
 +
 image:screenshot-deploy-cloudshell-session.png["Captura de tela que mostra uma nova sessão do CloudShell."]
@@ -119,14 +108,15 @@ Se ocorrer um erro após a emissão de um comando ONTAP CLI, selecione o ícone 
 
 
 --
-.Implante a partir do Storage
+.Implantar a partir do console NetApp
 --
 .Passos
-. Inicie sessão utilizando uma das link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
-. Em *armazenamento*, selecione *ir para inventário de armazenamento*.
-. Na guia *FSX for ONTAP*, selecione o menu de três pontos do sistema de arquivos e selecione *abrir o CloudShell*.
+. Faça login nolink:https://console.netapp.com["Console NetApp"^] .
+. No menu, selecione *Cargas de trabalho* e depois *Administração*.
+. No menu Administração, selecione *CloudShell*.
+. Na janela do CloudShell, selecione credenciais e região para a sessão do CloudShell e, em seguida, selecione a seta para continuar.
 +
-Uma sessão do CloudShell é aberta no contexto do sistema de arquivos selecionado.
+image:screenshot-deploy-cloudshell-session.png["Captura de tela que mostra uma nova sessão do CloudShell."]
 
 . Digite `help` para exibir os comandos e as instruções disponíveis do CloudShell ou consulte os seguintes documentos de referência da CLI para obter os comandos disponíveis:
 +
@@ -142,9 +132,9 @@ Se ocorrer um erro após a emissão de um comando ONTAP CLI, selecione o ícone 
 
 --
 ====
-As tarefas do CloudShell mostradas nesta captura de tela podem ser concluídas selecionando o menu de três pontos de uma guia de sessão aberta do CloudShell. Segue-se as instruções para cada uma destas tarefas.
+As tarefas do CloudShell mostradas nesta captura de tela podem ser concluídas selecionando o menu de ações de uma guia de sessão aberta do CloudShell.  Seguem as instruções para cada uma dessas tarefas.
 
-image:screenshot-cloudshell-tab-menu.png["Captura de tela que mostra o menu de três pontos do CloudShell Tab com opções como renomear, duplicar, fechar outras guias e fechar tudo."]
+image:screenshot-cloudshell-tab-menu.png["Captura de tela que mostra o menu de ações da guia do CloudShell com opções como renomear, duplicar, fechar outras guias e fechar tudo."]
 
 
 
@@ -153,7 +143,7 @@ image:screenshot-cloudshell-tab-menu.png["Captura de tela que mostra o menu de t
 Você pode renomear uma guia de sessão do CloudShell para ajudá-lo a identificar a sessão.
 
 .Passos
-. Selecione o menu de três pontos da guia sessão do CloudShell.
+. Selecione o menu de ações da guia de sessão do CloudShell.
 . Selecione *Renomear*.
 . Insira um novo nome para a guia sessão e clique fora do nome da guia para definir o novo nome.
 
@@ -168,7 +158,7 @@ O novo nome aparece na guia sessão do CloudShell.
 Você pode duplicar uma guia de sessão do CloudShell para criar uma nova sessão com o mesmo nome, credenciais e região. O código da guia original não é duplicado na guia duplicada.
 
 .Passos
-. Selecione o menu de três pontos da guia sessão do CloudShell.
+. Selecione o menu de ações da guia de sessão do CloudShell.
 . Selecione *duplicar*.
 
 
@@ -182,7 +172,7 @@ O novo separador é apresentado com o mesmo nome que o separador original.
 Você pode fechar as guias do CloudShell uma de cada vez, fechar outras guias nas quais não está trabalhando ou fechar todas as guias de uma vez.
 
 .Passos
-. Selecione o menu de três pontos da guia sessão do CloudShell.
+. Selecione o menu de ações da guia de sessão do CloudShell.
 . Selecione uma das seguintes opções:
 +
 ** Selecione "X" na janela da guia CloudShell para fechar uma guia de cada vez.
@@ -205,18 +195,6 @@ Você pode dividir as guias de sessão do CloudShell para exibir duas ou mais gu
 Arraste e solte as guias de sessão do CloudShell para a parte superior, inferior, esquerda ou direita da janela do CloudShell para dividir a exibição.
 
 image:screenshot-cloudshell-split-view.png["Captura de tela que mostra duas guias do CloudShell divididas horizontalmente. As patilhas aparecem lado a lado."]
-
-
-
-== Reabra sua última sessão do CloudShell
-
-Se por acaso você fechar sua sessão do CloudShell, você pode reabri-la.
-
-.Passo
-Selecione o ícone do CloudShell image:cloudshell-icon.png["Captura de tela do ícone cloudshell"]na barra de navegação superior.
-
-.Resultado
-As últimas sessões do CloudShell são abertas.
 
 
 

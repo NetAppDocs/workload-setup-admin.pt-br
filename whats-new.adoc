@@ -2,16 +2,44 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 'Saiba o que há de novo com os recursos de administração de fábrica de carga de trabalho: Credenciais de provedor de nuvem, aprimoramentos de Codebox e muito mais.' 
+summary: 'Saiba o que há de novo nos recursos de administração do Workload Factory: credenciais do provedor de nuvem, aprimoramentos do Codebox e muito mais.' 
 ---
-= Novidades com os recursos de administração de fábrica do workload do BlueXP 
+= Novidades nos recursos de administração do NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Saiba o que há de novo com os recursos de administração de fábrica de carga de trabalho: Credenciais de provedor de nuvem, aprimoramentos de Codebox e muito mais.
+Saiba o que há de novo nos recursos de administração do Workload Factory: credenciais do provedor de nuvem, aprimoramentos do Codebox e muito mais.
+
+
+
+== 06 de outubro de 2025
+
+
+
+=== BlueXP workload factory agora NetApp Workload Factory
+
+O BlueXP foi renomeado e redesenhado para refletir melhor o papel que ele tem no gerenciamento da sua infraestrutura de dados. Como resultado, a BlueXP workload factory foi renomeada para NetApp Workload Factory.
+
+
+
+=== Integração do Ask Me com o MCP
+
+O Ask Me, assistente de IA da Workload Factory, é integrado ao Model Context Protocol (MCP).  Usando o MCP, o Ask Me interage com segurança com ambientes externos e consulta ferramentas de API para fornecer respostas personalizadas para seu ambiente de armazenamento específico.
+
+
+
+== 05 de outubro de 2025
+
+
+
+=== Nova notificação para armazenamento
+
+O serviço de notificação do NetApp Workload Factory inclui a notificação para problemas bem arquitetados para armazenamento.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Notificações para NetApp Workload Factory"]
 
 
 
