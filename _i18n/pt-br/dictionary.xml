@@ -1261,7 +1261,6 @@
   <block id="a77641000b55773f3d4f4abfc8eaa6ac" category="sidebar">Otimize cargas de trabalho com o Workload Factory</block>
   <block id="bec1e3daee54f5a9410751eb03bd867e" category="sidebar">Administrar Fábrica de Carga de Trabalho</block>
   <block id="7ffef60a0bb1e63a8505f9e4285dab5f" category="sidebar">Efetue login no Workload Factory</block>
-  <block id="9d4ab4efb1eff322f698ff725220f0c6" category="paragraph">O serviço de notificação do NetApp Workload Factory inclui a notificação para gerenciamento automático de capacidade de armazenamento.</block>
   <block id="8880bf2394c75ebe6ed859ae103855bd" category="cell">Capacidade SSD automática ou inodes aumentam o sucesso</block>
   <block id="0f4ae4b5b0836264a3d9e9d0e29731c8" category="cell">Durante uma atualização recente de gerenciamento automático de capacidade, o sistema de arquivos FSx para ONTAP aumentou a capacidade do SSD ou os inodes de volume com sucesso. Para mais informações, acesse o Tracker.</block>
   <block id="1d19e21de0f93b11f5ceb8b535a3afc2" category="cell">Gestão de capacidade</block>
@@ -1269,4 +1268,7 @@
   <block id="8ae74df732197be5b987055e70bb307d" category="cell">Falha automática de aumento de capacidade ou inodes do SSD</block>
   <block id="564359bbc40d00ebaa88afdacbe218a7" category="cell">Durante uma atualização recente de gerenciamento automático de capacidade, o sistema de arquivos FSx para ONTAP falhou ao aumentar a capacidade do SSD ou os inodes de volume. Para mais informações, acesse o Tracker.</block>
   <block id="b271a75b2d121a8cb5f59ae458394323" category="section-title">09 de setembro de 2025</block>
+  <block id="fd46c6801c12745a0b45c3f9e025fb2e" category="paragraph">O serviço de notificação de BlueXP workload factory inclui a notificação para gerenciamento automático de capacidade para armazenamento.</block>
+  <block id="28a2c493e9a663d617e582302e1bcf28" category="inline-link-macro">Notificações para a BlueXP workload factory</block>
+  <block id="a4bdb4b5125441fbfaec27ac4bb48be0" category="paragraph"><block ref="a4bdb4b5125441fbfaec27ac4bb48be0" category="inline-link-macro-rx"></block></block>
 </blocks>
