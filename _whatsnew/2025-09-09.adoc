@@ -1,0 +1,11 @@
+= Nova notificação para armazenamento
+:allow-uri-read: 
+
+
+
+
+=== Nova notificação para armazenamento
+
+O serviço de notificação do NetApp Workload Factory inclui a notificação para gerenciamento automático de capacidade de armazenamento.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Notificações para NetApp Workload Factory"]

@@ -39,6 +39,12 @@ O Workload Factory envia notificações para os seguintes eventos:
 | Falha na criação do FSx para ONTAP | O processo de criação do sistema de arquivos FSx para ONTAP falhou.  Para mais informações, acesse o Tracker. | Ação do sistema de arquivos FSx para ONTAP | Crítico | Armazenamento geral | FSx para ONTAP 
 
 
+| Capacidade SSD automática ou inodes aumentam o sucesso | Durante uma atualização recente de gerenciamento automático de capacidade, o sistema de arquivos FSx para ONTAP aumentou a capacidade do SSD ou os inodes de volume com sucesso. Para mais informações, acesse o Tracker. | Gestão de capacidade | Sucesso | Armazenamento geral | FSx para arquivo ONTAP 
+
+
+| Falha automática de aumento de capacidade ou inodes do SSD | Durante uma atualização recente de gerenciamento automático de capacidade, o sistema de arquivos FSx para ONTAP falhou ao aumentar a capacidade do SSD ou os inodes de volume. Para mais informações, acesse o Tracker. | Gestão de capacidade | Crítico | Armazenamento geral | FSx para sistemas de arquivos ONTAP 
+
+
 | Problema detectado no FSx para ONTAP | Todos os sistemas de arquivos FSx para ONTAP foram analisados ​​em busca de problemas de boa arquitetura.  A verificação detectou um ou mais problemas.  Para obter mais informações, revise a análise bem arquitetada do painel de armazenamento no console do Workload Factory. | Análise bem arquitetada | Recomendação | Armazenamento geral | FSx para sistemas de arquivos ONTAP 
 |===
 
