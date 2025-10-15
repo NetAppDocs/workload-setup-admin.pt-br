@@ -34,6 +34,7 @@ Os formatos de código suportados incluem:
 * APIs REST da Workload Factory
 * CLI DA AWS
 * AWS CloudFormation
+* Terraform
 
 
 
