@@ -1315,206 +1315,208 @@ Implantação
 | Leitura/escrita 
 
 
-.2+| Obtenha os detalhes do FSX for ONTAP | fsx:DescribeFileSystemAliases  a| 
-Implantação
-| Leitura/escrita 
+| Obtenha os detalhes do FSX for ONTAP | fsx:DescribeFileSystemAliases | Implantação | Leitura/escrita 
 
 
-| Redimensione o sistema de arquivos FSX for ONTAP para corrigir o espaço livre do sistema de arquivos | fsx:UpdateFilesystem | Otimização 
+| Redimensione o sistema de arquivos FSX for ONTAP para corrigir o espaço livre do sistema de arquivos | fsx:UpdateFilesystem | Otimização | Leitura/escrita 
 
 
-| Leitura/escrita | Redimensione volumes para corrigir os tamanhos de unidades de log e TempDB | fsx:Updatevolume | Otimização 
+| Redimensione volumes para corrigir os tamanhos de unidades de log e TempDB | fsx:Updatevolume | Otimização | Leitura/escrita 
 
 
-| Leitura/escrita .3+| Obtenha os detalhes das chaves do KMS e use a criptografia FSX for ONTAP | Kms:CreateGrant | Implantação 
+.3+| Obtenha os detalhes das chaves do KMS e use a criptografia FSX for ONTAP | Kms:CreateGrant | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | kms:DescreverCustomKeyStores | Implantação 
+| kms:DescreverCustomKeyStores | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | Kms:GenerateDataKey | Implantação 
+| Kms:GenerateDataKey | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita .8+| Crie logs do CloudWatch para scripts de validação e provisionamento executados em instâncias do EC2 | Logs:CreateLogGroup | Implantação 
+.8+| Crie logs do CloudWatch para scripts de validação e provisionamento executados em instâncias do EC2 | Logs:CreateLogGroup | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | Logs:CreateLogStream | Implantação 
+| Logs:CreateLogStream | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | Logs:DescribeLogStreams  a| 
+| Logs:DescribeLogStreams  a| 
 * Implantação
 * Avaliação
 
+| Leitura/escrita 
 
 
-
-| Leitura/escrita | registros:GetLogGroupFields | Implantação 
-
-
-| Leitura/escrita | registros: Obter Registro de Log | Implantação 
+| registros:GetLogGroupFields | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | Registos:ListLogDeliveries | Implantação 
+| registros: Obter Registro de Log | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | Logs:PutLogEvents  a| 
+| Registos:ListLogDeliveries | Implantação | Leitura/escrita 
+
+
+| Logs:PutLogEvents  a| 
 * Implantação
 * Gerenciar operações
 
+| Leitura/escrita 
 
 
+| Logs:TagResource | Implantação | Leitura/escrita 
 
-| Leitura/escrita | Logs:TagResource | Implantação 
 
-
-| Leitura/escrita | O Workload Factory alterna para logs do Amazon CloudWatch para a instância SQL ao encontrar truncamento de saída do SSM | Logs:GetLogEvents  a| 
+| O Workload Factory alterna para logs do Amazon CloudWatch para a instância SQL ao encontrar truncamento de saída do SSM | Logs:GetLogEvents  a| 
 * Avaliação de armazenamento (otimização)
 * Inventário
-
-
-
 
  a| 
 * Somente leitura
 * Leitura/escrita
+
+
+
 
 | Permitir que o Workload Factory obtenha grupos de log atuais e verificar se a retenção está definida para grupos de log criados pelo Workload Factory | Logs:DescribeLogGroups  a| 
 * Avaliação de armazenamento (otimização)
 * Inventário
 
+| Somente leitura 
 
 
-
-| Somente leitura | Permitir que o Workload Factory defina uma política de retenção de um dia para grupos de log criados pelo Workload Factory para evitar acúmulo desnecessário de fluxos de log para saídas de comando do SSM | Logs:PutRetentationPolicy  a| 
+| Permitir que o Workload Factory defina uma política de retenção de um dia para grupos de log criados pelo Workload Factory para evitar acúmulo desnecessário de fluxos de log para saídas de comando do SSM | Logs:PutRetentationPolicy  a| 
 * Avaliação de armazenamento (otimização)
 * Inventário
-
-
-
 
  a| 
 * Somente leitura
 * Leitura/escrita
 
-| Crie segredos em uma conta de usuário para as credenciais fornecidas para SQL, domínio e FSX para ONTAP | Servicequotas:ListServiceQuotes | Implantação 
 
 
-| Leitura/escrita .2+| Liste os tópicos do SNS do cliente e publique no SNS de back-end do WLMDB, bem como no SNS do cliente, se selecionado | sns:ListTopics | Implantação 
+
+| Crie segredos em uma conta de usuário para as credenciais fornecidas para SQL, domínio e FSX para ONTAP | Servicequotas:ListServiceQuotes | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | sns:publicar | Implantação 
+.2+| Liste os tópicos do SNS do cliente e publique no SNS de back-end do WLMDB, bem como no SNS do cliente, se selecionado | sns:ListTopics | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita .11+| Permissões de SSM necessárias para executar o script de descoberta em instâncias SQL provisionadas e buscar a lista mais recente de regiões AWS compatíveis com o FSX para ONTAP. | ssm: Aplicação de segurança | Implantação 
+| sns:publicar | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | ssm:PutConfigurePackageResult | Implantação 
+.11+| Permissões de SSM necessárias para executar o script de descoberta em instâncias SQL provisionadas e buscar a lista mais recente de regiões AWS compatíveis com o FSX para ONTAP. | ssm: Aplicação de segurança | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | ssm:Stock | Implantação 
+| ssm:PutConfigurePackageResult | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | ssm:SendCommand  a| 
+| ssm:Stock | Implantação | Leitura/escrita 
+
+
+| ssm:SendCommand  a| 
 * Implantação
 * Inventário
 * Gerenciar operações
 
+| Leitura/escrita 
 
 
-
-| Leitura/escrita | ssm:UpdateAssociationStatus | Implantação 
-
-
-| Leitura/escrita | ssm:UpdateInstanceAssociationStatus | Implantação 
+| ssm:UpdateAssociationStatus | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | ssm:UpdateInstanceInformation | Implantação 
+| ssm:UpdateInstanceAssociationStatus | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | ssmmessages:CriarCanalDeControle | Implantação 
+| ssm:UpdateInstanceInformation | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | ssmmessages:CriarCanalDeDados | Implantação 
+| ssmmessages:CriarCanalDeControle | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | ssmmessages:OpenControlChannel | Implantação 
+| ssmmessages:CriarCanalDeDados | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | ssmmessages:OpenDataChannel | Implantação 
+| ssmmessages:OpenControlChannel | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita .4+| Salvar credenciais para o FSX for ONTAP, ative Directory e usuário SQL (apenas para autenticação de usuário SQL) | ssm: GetParameter 1  a| 
+| ssmmessages:OpenDataChannel | Implantação | Leitura/escrita 
+
+
+.4+| Salvar credenciais para o FSX for ONTAP, ative Directory e usuário SQL (apenas para autenticação de usuário SQL) | ssm: GetParameter 1  a| 
 * Implantação
 * Gerenciar operações
 * Inventário
 
+| Leitura/escrita 
 
 
-
-| Leitura/escrita | ssm: GetParameters 1  a| 
+| ssm: GetParameters 1  a| 
 * Implantação
 * Inventário
 
+| Leitura/escrita 
 
 
-
-| Leitura/escrita | ssm: PutParameter 1  a| 
+| ssm: PutParameter 1  a| 
 * Implantação
 * Gerenciar operações
 
+| Leitura/escrita 
 
 
-
-| Leitura/escrita | ssm:DeleteParameters 1  a| 
+| ssm:DeleteParameters 1  a| 
 * Implantação
 * Gerenciar operações
 
+| Leitura/escrita 
 
 
-
-| Leitura/escrita | Sinalize a pilha do CloudFormation com sucesso ou falha. | Cloudformation: SignalResource 1 | Implantação 
-
-
-| Leitura/escrita | Adicione a função EC2 criada por modelo ao perfil de instância do EC2 para permitir que scripts no EC2 acessem os recursos necessários para implantação. | IAM:AddRoleToInstanceProfile | Implantação 
+| Sinalize a pilha do CloudFormation com sucesso ou falha. | Cloudformation: SignalResource 1 | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | Crie o perfil de instância para EC2 e anexe a função EC2 criada. | IAM:CreateInstanceProfile | Implantação 
+| Adicione a função EC2 criada por modelo ao perfil de instância do EC2 para permitir que scripts no EC2 acessem os recursos necessários para implantação. | IAM:AddRoleToInstanceProfile | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | Crie uma função EC2D através de modelo com as permissões listadas abaixo | IAM:CreateRole | Implantação 
+| Crie o perfil de instância para EC2 e anexe a função EC2 criada. | IAM:CreateInstanceProfile | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | Criar função vinculada ao serviço EC2 | ISO:CreateServiceLinkRole 2 | Implantação 
+| Crie uma função EC2D através de modelo com as permissões listadas abaixo | IAM:CreateRole | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | Excluir perfil de instância criado durante a implantação especificamente para os nós de validação | IAM:DeleteInstanceProfile | Implantação 
+| Criar função vinculada ao serviço EC2 | ISO:CreateServiceLinkRole 2 | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita .5+| Obtenha os detalhes da função e da política para determinar quaisquer lacunas na permissão e validar para a implantação | IAM:GetPolicy | Implantação 
+| Excluir perfil de instância criado durante a implantação especificamente para os nós de validação | IAM:DeleteInstanceProfile | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | IAM:GetPolicyVersion | Implantação 
+.5+| Obtenha os detalhes da função e da política para determinar quaisquer lacunas na permissão e validar para a implantação | IAM:GetPolicy | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | IAM: GetRole | Implantação 
+| IAM:GetPolicyVersion | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | IAM:GetRolePolicy | Implantação 
+| IAM: GetRole | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | IAM:GetUser | Implantação 
+| IAM:GetRolePolicy | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | Passe a função criada para a instância EC2 | 3 | Implantação 
+| IAM:GetUser | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | Adicione a política com as permissões necessárias à função EC2 criada | IAM:PutRolePolicy | Implantação 
+| Passe a função criada para a instância EC2 | 3 | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | Separe a função do perfil de instância do EC2 provisionado | IAM:RemoveRoleFromInstanceProfile | Implantação 
+| Adicione a política com as permissões necessárias à função EC2 criada | IAM:PutRolePolicy | Implantação | Leitura/escrita 
 
 
-| Leitura/escrita | Simule operações de carga de trabalho para validar permissões disponíveis e compare com as permissões de conta da AWS necessárias | IAM:SimulatePrincipalPolicy | Implantação 
+| Separe a função do perfil de instância do EC2 provisionado | IAM:RemoveRoleFromInstanceProfile | Implantação | Leitura/escrita 
+
+
+| Simule operações de carga de trabalho para validar permissões disponíveis e compare com as permissões de conta da AWS necessárias | IAM:SimulatePrincipalPolicy | Implantação  a| 
+* Somente leitura
+* Leitura/escrita
+
+
 |===
 . A permissão é restrita a recursos que começam com WLMDB.
 . "IAM:CreateServiceLinkRole" limitado por "iam:AWSServiceName": "ec2.amazonaws.com"*
