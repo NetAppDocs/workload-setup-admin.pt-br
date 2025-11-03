@@ -1,0 +1,27 @@
+= Atualização de permissões
+:allow-uri-read: 
+
+
+
+
+=== Atualização de permissões
+
+Nesta versão, fizemos atualizações significativas nas políticas de permissão para cargas de trabalho de armazenamento, banco de dados e VMware, a fim de aprimorar a segurança e o controle do usuário.  Você pode personalizar suas configurações de permissão de forma mais detalhada, adicionando ou removendo permissões conforme achar melhor.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Referência de permissões para o Workload Factory"]
+
+
+
+=== Nova notificação para armazenamento
+
+O serviço de notificação do NetApp Workload Factory inclui a notificação para gerenciamento automático de inodes para armazenamento.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Notificações para NetApp Workload Factory"]
+
+
+
+=== Avisos de limite para gerenciamento automático de capacidade e inodes.
+
+O gerenciamento automático de capacidade e inodes para armazenamento pode ser configurado com um limite de alerta que aciona uma notificação do serviço de notificação do Workload Factory.  Para usar esse recurso, você precisa primeiro ativar o serviço de notificação do Workload Factory.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Configure as notificações para o NetApp Workload Factory."]

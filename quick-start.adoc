@@ -13,7 +13,7 @@ summary: Comece a usar o Workload Factory preparando a rede para o console do Wo
 [role="lead"]
 Comece a usar o NetApp Workload Factory inscrevendo-se e criando uma conta, adicionando credenciais para que o Workload Factory possa gerenciar recursos da AWS diretamente e, em seguida, otimizar suas cargas de trabalho usando o Amazon FSx for NetApp ONTAP.
 
-O NetApp Workload Factory pode ser acessado pelos usuários como um serviço de nuvem no console baseado na Web.  Antes de começar, você deve ter uma compreensão delink:workload-factory-overview.html["Fábrica de Carga de Trabalho"] elink:operational-modes.html["modos operacionais"] .
+O NetApp Workload Factory está acessível aos usuários como um serviço em nuvem a partir do console baseado na web.  Antes de começar, você deve ter uma compreensão delink:workload-factory-overview.html["Fábrica de Carga de Trabalho"] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Um"] Cadastre-se e crie uma conta
 [role="quick-margin-para"]
@@ -24,7 +24,7 @@ link:sign-up-saas.html["Saiba como se inscrever e criar uma conta"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Dois"]Adicionar credenciais da AWS ao Workload Factory
 [role="quick-margin-para"]
-Esta etapa é opcional. Você pode usar o Workload Factory no modo _Básico_ sem adicionar credenciais para acessar sua conta da AWS.  Adicionar credenciais da AWS ao Workload Factory no modo _somente leitura_ ou no modo _leitura/gravação_ fornece à sua conta do Workload Factory as permissões necessárias para criar e gerenciar sistemas de arquivos FSx for ONTAP e para implantar e gerenciar cargas de trabalho específicas, como bancos de dados e GenAI.
+Esta etapa é opcional. Você pode usar o Workload Factory sem precisar adicionar credenciais para acessar sua conta da AWS.  Adicionar credenciais da AWS ao Workload Factory concede à sua conta do Workload Factory as permissões necessárias para criar e gerenciar sistemas de arquivos FSx para ONTAP e para implantar e gerenciar cargas de trabalho específicas, como bancos de dados e GenAI.
 
 [role="quick-margin-para"]
 link:add-credentials.html["Saiba como adicionar credenciais à sua conta"].

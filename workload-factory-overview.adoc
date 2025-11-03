@@ -91,16 +91,11 @@ link:manage-service-accounts.html["Saiba como gerenciar contas de serviço"].
 
 
 
-=== Modos operacionais
+=== Permissões
 
-O Workload Factory fornece três modos operacionais que permitem controlar cuidadosamente o acesso ao seu ambiente de nuvem e atribuir confiança incremental ao Workload Factory com base em suas políticas de TI.
+O Workload Factory oferece políticas de permissão flexíveis que permitem controlar cuidadosamente o acesso ao seu ambiente de nuvem e atribuir níveis incrementais de confiança ao Workload Factory com base em suas políticas de TI.
 
-* *O modo básico* representa um relacionamento de confiança zero e foi projetado para exploração antecipada do Workload Factory e uso de vários assistentes para criar a infraestrutura necessária como código.  Este código pode ser copiado e usado manualmente pelo usuário junto com suas credenciais relevantes da AWS.
-* *Modo somente leitura* melhora a experiência do modo Básico, auxiliando o usuário na deteção de vários recursos e ferramentas e, consequentemente, ajudando a completar assistentes relevantes.
-* *O modo de leitura/gravação* representa uma relação de confiança total e foi projetado para executar e automatizar em nome do usuário, juntamente com as credenciais atribuídas que têm as permissões necessárias e validadas para execução.
-
-
-link:operational-modes.html["Saiba mais sobre os modos operacionais do Workload Factory"] .
+link:permissions-reference.html["Saiba mais sobre as políticas de permissão do Workload Factory."].
 
 
 
