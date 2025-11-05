@@ -1236,4 +1236,7 @@
   <block id="1b512d78c8df2f0c24a19da35f804ca3" category="inline-link-macro">Saiba mais sobre as políticas de permissão do Workload Factory.</block>
   <block id="9de83ea21033a65a11f8b135f0dfca93" category="paragraph"><block ref="14d3fbf26a974628349cadb25ac5954d" category="inline-link-macro-rx"></block>.</block>
   <block id="c51a57db8914c4d0002701f58f6f3d36" category="sidebar">Permissões para o Workload Factory</block>
+  <block id="67cc1fa9f1a93753f08cfa64d81c9661" category="inline-link">cargas de trabalho do construtor</block>
+  <block id="fadf0a6a0fc7dcefddc336cf580be28f" category="list-text"><block ref="fadf0a6a0fc7dcefddc336cf580be28f" category="inline-link-rx"></block></block>
+  <block id="4dbca6300d097acc1ed4450a1e0d70d7" category="paragraph">Simplifique o consumo e o acesso às versões de software, permitindo a integração instantânea de clones com sistemas de controle de versão e fluxos de CI/CD, economizando tempo e recursos.</block>
 </blocks>
