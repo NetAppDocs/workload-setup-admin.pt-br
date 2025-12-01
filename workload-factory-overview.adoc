@@ -64,7 +64,7 @@ O Workload Factory inclui um console baseado na web fornecido por meio da camada
 
 O Workload Factory pode ser acessado através dolink:https://console.workloads.netapp.com["Console do NetApp Workload Factory"^] e olink:https://console.netapp.com["Console NetApp"^] .  Essas experiências SaaS permitem que você acesse automaticamente os recursos mais recentes assim que são lançados e alterne facilmente entre suas contas e links do Workload Factory.
 
-Saiba mais sobre os diferentes link:console-experiences.html["experiências de console"].
+link:console-experiences.html["Saiba mais sobre as diferentes experiências de console."]
 
 
 
@@ -87,7 +87,7 @@ TIP: Se você usar o NetApp Console, já pertencerá a uma conta porque o Worklo
 
 Uma conta de serviço atua como um "usuário" que pode fazer chamadas de API autorizadas ao NetApp Workload Factory para fins de automação.  Isso facilita o gerenciamento da automação porque você não precisa criar scripts de automação com base na conta de usuário de uma pessoa real que pode sair da empresa a qualquer momento.  Todos os titulares de contas no Workload Factory são considerados administradores de contas.  Os administradores de contas podem criar e excluir várias contas de serviço.
 
-link:manage-service-accounts.html["Saiba como gerenciar contas de serviço"].
+link:manage-service-accounts.html["Saiba como gerenciar contas de serviço"]
 
 
 
@@ -95,7 +95,7 @@ link:manage-service-accounts.html["Saiba como gerenciar contas de serviço"].
 
 O Workload Factory oferece políticas de permissão flexíveis que permitem controlar cuidadosamente o acesso ao seu ambiente de nuvem e atribuir níveis incrementais de confiança ao Workload Factory com base em suas políticas de TI.
 
-link:permissions-reference.html["Saiba mais sobre as políticas de permissão do Workload Factory."].
+link:permissions-reference.html["Saiba mais sobre as políticas de permissão do Workload Factory."]
 
 
 
@@ -119,7 +119,7 @@ O Codebox está alinhado com os modos de operação do Workload Factory (_básic
 
 O painel Codebox mostra o IAC que é gerado por uma operação de fluxo de trabalho específica e é correspondido por um assistente gráfico ou interface de chat conversacional. Embora o Codebox suporte codificação de cores e pesquisa para facilitar a navegação e análise, ele não permite edição. Você só pode copiar ou salvar no Catálogo de Automação.
 
-link:codebox-automation.html["Saiba mais sobre o Codebox"].
+link:codebox-automation.html["Saiba mais sobre o Codebox"]
 
 
 

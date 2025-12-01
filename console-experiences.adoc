@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: console-experiences.html 
-keywords: console, consoles, access, saas, Workload Factory, bluexp, NetApp Workload Factory, NetApp Console 
+keywords: console, consoles, access, saas, Workload Factory, NetApp Workload Factory, NetApp Console 
 summary: O NetApp Workload Factory pode ser acessado por meio de dois consoles baseados na Web. 
 ---
 = Experiências de console
@@ -21,7 +21,7 @@ O NetApp Workload Factory pode ser acessado por meio de dois consoles baseados n
 
 == Acesse o Workload Factory no console do NetApp
 
-Você pode acessar o Workload Factory no NetApp Console.  Além de usar o Workload Factory para recursos de armazenamento e carga de trabalho da AWS, você também pode acessar outros serviços de dados, como NetApp Copy and Sync, NetApp Digital Wallet e muito mais.
+Você pode acessar o Workload Factory a partir do NetApp Console. Além de usar o Workload Factory para armazenamento e recursos de carga de trabalho da AWS, você também pode acessar outros serviços de dados, como o NetApp Copy and Sync, entre outros.
 
 .Passos
 . Faça login nolink:https://console.netapp.com["Console NetApp"^] .
