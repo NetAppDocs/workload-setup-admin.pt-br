@@ -13,7 +13,12 @@ summary: O Workload Factory pode ser acessado por meio de um console baseado na 
 [role="lead"]
 O NetApp Workload Factory pode ser acessado por meio de um console baseado na Web.  Ao começar a usar o Workload Factory, o primeiro passo é se inscrever usando suas credenciais existentes do site de suporte da NetApp ou criando um login na nuvem da NetApp .
 
-.Sobre esta tarefa
+Você também pode convidar outras pessoas para se juntarem à sua conta do Workload Factory para que elas possam acessar e usar o Workload Factory.
+
+
+
+== Inscreva-se no Workload Factory
+
 Você pode se inscrever no Workload Factory usando uma das seguintes opções:
 
 * Suas credenciais existentes do site de suporte da NetApp (NSS)
@@ -52,3 +57,14 @@ image:screenshot-account-selection.png["Uma captura de tela da página da conta 
 
 .Resultado
 Agora você tem um login e uma conta no Workload Factory.  Você é considerado um administrador de conta e tem acesso a todas as funcionalidades do Workload Factory.
+
+
+
+== Convide outras pessoas para criar uma conta no Workload Factory.
+
+Como administrador da conta, você pode convidar outras pessoas para participar da sua conta do Workload Factory, permitindo que elas acessem e utilizem o Workload Factory. O gerenciamento de contas só é possível a partir do NetApp Console.
+
+Consulte a documentação do NetApp Console para obter mais informações. link:https://docs.netapp.com/us-en/console-setup-admin/task-iam-manage-members-permissions.html["Aprenda como adicionar membros (contas de usuário)"^], para sua conta do Workload Factory.
+
+.Resultado
+O usuário convidado receberá um e-mail com instruções para acessar sua conta do Workload Factory.
