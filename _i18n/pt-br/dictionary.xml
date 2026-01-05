@@ -1263,4 +1263,7 @@
   <block id="4271c82b5b3d2551c37fdf5569e1bdf4" category="inline-link-macro">Aprenda como adicionar membros (contas de usuário)</block>
   <block id="c128860bea2b6fa591ace59f9f82d9e2" category="paragraph">Consulte a documentação do NetApp Console para obter mais informações. <block ref="d39c43ee8c7f0d03870545e14a548b70" category="inline-link-macro-rx"></block>, para sua conta do Workload Factory.</block>
   <block id="51a52248cd0718b8835bd272badd5424" category="paragraph">O usuário convidado receberá um e-mail com instruções para acessar sua conta do Workload Factory.</block>
+  <block id="5e3b7f958129022f75fe2931c55615b2" category="doc">Integração da página inicial do assistente de IA "Pergunte-me"</block>
+  <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">A página inicial do console do Workload Factory incorpora o assistente de IA "Pergunte-me", permitindo que você faça perguntas sobre seu próprio ambiente de armazenamento, obtenha insights personalizados diretamente do seu ambiente e consulte conversas anteriores. Você pode interagir com o recurso "Pergunte-me" para entender suas cargas de trabalho, solucionar problemas e aprender mais sobre o Workload Factory — tudo isso sem sair do console.</block>
+  <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">04 de janeiro de 2026</block>
 </blocks>
