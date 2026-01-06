@@ -29,8 +29,8 @@ Implante e gerencie uma infraestrutura de geração de recuperação aumentada (
 +
 Simplifique migrações e operações com recomendações inteligentes e correção automática. Implante backups eficientes e recuperação de desastres robusta. Monitore e solucione problemas de VMs.
 
-* https://docs.netapp.com/us-en/workload-builders/index.html["cargas de trabalho do construtor"^]
+* https://docs.netapp.com/us-en/workload-eda/index.html["Cargas de trabalho de EDA"^]
 +
-Simplifique o consumo e o acesso às versões de software, permitindo a integração instantânea de clones com sistemas de controle de versão e fluxos de CI/CD, economizando tempo e recursos.
+Otimize o FSx para ONTAP em vários sistemas de arquivos para aumentar o desempenho e reduzir os custos operacionais por meio do gerenciamento automatizado de parâmetros de armazenamento.
 
 
