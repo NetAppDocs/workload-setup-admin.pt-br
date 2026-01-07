@@ -359,7 +359,7 @@ A tabela a seguir exibe as permissões para armazenamento.
 | Simule operações de carga de trabalho para validar permissões disponíveis e compare com as permissões de conta da AWS necessárias | IAM:SimulatePrincipalPolicy | Implantação | Todos 
 
 
-.4+| Buscar eventos FSx para ONTAP EMS | Bedrock:ListInferenceProfiles | FSx para análise ONTAP EMS | Operações e remediação 
+.4+| Fornecer insights baseados em IA para eventos FSx para ONTAP EMS | Bedrock:ListInferenceProfiles | FSx para análise ONTAP EMS | Operações e remediação 
 
 
 | bedrock:GetInferenceProfile | FSx para análise ONTAP EMS | Operações e remediação 
