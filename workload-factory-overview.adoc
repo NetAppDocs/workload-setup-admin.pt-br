@@ -134,6 +134,14 @@ O Workload Factory oferece calculadoras de economia para que você possa compara
 
 
 
+=== Cargas de trabalho bem arquitetadas
+
+O Workload Factory ajuda você a manter e operar configurações de armazenamento e banco de dados confiáveis, seguras, eficientes e econômicas, alinhadas ao AWS Well-Architected Framework. O Workload Factory analisa diariamente as instalações do FSx em busca de sistemas de arquivos ONTAP , SQL Server e bancos de dados Oracle para fornecer informações sobre possíveis erros de configuração e recomendar ações manuais ou automatizadas para corrigir os problemas.
+
+link:well-architected-workloads.html["Saiba mais sobre cargas de trabalho bem arquitetadas."]
+
+
+
 == Ferramentas para usar o NetApp Workload Factory
 
 Você pode usar o NetApp Workload Factory com as seguintes ferramentas:
@@ -146,14 +154,6 @@ Você pode usar o NetApp Workload Factory com as seguintes ferramentas:
 * *CloudFormation*: use o código do AWS CloudFormation para executar as ações definidas no console do Workload Factory para modelar, provisionar e gerenciar recursos da AWS e de terceiros da pilha do CloudFormation na sua conta da AWS.
 * *Provedor do Terraform NetApp Workload Factory*: use o Terraform para criar e gerenciar fluxos de trabalho de infraestrutura gerados no console do Workload Factory.
 
-
-
-
-=== Cargas de trabalho bem arquitetadas
-
-O Workload Factory ajuda você a manter e operar configurações de armazenamento e banco de dados confiáveis, seguras, eficientes e econômicas, alinhadas ao AWS Well-Architected Framework. O Workload Factory analisa diariamente as instalações do FSx em busca de sistemas de arquivos ONTAP , SQL Server e bancos de dados Oracle para fornecer informações sobre possíveis erros de configuração e recomendar ações manuais ou automatizadas para corrigir os problemas.
-
-link:well-architected-workloads.html["Saiba mais sobre cargas de trabalho bem arquitetadas."]
 
 
 
