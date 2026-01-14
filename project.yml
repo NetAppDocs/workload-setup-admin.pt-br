@@ -42,6 +42,8 @@ sidebar:
       url: "/log-in.html"
     - title: Gerenciar contas de serviço
       url: "/manage-service-accounts.html"
+    - title: Criar e operar cargas de trabalho bem arquitetadas.
+      url: "/well-architected-workloads.html"
     - title: Configurar notificações
       url: "/configure-notifications.html"
     - title: Automatize tarefas usando Codebox

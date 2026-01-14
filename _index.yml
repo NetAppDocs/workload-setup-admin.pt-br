@@ -19,19 +19,35 @@ indexpage:
   - title: Comece agora
     links:
     - title: Saiba mais sobre o NetApp Workload Factory
-      url: workload-factory-overview.html
+      url: "/workload-factory-overview.html"
     - title: Inscreva-se
       url: sign-up-saas.html
+  - title: Credenciais e permissões
+    links:
     - title: Adicionar credenciais da AWS
-      url: add-credentials.html
+      url: "/add-credentials.html"
     - title: Permissões para o Workload Factory
-      url: permissions-reference.html
+      url: "/permissions-reference.html"
   - title: Automação usando Codebox
     links:
     - title: Saiba mais sobre Codebox
-      url: codebox-automation.html
+      url: "/codebox-automation.html"
     - title: Use Codebox para automação
-      url: use-codebox.html
+      url: "/use-codebox.html"
+  - title: Cargas de trabalho bem arquitetadas
+    links:
+    - title: Criar e operar cargas de trabalho bem arquitetadas.
+      url: "/well-architected-workloads.html"
+    - title: Implementar um FSx bem arquitetado para sistemas de arquivos ONTAP.
+      url: https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.html
+    - title: Implementar cargas de trabalho de banco de dados bem arquitetadas
+      url: https://docs.netapp.com/us-en/workload-databases/optimize-configurations.html
+  - title: Analisar cargas de trabalho
+    links:
+    - title: Analisar logs de erros para cargas de trabalho de banco de dados
+      url: https://docs.netapp.com/us-en/workload-databases/analyze-error-logs.html
+    - title: Visualize e analise eventos do EMS para cargas de trabalho de armazenamento.
+      url: https://docs.netapp.com/us-en/workload-fsx-ontap/analyze-events.html
   - title: Blogs & comunidade
     links:
     - title: Console NetApp
