@@ -1,0 +1,44 @@
+= Atualizações bem arquitetadas
+:allow-uri-read: 
+
+
+
+
+=== Atualizações bem arquitetadas
+
+NetApp Workload Factory inclui a avaliação bem arquitetada para cargas de trabalho do Elastic VMware Service (Exchange Virtual Server), e adiciona novas configurações para cargas de trabalho de Storage e Database.
+
+* *Cargas de trabalho VMware* NetApp Workload Factory fornece as melhores práticas e recomendações para operar cargas de trabalho Exchange Virtual Server bem arquitetadas do Amazon Elastic VMware Service (EVS).
++
+link:https://docs.netapp.com/us-en/workload-vmware/view-evs-well-architected.html["Implemente configurações Exchange Virtual Server bem arquitetadas"^]
+
+* *Cargas de trabalho de armazenamento* Diversas novas configurações foram adicionadas ao recurso well-architected na carga de trabalho de armazenamento para que você tenha mais informações sobre o desempenho e os custos de armazenamento.
++
+** Relatório lógico de VM de armazenamento
+** Otimizar o tamanho do volume de cache
+** Dispositivos de bloco órfãos
++
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.html["Implemente configurações de sistema de arquivos bem arquitetadas para cargas de trabalho de storage"^]
+
+
+
+* *Cargas de trabalho de banco de dados* O Workload Factory for Databases inclui uma nova configuração de storage para Oracle para habilitar e configurar o Direct NFS (dNFS) para melhorar o desempenho de E/S e diminuir a carga no host e no sistema de storage.
++
+** capacitação dNFS
+** Resolução de IP consistente dNFS
+** arquivo de configuração dNFS
+** dNFS `nosharecache`
++
+link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.html["Implementar cargas de trabalho de banco de dados bem arquitetadas"^]
+
+
+
+
+
+
+
+=== Novas permissões para Storage
+
+Novas permissões foram adicionadas à carga de trabalho Storage para aprimorar o gerenciamento de pontos de acesso S3.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["Log de alteração de referência de permissões"]

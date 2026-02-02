@@ -73,9 +73,6 @@ Veja as políticas IAM necessárias:
         "elasticfilesystem:DescribeFileSystems",
         "ce:GetCostAndUsage",
         "ce:GetTags",
-        "ce:GetCostAndUsageWithResources",
-        "ce:GetCostForecast",
-        "ce:GetUsageForecast"
       ],
       "Resource": "*"
     },
@@ -110,10 +107,32 @@ Veja as políticas IAM necessárias:
         "fsx:DeleteBackup",
         "fsx:TagResource",
         "fsx:UntagResource",
+        "fsx:CreateAndAttachS3AccessPoint",
+        "fsx:DetachAndDeleteS3AccessPoint",
+        "s3:CreateAccessPoint",
+        "s3:DeleteAccessPoint",
+        "s3:GetObjectTagging",
         "bedrock:InvokeModelWithResponseStream",
         "bedrock:InvokeModel",
         "bedrock:ListInferenceProfiles",
-        "bedrock:GetInferenceProfile"
+        "bedrock:GetInferenceProfile",
+        "s3tables:CreateTableBucket",
+        "s3tables:ListTables",
+        "s3tables:GetTable",
+        "s3tables:GetTableMetadataLocation",
+        "s3tables:CreateTable",
+        "s3tables:GetNamespace",
+        "s3tables:PutTableData",
+        "s3tables:CreateNamespace",
+        "s3tables:GetTableData",
+        "s3tables:ListNamespaces",
+        "s3tables:ListTableBuckets",
+        "s3tables:GetTableBucket",
+        "s3tables:UpdateTableMetadataLocation",
+        "s3tables:ListTagsForResource",
+        "s3tables:TagResource",
+        "s3:GetObjectTagging",
+        "s3:ListBucket"
       ],
       "Resource": "*"
     },
@@ -375,6 +394,60 @@ A tabela a seguir exibe as permissões para armazenamento.
 
 
 | ce:ObterTags | Análise de custos e utilização | Visualização, planejamento e análise 
+
+
+| Crie um ponto de acesso S3 e conecte-o a um sistema de arquivos Amazon FSx for NetApp ONTAP | fsx:CreateAndAttachS3AccessPoint | Gerenciamento de pontos de acesso S3 | Operações e remediação 
+
+
+| Desconecte um ponto de acesso S3 de um sistema de arquivos FSx for ONTAP e exclua-o | fsx:DetachAndDeleteS3AccessPoint | Gerenciamento de pontos de acesso S3 | Operações e remediação 
+
+
+| Crie um ponto de acesso S3 para simplificar o gerenciamento de acesso ao bucket | s3:CreateAccessPoint | Gerenciamento de pontos de acesso S3 | Operações e remediação 
+
+
+| Excluir um ponto de acesso S3 | s3:DeleteAccessPoint | Gerenciamento de pontos de acesso S3 | Operações e remediação 
+
+
+| Adicionar tags a um ponto de acesso S3 | s3:TagResource | Gerenciamento de pontos de acesso S3 | Operações e remediação 
+
+
+| Listar e visualizar tags em um ponto de acesso S3 | s3:ListTagsForResource | Gerenciamento de pontos de acesso S3 | Operações e remediação 
+
+
+| Remova tags de um ponto de acesso S3 | s3:UntagResource | Gerenciamento de pontos de acesso S3 | Operações e remediação 
+
+
+| Descobrir objetos em um bucket de ponto de acesso S3 | s3:ListBucket | Operações de bucket S3 | Operações e remediação 
+
+
+| Listar, criar e descrever buckets de tabela S3 | s3tables:ListTableBuckets s3tables:CreateTableBucket s3tables:GetTableBucket | Gerenciamento de bucket de tabela S3 | Operações e remediação 
+
+
+| Liste, crie e recupere tabelas S3 | s3tables:ListTables s3tables:CreateTable s3tables:GetTable | Operações de tabela S3 | Operações e remediação 
+
+
+| Ler localização dos metadados da tabela | s3tables:GetTableMetadataLocation | Operações de metadados da tabela S3 | Operações e remediação 
+
+
+| Atualizar localização dos metadados da tabela | s3tables:UpdateTableMetadataLocation | Operações de metadados da tabela S3 | Operações e remediação 
+
+
+| Listar, criar e recuperar namespaces de tabelas | s3tables:ListNamespaces s3tables:CreateNamespace s3tables:GetNamespace | Operações de namespace S3 | Operações e remediação 
+
+
+| Ler dados da tabela (select, scan) | s3tables:GetTableData | Operações de dados da tabela S3 | Operações e remediação 
+
+
+| Escrever dados da tabela (insert) | s3tables:PutTableData | Operações de dados da tabela S3 | Operações e remediação 
+
+
+| Listar tags em uma tabela de inventário (obter FSx for ONTAP, storage VM, IDs de volume) | s3tables:ListTagsForResource | Operações de tags de tabela S3 | Operações e remediação 
+
+
+| Marque uma tabela de inventário para pesquisa na NetApp Workload Factory | s3tables:TagResource | Operações de tags de tabela S3 | Operações e remediação 
+
+
+| Recuperar marcação de objetos via ponto de acesso | s3:GetObjectTagging | Operações de objetos S3 | Operações e remediação 
 |===
 ====
 
@@ -827,7 +900,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 | fsx:DescribeStorageVirtualMachines  a| 
 * Implantação
-* Gerenciar operações
+* Operações de gerenciamento
 * Inventário
 
 | Visualização, planejamento e análise 
@@ -835,14 +908,14 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 | fsx:DescribeFileSystems  a| 
 * Implantação
-* Gerenciar operações
+* Operações de gerenciamento
 * Inventário
 * Explore as poupanças
 
 | Visualização, planejamento e análise 
 
 
-| fsx:ListTagsForResource | Gerenciar operações | Visualização, planejamento e análise 
+| fsx:ListTagsForResource | Operações de gerenciamento | Visualização, planejamento e análise 
 
 
 | Obtenha os limites de cota de serviço para CloudFormation e VPC / Crie segredos em uma conta de usuário para as credenciais fornecidas para SQL, domínio e FSx para ONTAP | Servicequotas:ListServiceQuotes | Implantação | Visualização, planejamento e análise 
@@ -851,8 +924,8 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 | Use a consulta com base no SSM para obter a lista atualizada de regiões compatíveis com o FSX para ONTAP | ssm:GetParametersByPath | Implantação | Visualização, planejamento e análise 
 
 
-| Poll para resposta SSM após o envio do comando para gerenciar operações após a implantação | ssm:GetCommandInvocation  a| 
-* Gerenciar operações
+| Aguardar resposta do SSM após o envio do comando para operações de gerenciamento pós-implantação | ssm:GetCommandInvocation  a| 
+* Operações de gerenciamento
 * Inventário
 * Explore as poupanças
 * Otimização
@@ -861,7 +934,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 
 | Enviar comandos via SSM para instâncias EC2 para descoberta e gerenciamento. | ssm:SendCommand  a| 
-* Gerenciar operações
+* Operações de gerenciamento
 * Inventário
 * Explore as poupanças
 * Otimização
@@ -870,7 +943,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 
 | Obtenha o status de conetividade SSM em instâncias após a implantação | ssm:GetConnectionStatus  a| 
-* Gerenciar operações
+* Operações de gerenciamento
 * Inventário
 * Otimização
 
@@ -933,7 +1006,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 .4+| Obtenha, liste, crie e exclua parâmetros SSM para credenciais de usuário do AD, FSX for ONTAP e SQL usadas durante a implantação ou gerenciadas em sua conta da AWS | ssm: GetParameter 1  a| 
 * Implantação
-* Gerenciar operações
+* Operações de gerenciamento
 * Inventário
 
 | Visualização, planejamento e análise 
@@ -941,7 +1014,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 | ssm: GetParameters 1  a| 
 * Implantação
-* Gerenciar operações
+* Operações de gerenciamento
 * Inventário
 
 | Visualização, planejamento e análise 
@@ -949,14 +1022,14 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 | ssm: PutParameter 1  a| 
 * Implantação
-* Gerenciar operações
+* Operações de gerenciamento
 
 | Visualização, planejamento e análise 
 
 
 | ssm:DeleteParameters 1  a| 
 * Implantação
-* Gerenciar operações
+* Operações de gerenciamento
 
 | Visualização, planejamento e análise 
 
@@ -1077,7 +1150,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 | Marque valores personalizados para os recursos do Amazon FSX for NetApp ONTAP criados pelo WLMDB para obter detalhes de cobrança durante o gerenciamento de recursos | Bem-vindo ao site 1  a| 
 * Implantação
-* Gerenciar operações
+* Operações de gerenciamento
 
 | Criação de host de banco de dados 
 
@@ -1129,7 +1202,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 | fsx:Createvolume  a| 
 * Implantação
-* Gerenciar operações
+* Operações de gerenciamento
 
 | Criação de host de banco de dados 
 
@@ -1169,7 +1242,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 
 | Logs:PutLogEvents  a| 
 * Implantação
-* Gerenciar operações
+* Operações de gerenciamento
 
 | Criação de host de banco de dados 
 
@@ -2009,6 +2082,46 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 == Alterar registo
 
 À medida que as permissões são adicionadas e removidas, vamos anotá-las nas seções abaixo.
+
+
+
+=== 1 de fevereiro de 2025
+
+As seguintes permissões foram adicionadas à carga de trabalho de armazenamento:
+
+* `s3:TagResource`
+* `s3:ListTagsForResource`
+* `s3:UntagResource`
+* `s3tables:CreateTableBucket`
+* `s3tables:ListTables`
+* `s3tables:GetTable`
+* `s3tables:GetTableMetadataLocation`
+* `s3tables:CreateTable`
+* `s3tables:GetNamespace`
+* `s3tables:PutTableData`
+* `s3tables:CreateNamespace`
+* `s3tables:GetTableData`
+* `s3tables:ListNamespaces`
+* `s3tables:ListTableBuckets`
+* `s3tables:GetTableBucket`
+* `s3tables:UpdateTableMetadataLocation`
+* `s3tables:ListTagsForResource`
+* `s3tables:TagResource`
+* `s3:GetObjectTagging`
+* `s3:ListBucket`
+
+
+
+
+=== 04 de dezembro de 2025
+
+As seguintes permissões foram adicionadas à carga de trabalho de armazenamento:
+
+* `fsx:CreateAndAttachS3AccessPoint`
+* `fsx:DetachAndDeleteS3AccessPoint`
+* `s3:CreateAccessPoint`
+* `s3:DeleteAccessPoint`
+
 
 
 
