@@ -1501,7 +1501,6 @@
   <block id="a49bf929860657a29ec7b321ff7a63ba" category="list-text">*Relatórios lógicos de Storage VM*</block>
   <block id="7edda8ec9be79d47927f4aa7e27bd776" category="paragraph">A Workload Factory recomenda que a configuração de relatório padrão seja definida como lógica para uma VM de armazenamento, a fim de proporcionar melhor visibilidade do uso de armazenamento no nível do volume.</block>
   <block id="394c926099d3d2cf7e0d7477f17faf38" category="paragraph">A otimização de custos ajuda você a obter o máximo valor para o seu negócio enquanto mantém os custos baixos.</block>
-  <block id="6d281baa5967f3e1be000f071dda6d92" category="list-text">*Dispositivos de bloco órfãos*</block>
   <block id="934ae55c0ac8033312b0dd4fc00ad677" category="paragraph">Após um dispositivo de bloco não ser usado por sete dias, a Workload Factory recomenda arquivar os dados do dispositivo de bloco ou excluir o dispositivo de bloco não utilizado para reduzir custos.</block>
   <block id="08e31d66d631ac235f15db15294a1bed" category="paragraph">Para obter o melhor desempenho de armazenamento, crie volumes FSx for ONTAP na camada SSD primária. Usar a camada de pool de capacidade pode tornar o desempenho mais lento e aumentar a latência.</block>
   <block id="c882de88255b448709010276c1779e90" category="paragraph">Para otimizar o desempenho do armazenamento, defina a capacidade do sistema de arquivos para 1,35 vezes o tamanho total dos seus volumes.</block>
@@ -1518,4 +1517,5 @@
   <block id="9bcd13fbdffcddd84a7b637f7ec4e9b8" category="list-text">*Gerenciamento de nós de cluster*</block>
   <block id="240380a5970626d74754b96038898f5e" category="paragraph">Certifique-se de que os nós do seu cluster Exchange Virtual Server tenham a proteção adequada contra parada e encerramento do EC2 configurada. Os nós ESXi do Exchange Virtual Server devem ser gerenciados exclusivamente usando vCenter ou outras ferramentas de gerenciamento em nível VMware. Sem as proteções adequadas no nível do EC2, os nós podem ser interrompidos ou encerrados acidentalmente a partir do console do EC2, o que pode levar à indisponibilidade de dados da máquina virtual ou perda de dados.</block>
   <block id="d1fabbd85b7cc34641739e525d26f652" category="section-title">01 de fevereiro de 2026</block>
+  <block id="c359614024935abd3712075452782fa3" category="list-text">*Dispositivos de bloco inativos*</block>
 </blocks>

@@ -147,7 +147,7 @@ O armazenamento em camadas de dados frios deve ser ativado para reduzir a utiliz
 +
 Instantâneos e backups que não são mais necessários devem ser excluídos para reduzir custos.
 
-* *Dispositivos de bloco órfãos*
+* *Dispositivos de bloco inativos*
 +
 Após um dispositivo de bloco não ser usado por sete dias, a Workload Factory recomenda arquivar os dados do dispositivo de bloco ou excluir o dispositivo de bloco não utilizado para reduzir custos.
 
