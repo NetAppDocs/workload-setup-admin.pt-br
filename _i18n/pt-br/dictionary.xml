@@ -1521,4 +1521,10 @@
   <block id="a245d89706ebe16fde36591a5e609a33" category="list-text">Opcionalmente, você pode obter um token de acesso para a API de gerenciamento do Auth0 executando uma troca de credenciais do cliente. Consulte <block ref="3b56da8d0a374b6655d8f6eed0786ff9" category="inline-link-macro-rx"></block> para obter informações sobre como gerar um token de atualização.</block>
   <block id="c24f8da0f82882bea0b6a996bf370a07" category="paragraph">O exemplo com curl mostra como você pode pegar o client ID e o secret e usar uma API para gerar o token de acesso, que é limitado por tempo. O token fornece várias horas de acesso às APIs do NetApp Workload Factory.</block>
   <block id="63c9444676abbb5883eb0d8ae98bc87a" category="paragraph">Poste a saída em https://netapp-cloud-account.auth0.com/oauth/token para obter o token de acesso.</block>
+  <block id="129560e32411be4dc94c9cfeada8ea67" category="doc">Novo marcador Ask Me disponível no Workload Factory</block>
+  <block id="4ea89e975474ebd5bba8d32ced2e95cc" category="paragraph">Adicionamos um novo marcador Ask Me em todas as telas do console do Workload Factory. Essa melhoria torna mais fácil e rápido para você acessar o Ask Me sempre que precisar de ajuda. Ask Me é nosso assistente de IA, permitindo que você faça perguntas sobre seus próprios ambientes de carga de trabalho, obtenha insights personalizados diretamente do seu ambiente e consulte conversas anteriores.</block>
+  <block id="38dc719ee518af5f799c19331bfd5f19" category="paragraph">Você pode abrir Ask Me de qualquer página clicando no novo marcador. Ele inicia o Ask Me em um painel lateral sem interromper seu trabalho atual e oferece explicações rápidas e recomendações relacionadas ao que você está fazendo no momento.</block>
+  <block id="80dcbdee31e7f18a301f863f8b73dc64" category="inline-link-macro">Saiba mais sobre Ask Me</block>
+  <block id="ca844fa02d938fb3d0329bf797d0a633" category="paragraph"><block ref="ca844fa02d938fb3d0329bf797d0a633" category="inline-link-macro-rx"></block></block>
+  <block id="4aa1f4ce7ff97e69b143fbe399631234" category="section-title">01 de março de 2026</block>
 </blocks>
