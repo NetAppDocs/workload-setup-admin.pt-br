@@ -1391,4 +1391,5 @@
   <block id="23b296afc9efdc38bb284c5491538e2f" category="doc">Crie e opere cargas de trabalho bem arquitetadas com NetApp Workload Factory</block>
   <block id="c3a8b5ec0adade5d633e6e6466b483a6" category="paragraph">Workload Factory, o NetApp management suite para Amazon FSx for NetApp ONTAP, ajuda você a manter e operar configurações de cargas de trabalho confiáveis, seguras, eficientes e econômicas que estejam alinhadas ao AWS Well-Architected Framework. Workload Factory fornece análise diária de suas cargas de trabalho, recomendações e correções automáticas para promover operações saudáveis de cargas de trabalho. Ao automatizar esse processo, Workload Factory minimiza erros humanos e garante consistência no gerenciamento de cargas de trabalho.</block>
   <block id="421a8570ce985526e7d5c4e54d3094e2" category="section-title">Comece a usar o Workload Factory para detectar e corrigir configurações incorretas de workload.</block>
+  <block id="7274d50d53fc920babacadb1439892ff" category="sidebar">Implemente configurações bem arquitetadas do Elastic VMware Service</block>
 </blocks>
