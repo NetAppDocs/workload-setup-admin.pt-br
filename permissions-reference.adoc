@@ -555,32 +555,42 @@ Selecione o modo operacional para visualizar as políticas do IAM necessárias:
 --
 [source, json]
 ----
-[
+{
+  "Version": "2012-10-17",
+  "Statement": [
     {
-        "Sid": "FSxRemediation",
-        "Effect": "Allow",
-        "Action": [
-            "fsx:UpdateFileSystem",
-            "fsx:UpdateVolume"
-        ],
-        "Resource": "*"
+      "Sid": "FSxRemediation",
+      "Effect": "Allow",
+      "Action": [
+        "fsx:UpdateFileSystem",
+        "fsx:UpdateVolume"
+      ],
+      "Resource": "*"
     },
     {
-        "Sid": "EC2Remediation",
-        "Effect": "Allow",
-        "Action": [
-            "ec2:StartInstances",
-            "ec2:ModifyInstanceAttribute",
-            "ec2:StopInstances"
-        ],
-        "Resource": "*",
-        "Condition": {
-            "StringLike": {
-                "ec2:ResourceTag/aws:cloudformation:stack-name": "WLMDB*"
-            }
+      "Sid": "EC2Remediation",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:StartInstances",
+        "ec2:ModifyInstanceAttribute",
+        "ec2:StopInstances"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringLike": {
+          "ec2:ResourceTag/aws:cloudformation:stack-name": "WLMDB*"
         }
+      }
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:SimulatePrincipalPolicy"
+      ],
+      "Resource": "*"
     }
-]
+  ]
+}
 ----
 --
 .Criação de host de banco de dados
@@ -2085,7 +2095,7 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 
 
 
-=== 1 de fevereiro de 2025
+=== 1 de fevereiro de 2026
 
 As seguintes permissões foram adicionadas à carga de trabalho de armazenamento:
 
