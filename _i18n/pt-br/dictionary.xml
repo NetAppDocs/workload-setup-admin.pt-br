@@ -1392,4 +1392,9 @@
   <block id="421a8570ce985526e7d5c4e54d3094e2" category="section-title">Comece a usar o Workload Factory para detectar e corrigir configurações incorretas de workload.</block>
   <block id="7274d50d53fc920babacadb1439892ff" category="sidebar">Implemente configurações bem arquitetadas do Elastic VMware Service</block>
   <block id="8d2488f820b40da5c2d7dfd912588e9a" category="section-title">1 de fevereiro de 2026</block>
+  <block id="77633bb85f2dda716363da565416542c" category="paragraph">O serviço de notificação do NetApp Workload Factory inclui a notificação para NetApp Autonomous Ransomware Protection com IA (ARP/AI) para Storage.</block>
+  <block id="88614adcb88ae7a8a2cbc6a00a38780b" category="cell">Atividade de volume suspeita detectada no sistema de arquivos FSx for ONTAP</block>
+  <block id="3577aeab8c1da0cce8c18c1a2ea9394e" category="cell">NetApp Proteção Autônoma contra Ransomware com IA (ARP/AI) detectou atividade suspeita no volume.</block>
+  <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="cell">Proteção contra ransomware</block>
+  <block id="7f65119c79afd09b7f99936d13e97909" category="section-title">06 de abril de 2026</block>
 </blocks>

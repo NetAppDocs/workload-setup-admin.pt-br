@@ -52,6 +52,9 @@ O Workload Factory envia notificações para os seguintes eventos:
 
 
 | Evento de gerenciamento automático de inodes para FSx para ONTAP | A contagem de inodes para o volume FSx para ONTAP atingiu o limite de alerta (contagem/percentagem total). | Gestão de capacidade | Aviso | Armazenamento geral | FSx para sistemas de arquivos ONTAP 
+
+
+| Atividade de volume suspeita detectada no sistema de arquivos FSx for ONTAP | NetApp Proteção Autônoma contra Ransomware com IA (ARP/AI) detectou atividade suspeita no volume. | Proteção contra ransomware | Crítico | Armazenamento geral | FSx para sistemas de arquivos ONTAP 
 |===
 
 
