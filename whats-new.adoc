@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 'Saiba o que há de novo nos recursos de administração do Workload Factory: credenciais do provedor de nuvem, aprimoramentos do Codebox e muito mais.' 
+summary: Descubra as novidades nos recursos de administração do Workload Factory, como credenciais de cloud provider, melhorias no Codebox e muito mais. 
 ---
 = Novidades nos recursos de administração do NetApp Workload Factory
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'Saiba o que há de novo nos recursos de administração do Workload Fa
 
 
 [role="lead"]
-Saiba o que há de novo nos recursos de administração do Workload Factory: credenciais do provedor de nuvem, aprimoramentos do Codebox e muito mais.
+Descubra as novidades nos recursos de administração do Workload Factory, como credenciais de cloud provider, melhorias no Codebox e muito mais.
 
 
 
@@ -32,6 +32,14 @@ Se você configurar as notificações no NetApp Console, NetApp Console assumir�
 === Nova notificação para latência EDA
 
 O serviço de notificação do NetApp Workload Factory inclui a notificação de latência de EDA, que avisa quando a latência de uma operação EDA excede um determinado limite.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Configurar notificações do Workload Factory"]
+
+
+
+=== Nova notificação para sistemas de arquivos FSx for ONTAP
+
+O serviço de notificações do NetApp Workload Factory inclui uma notificação com um resumo mensal dos custos da sua conta, mostrando tendências de gastos, alterações incomuns e as melhores oportunidades de economia para sistemas de arquivos FSx for ONTAP.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Configurar notificações do Workload Factory"]
 
