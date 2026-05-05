@@ -15,6 +15,28 @@ Saiba o que há de novo nos recursos de administração do Workload Factory: cre
 
 
 
+== 03 de maio de 2026
+
+
+
+=== Notificações por e-mail para Workload Factory
+
+Agora você pode receber notificações do Workload Factory por e-mail sem configurar um tópico do Amazon SNS. Habilite as notificações por e-mail para enviar notificações para qualquer endereço de e-mail associado à conta.
+
+Você pode configurar notificações por e-mail tanto no console do Workload Factory quanto no NetApp Console. O NetApp Console também oferece a opção de configurar notificações do NetApp Console que aparecem no ícone de sino.
+
+Se você configurar as notificações no NetApp Console, NetApp Console assumirá a responsabilidade pela entrega das notificações. As configurações de notificação no console do Workload Factory se tornarão somente leitura para evitar notificações duplicadas.
+
+
+
+=== Nova notificação para latência EDA
+
+O serviço de notificação do NetApp Workload Factory inclui a notificação de latência de EDA, que avisa quando a latência de uma operação EDA excede um determinado limite.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Configurar notificações do Workload Factory"]
+
+
+
 == 06 de abril de 2026
 
 

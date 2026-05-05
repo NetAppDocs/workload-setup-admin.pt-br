@@ -830,8 +830,6 @@
   <block id="3a966eb1052bbc81baf1db313011eddf" category="cell">A implantação do host Microsoft SQL Server ou PostgreSQL falhou. Para mais informações, acesse o monitoramento de tarefas.</block>
   <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="cell">Erro</block>
   <block id="9ccebe6954a81c5c1f9a57ddc658596a" category="list-text">Você precisa configurar o Amazon SNS e criar tópicos do Amazon SNS usando o console do Amazon SNS ou a AWS CLI.</block>
-  <block id="9bc635b321d7a10ffec6283dfaa84aa0" category="list-text">Selecione *Ativar notificações SNS*.</block>
-  <block id="677c7dc689b0afdcb0633b635edd3a87" category="list-text">Siga as instruções para configurar o Amazon SNS no console do Amazon SNS.</block>
   <block id="2339afaee28d73e91f81e490b67a4b5c" category="list-text">Depois de verificar a configuração enviando uma notificação de teste, selecione *Aplicar*.</block>
   <block id="5e5392f4dcdf5502f0937be76da274d0" category="section-title">Inscreva-se no tópico Amazon SNS</block>
   <block id="cbde2df6a7c89370edc449dc5705d30c" category="inline-link">instruções</block>
@@ -919,7 +917,6 @@
   <block id="67c0397212edda6d32cfd64e83e5f8dc" category="paragraph"><block ref="2171d3ebe49d6b87e35ddf53dd80032d" category="inline-link-macro-rx"></block> .</block>
   <block id="a59c5f15e65baf8d84c9f0e2d778cfc9" category="summary">Você pode configurar o NetApp Workload Factory para enviar notificações a uma pessoa ou outro aplicativo quando determinados tipos de eventos ocorrerem.</block>
   <block id="5ba8acf00a9c87f3087344b902777a6e" category="doc">Configurar notificações do NetApp Workload Factory</block>
-  <block id="f476688085fcfdcff7daf09d94971782" category="paragraph">Você pode configurar o serviço de notificação do NetApp Workload Factory para enviar notificações como alertas no NetApp Console ou para um tópico do Amazon SNS.  As notificações enviadas como alertas aparecem no NetApp Console quando você tem um agente ou link do Console implantado.  Quando o Workload Factory publica notificações em um tópico do Amazon SNS, os assinantes do tópico (como pessoas ou outros aplicativos) recebem as notificações nos endpoints configurados para o tópico (como e-mail ou mensagens SMS).</block>
   <block id="ac41ca3061dfdb48a516c0388098eccd" category="paragraph">O Workload Factory envia notificações para os seguintes eventos:</block>
   <block id="e57a1a49b9af455c41d31e251929ebe5" category="cell">Todas as instâncias do Microsoft SQL Server em sua conta foram analisadas em busca de problemas de arquitetura adequada.  A descrição deste evento fornece o número de instâncias bem arquitetadas e instâncias não otimizadas.  Revise as descobertas e recomendações de status bem arquitetadas no inventário de bancos de dados do console do Workload Factory.</block>
   <block id="8a139d1f9e892c3827baf8993b22e06f" category="cell">Problema detectado no FSx para ONTAP</block>
@@ -927,23 +924,16 @@
   <block id="2eff23d45d9eb3d8a7c0149407c6dcf8" category="cell">Análise bem arquitetada</block>
   <block id="8da726c31c391e624ecc54fd7ed145d6" category="cell">FSx para sistemas de arquivos ONTAP</block>
   <block id="7c1a1feb7968ed15d338ae3e7284dd4e" category="section-title">Configurar notificações do Workload Factory</block>
-  <block id="014e444433a1c7cbbdd9c8c1f4fefa4b" category="paragraph">Configure as notificações do Workload Factory usando o NetApp Console ou o console do Workload Factory.  Se você usar o NetApp Console, poderá configurar o Workload Factory para enviar notificações como alertas no NetApp Console ou para um tópico do Amazon SNS.  Você pode configurar notificações nas *Configurações de notificações* no NetApp Console.</block>
   <block id="1a7d7414c3da7bd3d69c29c1c9dc74ad" category="list-text">Observe que o Workload Factory oferece suporte ao tipo de tópico *Padrão*.  Esse tipo de tópico não garante que as notificações sejam enviadas aos assinantes na ordem em que foram recebidas, portanto, considere isso se você tiver notificações críticas ou de emergência.</block>
   <block id="4be7ff4e16147ce765eb61308f73beda" category="open-title">Configurar notificações do NetApp Console</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="inline-link-macro">Console NetApp</block>
   <block id="fe3e3ad90678611fd3fe6b4348fba6dc" category="list-text">Faça login no<block ref="7532dfde8c533672ea63a5b546224a97" category="inline-link-macro-rx"></block> .</block>
   <block id="0a4d4130dbebdc7083cd7435e388797d" category="list-text">No menu do NetApp Console, selecione *Cargas de trabalho*, *Administração* e, em seguida, *Configuração de notificações*.</block>
-  <block id="df93da47c0462e1ca9969b57c5b59331" category="list-text">Na página de configuração de notificações, faça o seguinte:</block>
-  <block id="d993cd32e8e4b3f49b00361542cc4c2e" category="list-text">Opcional: selecione *Ativar notificações do NetApp Console* para configurar o Workload Factory para enviar notificações no NetApp Console.</block>
   <block id="a4caa02a925f9e2b61439b42ecfebb6f" category="paragraph">Depois de criar o tópico, copie o ARN do tópico e insira-o no campo *ARN do tópico do SNS* na página *Configuração de notificações*.</block>
-  <block id="d055c503023d741dbaa19c65690c1ebd" category="paragraph">O Workload Factory está configurado para enviar notificações ao tópico do Amazon SNS que você especificou.</block>
   <block id="4bc45d22028e53a00f4de2c50839c911" category="open-title">Configurar notificações do console do Workload Factory</block>
   <block id="219bd6a410f8c490dbc0ffbcf504910f" category="list-text">Faça login no<block ref="ed002915dbbbf90a20b3d8fdf4cc2390" category="inline-link-macro-rx"></block> .</block>
   <block id="99a1b22d5c08e1ea6e260730064a78c1" category="list-text">No menu do console do Workload Factory, selecione *Cargas de trabalho*, *Administração* e, em seguida, *Configuração de notificações*.</block>
   <block id="48069e5c28c259c5ae7ab58ad98f2b42" category="paragraph">Depois de configurar o Workload Factory para enviar notificações a um tópico, siga as instruções<block ref="88c7b6108316e02c36e39863bedc2019" category="inline-link-rx"></block> na documentação do Amazon SNS para assinar o tópico e receber notificações do Workload Factory.</block>
-  <block id="c5fd377ea2f0481283c28906ff7fda82" category="paragraph">Você pode reduzir o tráfego de notificações desnecessárias e direcionar tipos de notificações específicos para usuários específicos aplicando filtros às notificações.  Você pode fazer isso usando uma política do Amazon SNS para notificações do SNS e usando as configurações de notificações no NetApp Console.</block>
-  <block id="163b273913190cc19572b1888b07e784" category="section-title">Filtrar notificações no NetApp Console</block>
-  <block id="05efbe0ae6892f06551778677d8a7b08" category="paragraph">Você pode usar as configurações de notificações do NetApp Console para filtrar notificações recebidas no Console por nível de gravidade, como Crítico, Informativo ou Aviso.</block>
   <block id="454bb1110d6093b9ef29fd01d063b03f" category="inline-link">Documentação do NetApp Console</block>
   <block id="53dc504e1574e48bdd8e3e0657d1ae00" category="paragraph">Para obter mais informações sobre como filtrar notificações no Console, consulte o<block ref="46a34f1df7f0cbab6b8d9cd707e12b7f" category="inline-link-rx"></block> .</block>
   <block id="6370c01a33f220ec64c0532b1236e695" category="summary">O NetApp Workload Factory pode ser acessado por meio de dois consoles baseados na Web.</block>
@@ -1397,4 +1387,35 @@
   <block id="3577aeab8c1da0cce8c18c1a2ea9394e" category="cell">NetApp Proteção Autônoma contra Ransomware com IA (ARP/AI) detectou atividade suspeita no volume.</block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="cell">Proteção contra ransomware</block>
   <block id="7f65119c79afd09b7f99936d13e97909" category="section-title">06 de abril de 2026</block>
+  <block id="15407be309823d0bd0fd1f09d53ccd89" category="doc">Notificações por e-mail para Workload Factory</block>
+  <block id="a1ed0466beff73a72b5d95ef2b956e83" category="paragraph">Agora você pode receber notificações do Workload Factory por e-mail sem configurar um tópico do Amazon SNS. Habilite as notificações por e-mail para enviar notificações para qualquer endereço de e-mail associado à conta.</block>
+  <block id="1c6cc010b2ec0805e327534ebbfb3973" category="paragraph">Você pode configurar notificações por e-mail tanto no console do Workload Factory quanto no NetApp Console. O NetApp Console também oferece a opção de configurar notificações do NetApp Console que aparecem no ícone de sino.</block>
+  <block id="f76fbee6bb24fc9289f051c59b4058b2" category="paragraph">Se você configurar as notificações no NetApp Console, NetApp Console assumirá a responsabilidade pela entrega das notificações. As configurações de notificação no console do Workload Factory se tornarão somente leitura para evitar notificações duplicadas.</block>
+  <block id="b2dfd446bf724d5a49ad6d34fffa8cd5" category="section-title">Nova notificação para latência EDA</block>
+  <block id="72139a3373d3afc6254af7e39dc3cd2a" category="paragraph">O serviço de notificação do NetApp Workload Factory inclui a notificação de latência de EDA, que avisa quando a latência de uma operação EDA excede um determinado limite.</block>
+  <block id="06c8d6de7277fbcb62791ed118b9bc96" category="paragraph"><block ref="06c8d6de7277fbcb62791ed118b9bc96" category="inline-link-macro-rx"></block></block>
+  <block id="ecfa38cbb07762f651b2d55730a9503d" category="paragraph">Você pode configurar o serviço de notificações do NetApp Workload Factory para enviar notificações como alertas no NetApp Console, para qualquer endereço de e-mail associado à conta ou para um tópico do Amazon SNS. As notificações enviadas como alertas aparecem no NetApp Console quando você tem um agente ou link do Console implantado. Quando o Workload Factory publica notificações em um tópico do Amazon SNS, os assinantes do tópico (como pessoas ou outros aplicativos) recebem as notificações nos endpoints configurados para o tópico (como e-mail ou mensagens SMS).</block>
+  <block id="6a3ad7ac445ce4c1e599c439dfbb0b26" category="cell">Violação do limite de latência detectada</block>
+  <block id="1bb95b7c12022ee051b8199049811a71" category="cell">Um ou mais volumes no cluster FSx for ONTAP excederam o limite de latência.</block>
+  <block id="d8be01b779b72fb7ad353d45426e7fe3" category="cell">Monitoramento de desempenho</block>
+  <block id="81f1b99be9951f3725aa3dd62766099e" category="cell">EDA</block>
+  <block id="4bd55d131f0ae81cc60c9fe282068a64" category="paragraph">Você pode configurar as notificações do Workload Factory usando o NetApp Console ou o console do Workload Factory.</block>
+  <block id="d7dcef6f1d8c5c823f847fd4c7fa8fe9" category="paragraph">Opções para receber notificações incluem:</block>
+  <block id="cce7bd3a3721067273866ec7f3ec7b7c" category="list-text">*Notificações*: Configure o Workload Factory para enviar notificações que aparecem sob o ícone de sino no NetApp Console.</block>
+  <block id="a58c54927d168d58046b4ad29f5254fa" category="list-text">*E-mail*: Habilite as notificações por e-mail no NetApp Console para receber notificações em qualquer endereço de e-mail associado à conta, sem precisar configurar o Amazon SNS.</block>
+  <block id="d7b2e59eb21ae19aa7b493f93fbcb35f" category="list-text">*Amazon SNS*: configure o NetApp Workload Factory para enviar notificações a um tópico do Amazon SNS.</block>
+  <block id="e174fa0e05fb5c229301ef978773782d" category="list-text">*E-mail*: Habilite as notificações por e-mail no console do Workload Factory para receber notificações em qualquer endereço de e-mail associado à conta, sem a necessidade de configuração do Amazon SNS.</block>
+  <block id="7184b61f2058f394c7d6b104dc166242" category="list-text">*Amazon SNS*: configure o Workload Factory para enviar notificações a um tópico do Amazon SNS usando o console do Workload Factory.</block>
+  <block id="150b7425bee731f53d950cb07997d3a9" category="admonition">Ao configurar notificações no NetApp Console, ele assume o controle do envio de notificações e as opções de notificação do console do Workload Factory são desativadas e exibidas em modo somente leitura. Uma dica de ferramenta informa que as notificações são gerenciadas a partir do NetApp Console. Você só pode gerenciar notificações a partir do NetApp Console.</block>
+  <block id="719c05c1c99e00fa5e0edb33bb8190f6" category="paragraph">Os seguintes pré-requisitos aplicam-se apenas à configuração de notificações do Amazon SNS:</block>
+  <block id="62ebe1005c43ca37dff7ddb9684484ac" category="list-text">Na página de configuração de notificações, ative um ou mais dos seguintes tipos de notificação:</block>
+  <block id="3cffbdfd446e6b3ca39fc52d1b2a87ab" category="list-text">*NetApp Console notificações*: Selecione *Ativar NetApp Console notificações* para configurar Workload Factory para enviar notificações no NetApp Console.</block>
+  <block id="4941b94ab67ffcf8b95fddca7b5ce770" category="list-text">*Notificações por e-mail*: selecione *Ativar notificações por e-mail* para configurar o Workload Factory para enviar notificações para quaisquer endereços de e-mail associados à conta.</block>
+  <block id="0d7adbc19c316fab18fa015b723496bd" category="list-text">*Notificações do Amazon SNS*: selecione *Ativar notificações do SNS* e siga as instruções para configurar o Amazon SNS no console do Amazon SNS.</block>
+  <block id="458f208085c8b6ec69e163ddf2378427" category="list-text">Ative um ou mais dos seguintes tipos de notificação:</block>
+  <block id="622901cf56fa55473d2f9550e6422faf" category="list-text">*Notificações por e-mail*: selecione *Ativar notificações por e-mail*. Todos os endereços de e-mail associados à conta são exibidos em modo somente leitura.</block>
+  <block id="3bf17ee9de6360f01456d2fe35c8ff4c" category="paragraph">Você pode reduzir o tráfego desnecessário de notificações e direcionar tipos específicos de notificações para usuários específicos aplicando filtros às notificações. Você pode fazer isso usando uma política do Amazon SNS para notificações do SNS e usando as configurações de notificações no NetApp Console.</block>
+  <block id="8749fce6a42b5cc208c97e090bbdf52e" category="section-title">Filtrar notificações no NetApp Console</block>
+  <block id="067205dc8475e129dc9d47a407ae631d" category="paragraph">Você pode usar as configurações de notificações do NetApp Console para filtrar as notificações recebidas no Console por nível de gravidade, como Crítico, Informativo ou Aviso.</block>
+  <block id="3be044b694628f6e958377c22febfacd" category="section-title">03 de maio de 2026</block>
 </blocks>
