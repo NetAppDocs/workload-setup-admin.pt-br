@@ -45,12 +45,15 @@ Observe que somente carateres em inglês são permitidos no formulário de inscr
 Este passo é necessário antes de poder iniciar sessão.
 
 . Quando solicitado, revise o Contrato de Licença de Usuário final e aceite os termos e selecione *continuar*.
-. Na página *conta*, insira um nome para sua conta e, opcionalmente, selecione sua descrição do trabalho.
+. Na página *Conta*, crie uma conta. Uma conta é o elemento de nível superior na plataforma de identidade da NetApp e permite adicionar e gerenciar permissões e credenciais.
 +
-Uma conta é o elemento de nível superior na plataforma de identidade do NetApp e permite adicionar e gerenciar permissões e credenciais.
+image:screenshot-account-selection-govcloud.png["Uma captura de tela da página da conta que aparece quando você faz login com uma nova conta."]
 
 +
-image:screenshot-account-selection.png["Uma captura de tela da página da conta que aparece quando você faz login com uma nova conta."]
+.. Insira um nome para a conta.
+.. Opcionalmente, transforme a conta em uma conta AWS GovCloud (EUA). Esse tipo de conta usa apenas endpoints e regiões AWS GovCloud (EUA) para configuração e operações. As credenciais e os segredos permanecem em GovCloud. Essa seleção é permanente.
+.. Opcionalmente, forneça uma descrição da função para a conta.
+
 
 . Selecione *Criar* e a página inicial do Workload Factory será exibida.
 
