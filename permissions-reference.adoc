@@ -39,6 +39,10 @@ As políticas do IAM disponíveis para o Storage fornecem as permissões necess�
 O armazenamento oferece as seguintes políticas de permissão para escolha:
 
 * *Visualização, planejamento e análise*: Visualize os sistemas de arquivos FSx para ONTAP , aprenda sobre a integridade do sistema, obtenha uma análise bem arquitetada para seus sistemas e explore oportunidades de economia.
++
+
+NOTE: AWS GovCloud não oferece suporte ao AWS Cost Explorer, então você não precisa dessas permissões: `ce:GetCostAndUsage` e `ce:GetTags`. Se você incluí-las, a política ainda funcionará.
+
 * *Operações e correções*: Execute tarefas operacionais como ajustar a capacidade do sistema de arquivos e corrigir problemas nas configurações do seu sistema de arquivos.
 * *Criação e exclusão de sistemas de arquivos*: Crie e exclua sistemas de arquivos FSx para ONTAP e máquinas virtuais de armazenamento.
 
