@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: manage-custom-dashboards.html 
+keywords: manage dashboards, edit dashboard, delete dashboard, refresh dashboard, dashboard catalog 
+summary: Acesse seu catálogo de dashboards para visualizar, editar, atualizar e excluir dashboards personalizados no Workload Factory. 
+---
+= Gerencie painéis personalizados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Gerencie seus painéis personalizados a partir do catálogo de painéis. Lá, você pode visualizar detalhes, atualizar dados, editar configurações do painel ou excluir painéis que não precisa mais.
+
+.Sobre esta tarefa
+Todos os usuários da sua conta do Workload Factory podem acessar todos os painéis personalizados. Cada painel exibe detalhes básicos, como o nome do criador, a data de criação e se alguém está editando no momento.
+
+Os painéis personalizados são somente leitura. Eles não podem alterar suas configurações de armazenamento ou carga de trabalho. Você pode editar o próprio painel, mas não os recursos que ele monitora.
+
+.Antes de começar
+Você precisa ter pelo menos um painel personalizado em sua conta do Workload Factory.
+
+
+
+== Acesse o catálogo do dashboard
+
+.Passos
+. Inicie sessão utilizando uma das link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. No menu, selecione *Visão geral das cargas de trabalho* e depois *Painéis personalizados*.
++
+O catálogo de dashboards mostra todos os dashboards personalizados da sua conta do Workload Factory.
+
+. Revise a lista do dashboard.
+
+
+
+
+== Atualizar dados do dashboard
+
+Os dados do painel são carregados quando você abre um painel. Você pode atualizá-lo para ver as informações mais recentes.
+
+O painel de controle recarrega os dados das suas cargas de trabalho. A hora da última atualização muda para mostrar quando os dados foram atualizados.
+
+
+
+== Editar um dashboard
+
+Você pode editar um painel para alterar o que ele exibe, incluindo as métricas e os gráficos.
+
+.Passos
+. Na página *Painéis personalizados*, localize o painel que você deseja editar.
+. No menu *Ações* desse dashboard, selecione *Editar dashboard*.
++
+Se outro usuário estiver editando o painel, você verá uma mensagem como "Atualmente sendo editado por [nome do usuário]". Aguarde até que ele termine ou coordene com ele.
+
+. Na caixa de diálogo com a IA, descreva as alterações que você deseja fazer.
++
+Esse processo é semelhante à criação de um novo painel. Você pode alterar as cargas de trabalho, métricas ou intervalos de tempo que o painel monitora.
+
+. Revise as alterações e selecione **Salvar**.
+
+
+.Resultado
+O painel de controle é atualizado com suas alterações. A data da última modificação também é atualizada.
+
+
+
+== Excluir um dashboard
+
+Exclua os painéis que você não precisa mais. Essa ação é permanente e não pode ser desfeita.
+
+.Passos
+. Na página *Painéis personalizados*, localize o painel que você deseja remover.
+. No menu suspenso *Ações* desse painel, selecione *Excluir*.
+. Confirme a exclusão.
+
+
+.Resultado
+O painel de controle é removido permanentemente da sua conta do Workload Factory e todos os usuários perdem o acesso a ele.
+
+
+
+== Informações relacionadas
+
+* link:create-custom-dashboard.html["Crie painéis personalizados adicionais"]
+* link:troubleshoot-custom-dashboards.html["Solucionar problemas de painéis personalizados"]
+

@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: learn-custom-dashboards.html 
+keywords: custom dashboards, dashboards, personalized dashboards, AI dashboards, operational visibility, workload monitoring 
+summary: Crie painéis de controle com inteligência artificial personalizados para suas cargas de trabalho e prioridades, a fim de obter maior visibilidade operacional sem ficar limitado por visualizações predefinidas. 
+---
+= Saiba mais sobre painéis personalizados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Como administrador de nuvem e armazenamento, os painéis personalizados oferecem uma visão clara dos sistemas e cargas de trabalho que você gerencia. Eles permitem criar e personalizar visualizações que correspondam ao seu trabalho, prioridades e objetivos de negócios, em vez de ficar limitado a layouts predefinidos.
+
+Painéis personalizados usam IA para criar visualizações personalizadas do seu ambiente Workload Factory. Basta descrever o que você deseja monitorar em linguagem simples e o sistema cria automaticamente gráficos visuais com base nas suas necessidades.
+
+Todos os membros da sua conta do Workload Factory podem visualizar todos os painéis personalizados. Essa configuração compartilhada ajuda as equipes a colaborar e a visualizar as mesmas informações operacionais em toda a sua organização.
+
+
+
+== Por que usar painéis personalizados
+
+Os usuários do Workload Factory gerenciam diversas cargas de trabalho, ambientes e prioridades, mas os painéis padrão exibem apenas visualizações predefinidas. Painéis personalizados ajudam a solucionar vários desafios operacionais:
+
+* *Responda às perguntas-chave rapidamente*: Concentre-se nas perguntas mais importantes ou nas lacunas em seu entendimento, em vez de estatísticas gerais do sistema.
+* *Monitore o que importa agora*: Acompanhe as métricas que correspondem às suas prioridades atuais, não um conjunto fixo de indicadores de saúde.
+* *Relacione dados técnicos a resultados de negócios*: Mostre como o desempenho do sistema afeta as operações e os objetivos de negócios.
+* *Evite alternar entre ferramentas*: visualize todas as informações relevantes em um só lugar—sem necessidade de alternar entre ferramentas, páginas ou exportações.
+
+
+
+
+== O que você pode fazer com painéis personalizados
+
+Durante a configuração, o diálogo guiado por IA ajuda você a definir:
+
+* Cargas de trabalho e recursos para monitorar
+* Principais métricas que importam para o seu trabalho
+* Intervalos de tempo e períodos para comparar
+* Visualizações por região, carga de trabalho ou outras categorias
+* Regras ou requisitos que você precisa acompanhar e exibir
+
+
+
+
+== Considerações e limitações
+
+
+
+=== Permissões
+
+Para criar ou visualizar painéis personalizados, você precisa das permissões corretas do AWS IAM para os recursos que deseja monitorar. Certifique-se de que a conta Workload Factory tenha acesso de leitura às fontes de dados usadas pelos painéis.
+
+link:add-credentials.html["Aprenda como adicionar credenciais da AWS e configurar permissões do IAM"^].
+
+
+
+=== Design somente leitura
+
+Os painéis personalizados são somente leitura. Eles não podem alterar suas configurações de armazenamento ou carga de trabalho. Isso permite que você monitore seu sistema sem alterar nada acidentalmente.
+
+
+
+=== Limitações
+
+As seguintes limitações aplicam-se atualmente aos painéis personalizados:
+
+* Você não pode compartilhar dashboards fora da sua conta Workload Factory
+* Apenas um usuário pode editar um painel por vez
+* A edição simultânea não é suportada
+
+
+
+
+=== Ambiente de demonstração
+
+Se você estiver usando uma conta de demonstração do Workload Factory, alguns painéis predefinidos estarão disponíveis. Eles ajudam você a ver o que os painéis personalizados podem fazer. Cada painel mostra uma necessidade comum de monitoramento: status de recuperação de desastres, capacidade e custos em diferentes regiões e se as regras de proteção de armazenamento estão sendo seguidas.
+
+
+
+=== Exemplos de prompts
+
+Os exemplos a seguir mostram como descrever suas necessidades de monitoramento em linguagem simples:
+
+* *Monitoramento de recuperação de desastres*: "Estou configurando uma solução de recuperação de desastres na AWS para meus sistemas locais. Quero ver uma lista completa dos meus recursos locais e o status de cada um no site de recuperação de desastres na região US East, incluindo se está configurado, ativo e íntegro."
+* *Capacidade e custo em várias regiões*: "Gerencio armazenamento em diversas regiões e aplicações na nuvem. Quero ter visibilidade clara de quanto armazenamento aloquei, quanto está sendo usado e qual o custo, com detalhes para cada região e cada aplicação."
+* *Conformidade com a proteção de armazenamento*: "Estou configurando uma nova estratégia de proteção de armazenamento com base nos padrões da minha organização. Mostre-me todos os sistemas de arquivos e se eles atendem a estes requisitos:
++
+** Cargas de trabalho do banco de dados: 12 snapshots diários por volume e 2 snapshots à prova de adulteração por semana.
+** Compartilhamentos NFS e SMB: 7 snapshots diários por volume e 1 snapshot à prova de adulteração por semana.
+** O ARP deve estar habilitado em todos os volumes.
+
+
+
+
+
+
+== Próximos passos
+
+* link:create-custom-dashboard.html["Crie um painel personalizado"]
+* link:manage-custom-dashboards.html["Gerencie painéis personalizados"]
+* link:troubleshoot-custom-dashboards.html["Solucionar problemas de painéis personalizados"]
+

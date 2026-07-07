@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: create-custom-dashboard.html 
+keywords: create dashboard, custom dashboard, AI dashboard, dashboard creation, personalized dashboard 
+summary: Crie um painel personalizado usando instruções guiadas por IA para monitorar o que é mais importante para suas cargas de trabalho e prioridades operacionais. 
+---
+= Crie um painel personalizado
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Crie painéis personalizados descrevendo o que você deseja monitorar em linguagem simples. A IA guia você pela configuração para que seus painéis correspondam às suas cargas de trabalho e prioridades.
+
+.Sobre esta tarefa
+Os painéis personalizados utilizam um diálogo guiado por IA para entender o que você deseja visualizar. Você descreve suas necessidades de monitoramento em linguagem natural, e o sistema faz perguntas para esclarecer e garantir que o painel atenda aos seus requisitos.
+
+Depois de criado, você pode atualizar o painel para ver os dados atualizados.
+
+Lembre-se de que os painéis personalizados são, por definição, somente leitura e não podem fazer alterações nas configurações de armazenamento ou de workload.
+
+.Antes de começar
+* Você precisa de permissão para acessar os recursos que você deseja monitorar no seu painel.
+* Configure suas cargas de trabalho no Workload Factory antes de criar painéis para monitorá-las.
+
+
+
+
+== Crie um painel de controle
+
+.Passos
+. Inicie sessão utilizando uma das link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Selecione o menu image:workloads-menu-icon.png["O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, eda, ai, bancos de dados, vmware e administração."] e, em seguida, selecione *Visão geral das cargas de trabalho* > *Painéis personalizados*.
++
+Se este for o seu primeiro painel, você verá uma tela em branco com prompts de exemplo para ajudar você a começar. Você pode selecionar *Copiar prompt* para copiar um prompt de exemplo para a caixa de texto do diálogo de IA.
+
+. Selecione *Criar novo painel*.
+. Na caixa de diálogo de IA, descreva o que você deseja monitorar.
++
+Descreva em linguagem simples. A IA fará algumas perguntas para entender melhor suas necessidades.
+
+. Selecione image:arrow.png["O ícone de menu é usado para iniciar a geração de painéis., width=18"].
+. Responda às perguntas de esclarecimento da IA.
++
+A IA pode pedir que você escolha entre várias opções para entender melhor o que você precisa. Responda a cada pergunta e selecione *Continuar* ou selecione *Pular* para passar pelas perguntas opcionais.
+
+. Após responder a todas as perguntas, selecione *Continuar* para criar seu painel.
+
+
+.Resultado
+Seu painel personalizado agora está no catálogo de painéis. Todos os usuários da sua conta do Workload Factory podem acessá-lo e visualizá-lo.
+
+.O que vem a seguir
+Após a criação, você pode:
+
+* Atualize os dados do painel para ver as informações mais recentes
+* Edite os painéis para alterar o que eles exibem
+* Exclua painéis que você não precisa mais
+* Veja os detalhes do painel, incluindo quem o criou e quando foi atualizado pela última vez
+
+
+
+
+== Informações relacionadas
+
+* link:manage-custom-dashboards.html["Gerencie seus painéis personalizados"]
+* link:troubleshoot-custom-dashboards.html["Solucionar problemas de painéis personalizados"]
+

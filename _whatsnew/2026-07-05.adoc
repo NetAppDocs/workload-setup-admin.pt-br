@@ -1,0 +1,15 @@
+= Painéis personalizados
+:allow-uri-read: 
+
+
+
+
+=== Painéis personalizados
+
+Crie painéis de controle com inteligência artificial que se adaptem às suas cargas de trabalho e prioridades para que você possa visualizar facilmente o desempenho das suas operações. Em vez de depender de visualizações fixas, os painéis personalizados permitem que você se concentre nas informações que mais importam.
+
+Basta descrever o que você deseja monitorar em linguagem simples, e a IA criará um painel com base na sua solicitação. Por exemplo, você pode monitorar o status de recuperação de desastres, a capacidade e os custos em diferentes regiões, a conformidade com a proteção de armazenamento e outras métricas operacionais.
+
+Os painéis personalizados são somente leitura, portanto, não podem alterar suas configurações de armazenamento ou carga de trabalho. Qualquer pessoa em sua conta do Workload Factory pode visualizar e gerenciar esses painéis, facilitando o compartilhamento de informações e o alinhamento entre as equipes.
+
+link:learn-custom-dashboards.html["Saiba mais sobre painéis personalizados"]
