@@ -26,7 +26,7 @@ Você precisa ter pelo menos um painel personalizado em sua conta do Workload Fa
 == Acesse o catálogo do dashboard
 
 .Passos
-. Inicie sessão utilizando uma das link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Faça login usando um dos link:console-experiences.html["experiências de console"^].
 . No menu, selecione *Visão geral das cargas de trabalho* e depois *Painéis personalizados*.
 +
 O catálogo de dashboards mostra todos os dashboards personalizados da sua conta do Workload Factory.

@@ -30,7 +30,7 @@ Lembre-se de que os painéis personalizados são, por definição, somente leitu
 == Crie um painel de controle
 
 .Passos
-. Inicie sessão utilizando uma das link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Faça login usando um dos link:console-experiences.html["experiências de console"^].
 . Selecione o menu image:workloads-menu-icon.png["O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, eda, ai, bancos de dados, vmware e administração."] e, em seguida, selecione *Visão geral das cargas de trabalho* > *Painéis personalizados*.
 +
 Se este for o seu primeiro painel, você verá uma tela em branco com prompts de exemplo para ajudar você a começar. Você pode selecionar *Copiar prompt* para copiar um prompt de exemplo para a caixa de texto do diálogo de IA.
