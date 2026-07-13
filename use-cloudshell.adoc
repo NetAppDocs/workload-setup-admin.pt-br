@@ -15,6 +15,7 @@ Abra o CloudShell para executar comandos AWS ou ONTAP CLI de qualquer lugar no c
 
 
 
+[[about-this-task]]
 == Sobre esta tarefa
 
 O CloudShell permite que você execute comandos AWS CLI ou ONTAP CLI em um ambiente semelhante a um shell a partir do console do Workload Factory.  Ele simula sessões de terminal no navegador, fornecendo recursos de terminal e enviando mensagens por meio do backend do Workload Factory.  Ele permite que você use as credenciais da AWS e as credenciais do ONTAP que você forneceu na sua conta NetApp .
@@ -32,6 +33,7 @@ Os recursos do CloudShell incluem:
 
 
 
+[[cloudshell-commands]]
 == Comandos do CloudShell
 
 Na interface GUI do CloudShell, você pode entrar `help` para exibir os comandos do CloudShell disponíveis. Depois de emitir o `help` comando, aparece a seguinte referência.
@@ -71,6 +73,7 @@ Os operadores de shell, como pipe `|`, execução em segundo plano `&` e redirec
 
 
 
+[[before-you-begin]]
 == Antes de começar
 
 O CloudShell funciona no contexto de suas credenciais da AWS. Para usar o CloudShell, você deve fornecer pelo menos uma credencial da AWS.
@@ -80,6 +83,7 @@ NOTE: O CloudShell está disponível para você executar qualquer comando AWS ou
 
 
 
+[[deploy-cloudshell]]
 == Implante o CloudShell
 
 Você pode implantar o CloudShell de qualquer lugar no console do NetApp Workload Factory.  Você também pode implantar o CloudShell a partir do NetApp Console.
@@ -138,6 +142,7 @@ image:screenshot-cloudshell-tab-menu.png["Captura de tela que mostra o menu de a
 
 
 
+[[rename-a-cloudshell-session-tab]]
 == Renomeie uma guia de sessão do CloudShell
 
 Você pode renomear uma guia de sessão do CloudShell para ajudá-lo a identificar a sessão.
@@ -153,6 +158,7 @@ O novo nome aparece na guia sessão do CloudShell.
 
 
 
+[[duplicate-cloudshell-session-tab]]
 == Guia de sessão duplicada do CloudShell
 
 Você pode duplicar uma guia de sessão do CloudShell para criar uma nova sessão com o mesmo nome, credenciais e região. O código da guia original não é duplicado na guia duplicada.
@@ -167,6 +173,7 @@ O novo separador é apresentado com o mesmo nome que o separador original.
 
 
 
+[[close-cloudshell-session-tabs]]
 == Feche as guias de sessão do CloudShell
 
 Você pode fechar as guias do CloudShell uma de cada vez, fechar outras guias nas quais não está trabalhando ou fechar todas as guias de uma vez.
@@ -187,6 +194,7 @@ As guias de sessão do CloudShell selecionadas são fechadas.
 
 
 
+[[split-cloudshell-session-tabs]]
 == Dividir guias de sessão do CloudShell
 
 Você pode dividir as guias de sessão do CloudShell para exibir duas ou mais guias ao mesmo tempo.
@@ -198,6 +206,7 @@ image:screenshot-cloudshell-split-view.png["Captura de tela que mostra duas guia
 
 
 
+[[update-settings-for-a-cloudshell-session]]
 == Atualize as configurações para uma sessão do CloudShell
 
 Você pode atualizar as configurações de tipo de fonte e saída para sessões do CloudShell.

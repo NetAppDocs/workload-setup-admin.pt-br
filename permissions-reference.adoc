@@ -18,6 +18,7 @@ Para usar os recursos e serviços do NetApp Workload Factory, você precisará f
 
 
 
+[[why-use-permissions]]
 == Por que usar permissões
 
 Ao conceder permissões, o Workload Factory associa uma política à instância com permissões para gerenciar recursos e processos dentro dessa conta da AWS.  Isso permite que o Workload Factory execute diversas operações, desde a descoberta de seus ambientes de armazenamento até a implantação de recursos da AWS, como sistemas de arquivos no gerenciamento de armazenamento ou bases de conhecimento para cargas de trabalho do GenAI.
@@ -26,12 +27,14 @@ Para cargas de trabalho de banco de dados, por exemplo, quando o Workload Factor
 
 
 
+[[permissions-by-workload]]
 == Permissões por carga de trabalho
 
 Cada carga de trabalho utiliza permissões para executar determinadas tarefas no Workload Factory.  As permissões são agrupadas em políticas de permissão definidas.  Role a página até a carga de trabalho que você utiliza para saber mais sobre as políticas de permissão, o JSON copiável dessas políticas e uma tabela que lista todas as permissões, sua finalidade, onde são usadas e quais políticas de permissão as suportam.
 
 
 
+[[permissions-for-storage]]
 === Permissões para armazenamento
 
 As políticas do IAM disponíveis para o Storage fornecem as permissões necessárias para que o Workload Factory gerencie recursos e processos em seu ambiente de nuvem pública.
@@ -478,6 +481,7 @@ A tabela a seguir exibe as permissões para armazenamento.
 ====
 
 
+[[permissions-for-database-workloads]]
 === Permissões para cargas de trabalho de banco de dados
 
 As políticas do IAM disponíveis para cargas de trabalho de banco de dados fornecem as permissões necessárias para que o Workload Factory gerencie recursos e processos em seu ambiente de nuvem pública.
@@ -1401,6 +1405,7 @@ A tabela a seguir exibe as permissões para cargas de trabalho de banco de dados
 ====
 
 
+[[permissions-for-genai-workloads]]
 === Permissões para cargas de trabalho do GenAI
 
 As políticas do IAM para cargas de trabalho do VMware fornecem as permissões que o Workload Factory for VMware precisa para gerenciar recursos e processos dentro do seu ambiente de nuvem pública com base no modo operacional em que você opera.
@@ -1874,6 +1879,7 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 ====
 
 
+[[permissions-for-vmware-workloads]]
 === Permissões para cargas de trabalho VMware
 
 As cargas de trabalho do VMware oferecem as seguintes políticas de permissão para escolha:
@@ -2115,12 +2121,14 @@ A tabela a seguir fornece detalhes sobre as permissões para cargas de trabalho 
 ====
 
 
+[[change-log]]
 == Alterar registo
 
 À medida que as permissões são adicionadas e removidas, vamos anotá-las nas seções abaixo.
 
 
 
+[[1-february-2026]]
 === 1 de fevereiro de 2026
 
 As seguintes permissões foram adicionadas à carga de trabalho de armazenamento:
@@ -2149,6 +2157,7 @@ As seguintes permissões foram adicionadas à carga de trabalho de armazenamento
 
 
 
+[[04-december-2025]]
 === 04 de dezembro de 2025
 
 As seguintes permissões foram adicionadas à carga de trabalho de armazenamento:
@@ -2161,6 +2170,7 @@ As seguintes permissões foram adicionadas à carga de trabalho de armazenamento
 
 
 
+[[27-november-2025]]
 === 27 de novembro de 2025
 
 As seguintes permissões foram adicionadas à carga de trabalho de armazenamento:
@@ -2173,12 +2183,14 @@ As seguintes permissões foram adicionadas à carga de trabalho de armazenamento
 
 
 
+[[2-november-2025]]
 === 2 de novembro de 2025
 
 As políticas de permissão "somente leitura" e "leitura/gravação" foram substituídas em cargas de trabalho de armazenamento, banco de dados e VMware para fornecer mais granularidade e flexibilidade na atribuição de permissões.
 
 
 
+[[5-october-2025]]
 === 5 de outubro de 2025
 
 As seguintes permissões foram removidas do GenAI e agora são gerenciadas pelo mecanismo GenAI:
@@ -2192,18 +2204,21 @@ As seguintes permissões foram removidas do GenAI e agora são gerenciadas pelo 
 
 
 
+[[29-june-2025]]
 === 29 de junho de 2025
 
 A seguinte permissão agora está disponível no modo _somente leitura_ para bancos de dados:  `cloudwatch:GetMetricData` .
 
 
 
+[[3-june-2025]]
 === 3 de junho de 2025
 
 A seguinte permissão agora está disponível no modo _leitura/gravação_ para GenAI:  `s3:ListAllMyBuckets` .
 
 
 
+[[4-may-2025]]
 === 4 de maio de 2025
 
 A seguinte permissão agora está disponível no modo _leitura/gravação_ para GenAI:  `qbusiness:ListApplications` .
@@ -2219,12 +2234,14 @@ A seguinte permissão agora está disponível no modo _leitura/gravação_ para 
 
 
 
+[[2-april-2025]]
 === 2 de abril de 2025
 
 A seguinte permissão agora está disponível no modo _somente leitura_ para bancos de dados:  `ssm:DescribeInstanceInformation` .
 
 
 
+[[30-march-2025]]
 === 30 de março de 2025
 
 
@@ -2250,12 +2267,14 @@ O `iam:SimulatePrincipalPolicy` a permissão faz parte de todas as políticas de
 
 
 
+[[2-march-2025]]
 === 2 de março de 2025
 
 A seguinte permissão agora está disponível no modo _leitura/gravação_ para GenAI:  `bedrock:GetFoundationModel` .
 
 
 
+[[3-february-2025]]
 === 3 de fevereiro de 2025
 
 A seguinte permissão agora está disponível no modo _somente leitura_ para bancos de dados:  `iam:SimulatePrincipalPolicy` .

@@ -17,6 +17,7 @@ Você também pode convidar outras pessoas para se juntarem à sua conta do Work
 
 
 
+[[sign-up-to-workload-factory]]
 == Inscreva-se no Workload Factory
 
 Você pode se inscrever no Workload Factory usando uma das seguintes opções:
@@ -63,6 +64,7 @@ Agora você tem um login e uma conta no Workload Factory.  Você é considerado 
 
 
 
+[[invite-others-to-join-an-account-in-workload-factory]]
 == Convide outras pessoas para criar uma conta no Workload Factory.
 
 Como administrador da conta, você pode convidar outras pessoas para participar da sua conta do Workload Factory, permitindo que elas acessem e utilizem o Workload Factory. O gerenciamento de contas só é possível a partir do NetApp Console.

@@ -4,6 +4,7 @@
 
 
 
+[[rss-subscription]]
 === Subscrição RSS
 
 A subscrição RSS está disponível no link:https://console.workloads.netapp.com/["console de fábrica do workload"]. Usar um feed RSS é uma maneira fácil de consumir e estar ciente das mudanças na fábrica de carga de trabalho do BlueXP .
@@ -12,6 +13,7 @@ image:screenshot-rss-subscribe-button.png["Captura de tela do menu suspenso de a
 
 
 
+[[support-for-a-single-permission-policy-per-workload]]
 === Suporte para uma única política de permissão por workload
 
 Ao adicionar credenciais da AWS na fábrica de workloads, agora você pode selecionar uma única política de permissão, seja no modo de leitura ou automação, para cada workload e gerenciamento de storage.

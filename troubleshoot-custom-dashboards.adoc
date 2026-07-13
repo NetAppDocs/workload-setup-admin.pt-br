@@ -15,6 +15,7 @@ Use essas informações para resolver problemas comuns que você pode encontrar 
 
 
 
+[[dashboard-creation-failed]]
 == Falha na criação do dashboard
 
 **Problema:** Você vê a mensagem de erro "Falha ao entender a solicitação e gerar o código" ao criar um painel.
@@ -31,6 +32,7 @@ Use essas informações para resolver problemas comuns que você pode encontrar 
 
 
 
+[[dashboard-failed-to-load-data]]
 == Falha ao carregar os dados do painel
 
 **Problema:** O painel foi criado, mas apresenta erros ao carregar dados.
@@ -39,13 +41,13 @@ Use essas informações para resolver problemas comuns que você pode encontrar 
 
 **Solução:**
 
-* **Verifique as permissões:** Certifique-se de que sua conta do Workload Factory tenha acesso de leitura às cargas de trabalho e aos recursos usados pelo painel. Revise os requisitos de permissões em link:learn-custom-dashboards.html#permissions["Permissões"].
+* **Verifique as permissões:** Certifique-se de que sua conta do Workload Factory tenha acesso de leitura às cargas de trabalho e aos recursos usados pelo painel. Revise os requisitos de permissões em link:learn-custom-dashboards.html#aws-credentials-and-permissions["Credenciais e permissões da AWS"].
 * **Verifique as credenciais:** Confirme se suas credenciais da AWS são válidas e não expiraram. Veja link:add-credentials.html["Adicionar credenciais da AWS"] para detalhes.
-* **Confirme a configuração da carga de trabalho:** Certifique-se de que as cargas de trabalho que você deseja monitorar estão configuradas corretamente no Workload Factory e estão em execução.
 
 
 
 
+[[dashboard-not-loading-or-loading-slowly]]
 == O painel de controle não está carregando ou está carregando lentamente
 
 **Problema:** O painel de controle carrega lentamente ou alguns widgets não aparecem.
@@ -62,21 +64,7 @@ Use essas informações para resolver problemas comuns que você pode encontrar 
 
 
 
-== Não é possível editar o dashboard
-
-**Problema:** Ao tentar editar um painel, você vê a mensagem "Atualmente sendo editado por [nome do usuário]".
-
-**Causa:** Outro usuário da sua conta do Workload Factory está editando o painel. Apenas um usuário pode editar um painel por vez.
-
-**Solução:**
-
-* Aguarde o outro usuário terminar e salvar as alterações.
-* Entre em contato com a pessoa indicada na mensagem para coordenar a edição.
-* Se o usuário não estiver mais editando, mas o bloqueio permanecer, peça para fechar a janela de edição para liberar o bloqueio.
-
-
-
-
+[[missing-dashboards]]
 == Painéis ausentes
 
 **Problema:** Um painel que você criou não está mais listado no catálogo de painéis.
@@ -94,6 +82,7 @@ Todos os usuários de uma conta do Workload Factory podem visualizar e excluir p
 
 
 
+[[additional-help]]
 == Ajuda adicional
 
 Se você continuar enfrentando problemas com painéis personalizados, consulte link:get-help.html["Obtenha ajuda"] para obter informações sobre como entrar em contato com o suporte da NetApp.

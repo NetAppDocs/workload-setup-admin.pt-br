@@ -15,6 +15,7 @@ O Codebox é um copiloto de Infraestrutura como Código (IaC) que ajuda desenvol
 
 
 
+[[codebox-capabilities]]
 == Recursos do Codebox
 
 O Codebox fornece dois recursos principais do IAC:
@@ -27,6 +28,7 @@ Além disso, ao configurar as credenciais do Workload Factory, o Codebox exibe d
 
 
 
+[[supported-code-formats]]
 == Formatos de código suportados
 
 Os formatos de código suportados incluem:
@@ -39,6 +41,7 @@ Os formatos de código suportados incluem:
 
 
 
+[[related-information]]
 == Informações relacionadas
 
 link:use-codebox.html["Saiba como usar o Codebox"].

@@ -19,6 +19,7 @@ O Amazon FSx for NetApp ONTAP fornece volumes de armazenamento NFS, SMB/CIFS e i
 
 
 
+[[features]]
 == Caraterísticas
 
 A plataforma Workload Factory oferece os seguintes recursos principais.
@@ -34,12 +35,14 @@ Assistente de IA Ask Me:: Faça perguntas ao assistente de IA sobre como gerenci
 
 
 
+[[supported-cloud-providers]]
 == Fornecedores de nuvem compatíveis
 
 O Workload Factory permite que você gerencie o armazenamento em nuvem e use recursos de carga de trabalho no Amazon Web Services.
 
 
 
+[[security]]
 == Segurança
 
 A segurança do NetApp Workload Factory é uma prioridade máxima para a NetApp. Todas as cargas de trabalho no Workload Factory são executadas sobre o Amazon FSx for NetApp ONTAP. Além de tudo link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/security.html["Recursos de segurança da AWS"^]O NetApp Workload Factory recebeu link:https://trust.netapp.com/["Conformidade com SOC2 Tipo 1, conformidade com SOC2 Tipo 2 e conformidade com HIPAA."^].
@@ -48,18 +51,21 @@ O Amazon FSx for NetApp ONTAP para NetApp Workload Factory é umlink:https://aws
 
 
 
+[[cost]]
 == Custo
 
 O Workload Factory é gratuito.  O custo que você paga à Amazon Web Services (AWS) depende dos serviços de armazenamento e carga de trabalho que você planeja implantar.  Isso inclui o custo do Amazon FSx for NetApp ONTAP , infraestrutura do VMware Cloud na AWS, serviços da AWS e muito mais.
 
 
 
+[[how-workload-factory-works]]
 == Como funciona o Workload Factory
 
 O Workload Factory inclui um console baseado na web fornecido por meio da camada SaaS, uma conta, modos operacionais que controlam o acesso ao seu ambiente de nuvem, links que fornecem conectividade segregada entre o Workload Factory e uma conta da AWS e muito mais.
 
 
 
+[[software-as-a-service]]
 === Software como serviço
 
 O Workload Factory pode ser acessado através dolink:https://console.workloads.netapp.com["Console do NetApp Workload Factory"^] e olink:https://console.netapp.com["Console NetApp"^] .  Essas experiências SaaS permitem que você acesse automaticamente os recursos mais recentes assim que são lançados e alterne facilmente entre suas contas e links do Workload Factory.
@@ -68,6 +74,7 @@ link:console-experiences.html["Saiba mais sobre as diferentes experiências de c
 
 
 
+[[accounts]]
 === Contas
 
 Ao efetuar login no Workload Factory pela primeira vez, você será solicitado a criar uma conta.  Esta conta permite que você organize seus recursos, cargas de trabalho e acesso a cargas de trabalho para sua organização usando credenciais.
@@ -91,6 +98,7 @@ link:manage-service-accounts.html["Saiba como gerenciar contas de serviço"]
 
 
 
+[[permissions]]
 === Permissões
 
 O Workload Factory oferece políticas de permissão flexíveis que permitem controlar cuidadosamente o acesso ao seu ambiente de nuvem e atribuir níveis incrementais de confiança ao Workload Factory com base em suas políticas de TI.
@@ -99,6 +107,7 @@ link:permissions-reference.html["Saiba mais sobre as políticas de permissão do
 
 
 
+[[connectivity-links]]
 === Ligações de conetividade
 
 Um link do Workload Factory cria uma relação de confiança e conectividade entre o Workload Factory e um ou mais sistemas de arquivos FSx para ONTAP .  Isso permite que você monitore e gerencie determinados recursos do sistema de arquivos diretamente das chamadas da API REST do ONTAP que não estão disponíveis por meio da API do Amazon FSx para ONTAP .
@@ -111,6 +120,7 @@ https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["Saiba mais
 
 
 
+[[codebox-automation]]
 === Automação Codebox
 
 O Codebox é um copiloto de Infraestrutura como Código (IaC) que ajuda desenvolvedores e engenheiros de DevOps a gerar o código necessário para executar qualquer operação suportada pelo Workload Factory.  Os formatos de código incluem API REST do Workload Factory, AWS CLI e AWS CloudFormation.
@@ -123,6 +133,7 @@ link:codebox-automation.html["Saiba mais sobre o Codebox"]
 
 
 
+[[savings-calculators]]
 === Calculadoras de poupança
 
 O Workload Factory oferece calculadoras de economia para que você possa comparar os custos de seus ambientes de armazenamento, bancos de dados ou cargas de trabalho VMware em sistemas de arquivos FSx para ONTAP com outros serviços da Amazon. Dependendo das suas necessidades de armazenamento, você pode descobrir que os sistemas de arquivos FSx para ONTAP são a opção mais econômica para você.
@@ -134,6 +145,7 @@ O Workload Factory oferece calculadoras de economia para que você possa compara
 
 
 
+[[well-architected-workloads]]
 === Cargas de trabalho bem arquitetadas
 
 O Workload Factory ajuda você a manter e operar configurações de armazenamento e banco de dados confiáveis, seguras, eficientes e econômicas, alinhadas ao AWS Well-Architected Framework. O Workload Factory analisa diariamente as instalações do FSx em busca de sistemas de arquivos ONTAP , SQL Server e bancos de dados Oracle para fornecer informações sobre possíveis erros de configuração e recomendar ações manuais ou automatizadas para corrigir os problemas.
@@ -142,6 +154,7 @@ link:well-architected-workloads.html["Saiba mais sobre cargas de trabalho bem ar
 
 
 
+[[tools-to-use-netapp-workload-factory]]
 == Ferramentas para usar o NetApp Workload Factory
 
 Você pode usar o NetApp Workload Factory com as seguintes ferramentas:
@@ -157,6 +170,7 @@ Você pode usar o NetApp Workload Factory com as seguintes ferramentas:
 
 
 
+[[rest-apis]]
 === APIS REST
 
 O Workload Factory permite que você otimize, automatize e opere seus sistemas de arquivos FSx for ONTAP para cargas de trabalho específicas.  Cada carga de trabalho expõe uma API REST associada.  Coletivamente, essas cargas de trabalho e APIs formam uma plataforma de desenvolvimento flexível e extensível que você pode usar para administrar seus sistemas de arquivos FSx para ONTAP .
@@ -172,6 +186,7 @@ https://console.workloads.netapp.com/api-doc["Veja a documentação da API REST 
 
 
 
+[[region-support]]
 == Suporte de região
 
 As seguintes regiões da AWS não são suportadas:

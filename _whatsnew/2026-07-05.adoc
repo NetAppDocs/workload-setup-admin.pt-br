@@ -4,6 +4,7 @@
 
 
 
+[[custom-dashboards]]
 === Painéis personalizados
 
 Crie painéis de controle com inteligência artificial que se adaptem às suas cargas de trabalho e prioridades para que você possa visualizar facilmente o desempenho das suas operações. Em vez de depender de visualizações fixas, os painéis personalizados permitem que você se concentre nas informações que mais importam.

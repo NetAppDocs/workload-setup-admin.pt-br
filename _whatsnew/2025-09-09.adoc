@@ -4,6 +4,7 @@
 
 
 
+[[new-notification-for-storage]]
 === Nova notificação para armazenamento
 
 O serviço de notificação de BlueXP workload factory inclui a notificação para gerenciamento automático de capacidade para armazenamento.

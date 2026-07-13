@@ -20,13 +20,9 @@ Depois de criado, você pode atualizar o painel para ver os dados atualizados.
 
 Lembre-se de que os painéis personalizados são, por definição, somente leitura e não podem fazer alterações nas configurações de armazenamento ou de workload.
 
-.Antes de começar
-* Você precisa de permissão para acessar os recursos que você deseja monitorar no seu painel.
-* Configure suas cargas de trabalho no Workload Factory antes de criar painéis para monitorá-las.
 
 
-
-
+[[create-a-dashboard]]
 == Crie um painel de controle
 
 .Passos
@@ -55,13 +51,13 @@ Seu painel personalizado agora está no catálogo de painéis. Todos os usuário
 Após a criação, você pode:
 
 * Atualize os dados do painel para ver as informações mais recentes
-* Edite os painéis para alterar o que eles exibem
 * Exclua painéis que você não precisa mais
 * Veja os detalhes do painel, incluindo quem o criou e quando foi atualizado pela última vez
 
 
 
 
+[[related-information]]
 == Informações relacionadas
 
 * link:manage-custom-dashboards.html["Gerencie seus painéis personalizados"]

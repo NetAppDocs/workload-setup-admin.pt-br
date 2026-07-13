@@ -4,6 +4,7 @@
 
 
 
+[[well-architected-updates]]
 === Atualizações bem arquitetadas
 
 NetApp Workload Factory inclui a avaliação bem arquitetada para cargas de trabalho do Elastic VMware Service (Exchange Virtual Server), e adiciona novas configurações para cargas de trabalho de Storage e Database.
@@ -37,6 +38,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[new-permissions-for-storage]]
 === Novas permissões para Storage
 
 Novas permissões foram adicionadas à carga de trabalho Storage para aprimorar o gerenciamento de pontos de acesso S3.

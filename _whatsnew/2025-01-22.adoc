@@ -4,6 +4,7 @@
 
 
 
+[[bluexp-workload-factory-permissions]]
 === Permissões de fábrica do workload do BlueXP 
 
 Agora você pode visualizar as permissões que a fábrica de workloads do BlueXP  usa para executar várias operações, desde a descoberta de seus ambientes de storage até a implantação de recursos da AWS, como sistemas de arquivos em armazenamento ou bases de conhecimento para workloads do GenAI. Você pode visualizar as políticas e permissões do IAM para workloads de storage, bancos de dados, VMware e GenAI.
