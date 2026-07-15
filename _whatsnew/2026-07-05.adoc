@@ -14,3 +14,10 @@ Basta descrever o que você deseja monitorar em linguagem simples, e a IA criar�
 Os painéis personalizados são somente leitura, portanto, não podem alterar suas configurações de armazenamento ou carga de trabalho. Qualquer pessoa em sua conta do Workload Factory pode visualizar e gerenciar esses painéis, facilitando o compartilhamento de informações e o alinhamento entre as equipes.
 
 link:learn-custom-dashboards.html["Saiba mais sobre painéis personalizados"]
+
+
+
+[[genai-workload-removal-from-workload-factory]]
+=== Remoção de workload GenAI do Workload Factory
+
+A carga de trabalho GenAI foi removida do console do Workload Factory.

@@ -1582,4 +1582,6 @@
   <block id="21984c4de187dab774a2262572d5c108" category="paragraph">Todos os usuários da sua conta do Workload Factory podem acessar todos os painéis personalizados. Cada painel exibe detalhes básicos, como o nome do criador e a data de criação.</block>
   <block id="a83695a886882e5b4baf753ee607f66f" category="paragraph">Os painéis personalizados são somente leitura. Eles não podem alterar suas configurações de armazenamento ou carga de trabalho.</block>
   <block id="dc3bd384dcb2bc2324eb0b2de08dda55" category="list-text">**Verifique as permissões:** Certifique-se de que sua conta do Workload Factory tenha acesso de leitura às cargas de trabalho e aos recursos usados pelo painel. Revise os requisitos de permissões em <block ref="7630a8b182c80d5ddb5d9ce1be672fef" category="inline-link-macro-rx"></block>.</block>
+  <block id="cc661418365d138458bf55f936b73a47" category="section-title">Remoção de workload GenAI do Workload Factory</block>
+  <block id="ef18329e66f7a0f5b022b9a400dd74ed" category="paragraph">A carga de trabalho GenAI foi removida do console do Workload Factory.</block>
 </blocks>
