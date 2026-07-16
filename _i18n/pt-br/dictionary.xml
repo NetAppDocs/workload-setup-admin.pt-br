@@ -1467,7 +1467,6 @@
   <block id="22e8351c82677bcc78bd23d6fb170bc8" category="paragraph">O painel de controle é removido permanentemente da sua conta do Workload Factory e todos os usuários perdem o acesso a ele.</block>
   <block id="9537d9160ef701530bdd875698475957" category="inline-link-macro">Crie painéis personalizados adicionais</block>
   <block id="1258b44f1520a3cf10d648fb08dbf72e" category="list-text"><block ref="1258b44f1520a3cf10d648fb08dbf72e" category="inline-link-macro-rx"></block></block>
-  <block id="87377124bfbafaf3a36cd9e53255e829" category="summary">Resolva problemas comuns com painéis personalizados, incluindo falhas na criação, problemas de carregamento de dados e problemas de acesso.</block>
   <block id="0c5896a9e6c8d2cff1b4d007852b1732" category="paragraph">Use essas informações para resolver problemas comuns que você pode encontrar ao criar ou usar painéis personalizados.</block>
   <block id="2e00365fe32c89b1fd1ad214f291ca85" category="section-title">Falha na criação do dashboard</block>
   <block id="09a8c59ab236b488dde6ce993a012c63" category="paragraph">**Problema:** Você vê a mensagem de erro "Falha ao entender a solicitação e gerar o código" ao criar um painel.</block>
@@ -1491,7 +1490,6 @@
   <block id="e7347594ee6cffce40f1598054f4f163" category="list-text">**Aguarde e tente novamente:** Se o problema continuar, aguarde alguns minutos e tente novamente.</block>
   <block id="318369ae5a2f25e9c7cb0b7b846d1775" category="section-title">Painéis ausentes</block>
   <block id="732976f9f9cc4b9938c0a1a9c2569828" category="paragraph">**Problema:** Um painel que você criou não está mais listado no catálogo de painéis.</block>
-  <block id="d0a35413e8843c3f263cb1fad4f4cb3e" category="paragraph">**Causa:** Outro usuário da sua conta do Workload Factory pode tê-lo excluído.</block>
   <block id="4d6f4bd604a33b7ae11eceb4c29146f9" category="list-text">Certifique-se de estar conectado à conta correta do Workload Factory.</block>
   <block id="86d37fb397f8d1a33dc0e6cb1de913ae" category="list-text">Pergunte a outros usuários da sua conta se alguém excluiu o dashboard.</block>
   <block id="62ad02c42e5e548dcaf80a64c2d0eefd" category="list-text">Se necessário, recrie o dashboard usando os requisitos originais.</block>
@@ -1513,4 +1511,7 @@
   <block id="ef18329e66f7a0f5b022b9a400dd74ed" category="paragraph">A carga de trabalho GenAI foi removida do console do Workload Factory.</block>
   <block id="7548d07d123f53ef8a847c6be983f3e5" category="paragraph">Ao conceder permissões, Workload Factory associa uma política à instância com permissões para gerenciar recursos e processos dentro dessa conta da AWS. Isso permite que Workload Factory execute diversas operações, desde a descoberta de seus ambientes de armazenamento até a implantação de recursos da AWS, como sistemas de arquivos no gerenciamento de storage.</block>
   <block id="b0e0fd1b2977dcfd6e5719ca7a3a6e37" category="paragraph">Esta etapa é opcional. Você pode usar o Workload Factory sem adicionar credenciais para acessar sua conta AWS. Adicionar credenciais da AWS ao Workload Factory concede à sua conta Workload Factory as permissões necessárias para criar e gerenciar sistemas de arquivos FSx for ONTAP e para implantar e gerenciar cargas de trabalho específicas, como bancos de dados.</block>
+  <block id="00436cf3153058a6cc1bda7834e2df46" category="paragraph">Para criar dashboards, o Workload Factory usa credenciais da AWS somente leitura. Essas credenciais permitem apenas ações de leitura, como <block ref="24ca8966cf3ca7c9dc7c9de631b31ff0" prefix=" " category="inline-code"></block> e <block ref="0054238c3be20aab765346f029c558a4" prefix=" " category="inline-code"></block>, para os seguintes serviços: EC2, FSx, CloudWatch, Resource Groups Tagging API, Backup, CloudWatch Logs, KMS e EFS.</block>
+  <block id="660503a3fa3804fff2a7f84301e40d4a" category="summary">Corrija problemas comuns com painéis personalizados, incluindo falhas de configuração, problemas de carregamento de dados e problemas de acesso.</block>
+  <block id="e3c8b96b5757e581b1d0e7900d690797" category="paragraph">**Causa:** Outro usuário na sua conta do Workload Factory pode tê-lo excluído.</block>
 </blocks>

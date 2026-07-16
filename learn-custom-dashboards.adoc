@@ -56,6 +56,8 @@ Durante a configuração, o diálogo guiado por IA ajuda você a definir:
 
 Para criar ou visualizar painéis personalizados, você precisa das permissões corretas do AWS IAM para os recursos que deseja monitorar. Certifique-se de que a conta Workload Factory tenha acesso de leitura às fontes de dados usadas pelos painéis.
 
+Para criar dashboards, o Workload Factory usa credenciais da AWS somente leitura. Essas credenciais permitem apenas ações de leitura, como  `fsx:DescribeVolumes` e  `fsx:DescribeFileSystems`, para os seguintes serviços: EC2, FSx, CloudWatch, Resource Groups Tagging API, Backup, CloudWatch Logs, KMS e EFS.
+
 link:add-credentials.html["Aprenda como adicionar credenciais da AWS e configurar permissões do IAM"^].
 
 

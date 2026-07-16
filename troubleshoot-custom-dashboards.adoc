@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: troubleshoot-custom-dashboards.html 
 keywords: troubleshooting, dashboard errors, dashboard issues, failed creation, failed to load, dashboard not loading 
-summary: Resolva problemas comuns com painéis personalizados, incluindo falhas na criação, problemas de carregamento de dados e problemas de acesso. 
+summary: Corrija problemas comuns com painéis personalizados, incluindo falhas de configuração, problemas de carregamento de dados e problemas de acesso. 
 ---
 = Solucionar problemas de painéis personalizados
 :allow-uri-read: 
@@ -69,7 +69,7 @@ Use essas informações para resolver problemas comuns que você pode encontrar 
 
 **Problema:** Um painel que você criou não está mais listado no catálogo de painéis.
 
-**Causa:** Outro usuário da sua conta do Workload Factory pode tê-lo excluído.
+**Causa:** Outro usuário na sua conta do Workload Factory pode tê-lo excluído.
 
 **Solução:**
 
