@@ -18,6 +18,9 @@ Painéis personalizados usam IA para criar visualizações personalizadas do seu
 Todos os membros da sua conta do Workload Factory podem visualizar todos os painéis personalizados. Essa configuração compartilhada ajuda as equipes a colaborar e a visualizar as mesmas informações operacionais em toda a sua organização.
 
 
+NOTE: Se o administrador da sua conta desativou os recursos de IA, você verá uma mensagem e não poderá criar painéis. Entre em contato com seu administrador ou link:manage-genai-features.html["Aprenda sobre administração de IA"].
+
+
 
 [[why-use-custom-dashboards]]
 == Por que usar painéis personalizados
@@ -43,6 +46,21 @@ Durante a configuração, o diálogo guiado por IA ajuda você a definir:
 * Visualizações por região, carga de trabalho ou outras categorias
 * Regras ou requisitos que você precisa acompanhar e exibir
 
+
+
+
+[[view-and-share-dashboards]]
+== Visualize e compartilhe painéis
+
+Por padrão, os novos painéis são privados, então somente você pode visualizá-los. Você pode tornar um painel público a qualquer momento para compartilhá-lo com sua equipe.
+
+* *Painéis privados*: Somente você pode visualizar esses painéis. Use-os para monitoramento pessoal, testes ou trabalho em andamento.
+* *Painéis públicos*: Todos os membros da sua conta do Workload Factory podem visualizar esses painéis. Use-os para compartilhar visualizações de monitoramento e manter sua equipe alinhada em relação às cargas de trabalho, prioridades e objetivos de negócios.
+
+
+Cada cartão do painel mostra se o painel é privado ou público, assim você pode ver rapidamente quais painéis são compartilhados.
+
+link:manage-custom-dashboards.html#change-dashboard-visibility["Aprenda como alterar a visibilidade do painel"].
 
 
 
@@ -83,7 +101,7 @@ Os painéis personalizados são somente leitura. Eles não podem alterar suas co
 
 As seguintes limitações aplicam-se atualmente aos painéis personalizados:
 
-* Você não pode compartilhar dashboards fora da sua conta Workload Factory
+* Não é possível compartilhar dashboards fora da sua conta do Workload Factory. Todo compartilhamento de dashboards é limitado a usuários dentro da mesma conta do Workload Factory.
 
 
 

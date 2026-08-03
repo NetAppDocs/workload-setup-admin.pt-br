@@ -34,6 +34,9 @@ Assistente de IA Ask Me:: Faça perguntas ao assistente de IA sobre como gerenci
 
 
 
+NOTE: Os administradores da conta podem ativar ou desativar os recursos de IA. Se um administrador os desativar, o assistente de IA "Ask Me AI" não estará disponível. link:manage-genai-features.html["Saiba mais sobre como gerenciar recursos de IA"].
+
+
 
 [[supported-cloud-providers]]
 == Fornecedores de nuvem compatíveis
@@ -116,7 +119,7 @@ Você não precisa de um link para começar a usar o Workload Factory, mas em al
 
 Atualmente, os links utilizam o AWS Lambda.
 
-https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["Saiba mais sobre links"^]
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["Saiba mais sobre links"^]
 
 
 

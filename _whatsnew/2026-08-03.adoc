@@ -1,0 +1,63 @@
+= Políticas de permissão IAM atualizadas para bancos de dados
+:allow-uri-read: 
+
+
+
+
+[[updated-iam-permission-policies-for-databases]]
+=== Políticas de permissão IAM atualizadas para bancos de dados
+
+As permissões para bancos de dados foram atualizadas para melhorar o acesso aos recursos e limitar o acesso ao SSM onde desnecessário.
+
+As permissões de visualização, planejamento e análise são limitadas a documentos do AWS SSM. Com essas permissões, você pode visualizar hosts, instâncias e bancos de dados. Você também pode executar uma análise sob demanda básica well-architected dos seus recursos.
+
+As permissões de operação e correção permitem que você faça alterações em seus recursos, analise registros de erros, obtenha uma análise abrangente e bem arquitetada de seus recursos e corrija problemas de configuração.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Referência de permissões"] === Painéis personalizados
+
+
+
+==== Notificações para painéis personalizados
+
+O Workload Factory agora notifica você quando seu painel personalizado está pronto ou se a criação falhar.
+
+Após criar um painel personalizado, você receberá uma notificação com um link direto para visualizá-lo. Se a criação falhar, você receberá uma notificação com um link para o inventário do painel personalizado para tentar novamente.
+
+Isso ajuda você a saber quando seu painel está pronto e facilita revisar ou recriar o painel.
+
+link:create-custom-dashboard.html["Aprenda como criar painéis personalizados"]
+
+link:configure-notifications.html["Saiba mais sobre como configurar notificações"]
+
+
+
+==== Painéis de controle personalizados privados e públicos
+
+Os painéis personalizados agora incluem configurações de compartilhamento. Você pode manter um painel privado ou compartilhá-lo com sua equipe.
+
+Por padrão, os novos painéis são privados e visíveis apenas para você. Você pode tornar um painel público a qualquer momento para compartilhá-lo com todos em sua conta do Workload Factory.
+
+Cada cartão do painel exibe um rótulo "Privado" ou "Público" para que você possa ver rapidamente quais painéis são compartilhados.
+
+link:learn-custom-dashboards.html#dashboard-visibility-and-sharing["Saiba mais sobre visibilidade e compartilhamento de painéis"]
+
+link:manage-custom-dashboards.html#change-dashboard-visibility["Aprenda como compartilhar dashboards"]
+
+
+
+[[ai-features-administration]]
+=== Administração de recursos de IA
+
+Você pode controlar o acesso aos recursos de IA em toda a sua organização com as seguintes configurações na administração do Workload Factory.
+
+* Use o Bedrock gerenciado pela NetApp (recomendado e ativado por padrão, com limites de crédito mensais)
+* Desative todos os recursos de IA
+
+
+A nova página de administração permite gerenciar essas configurações em um só lugar.
+
+Os recursos de IA incluem "Pergunte-me", painéis personalizados, construtor de regras e analisadores para EMS, logs de banco de dados e latência de volume.
+
+Se os recursos de IA estiverem desativados, os usuários verão uma mensagem informando que a IA não está disponível.
+
+link:manage-genai-features.html["Saiba mais sobre como gerenciar recursos de IA"]

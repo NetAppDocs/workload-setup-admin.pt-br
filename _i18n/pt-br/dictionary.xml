@@ -1098,8 +1098,6 @@
   <block id="b1c94ca2fbc3e78fc30069c8d0f01680" category="cell">Todos</block>
   <block id="51a013adbef58901545868ef26f09d7a" category="paragraph">As políticas do IAM disponíveis para cargas de trabalho de banco de dados fornecem as permissões necessárias para que o Workload Factory gerencie recursos e processos em seu ambiente de nuvem pública.</block>
   <block id="2d91eea349dd2934a023a9c89a25a4ae" category="paragraph">O banco de dados oferece as seguintes políticas de permissão para escolha:</block>
-  <block id="abd0fc334cbbe6ce3b144ecdf917849b" category="list-text">*Visualização, planejamento e análise*: Visualize o inventário de recursos do banco de dados, aprenda sobre a integridade de seus recursos, revise a análise de arquitetura adequada para suas configurações de banco de dados e explore oportunidades de economia, obtenha análises de logs de erros e explore possíveis economias.</block>
-  <block id="516f58485558bb7df0c42bfdf10a650f" category="list-text">*Operações e correção*: Execute tarefas operacionais para seus recursos de banco de dados e corrija problemas de configuração do banco de dados e do sistema de arquivos FSx para ONTAP subjacente.</block>
   <block id="6ba3b68b57fd6ae3c84b2202720ff1c9" category="list-text">*Criação de hosts de banco de dados*: Implante os hosts de banco de dados e o armazenamento do sistema de arquivos FSx para ONTAP subjacente de acordo com as melhores práticas.</block>
   <block id="2df5c87e4b8d61414a47560bc03e428a" category="open-title">Criação de host de banco de dados</block>
   <block id="041381a9f940255508c93bc6e7320eb0" category="cell">Obtenha os limites de cota de serviço para CloudFormation e VPC / Crie segredos em uma conta de usuário para as credenciais fornecidas para SQL, domínio e FSx para ONTAP</block>
@@ -1278,7 +1276,6 @@
   <block id="639aaa7220975711eaf4f7238888ede3" category="list-text"><block ref="60bf6eb7c11585a14c81cd64167a3e2f" prefix="" category="inline-code"></block></block>
   <block id="6f4666c06bc4797e8ebfec4281169e8e" category="list-text"><block ref="c7ae295cae45381a4835902254c83dd7" prefix="" category="inline-code"></block></block>
   <block id="5aa9637b0dbaf8812fe7c460bc3ac1a2" category="list-text"><block ref="fa85c54aec6192ae2f2d35640fa9550d" prefix="" category="inline-code"></block></block>
-  <block id="1fab3ff575faec37f5f5855ba6c44e9b" category="paragraph">Você pode descartar a análise de configurações que não se aplicam aos seus ambientes. Isso evita alertas desnecessários e resultados de otimização imprecisos. Ao descartar uma análise de configuração específica, Workload Factory não inclui a configuração na pontuação total de otimização.</block>
   <block id="0769f6a1306d51409d74d415b516e381" category="paragraph">Para começar a usar o Workload Factory, inscreva-se, adicione credenciais e estabeleça conectividade para gerenciar recursos da AWS e otimizar cargas de trabalho usando Amazon FSx for NetApp ONTAP.</block>
   <block id="d1fabbd85b7cc34641739e525d26f652" category="section-title">01 de fevereiro de 2026</block>
   <block id="7be2086f13a4f10a02431f16800fa81d" category="inline-link-macro">NetApp Console Documentação da API</block>
@@ -1398,7 +1395,6 @@
   <block id="32e95e9677f9ef2f50e204cf4b6401d7" category="list-text">Responda às perguntas de esclarecimento da IA.</block>
   <block id="7d84a0d9d14a5f050503a7b9b00b3435" category="paragraph">A IA pode pedir que você escolha entre várias opções para entender melhor o que você precisa. Responda a cada pergunta e selecione *Continuar* ou selecione *Pular* para passar pelas perguntas opcionais.</block>
   <block id="90173ffd48ab0b65df8cc1496c811a5d" category="list-text">Após responder a todas as perguntas, selecione *Continuar* para criar seu painel.</block>
-  <block id="9d1ec15b76f21503c345737dd1e6038c" category="paragraph">Seu painel personalizado agora está no catálogo de painéis. Todos os usuários da sua conta do Workload Factory podem acessá-lo e visualizá-lo.</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">O que vem a seguir</block>
   <block id="fb3b6f147b0a44a08f4c961dc053571e" category="paragraph">Após a criação, você pode:</block>
   <block id="a5c04615d2baa4c3104d2afbb5b85c59" category="list-text">Atualize os dados do painel para ver as informações mais recentes</block>
@@ -1434,7 +1430,6 @@
   <block id="9596530d51115869eabe2f1148109fcb" category="paragraph">Os painéis personalizados são somente leitura. Eles não podem alterar suas configurações de armazenamento ou carga de trabalho. Isso permite que você monitore seu sistema sem alterar nada acidentalmente.</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">Limitações</block>
   <block id="9b7e15be2b250373f1f4204c0d8a313a" category="paragraph">As seguintes limitações aplicam-se atualmente aos painéis personalizados:</block>
-  <block id="af58cbb6f48e75ca1858deb5b23d424e" category="list-text">Você não pode compartilhar dashboards fora da sua conta Workload Factory</block>
   <block id="8fbadf27f5b9fe2779015430fdb5baac" category="section-title">Ambiente de demonstração</block>
   <block id="372d2f979722e867e21cf5dc86365106" category="paragraph">Se você estiver usando uma conta de demonstração do Workload Factory, alguns painéis predefinidos estarão disponíveis. Eles ajudam você a ver o que os painéis personalizados podem fazer. Cada painel mostra uma necessidade comum de monitoramento: status de recuperação de desastres, capacidade e custos em diferentes regiões e se as regras de proteção de armazenamento estão sendo seguidas.</block>
   <block id="79092ffcd78270a38b45ed11da4ef893" category="section-title">Exemplos de prompts</block>
@@ -1500,8 +1495,6 @@
   <block id="68cd2ca9724f378c0a2815415eeecfbd" category="inline-link">Saiba como criar um link</block>
   <block id="11a7b8f6e5b40124f50c5d30e3fedda3" category="paragraph"><block ref="35d312ad6c576252ccfa87842dc6e767" category="inline-link-rx"></block>.</block>
   <block id="90b29202abc7a1c38c887ae166296c46" category="summary">Acesse seu catálogo de dashboards para visualizar, atualizar e excluir dashboards personalizados no Workload Factory.</block>
-  <block id="b0929267f27be355fe20aa6662a8ff91" category="paragraph">Gerencie seus painéis personalizados a partir do catálogo de painéis. Lá, você pode visualizar detalhes, atualizar dados ou excluir painéis que não precisa mais.</block>
-  <block id="21984c4de187dab774a2262572d5c108" category="paragraph">Todos os usuários da sua conta do Workload Factory podem acessar todos os painéis personalizados. Cada painel exibe detalhes básicos, como o nome do criador e a data de criação.</block>
   <block id="a83695a886882e5b4baf753ee607f66f" category="paragraph">Os painéis personalizados são somente leitura. Eles não podem alterar suas configurações de armazenamento ou carga de trabalho.</block>
   <block id="dc3bd384dcb2bc2324eb0b2de08dda55" category="list-text">**Verifique as permissões:** Certifique-se de que sua conta do Workload Factory tenha acesso de leitura às cargas de trabalho e aos recursos usados pelo painel. Revise os requisitos de permissões em <block ref="7630a8b182c80d5ddb5d9ce1be672fef" category="inline-link-macro-rx"></block>.</block>
   <block id="cc661418365d138458bf55f936b73a47" category="section-title">Remoção de workload GenAI do Workload Factory</block>
@@ -1513,5 +1506,139 @@
   <block id="e3c8b96b5757e581b1d0e7900d690797" category="paragraph">**Causa:** Outro usuário na sua conta do Workload Factory pode tê-lo excluído.</block>
   <block id="ee01e7a77a5b8f6475723b4e66eca889" category="paragraph">O Workload Factory requer um link para se conectar aos sistemas de arquivos Amazon FSx for ONTAP. Um link cria uma relação de confiança e conectividade entre o Workload Factory e um ou mais sistemas de arquivos Amazon FSx for ONTAP. Isso permite que você monitore e gerencie determinados recursos do sistema de arquivos diretamente pelas chamadas da API REST do ONTAP, que não estão disponíveis pela API do Amazon FSx for ONTAP.</block>
   <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link">Saiba mais sobre links</block>
-  <block id="cea96a6659ee3b63722518018a5e6659" category="paragraph"><block ref="cea96a6659ee3b63722518018a5e6659" category="inline-link-rx"></block></block>
+  <block id="8215457eb88ef1fb110b79579b908e3d" category="paragraph">Você pode descartar a análise de configurações que não se aplicam aos seus ambientes. Isso evita alertas desnecessários e resultados de otimização imprecisos.</block>
+  <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link-macro">Saiba mais sobre regras personalizadas</block>
+  <block id="821af7226458ea25572e88e8ab2026e4" category="paragraph">Você também pode criar regras personalizadas em linguagem simples para validar seus ambientes em relação aos padrões da sua organização e às melhores práticas da NetApp. Teste as regras com uma simulação e depois agende a execução delas em todos os seus ambientes. <block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>.</block>
+  <block id="8be08850265c9930c26a8e5b28183a2e" category="paragraph">Você também pode criar regras personalizadas em linguagem simples para validar seus ambientes em relação aos padrões da sua organização e às melhores práticas da NetApp. Teste as regras com uma simulação e, em seguida, agende a execução delas em todos os seus ambientes.</block>
+  <block id="7c24f3892a999a3e8d688cabe068b17a" category="paragraph"><block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>.</block>
+  <block id="da0c92072a1db7fee3208bcad3ad822b" category="doc">Políticas de permissão IAM atualizadas para bancos de dados</block>
+  <block id="e9e3af45119a834b75ee5ce8ad5fc96d" category="paragraph">As permissões para bancos de dados foram atualizadas para melhorar o acesso aos recursos e limitar o acesso ao SSM onde desnecessário.</block>
+  <block id="6f70bfe68d48e1ab770cfb69bea59dfd" category="paragraph">As permissões de visualização, planejamento e análise são limitadas a documentos do AWS SSM. Com essas permissões, você pode visualizar hosts, instâncias e bancos de dados. Você também pode executar uma análise sob demanda básica well-architected dos seus recursos.</block>
+  <block id="e9ad7ba5991717b52c215bd25e788b28" category="paragraph">As permissões de operação e correção permitem que você faça alterações em seus recursos, analise registros de erros, obtenha uma análise abrangente e bem arquitetada de seus recursos e corrija problemas de configuração.</block>
+  <block id="0c92fa03ad5e533f4ef42de9a2ae598f" category="paragraph"><block ref="167e20b67f84068555b3081057c696b8" category="inline-link-macro-rx"></block> === Painéis personalizados</block>
+  <block id="d5eb0f9120b28b557f3e367589adf4bb" category="section-title">Notificações para painéis personalizados</block>
+  <block id="fb5e135dfdab99cdebbb946a22093655" category="paragraph">O Workload Factory agora notifica você quando seu painel personalizado está pronto ou se a criação falhar.</block>
+  <block id="7a99102fbba6a5729480bc61967c8423" category="paragraph">Após criar um painel personalizado, você receberá uma notificação com um link direto para visualizá-lo. Se a criação falhar, você receberá uma notificação com um link para o inventário do painel personalizado para tentar novamente.</block>
+  <block id="a9402b6e97b8b59ffa86012d5cfb7f9a" category="paragraph">Isso ajuda você a saber quando seu painel está pronto e facilita revisar ou recriar o painel.</block>
+  <block id="359ab637c5369e269d0e004308b6c089" category="inline-link-macro">Aprenda como criar painéis personalizados</block>
+  <block id="2b4fe8741ca59e9e85fecaff24736613" category="paragraph"><block ref="2b4fe8741ca59e9e85fecaff24736613" category="inline-link-macro-rx"></block></block>
+  <block id="863d814c29385fa8ebfd13bc1c1c7e96" category="inline-link-macro">Saiba mais sobre como configurar notificações</block>
+  <block id="19fa6c73a4251f43a74dc700e68a79f1" category="paragraph"><block ref="19fa6c73a4251f43a74dc700e68a79f1" category="inline-link-macro-rx"></block></block>
+  <block id="27a522e1e6e4d9921e08ab5e7ad99158" category="section-title">Painéis de controle personalizados privados e públicos</block>
+  <block id="add4e669fb22c004f4eef61607cc5df8" category="paragraph">Os painéis personalizados agora incluem configurações de compartilhamento. Você pode manter um painel privado ou compartilhá-lo com sua equipe.</block>
+  <block id="1bdd40db25752f704baa9b254470fb9a" category="paragraph">Por padrão, os novos painéis são privados e visíveis apenas para você. Você pode tornar um painel público a qualquer momento para compartilhá-lo com todos em sua conta do Workload Factory.</block>
+  <block id="26e05170ba3616166d4659e72d415450" category="paragraph">Cada cartão do painel exibe um rótulo "Privado" ou "Público" para que você possa ver rapidamente quais painéis são compartilhados.</block>
+  <block id="29f897a53b188561913c2393050ce43a" category="inline-link-macro">Saiba mais sobre visibilidade e compartilhamento de painéis</block>
+  <block id="c5d5a7386c6c7c68f8d62de175cd235f" category="paragraph"><block ref="c5d5a7386c6c7c68f8d62de175cd235f" category="inline-link-macro-rx"></block></block>
+  <block id="c0bb5d7518380c44f5710f0803f9b3f4" category="inline-link-macro">Aprenda como compartilhar dashboards</block>
+  <block id="15bb464c4011a82a1976bc518af9f860" category="paragraph"><block ref="15bb464c4011a82a1976bc518af9f860" category="inline-link-macro-rx"></block></block>
+  <block id="b6ea1239e82705b159df88578e6fb6f0" category="section-title">Administração de recursos de IA</block>
+  <block id="1c7ba82e26fc30a97a625aaad623e4f4" category="paragraph">Você pode controlar o acesso aos recursos de IA em toda a sua organização com as seguintes configurações na administração do Workload Factory.</block>
+  <block id="e585625dd2a0a8e71ca8d8a269834ba9" category="list-text">Use o Bedrock gerenciado pela NetApp (recomendado e ativado por padrão, com limites de crédito mensais)</block>
+  <block id="7f72da8c356eeacf603a52c235e09676" category="list-text">Desative todos os recursos de IA</block>
+  <block id="aa55b63e5a41704f1621780515cd8a24" category="paragraph">A nova página de administração permite gerenciar essas configurações em um só lugar.</block>
+  <block id="cd89624525aeeba4f9fce9dcfb6d9a91" category="paragraph">Os recursos de IA incluem "Pergunte-me", painéis personalizados, construtor de regras e analisadores para EMS, logs de banco de dados e latência de volume.</block>
+  <block id="dc363e90d503e57b6cddc555e2f96d5f" category="paragraph">Se os recursos de IA estiverem desativados, os usuários verão uma mensagem informando que a IA não está disponível.</block>
+  <block id="48dc51848c127d267cdd7ab1bcd0fe5e" category="inline-link-macro">Saiba mais sobre como gerenciar recursos de IA</block>
+  <block id="56d2e09cbb0a828478db20ff2d11774d" category="paragraph"><block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block></block>
+  <block id="30c96c6f4cd1002d6f485ca940c9a6e7" category="cell">Criação do painel personalizado concluída com sucesso</block>
+  <block id="0791611e19f18138ef88e9ec3b961a87" category="cell">Seu painel personalizado foi criado com sucesso e já está pronto para visualização.</block>
+  <block id="8fef7542994100e60e95202e22600bf2" category="cell">Painéis personalizados</block>
+  <block id="c76cdbadf0535a7304cb2044c4133a18" category="cell">Conta Workload Factory</block>
+  <block id="b6330ae88e7fb12d91890500943ac6ca" category="cell">A criação do painel personalizado falhou</block>
+  <block id="9f6b01ed8eaa27184b62fa8349a3da2f" category="cell">O Workload Factory não conseguiu criar seu painel personalizado. Tente criar o painel novamente.</block>
+  <block id="21b694dc2503eab08ab245a8bcfe9f1c" category="inline-link-macro">Aprenda sobre administração de IA</block>
+  <block id="1981f9412416cf6cd4df691ce6b82265" category="admonition">Se o administrador da sua conta desativou os recursos de IA, você verá uma mensagem e não poderá criar painéis. Entre em contato com seu administrador ou <block ref="51cc9b1bceb3cdf8e5a226d8fb6d37eb" category="inline-link-macro-rx"></block>.</block>
+  <block id="871affa3441567ce8c578a244f4fa377" category="paragraph">Seu painel está sendo criado. Isso pode levar alguns instantes.</block>
+  <block id="fa2935cab9052ead8bda54e043c876e7" category="inline-link-macro">Aprenda como alterar a visibilidade do painel</block>
+  <block id="aab6babf7e647142284d77b6d7bc1e3f" category="paragraph">Seu painel personalizado foi criado e adicionado ao catálogo de painéis. Por padrão, o painel é privado e visível apenas para você. Você pode alterar a visibilidade para pública se quiser compartilhá-lo com outros usuários na sua conta do Workload Factory. <block ref="fe356bc0877a3688c38625a5a5fa7c4e" category="inline-link-macro-rx"></block>.</block>
+  <block id="c9db1966c96002c79c43ee5507b95b7c" category="paragraph">Você receberá uma notificação quando seu painel estiver pronto. Caso não seja possível criá-lo, você receberá uma notificação com um link para tentar novamente. <block ref="19fa6c73a4251f43a74dc700e68a79f1" category="inline-link-macro-rx"></block>.</block>
+  <block id="86d47ec5cc124c99638dc3c2f21c96e0" category="list-text">Altere a visibilidade do painel para compartilhar com sua equipe</block>
+  <block id="e51744ffc297cdf8c6870d1628183484" category="section-title">Visualize e compartilhe painéis</block>
+  <block id="5710b2075647e6888eb75d89c421fa55" category="paragraph">Por padrão, os novos painéis são privados, então somente você pode visualizá-los. Você pode tornar um painel público a qualquer momento para compartilhá-lo com sua equipe.</block>
+  <block id="7341b20ff1ddefe079f968d8d4436714" category="list-text">*Painéis privados*: Somente você pode visualizar esses painéis. Use-os para monitoramento pessoal, testes ou trabalho em andamento.</block>
+  <block id="71c6aa9812ec2db21553218b51c3d261" category="list-text">*Painéis públicos*: Todos os membros da sua conta do Workload Factory podem visualizar esses painéis. Use-os para compartilhar visualizações de monitoramento e manter sua equipe alinhada em relação às cargas de trabalho, prioridades e objetivos de negócios.</block>
+  <block id="0f72bd1a783a9d1e54bd0e1af11e9b72" category="paragraph">Cada cartão do painel mostra se o painel é privado ou público, assim você pode ver rapidamente quais painéis são compartilhados.</block>
+  <block id="93abc3800cadb3c84e6ebb4f337cb663" category="paragraph"><block ref="fe356bc0877a3688c38625a5a5fa7c4e" category="inline-link-macro-rx"></block>.</block>
+  <block id="c7084515fd41cf4b219b3c9bc1bf874a" category="list-text">Não é possível compartilhar dashboards fora da sua conta do Workload Factory. Todo compartilhamento de dashboards é limitado a usuários dentro da mesma conta do Workload Factory.</block>
+  <block id="3ba405e1d72777e360f3b281ce3ba5b9" category="paragraph">Gerencie seus painéis personalizados a partir do catálogo de painéis. Lá, você pode visualizar detalhes, compartilhar painéis, atualizar dados ou excluir painéis que não precisa mais.</block>
+  <block id="6ef261950960e68b5c274dbb2ad858c2" category="paragraph">Você pode visualizar e gerenciar dashboards personalizados no catálogo de dashboards. Dashboards privados são visíveis apenas para você, enquanto dashboards públicos são visíveis para todos os usuários da sua conta do Workload Factory. Cada dashboard exibe detalhes básicos, como o nome do criador, a data de criação e um rótulo de visibilidade (Privado ou Público).</block>
+  <block id="8471f69a4146258ee48a6b85bff6fa31" category="section-title">Alterar a visibilidade do dashboard</block>
+  <block id="434e902a308729311c26bf05cd3a3e42" category="paragraph">Torne o painel público para compartilhá-lo com sua equipe. Torne-o privado para parar de compartilhá-lo.</block>
+  <block id="bccfa88da47be219216832061b161e9d" category="list-text">Na página *Painéis personalizados*, localize o painel que você deseja atualizar.</block>
+  <block id="67555ed7bd410ec9e055cfc0df3421a7" category="inline-image-macro">O ícone de três pontos que abre o menu de ações</block>
+  <block id="bef527319e2ed6381bad6ee8055687a2" category="list-text">No menu suspenso *Ações* <block ref="958bffae98208bc799f63dfd3f08c003" category="inline-image-macro-rx" type="image"></block> desse painel, selecione uma das seguintes opções:</block>
+  <block id="d87198500f0d81b0ca147bc5b2a09622" category="list-text">*Compartilhar painel* - Torna o painel visível para todos os usuários da sua conta do Workload Factory</block>
+  <block id="939742a8d44add9f4ad62a0fc3824a6e" category="list-text">*Alterar para painel privado* - Torna o painel visível apenas para você</block>
+  <block id="7e3cce2609a225eafd019dfc30a9437a" category="paragraph">O painel de controle é atualizado imediatamente. O indicador de visibilidade no cartão do painel mostra o status atual.</block>
+  <block id="f7b22a19823cae9bc6664fece0b96115" category="summary">Controle o acesso aos recursos de IA baseados em Bedrock no Workload Factory. Você pode desativar os recursos de IA ou usar o AWS Bedrock gerenciado pela NetApp.</block>
+  <block id="ebd4b28f0632a0dc47fff6d0e28857b1" category="doc">Gerencie recursos de IA</block>
+  <block id="13bb649429b18adc1dadc0ed391c5bc2" category="paragraph">Controle o acesso aos recursos de IA no Workload Factory. Você pode desativar os recursos de IA ou usar o AWS Bedrock gerenciado por NetApp.</block>
+  <block id="00e95115c994386ef85f1864db952bca" category="section-title">Sobre os recursos de IA</block>
+  <block id="5a41793d075495dfb423bb395a189adf" category="paragraph">O Workload Factory inclui diversos recursos com tecnologia de IA que melhoram sua experiência, como Ask Me, painéis personalizados e analisadores para EMS, logs de banco de dados e latência.</block>
+  <block id="46918c8c585299e7a785eed266de3f97" category="paragraph">Como administrador do Workload Factory, você pode controlar como esses recursos usam IA na página de configurações de IA.</block>
+  <block id="50f33d14f129e4548c1c270fd6725a78" category="section-title">Opções de configuração</block>
+  <block id="5787d906b76d8323ff398ce17924ceda" category="paragraph">Escolha uma destas opções de configuração:</block>
+  <block id="c9c6c9ef9f18086ff7b6da1890b95abd" category="list-text">NetApp-gerenciado Bedrock (Recomendado)</block>
+  <block id="8e8bf160c6d6262df67ff522fa89feb6" category="list-text">Utilize um serviço AWS Bedrock gerenciado pela NetApp. Essa opção é recomendada para a maioria dos usuários.</block>
+  <block id="5438652af11e98ac4fc1b99f559b68a2" category="list-text">Seus dados não são usados para treinar modelos</block>
+  <block id="9a0258efc499c889c5f1af73bbaf4364" category="list-text">Os créditos de uso mensais são compartilhados em toda a sua organização</block>
+  <block id="2c8b8060f9331f918beb8261403785ec" category="list-text">Nenhuma configuração adicional da AWS é necessária</block>
+  <block id="1ee78c04d8b078adcb0fca6be60af5a2" category="list-text">Recursos do GenAI desativados</block>
+  <block id="8828805c938d7fc1a48fbf3585c37b14" category="list-text">Desativa todos os recursos de IA. Os usuários não poderão mais usar o Ask Me, analisadores, painéis personalizados, criador de regras ou outras ferramentas com tecnologia de IA.</block>
+  <block id="396640080b08108896efb48796063406" category="list-text">Recomendamos que um administrador da conta configure os recursos de IA.</block>
+  <block id="6b7af6c72f84f0f7380106617c11be78" category="section-title">Configurar recursos de IA</block>
+  <block id="3f0879fc8845a02f07ea71a0a584847e" category="list-text">No menu, selecione *Administração* e depois *Configurações de IA*.</block>
+  <block id="ef1f959eefc1f11cf2aec294261e066f" category="list-text">Na página *Configurações de IA*, selecione sua configuração preferida:</block>
+  <block id="7530dc640ec2dd92a9e70b8484867369" category="list-text">*NetApp-managed Bedrock (Recomendado)*: use o NetApp-managed AWS Bedrock.</block>
+  <block id="053d266af64b45b2a2fbc0eeccc99297" category="list-text">*Recursos de IA desativados*: Desative todos os recursos de IA.</block>
+  <block id="cbab3ffec133396f2f907f9faa5a4337" category="list-text">Selecione *Salvar preferências*.</block>
+  <block id="1f19237677d2459e3c32c18ad28d89c4" category="paragraph">Suas configurações são salvas e aplicadas imediatamente a todos os recursos de IA no Workload Factory. Você pode ver no Tracker quem atualizou as configurações pela última vez e quando.</block>
+  <block id="e8d0b42b043c438b67550c55202181fe" category="paragraph">Se os recursos de IA estiverem desativados, os usuários veem uma mensagem ao tentarem usar recursos com tecnologia de IA. A interface permanece visível e mostra claramente que o recurso está indisponível.</block>
+  <block id="c5a072ef0376df4bfe60ecf20f43c427" category="section-title">Controles orçamentários e limites de crédito</block>
+  <block id="e622f31b01cf42245970bf4f82c9e127" category="paragraph">NetApp gerencia os controles de orçamento para recursos de IA ao usar a configuração padrão gerenciada pela NetApp.</block>
+  <block id="583513a0baae6b087a0f3c846b3f742a" category="section-title">Limites de crédito mensais</block>
+  <block id="c9f9c41c2d00489aef5b70d1c80be3d1" category="paragraph">Cada conta possui um limite de gastos mensal para cada recurso de IA ao usar o Bedrock gerenciado pela NetApp.</block>
+  <block id="dfc84788c4742cd3e802820d33f9aeca" category="section-title">Quando o orçamento for atingido</block>
+  <block id="17f62ca6f7678c35076b21c5b69b13a5" category="paragraph">Se sua conta atingir o limite de orçamento mensal, Workload Factory fará o seguinte:</block>
+  <block id="33384fc97290993b7b5c957cd0b1121d" category="list-text">Desative os recursos de IA e deixe em cinza as partes relacionadas da interface</block>
+  <block id="e1f97f2fd8d3abfc5a1fb2fd4651c8ec" category="list-text">Exiba esta mensagem como uma dica de ferramenta: “Créditos mensais de IA atingidos. Entre em contato com o suporte da NetApp.”</block>
+  <block id="2e1edf16d2dadaf3ef563f2a299fdea2" category="list-text">Registrar o uso para fins de rastreamento</block>
+  <block id="3bcf8e0e9bb5a31e55a273a2c9c5cee3" category="section-title">Solicitar créditos adicionais</block>
+  <block id="7dd15a9100090790ffaa73276589e132" category="paragraph">Se você precisar de mais créditos de IA, entre em contato com seu representante da NetApp. Eles podem ajustar seu limite de crédito conforme suas necessidades.</block>
+  <block id="bb35ce7c19cf0fb7d68be0949c25bf5b" category="paragraph">Para entrar em contato com seu representante NetApp sobre limites de crédito, use o chat integrado ao produto ou visite a página <block ref="c470f3409940cee13ddda9c09bf54b60" category="inline-link-macro-rx"></block>.</block>
+  <block id="4a942eb7aff0ba24c1ac3ea3a80cb564" category="section-title">GovCloud considerações</block>
+  <block id="76bfd37862ec9a1b64c91e20f6eb2319" category="paragraph">Se você criar uma conta do Workload Factory na AWS GovCloud (US), observe que os recursos de IA usam os serviços AWS Bedrock em regiões públicas da AWS por padrão.</block>
+  <block id="f99bff6cf3004eef97fbe2d45d88bbb6" category="paragraph">Se os seus requisitos de segurança não permitirem conexões com serviços de regiões públicas da AWS, você pode desativar os recursos de IA.</block>
+  <block id="dd6e90f5bd491e697312863dba7649a7" category="inline-link-macro">Saiba mais sobre como criar contas GovCloud</block>
+  <block id="5736b79683356fbe1ea6dc44e0674a70" category="paragraph"><block ref="8cd60bd48ebd271dc9881481f9c03b99" category="inline-link-macro-rx"></block>.</block>
+  <block id="dbfcf3c73705d2a8ff505896a6114b1d" category="section-title">Impacto nas sessões existentes</block>
+  <block id="7e560ca46866fbb4e5f011669044f51a" category="paragraph">Ao alterar as configurações de IA, todas as sessões de IA ativas são encerradas gradualmente. Os fluxos de trabalho em andamento podem ser concluídos, mas novas solicitações usam as configurações atualizadas.</block>
+  <block id="f020db608d739c7eeff9c8874e43b282" category="paragraph">O comportamento de encerramento pode variar de acordo com o recurso. Consulte a documentação específica do recurso para obter detalhes.</block>
+  <block id="686efa14a6d0381010005caff3820d5a" category="inline-link-macro">Saiba mais sobre os recursos do Workload Factory</block>
+  <block id="1b3122dbd76b9f6ecc47ea28eda13846" category="list-text"><block ref="1b3122dbd76b9f6ecc47ea28eda13846" category="inline-link-macro-rx"></block></block>
+  <block id="1d37f129240a0035a4c1f8d424382c89" category="inline-link-macro">Saiba mais sobre painéis personalizados</block>
+  <block id="6394188e7fed8a951fc63352c894a5c2" category="list-text"><block ref="6394188e7fed8a951fc63352c894a5c2" category="inline-link-macro-rx"></block></block>
+  <block id="b2fa8f8bcb70f53fbee747df0674d6ae" category="list-text"><block ref="b2fa8f8bcb70f53fbee747df0674d6ae" category="inline-link-macro-rx"></block></block>
+  <block id="a5f4ae61e232cd6bd835f3c22c2ae14c" category="list-text"><block ref="a5f4ae61e232cd6bd835f3c22c2ae14c" category="inline-link-macro-rx"></block></block>
+  <block id="f62343d698b77f27e36d648aa9329d02" category="list-text">*Visualização, planejamento e análise*: visualize o inventário de recursos do banco de dados, conheça a integridade de seus recursos e revise a análise bem arquitetada de suas configurações de banco de dados.</block>
+  <block id="0cbb3b595963e7bba1934e4634676fd3" category="list-text">*Operações e remediação*: Execute tarefas operacionais para seus recursos de banco de dados, obtenha análises de logs de erros, explore oportunidades de economia e corrija problemas nas configurações do banco de dados e no armazenamento do sistema de arquivos FSx for ONTAP subjacente.</block>
+  <block id="7c2bb28f2e8fdd155edd0cd247844516" category="cell">Visualização, planejamento e análise; operações e remediação</block>
+  <block id="94333def81dc3274a6c2d43284414047" category="cell">Obtenha os detalhes do inventário de patches em instâncias EC2 do Windows para fluxos de trabalho de avaliação e correção</block>
+  <block id="7ae4e865615ebe5713830d4167af894d" category="cell">ssm:DescribeInstancePatches</block>
+  <block id="af6e0bbae1688b5bce02d25956446241" category="cell">Obtenha a lista de patches disponíveis para avaliação de patch do sistema operacional</block>
+  <block id="f2698a29e8a8773ce8685f5539c1e140" category="cell">ssm:DescribeAvailablePatches</block>
+  <block id="7511687a15aa4b86adfa56397c1cdd8e" category="cell">Recuperar metadados de inventário coletados de nós SQL gerenciados</block>
+  <block id="baba7a5c9dbcd8f6ee64d9d75ccaa4aa" category="cell">ssm:GetInventory</block>
+  <block id="f471f61f91c494484a3ce296d4dff4d0" category="cell">Liste as entradas de inventário coletadas de nós SQL gerenciados</block>
+  <block id="666a36983125fa26c0cbb0ea9cee9636" category="cell">ssm:ListInventoryEntries</block>
+  <block id="951a51b60db3d63eb71726cd5fe6fbad" category="section-title">3 de agosto de 2026</block>
+  <block id="8a5ccf9a134719594312d39bcf9c8eb0" category="paragraph">As permissões de visualização, planejamento e análise são limitadas aos documentos do AWS SSM. Com essas permissões, você pode visualizar hosts, instâncias e bancos de dados. Você também pode executar uma análise básica sob demanda bem arquitetada dos seus recursos.</block>
+  <block id="8ef5f747b1fcf7a7b889d5faefa4711e" category="paragraph">As permissões de operações e correção permitem que você obtenha uma avaliação bem arquitetada abrangente, aplique as ações recomendadas com base na análise bem arquitetada, faça alterações em seus recursos e analise os registros de erros.</block>
+  <block id="14f96fa9e126b729be2224f781495287" category="admonition">Os recursos de IA do Workload Factory usam serviços AWS Bedrock hospedados em regiões públicas da AWS. Se suas políticas de segurança não permitirem conexões com serviços de regiões públicas, você pode desativar os recursos de IA nas configurações de Administração. <block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block>.</block>
+  <block id="255efce8fcb0ce70d6ca799d3f7fcce4" category="admonition">Se o administrador da sua conta desativou os recursos de IA, as respostas de erro geradas por IA não estarão disponíveis. <block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block>.</block>
+  <block id="91d90ea5487ed9ed44e834f42f272ccb" category="section-title">03 de agosto de 2026</block>
+  <block id="1cdbc8bcb26cc8d5e894a97b9e7f269f" category="section-title">05 de julho de 2026</block>
+  <block id="8fb2a31345fc5c5e72c947d436b5077b" category="admonition">Os administradores da conta podem ativar ou desativar os recursos de IA. Se um administrador os desativar, o assistente de IA "Ask Me AI" não estará disponível. <block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block>.</block>
+  <block id="959c1faca1dbb57f8dac1b5058bf9c58" category="paragraph"><block ref="959c1faca1dbb57f8dac1b5058bf9c58" category="inline-link-macro-rx"></block></block>
 </blocks>

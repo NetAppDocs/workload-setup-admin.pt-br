@@ -21,6 +21,9 @@ Depois de criado, você pode atualizar o painel para ver os dados atualizados.
 Lembre-se de que os painéis personalizados são, por definição, somente leitura e não podem fazer alterações nas configurações de armazenamento ou de workload.
 
 
+NOTE: Se o administrador da sua conta desativou os recursos de IA, você verá uma mensagem e não poderá criar painéis. Entre em contato com seu administrador ou link:manage-genai-features.html["Aprenda sobre administração de IA"].
+
+
 
 [[create-a-dashboard]]
 == Crie um painel de controle
@@ -44,12 +47,17 @@ A IA pode pedir que você escolha entre várias opções para entender melhor o 
 . Após responder a todas as perguntas, selecione *Continuar* para criar seu painel.
 
 
+Seu painel está sendo criado. Isso pode levar alguns instantes.
+
 .Resultado
-Seu painel personalizado agora está no catálogo de painéis. Todos os usuários da sua conta do Workload Factory podem acessá-lo e visualizá-lo.
+Seu painel personalizado foi criado e adicionado ao catálogo de painéis. Por padrão, o painel é privado e visível apenas para você. Você pode alterar a visibilidade para pública se quiser compartilhá-lo com outros usuários na sua conta do Workload Factory. link:manage-custom-dashboards.html#change-dashboard-visibility["Aprenda como alterar a visibilidade do painel"].
+
+Você receberá uma notificação quando seu painel estiver pronto. Caso não seja possível criá-lo, você receberá uma notificação com um link para tentar novamente. link:configure-notifications.html["Saiba mais sobre como configurar notificações"].
 
 .O que vem a seguir
 Após a criação, você pode:
 
+* Altere a visibilidade do painel para compartilhar com sua equipe
 * Atualize os dados do painel para ver as informações mais recentes
 * Exclua painéis que você não precisa mais
 * Veja os detalhes do painel, incluindo quem o criou e quando foi atualizado pela última vez

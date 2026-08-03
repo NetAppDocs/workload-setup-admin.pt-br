@@ -32,6 +32,9 @@ Os recursos do CloudShell incluem:
 
 
 
+NOTE: Se o administrador da sua conta desativou os recursos de IA, as respostas de erro geradas por IA não estarão disponíveis. link:manage-genai-features.html["Saiba mais sobre como gerenciar recursos de IA"].
+
+
 
 [[cloudshell-commands]]
 == Comandos do CloudShell

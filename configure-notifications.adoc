@@ -65,6 +65,12 @@ O Workload Factory envia notificações para os seguintes eventos:
 
 
 | Atraso de replicação | A replicação está demorando mais do que o esperado. | Replicação | Crítico | Armazenamento geral | FSx para sistemas de arquivos ONTAP 
+
+
+| Criação do painel personalizado concluída com sucesso | Seu painel personalizado foi criado com sucesso e já está pronto para visualização. | Painéis personalizados | Sucesso | Armazenamento geral | Conta Workload Factory 
+
+
+| A criação do painel personalizado falhou | O Workload Factory não conseguiu criar seu painel personalizado. Tente criar o painel novamente. | Painéis personalizados | Erro | Armazenamento geral | Conta Workload Factory 
 |===
 
 

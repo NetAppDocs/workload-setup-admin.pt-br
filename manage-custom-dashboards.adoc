@@ -11,10 +11,10 @@ summary: Acesse seu catálogo de dashboards para visualizar, atualizar e excluir
 
 
 [role="lead"]
-Gerencie seus painéis personalizados a partir do catálogo de painéis. Lá, você pode visualizar detalhes, atualizar dados ou excluir painéis que não precisa mais.
+Gerencie seus painéis personalizados a partir do catálogo de painéis. Lá, você pode visualizar detalhes, compartilhar painéis, atualizar dados ou excluir painéis que não precisa mais.
 
 .Sobre esta tarefa
-Todos os usuários da sua conta do Workload Factory podem acessar todos os painéis personalizados. Cada painel exibe detalhes básicos, como o nome do criador e a data de criação.
+Você pode visualizar e gerenciar dashboards personalizados no catálogo de dashboards. Dashboards privados são visíveis apenas para você, enquanto dashboards públicos são visíveis para todos os usuários da sua conta do Workload Factory. Cada dashboard exibe detalhes básicos, como o nome do criador, a data de criação e um rótulo de visibilidade (Privado ou Público).
 
 Os painéis personalizados são somente leitura. Eles não podem alterar suas configurações de armazenamento ou carga de trabalho.
 
@@ -34,6 +34,26 @@ O catálogo de dashboards mostra todos os dashboards personalizados da sua conta
 
 . Revise a lista do dashboard.
 
+
+
+
+[[change-dashboard-visibility]]
+== Alterar a visibilidade do dashboard
+
+Torne o painel público para compartilhá-lo com sua equipe. Torne-o privado para parar de compartilhá-lo.
+
+.Passos
+. Na página *Painéis personalizados*, localize o painel que você deseja atualizar.
+. No menu suspenso *Ações* image:icon-action.png["O ícone de três pontos que abre o menu de ações"] desse painel, selecione uma das seguintes opções:
++
+** *Compartilhar painel* - Torna o painel visível para todos os usuários da sua conta do Workload Factory
+** *Alterar para painel privado* - Torna o painel visível apenas para você
+
+
+
+
+.Resultado
+O painel de controle é atualizado imediatamente. O indicador de visibilidade no cartão do painel mostra o status atual.
 
 
 
