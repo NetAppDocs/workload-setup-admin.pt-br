@@ -46,9 +46,9 @@ Após criar um painel personalizado, você receberá uma notificação com um li
 
 Isso ajuda você a saber quando seu painel está pronto e facilita revisar ou recriar o painel.
 
-link:create-custom-dashboard.html["Aprenda como criar painéis personalizados"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-custom-dashboard.html["Aprenda como criar painéis personalizados"]
 
-link:configure-notifications.html["Saiba mais sobre como configurar notificações"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Saiba mais sobre como configurar notificações"]
 
 
 
@@ -60,9 +60,9 @@ Por padrão, os novos painéis são privados e visíveis apenas para você. Voc�
 
 Cada cartão do painel exibe um rótulo "Privado" ou "Público" para que você possa ver rapidamente quais painéis são compartilhados.
 
-link:learn-custom-dashboards.html#dashboard-visibility-and-sharing["Saiba mais sobre visibilidade e compartilhamento de painéis"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/learn-custom-dashboards.html#view-and-share-dashboards["Saiba mais sobre visibilidade e compartilhamento de painéis"]
 
-link:manage-custom-dashboards.html#change-dashboard-visibility["Aprenda como compartilhar dashboards"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-custom-dashboards.html#change-dashboard-visibility["Aprenda como compartilhar dashboards"]
 
 
 
@@ -81,7 +81,7 @@ Os recursos de IA incluem "Pergunte-me", painéis personalizados, construtor de 
 
 Se os recursos de IA estiverem desativados, os usuários verão uma mensagem informando que a IA não está disponível.
 
-link:manage-genai-features.html["Saiba mais sobre como gerenciar recursos de IA"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html["Saiba mais sobre como gerenciar recursos de IA"]
 
 
 

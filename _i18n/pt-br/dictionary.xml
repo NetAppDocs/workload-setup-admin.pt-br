@@ -1520,17 +1520,13 @@
   <block id="7a99102fbba6a5729480bc61967c8423" category="paragraph">Após criar um painel personalizado, você receberá uma notificação com um link direto para visualizá-lo. Se a criação falhar, você receberá uma notificação com um link para o inventário do painel personalizado para tentar novamente.</block>
   <block id="a9402b6e97b8b59ffa86012d5cfb7f9a" category="paragraph">Isso ajuda você a saber quando seu painel está pronto e facilita revisar ou recriar o painel.</block>
   <block id="359ab637c5369e269d0e004308b6c089" category="inline-link-macro">Aprenda como criar painéis personalizados</block>
-  <block id="2b4fe8741ca59e9e85fecaff24736613" category="paragraph"><block ref="2b4fe8741ca59e9e85fecaff24736613" category="inline-link-macro-rx"></block></block>
   <block id="863d814c29385fa8ebfd13bc1c1c7e96" category="inline-link-macro">Saiba mais sobre como configurar notificações</block>
-  <block id="19fa6c73a4251f43a74dc700e68a79f1" category="paragraph"><block ref="19fa6c73a4251f43a74dc700e68a79f1" category="inline-link-macro-rx"></block></block>
   <block id="27a522e1e6e4d9921e08ab5e7ad99158" category="section-title">Painéis de controle personalizados privados e públicos</block>
   <block id="add4e669fb22c004f4eef61607cc5df8" category="paragraph">Os painéis personalizados agora incluem configurações de compartilhamento. Você pode manter um painel privado ou compartilhá-lo com sua equipe.</block>
   <block id="1bdd40db25752f704baa9b254470fb9a" category="paragraph">Por padrão, os novos painéis são privados e visíveis apenas para você. Você pode tornar um painel público a qualquer momento para compartilhá-lo com todos em sua conta do Workload Factory.</block>
   <block id="26e05170ba3616166d4659e72d415450" category="paragraph">Cada cartão do painel exibe um rótulo "Privado" ou "Público" para que você possa ver rapidamente quais painéis são compartilhados.</block>
   <block id="29f897a53b188561913c2393050ce43a" category="inline-link-macro">Saiba mais sobre visibilidade e compartilhamento de painéis</block>
-  <block id="c5d5a7386c6c7c68f8d62de175cd235f" category="paragraph"><block ref="c5d5a7386c6c7c68f8d62de175cd235f" category="inline-link-macro-rx"></block></block>
   <block id="c0bb5d7518380c44f5710f0803f9b3f4" category="inline-link-macro">Aprenda como compartilhar dashboards</block>
-  <block id="15bb464c4011a82a1976bc518af9f860" category="paragraph"><block ref="15bb464c4011a82a1976bc518af9f860" category="inline-link-macro-rx"></block></block>
   <block id="b6ea1239e82705b159df88578e6fb6f0" category="section-title">Administração de recursos de IA</block>
   <block id="1c7ba82e26fc30a97a625aaad623e4f4" category="paragraph">Você pode controlar o acesso aos recursos de IA em toda a sua organização com as seguintes configurações na administração do Workload Factory.</block>
   <block id="e585625dd2a0a8e71ca8d8a269834ba9" category="list-text">Use o Bedrock gerenciado pela NetApp (recomendado e ativado por padrão, com limites de crédito mensais)</block>
@@ -1539,7 +1535,6 @@
   <block id="cd89624525aeeba4f9fce9dcfb6d9a91" category="paragraph">Os recursos de IA incluem "Pergunte-me", painéis personalizados, construtor de regras e analisadores para EMS, logs de banco de dados e latência de volume.</block>
   <block id="dc363e90d503e57b6cddc555e2f96d5f" category="paragraph">Se os recursos de IA estiverem desativados, os usuários verão uma mensagem informando que a IA não está disponível.</block>
   <block id="48dc51848c127d267cdd7ab1bcd0fe5e" category="inline-link-macro">Saiba mais sobre como gerenciar recursos de IA</block>
-  <block id="56d2e09cbb0a828478db20ff2d11774d" category="paragraph"><block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block></block>
   <block id="30c96c6f4cd1002d6f485ca940c9a6e7" category="cell">Criação do painel personalizado concluída com sucesso</block>
   <block id="0791611e19f18138ef88e9ec3b961a87" category="cell">Seu painel personalizado foi criado com sucesso e já está pronto para visualização.</block>
   <block id="8fef7542994100e60e95202e22600bf2" category="cell">Painéis personalizados</block>
@@ -1641,4 +1636,9 @@
   <block id="8fb2a31345fc5c5e72c947d436b5077b" category="admonition">Os administradores da conta podem ativar ou desativar os recursos de IA. Se um administrador os desativar, o assistente de IA "Ask Me AI" não estará disponível. <block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block>.</block>
   <block id="959c1faca1dbb57f8dac1b5058bf9c58" category="paragraph"><block ref="959c1faca1dbb57f8dac1b5058bf9c58" category="inline-link-macro-rx"></block></block>
   <block id="167e20b67f84068555b3081057c696b8" category="paragraph"><block ref="167e20b67f84068555b3081057c696b8" category="inline-link-macro-rx"></block></block>
+  <block id="0e23d2a91e2fd1a7eb141ceb8cd9ddcf" category="paragraph"><block ref="0e23d2a91e2fd1a7eb141ceb8cd9ddcf" category="inline-link-macro-rx"></block></block>
+  <block id="d972d2e4f90697cd9aea0ea06c6d65ea" category="paragraph"><block ref="d972d2e4f90697cd9aea0ea06c6d65ea" category="inline-link-macro-rx"></block></block>
+  <block id="5243974c66976ebd592df24b62b1b9bf" category="paragraph"><block ref="5243974c66976ebd592df24b62b1b9bf" category="inline-link-macro-rx"></block></block>
+  <block id="a8d7b4c293e04e8a879f9be70ed380ba" category="paragraph"><block ref="a8d7b4c293e04e8a879f9be70ed380ba" category="inline-link-macro-rx"></block></block>
+  <block id="8d20116cd01bc3ce31dae628497af0dc" category="paragraph"><block ref="8d20116cd01bc3ce31dae628497af0dc" category="inline-link-macro-rx"></block></block>
 </blocks>
