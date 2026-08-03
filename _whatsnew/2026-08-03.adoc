@@ -13,7 +13,12 @@ As permissões de visualização, planejamento e análise são limitadas a docum
 
 As permissões de operação e correção permitem que você faça alterações em seus recursos, analise registros de erros, obtenha uma análise abrangente e bem arquitetada de seus recursos e corrija problemas de configuração.
 
-link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Referência de permissões"] === Painéis personalizados
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Referência de permissões"]
+
+
+
+[[custom-dashboards]]
+=== Painéis personalizados
 
 
 
