@@ -31,7 +31,6 @@
   <block id="05e2d97b3b23a80afeb67390bad5f97c" category="inline-image-macro">Uma captura de tela mostrando quais permissões farão parte da nova função.</block>
   <block id="bfc77a43a5b610654d7d0e7bbb9162a7" category="paragraph"><block ref="bfc77a43a5b610654d7d0e7bbb9162a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0a8070d8176ef21fdf6bc0d6b6833c9" category="list-text">No Console de Gerenciamento da AWS, selecione *funções &gt; criar função*.</block>
-  <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">Em *tipo de entidade confiável*, selecione *conta AWS*.</block>
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">Selecione *seguinte*.</block>
   <block id="552a0f683211339f8f7517a1d4fc804d" category="list-text">Na seção de política de permissões, escolha todas as políticas definidas anteriormente e selecione *Avançar*.</block>
   <block id="eb940e2ee0ec63786b166a518db881df" category="list-text">Insira um nome para a função e selecione *criar função*.</block>
@@ -633,7 +632,6 @@
   <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">02 de fevereiro de 2025</block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">5 de janeiro de 2025</block>
   <block id="5ff4c3f483396c894c51f91d47106ecf" category="list-text">Na página credenciais, selecione *Adicionar credenciais*.</block>
-  <block id="558847a01e0a9378a8c7b99a0e6af643" category="list-text">Na página Adicionar credenciais, selecione *Adicionar manualmente* e, em seguida, use as etapas a seguir para concluir cada seção em _configuração de permissões_.</block>
   <block id="4b44bad00f91b8450a836bfa54b0306e" category="list-text">Na janela do CloudShell, selecione credenciais e região para a sessão do CloudShell e, em seguida, selecione a seta para continuar.</block>
   <block id="a5fab0062142f5ef0615c361259b0b89" category="cell">A função concedida fornece comunicação entre o FSX for ONTAP e outros serviços da AWS</block>
   <block id="8832fb7d0699d4878c8449616cd47613" category="cell">IAM:CreateServiceLinkRole</block>
@@ -823,9 +821,6 @@
   <block id="6c8ca72a28d9651706405d888093910e" category="list-text">Faça login no<block ref="04c72ef1cb137ba02eafcfdeb6fc7765" category="inline-link-rx"></block> .</block>
   <block id="6191b3848b93c4178f95391680ab2108" category="list-text">No menu, selecione *Administração* e depois *Credenciais*.</block>
   <block id="30551002ceb8abd5af0ee8907423b553" category="paragraph">Nesta seção, você configurará uma função do IAM que o Workload Factory assumirá, incluindo as permissões e políticas que você acabou de criar.</block>
-  <block id="f0497660975536e414a629b7d4f9f276" category="list-text">Selecione *Outra conta AWS* e copie e cole o ID da conta para o gerenciamento de carga de trabalho do FSx para ONTAP na interface do usuário do Workload Factory.</block>
-  <block id="f97e7ca54bb60a402c14107162345b08" category="list-text">Selecione *ID externo necessário* e copie e cole o ID externo da interface do usuário do Workload Factory.</block>
-  <block id="fcf4437915eed569a9fd7691faf38a66" category="list-text">Retorne à página Adicionar credenciais no Workload Factory, expanda a seção *Criar função* em *Configuração de permissão* e cole o ARN no campo _ARN da função_.</block>
   <block id="a9c4ed0c041add98b3c1c27e6191e29e" category="paragraph">A etapa final é inserir um nome para as credenciais no Workload Factory.</block>
   <block id="5976d02d7cdfb004e841934d0a6bf1b5" category="list-text">Na página Adicionar credenciais no Workload Factory, expanda *Nome das credenciais* em *Configuração de permissão*.</block>
   <block id="21f73823dc240b09e9b0a0896496f95d" category="paragraph">Você pode adicionar credenciais da AWS ao Workload Factory usando uma pilha do AWS CloudFormation selecionando os recursos do Workload Factory que deseja usar e, em seguida, iniciando a pilha do AWS CloudFormation na sua conta da AWS.  O CloudFormation criará as políticas e a função do IAM com base nos recursos de carga de trabalho selecionados.</block>
@@ -1509,8 +1504,6 @@
   <block id="8215457eb88ef1fb110b79579b908e3d" category="paragraph">Você pode descartar a análise de configurações que não se aplicam aos seus ambientes. Isso evita alertas desnecessários e resultados de otimização imprecisos.</block>
   <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link-macro">Saiba mais sobre regras personalizadas</block>
   <block id="821af7226458ea25572e88e8ab2026e4" category="paragraph">Você também pode criar regras personalizadas em linguagem simples para validar seus ambientes em relação aos padrões da sua organização e às melhores práticas da NetApp. Teste as regras com uma simulação e depois agende a execução delas em todos os seus ambientes. <block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>.</block>
-  <block id="8be08850265c9930c26a8e5b28183a2e" category="paragraph">Você também pode criar regras personalizadas em linguagem simples para validar seus ambientes em relação aos padrões da sua organização e às melhores práticas da NetApp. Teste as regras com uma simulação e, em seguida, agende a execução delas em todos os seus ambientes.</block>
-  <block id="7c24f3892a999a3e8d688cabe068b17a" category="paragraph"><block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>.</block>
   <block id="da0c92072a1db7fee3208bcad3ad822b" category="doc">Políticas de permissão IAM atualizadas para bancos de dados</block>
   <block id="e9e3af45119a834b75ee5ce8ad5fc96d" category="paragraph">As permissões para bancos de dados foram atualizadas para melhorar o acesso aos recursos e limitar o acesso ao SSM onde desnecessário.</block>
   <block id="6f70bfe68d48e1ab770cfb69bea59dfd" category="paragraph">As permissões de visualização, planejamento e análise são limitadas a documentos do AWS SSM. Com essas permissões, você pode visualizar hosts, instâncias e bancos de dados. Você também pode executar uma análise sob demanda básica well-architected dos seus recursos.</block>
@@ -1641,4 +1634,10 @@
   <block id="5243974c66976ebd592df24b62b1b9bf" category="paragraph"><block ref="5243974c66976ebd592df24b62b1b9bf" category="inline-link-macro-rx"></block></block>
   <block id="a8d7b4c293e04e8a879f9be70ed380ba" category="paragraph"><block ref="a8d7b4c293e04e8a879f9be70ed380ba" category="inline-link-macro-rx"></block></block>
   <block id="8d20116cd01bc3ce31dae628497af0dc" category="paragraph"><block ref="8d20116cd01bc3ce31dae628497af0dc" category="inline-link-macro-rx"></block></block>
+  <block id="e0d1a02b10ec781984ac246a7d6226fd" category="list-text">Na página Adicionar credenciais, selecione *Adicionar manualmente* e siga as etapas a seguir para preencher cada seção em _Configuração de permissões_.</block>
+  <block id="4cba6cec5bdba739fed7cc1ed3ac5396" category="list-text">Na página Adicionar Credenciais do Workload Factory, expanda *Criar função* em *Configuração de permissões*.</block>
+  <block id="288d704e69ec643a96254456480c3998" category="list-text">Selecione *Código JSON* para copiar a política.</block>
+  <block id="e7a1d840ae4199cc1f76836535606345" category="list-text">Em *Tipo de entidade confiável*, selecione *Política de confiança personalizada*.</block>
+  <block id="a2908f77e830d0a907f60038a03cc446" category="list-text">Substitua o conteúdo atual na caixa de texto pelo código JSON que você copiou na etapa 2.</block>
+  <block id="0afa7405bb80320955bff5c5dafcba00" category="list-text">Retorne à página Adicionar Credenciais no Workload Factory e cole o ARN da função no campo _Role ARN_.</block>
 </blocks>
