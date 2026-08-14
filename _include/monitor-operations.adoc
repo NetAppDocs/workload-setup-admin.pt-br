@@ -1,0 +1,92 @@
+= Acompanhar e monitorar as operações
+:allow-uri-read: 
+
+
+Monitore e acompanhe a execução do FSx para ONTAP, credenciais e operações de link, e monitore o progresso das tarefas com o Tracker no NetApp Workload Factory.
+
+.Sobre esta tarefa
+O Workload Factory oferece o Tracker, um recurso de monitoramento para que você possa monitorar e acompanhar o progresso e o status do FSx for ONTAP, credenciais e operações de link, revisar detalhes de tarefas e subtarefas de operação e diagnosticar quaisquer problemas ou falhas.
+
+Diversas ações estão disponíveis no Tracker. Você pode filtrar tarefas por período (últimas 24 horas, 7 dias, 14 dias ou 30 dias), carga de trabalho, status e usuário; encontrar tarefas usando a função de busca; e baixar a tabela de tarefas como um arquivo CSV. Você pode atualizar o Tracker a qualquer momento. Você também pode tentar novamente uma operação com falha ou editar os parâmetros de uma operação com falha e tentar a operação novamente.
+
+O Tracker oferece suporte a dois níveis de monitoramento, dependendo da operação. Cada tarefa, como a implantação de um sistema de arquivos, exibe a descrição da tarefa, o status, a hora de início, a duração da tarefa, o usuário, a região, o recurso proxy, o ID da tarefa e todas as subtarefas relacionadas. Você pode visualizar as respostas da API para entender o que aconteceu durante a operação.
+
+Níveis de tarefas do tracker com exemplos::
++
+--
+* Nível 1 (tarefa): monitora a implantação do sistema de arquivos.
+* Nível 2 (subtarefa): Monitora as subtarefas relacionadas à implantação do sistema de arquivos.
+
+
+--
+Status da operação:: O status da operação no Tracker é o seguinte: _em andamento_, _sucesso_ e _falha_.
++
+--
+Frequência de operação:: A frequência de operação é baseada no tipo de trabalho e na programação do trabalho.
+
+
+--
+Retenção de eventos:: Os eventos ficam retidos na interface de usuário por 30 dias.
+
+
+
+
+[[track-and-monitor-operations]]
+== Acompanhar e monitorar as operações
+
+Acompanhe e monitore as operações no NetApp Console com o Tracker.
+
+.Passos
+. Faça login usando um dos link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["experiências de console"^].
+. Selecione o menu image:workloads-menu-icon.png["O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, eda, ai, bancos de dados, vmware e administração."] e, em seguida, selecione *Administração*.
+. No menu Administração, selecione *Tracker*.
+. No Tracker, use os filtros ou a pesquisa para refinar os resultados dos jobs. Você também pode baixar um relatório de jobs.
+
+
+
+
+[[view-api-request]]
+== Visualizar solicitação de API
+
+Veja a solicitação da API na Codebox para uma tarefa no Tracker.
+
+.Passos
+. No Tracker, selecione uma tarefa.
+. Selecione o menu de ações e, em seguida, selecione *Visualizar solicitação da API*.
+
+
+
+
+[[retry-a-failed-operation]]
+== Tente novamente uma operação que falhou
+
+Tente novamente uma operação com falha no Tracker. Você também pode copiar a mensagem de erro de uma operação com falha.
+
+
+NOTE: Apenas um número x de tentativas é permitido para uma operação com falha.
+
+.Passos
+. No Tracker, selecione uma operação com falha.
+. Selecione o menu de ações e, em seguida, selecione *Retry*.
+
+
+.Resultado
+A operação foi reiniciada.
+
+
+
+[[edit-and-retry-a-failed-operation]]
+== Editar e tentar novamente uma operação com falha
+
+Edite os parâmetros da operação que falhou e tente novamente a operação fora do Tracker.
+
+.Passos
+. No Tracker, selecione uma operação com falha.
+. Selecione o menu de ações e, em seguida, selecione *Editar e tentar novamente*.
++
+Você é redirecionado para a página da operação, onde pode editar os parâmetros e tentar a operação novamente.
+
+
+
+.Resultado
+A operação foi reiniciada. Acesse o Tracker para visualizar o status da operação.
