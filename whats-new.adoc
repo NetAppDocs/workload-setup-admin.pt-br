@@ -15,6 +15,18 @@ Descubra as novidades nos recursos de administração do Workload Factory, como 
 
 
 
+[[30-august-2026]]
+== 30 de agosto de 2026
+
+
+
+[[new-onboarding-experience-for-credentials-and-links]]
+=== Nova experiência de integração para credenciais e links
+
+O Workload Factory aprimora a experiência de integração de credenciais e links, facilitando o início do uso. Após você criar sua conta e fazer login, selecione *Começar* em qualquer bloco de carga de trabalho, por exemplo *Armazenamento*, e a próxima página guiará você pelo processo de configuração passo a passo.
+
+
+
 [[03-august-2026]]
 == 03 de agosto de 2026
 

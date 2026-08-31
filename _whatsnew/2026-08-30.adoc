@@ -1,0 +1,10 @@
+= Nova experiência de integração para credenciais e links
+:allow-uri-read: 
+
+
+
+
+[[new-onboarding-experience-for-credentials-and-links]]
+=== Nova experiência de integração para credenciais e links
+
+O Workload Factory aprimora a experiência de integração de credenciais e links, facilitando o início do uso. Após você criar sua conta e fazer login, selecione *Começar* em qualquer bloco de carga de trabalho, por exemplo *Armazenamento*, e a próxima página guiará você pelo processo de configuração passo a passo.
