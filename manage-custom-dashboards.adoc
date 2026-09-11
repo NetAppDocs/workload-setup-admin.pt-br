@@ -4,7 +4,7 @@ permalink: manage-custom-dashboards.html
 keywords: manage dashboards, delete dashboard, refresh dashboard, dashboard catalog 
 summary: Acesse seu catálogo de dashboards para visualizar, atualizar e excluir dashboards personalizados no Workload Factory. 
 ---
-= Gerencie painéis personalizados
+= Gerencie painéis personalizados no NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

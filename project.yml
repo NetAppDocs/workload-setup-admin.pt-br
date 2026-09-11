@@ -30,7 +30,7 @@ sidebar:
         url: "/permissions-reference.html"
     - title: Início rápido
       url: "/quick-start.html"
-    - title: Inscreva-se no Workload Factory
+    - title: Cadastre-se e faça login no NetApp Workload Factory
       url: "/sign-up-saas.html"
     - title: Adicionar credenciais da AWS
       url: "/add-credentials.html"
@@ -38,8 +38,14 @@ sidebar:
       url: "/whats-next.html"
   - title: Administrar Fábrica de Carga de Trabalho
     entries:
-    - title: Efetue login no Workload Factory
-      url: "/log-in.html"
+    - title: Links
+      entries:
+      - title: Saiba mais sobre links
+        url: "/links-overview.html"
+      - title: Conecte-se a um sistema de arquivos com um link
+        url: "/create-link.html"
+      - title: Gerenciar links
+        url: "/manage-links.html"
     - title: Gerenciar contas de serviço
       url: "/manage-service-accounts.html"
     - title: Criar e operar cargas de trabalho bem arquitetadas.

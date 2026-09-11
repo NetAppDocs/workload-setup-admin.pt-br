@@ -4,7 +4,7 @@ permalink: create-custom-dashboard.html
 keywords: create dashboard, custom dashboard, AI dashboard, dashboard creation, personalized dashboard 
 summary: Crie um painel personalizado usando instruções guiadas por IA para monitorar o que é mais importante para suas cargas de trabalho e prioridades operacionais. 
 ---
-= Crie um painel personalizado
+= Crie um painel personalizado no NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

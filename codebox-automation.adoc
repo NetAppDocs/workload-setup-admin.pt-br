@@ -4,7 +4,7 @@ permalink: codebox-automation.html
 keywords: codebox, automation 
 summary: 'O Codebox é um copiloto de Infraestrutura como Código (IaC) que ajuda desenvolvedores e DevOps a gerar o código necessário para executar qualquer operação suportada pelo NetApp Workload Factory.' 
 ---
-= Saiba mais sobre a automação do codebox
+= Saiba mais sobre a automação do Codebox no NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

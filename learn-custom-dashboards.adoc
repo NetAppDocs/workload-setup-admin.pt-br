@@ -4,7 +4,7 @@ permalink: learn-custom-dashboards.html
 keywords: custom dashboards, dashboards, personalized dashboards, AI dashboards, operational visibility, workload monitoring 
 summary: Crie painéis de controle com inteligência artificial personalizados para suas cargas de trabalho e prioridades, a fim de obter maior visibilidade operacional sem ficar limitado por visualizações predefinidas. 
 ---
-= Saiba mais sobre painéis personalizados
+= Saiba mais sobre painéis personalizados no NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
