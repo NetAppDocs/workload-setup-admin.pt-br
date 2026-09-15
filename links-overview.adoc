@@ -76,4 +76,11 @@ As funcionalidades que requerem um link incluem:
 * Exibindo detalhes da LIF da storage VM e do cluster, incluindo funções, endpoints, nós, endereços IP e status
 
 
-Saiba como link:create-link.html["Conectar um link a um sistema de arquivos Amazon FSx for ONTAP"].
+
+
+[[related-information]]
+== Informações relacionadas
+
+* link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["Conecte um link a um sistema de arquivos FSx for ONTAP"]
+* link:https://docs.netapp.com/us-en/workload-setup-admin/manage-links.html["Gerenciar links"]
+

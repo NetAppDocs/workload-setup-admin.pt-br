@@ -1797,8 +1797,6 @@
   <block id="6cdde78d80d6fbbd8f3706a9bcac599e" category="list-text">Criação e gerenciamento de clones instantâneos e no local para clonagem de dados</block>
   <block id="7cacd07dfdd5c4feadcbf23d19f9972d" category="list-text">Exibindo métricas adicionais diretamente do ONTAP, como a versão do ONTAP</block>
   <block id="f22e542eda471e2702ed07136761fd6c" category="list-text">Exibindo detalhes da LIF da storage VM e do cluster, incluindo funções, endpoints, nós, endereços IP e status</block>
-  <block id="30f1ae8a88bc842cdf5e493350ae7eb1" category="inline-link-macro">Conectar um link a um sistema de arquivos Amazon FSx for ONTAP</block>
-  <block id="f86bb6aab3a49998f4db8fa07a49d81a" category="paragraph">Saiba como <block ref="e658cbfbd30fb261626bc7c82308a713" category="inline-link-macro-rx"></block>.</block>
   <block id="526aa50fb911c91291e959f7543639b0" category="doc">Gerencie painéis personalizados no NetApp Workload Factory</block>
   <block id="dbc831d32bec483a9698bd8ffbae773b" category="doc">Gerencie recursos de IA no NetApp Workload Factory</block>
   <block id="a1212a4e5f083322acc45c56b9938112" category="summary">Você pode visualizar os links associados à sua conta, atualizar as senhas para autenticação de links e remover um link no NetApp Workload Factory.</block>
@@ -1853,4 +1851,7 @@
   <block id="78f8c00f462b0fbe742eab283e3fdf7a" category="sidebar">Saiba mais sobre links</block>
   <block id="c108a5680d95b024bcb3f456683c719c" category="sidebar">Conecte-se a um sistema de arquivos com um link</block>
   <block id="fa1a08e2a749c9f330c9a8e60cac9cc3" category="sidebar">Gerenciar links</block>
+  <block id="bf7102668593cd82fd27a66594640387" category="inline-link-macro">Conecte um link a um sistema de arquivos FSx for ONTAP</block>
+  <block id="f54caf9bcfff2cb7aa30ba073518e7db" category="list-text"><block ref="f54caf9bcfff2cb7aa30ba073518e7db" category="inline-link-macro-rx"></block></block>
+  <block id="364f26fd39f55f2137b4749b01da3565" category="list-text"><block ref="364f26fd39f55f2137b4749b01da3565" category="inline-link-macro-rx"></block></block>
 </blocks>
