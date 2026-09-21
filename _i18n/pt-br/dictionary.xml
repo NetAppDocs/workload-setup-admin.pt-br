@@ -1022,7 +1022,6 @@
   <block id="65c95ed5c9f895be6dfa81e8583c86af" category="list-text">*CloudShell CLI*: O Workload Factory inclui um CloudShell CLI para gerenciar e operar ambientes AWS e NetApp em todas as contas a partir de um único CLI baseado em navegador. Acesse o CloudShell na barra superior do console do Workload Factory.</block>
   <block id="34904d30d825a389b588efb76a1ceb16" category="list-text">*API REST*: Use as APIs REST do Workload Factory para implantar e gerenciar seu FSx para sistemas de arquivos ONTAP e outros recursos da AWS.</block>
   <block id="3995165ba76339d9d4d08edf5a17c07c" category="list-text">*CloudFormation*: use o código do AWS CloudFormation para executar as ações definidas no console do Workload Factory para modelar, provisionar e gerenciar recursos da AWS e de terceiros da pilha do CloudFormation na sua conta da AWS.</block>
-  <block id="a1b1209dad1b58c4e66fd68ee5bc0148" category="list-text">*Provedor do Terraform NetApp Workload Factory*: use o Terraform para criar e gerenciar fluxos de trabalho de infraestrutura gerados no console do Workload Factory.</block>
   <block id="cfcd02bc3ad349605f667b1db0164fe0" category="paragraph">O Workload Factory permite que você otimize, automatize e opere seus sistemas de arquivos FSx for ONTAP para cargas de trabalho específicas.  Cada carga de trabalho expõe uma API REST associada.  Coletivamente, essas cargas de trabalho e APIs formam uma plataforma de desenvolvimento flexível e extensível que você pode usar para administrar seus sistemas de arquivos FSx para ONTAP .</block>
   <block id="49dac47ef61c863ab22404394b6c84e7" category="paragraph">Há vários benefícios ao usar as APIs REST do Workload Factory:</block>
   <block id="b5b61948785c8f81b44871382cf798d9" category="list-text">A autenticação do Workload Factory é baseada no padrão OAuth2.  O NetApp depende da implementação do serviço Auth0.</block>
@@ -1364,7 +1363,6 @@
   <block id="4ebed31793305164cd5e1b71336c2244" category="paragraph">Basta descrever o que você deseja monitorar em linguagem simples, e a IA criará um painel com base na sua solicitação. Por exemplo, você pode monitorar o status de recuperação de desastres, a capacidade e os custos em diferentes regiões, a conformidade com a proteção de armazenamento e outras métricas operacionais.</block>
   <block id="f2c8c03b6d33f0a06783ce6241b381a6" category="paragraph">Os painéis personalizados são somente leitura, portanto, não podem alterar suas configurações de armazenamento ou carga de trabalho. Qualquer pessoa em sua conta do Workload Factory pode visualizar e gerenciar esses painéis, facilitando o compartilhamento de informações e o alinhamento entre as equipes.</block>
   <block id="7f7fdf6329959f984b3ff303ae5ac37f" category="inline-link-macro">Saiba mais sobre painéis personalizados</block>
-  <block id="b95d6b8ad9f73321f9cc2385811deedb" category="paragraph"><block ref="b95d6b8ad9f73321f9cc2385811deedb" category="inline-link-macro-rx"></block></block>
   <block id="b8aad264abc6ada71a68a9b5a701a58b" category="summary">Crie um painel personalizado usando instruções guiadas por IA para monitorar o que é mais importante para suas cargas de trabalho e prioridades operacionais.</block>
   <block id="dfc2a77d9b383cd28cba1a1e99f9a378" category="doc">Crie um painel personalizado</block>
   <block id="43d2bb31c641fd8b871b835572bc7441" category="paragraph">Crie painéis personalizados descrevendo o que você deseja monitorar em linguagem simples. A IA guia você pela configuração para que seus painéis correspondam às suas cargas de trabalho e prioridades.</block>
@@ -1854,4 +1852,6 @@
   <block id="bf7102668593cd82fd27a66594640387" category="inline-link-macro">Conecte um link a um sistema de arquivos FSx for ONTAP</block>
   <block id="f54caf9bcfff2cb7aa30ba073518e7db" category="list-text"><block ref="f54caf9bcfff2cb7aa30ba073518e7db" category="inline-link-macro-rx"></block></block>
   <block id="364f26fd39f55f2137b4749b01da3565" category="list-text"><block ref="364f26fd39f55f2137b4749b01da3565" category="inline-link-macro-rx"></block></block>
+  <block id="dd6c12ecaee3143ccc7a7d85e16032ff" category="paragraph"><block ref="dd6c12ecaee3143ccc7a7d85e16032ff" category="inline-link-macro-rx"></block></block>
+  <block id="06e2f75907573850abfa673fd6e8572a" category="list-text">*NetApp Terraform provider*: Use o Terraform para criar e gerenciar fluxos de trabalho de infraestrutura gerados no console do Workload Factory.</block>
 </blocks>
