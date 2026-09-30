@@ -1,0 +1,141 @@
+---
+sidebar: sidebar 
+permalink: manage-agent-settings.html 
+keywords: agents settings, aiops, agent configuration, ai agent, agent mode, credentials, read-only, read-write, custom prompt, verbose, slack integration 
+summary: Configure as configurações dos agentes de IA, como o modo de operação, as permissões de acesso, as instruções personalizadas e os níveis de detalhamento das respostas, para controlar como os agentes funcionam no seu ambiente do Workload Factory. 
+---
+= Gerencie as configurações dos agentes de IA no NetApp Workload Factory
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Configure o funcionamento dos agentes de IA no seu ambiente do Workload Factory. Você pode escolher como os agentes operam, decidir quais credenciais eles podem usar, adicionar prompts personalizados e ajustar os níveis de detalhamento das respostas.
+
+
+
+[[before-you-begin]]
+== Antes de começar
+
+* Recomendamos que um administrador da conta configure as configurações dos agentes.
+* Antes de ativar o modo de leitura e gravação, certifique-se de compreender os riscos de segurança envolvidos em permitir que os agentes executem ações para você.
+
+
+
+NOTE: Se o administrador da sua conta desativou os recursos de IA, os agentes de IA não estarão disponíveis. link:manage-genai-features.html["Saiba mais sobre como gerenciar recursos de IA"].
+
+
+
+[[access-agents-settings]]
+== Configurações dos agentes de acesso
+
+.Passos
+. Faça login usando um dos link:console-experiences.html["experiências de console"^].
+. Acesse as configurações dos Agents usando um destes métodos:
++
+** No menu, selecione *Administração*, *Configurações* e, em seguida, *Agentes*.
+** Na experiência de chat dos agentes, selecione o link para *Configurações de agentes*.
+
+
+
+
+
+
+[[set-up-agents-operation-mode]]
+== Configurar o modo de operação dos agentes
+
+Escolha se os agentes operam em modo somente leitura ou em modo de leitura e gravação.
+
+.Sobre esta tarefa
+O modo de operação dos agentes determina quais ações os agentes podem executar:
+
+Modo somente leitura (padrão):: Os agentes podem visualizar e analisar seus dados, mas não podem alterar seus recursos. Eles podem responder a perguntas, identificar riscos, fornecer recomendações e ajudar a solucionar problemas.
+Modo de leitura e gravação:: Os agentes podem realizar ações em seu nome usando as credenciais que você escolher. Antes de realizar qualquer ação, eles mostram um resumo e aguardam sua aprovação. Eles não realizarão nenhuma ação sem sua aprovação.
+
+
+.Passos
+. No menu, selecione *Administração*, *Configurações* e, em seguida, *Agentes*.
+. Na página *Configurações de agentes*, acesse a seção *Modo de agentes*.
+. Selecione o modo de operação.
+. Selecione *aplicar*.
+
+
+
+
+[[select-credentials-for-agents-access]]
+== Selecione as credenciais para acesso dos agentes
+
+Escolha quais credenciais da AWS os agentes podem usar para acessar seu ambiente de nuvem. Por padrão, todas as credenciais estão selecionadas, mas você pode restringir isso a um subconjunto das suas credenciais configuradas.
+
+.Sobre esta tarefa
+Você pode selecionar nenhuma, uma, algumas ou todas as suas credenciais configuradas. Se você selecionar nenhuma credencial, os agentes poderão responder a perguntas gerais, mas não poderão analisar recursos no seu ambiente.
+
+.Passos
+. Na página *Configurações de agentes*, acesse a seção *Credenciais*.
+. Na lista suspensa *Nome das credenciais*, selecione quais credenciais os agentes podem usar.
++
+Caso nenhuma credencial esteja configurada, você verá uma opção para adicionar credenciais à sua conta do Workload Factory.
+
+. Selecione *aplicar*.
+
+
+
+
+[[slack-integration]]
+== Integração com o Slack
+
+Você pode conectar os agentes ao Slack e interagir com eles diretamente no seu espaço de trabalho do Slack.
+
+Para obter informações sobre como configurar a integração com o Slack, visite a documentação da integração com o Slack ou entre em contato com seu representante da NetApp sobre os agentes.
+
+
+
+[[add-a-custom-prompt]]
+== Adicionar um prompt personalizado
+
+Adicione diretrizes, preferências ou regras personalizadas para os agentes seguirem ao responder às suas solicitações.
+
+.Sobre esta tarefa
+Um prompt personalizado ajuda a orientar como os agentes respondem para que sigam as políticas, a linguagem e os fluxos de trabalho da sua organização. Ele se aplica a todas as interações dos agentes.
+
+O campo de prompt personalizado está vazio por padrão. Você pode adicionar, modificar ou remover o prompt personalizado a qualquer momento.
+
+.Passos
+. Na página *Configurações de agentes*, acesse a seção *Solicitação personalizada*.
+. No campo de texto, insira suas diretrizes personalizadas para os agentes.
++
+Por exemplo, você pode definir regras de nomenclatura, formatos de resposta preferenciais ou políticas da empresa que os agentes devem seguir.
+
+. Selecione *aplicar*.
+
+
+.Resultado
+Os agentes usarão seu prompt personalizado juntamente com seus recursos incorporados ao responder às suas solicitações.
+
+Para alterar ou remover o prompt personalizado, volte a esta página, edite a caixa de texto e selecione *Aplicar*.
+
+
+
+[[configure-verbosity-options]]
+== Configure as opções de detalhamento
+
+Escolha quanto detalhe os agentes compartilham sobre seu raciocínio e uso de ferramentas.
+
+.Sobre esta tarefa
+As opções de detalhamento permitem que você veja mais informações sobre como os agentes chegam às suas respostas e quais ferramentas eles usam para coletar informações:
+
+Raciocínio detalhado:: Quando ativados, os agentes explicam como chegam às suas respostas e tomam decisões. Isso ajuda você a entender por que eles recomendam determinadas ações ou chegam a conclusões específicas.
+Ferramentas detalhadas e verbosas:: Quando ativados, os agentes mostram quais ferramentas e APIs usam para coletar dados e realizar análises. Isso ajuda você a entender como eles interagem com seu ambiente.
+
+
+Ambas as opções estão desativadas por padrão para manter as respostas concisas. Ative-as quando precisar de mais transparência ou estiver solucionando problemas no comportamento dos agentes.
+
+.Passos
+. Na página *Configurações de agentes*, acesse a seção *Nível de detalhamento*.
+. Selecione as opções de detalhamento que você deseja ativar.
+. Selecione *aplicar*.
+

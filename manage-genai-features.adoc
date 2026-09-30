@@ -21,7 +21,7 @@ Controle o acesso aos recursos de IA no Workload Factory. Você pode desativar o
 [[about-ai-features]]
 == Sobre os recursos de IA
 
-O Workload Factory inclui diversos recursos com tecnologia de IA que melhoram sua experiência, como Ask Me, painéis personalizados e analisadores para EMS, logs de banco de dados e latência.
+O Workload Factory inclui diversos recursos com tecnologia de IA que aprimoram sua experiência, como o Ask Me, agentes de IA, painéis personalizados, o Rule builder e analisadores para EMS, logs de banco de dados e latência.
 
 Como administrador do Workload Factory, você pode controlar como esses recursos usam IA na página de configurações de IA.
 
@@ -41,7 +41,7 @@ NetApp-gerenciado Bedrock (Recomendado):: Utilize um serviço AWS Bedrock gerenc
 
 
 --
-Recursos do GenAI desativados:: Desativa todos os recursos de IA. Os usuários não poderão mais usar o Ask Me, analisadores, painéis personalizados, criador de regras ou outras ferramentas com tecnologia de IA.
+Recursos do GenAI desativados:: Desativa todos os recursos de IA. Os usuários não poderão mais usar o Ask Me, o AI Agent, analisadores, painéis personalizados, o criador de regras ou outras ferramentas com tecnologia de IA.
 
 
 

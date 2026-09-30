@@ -50,6 +50,12 @@ indexpage:
       url: https://docs.netapp.com/us-en/workload-databases/analyze-error-logs.html
     - title: Visualize e analise eventos do EMS para cargas de trabalho de armazenamento.
       url: https://docs.netapp.com/us-en/workload-fsx-ontap/analyze-events.html
+  - title: Agentes de IA
+    links:
+    - title: Saiba mais sobre agentes de IA
+      url: "/learn-agent.html"
+    - title: Gerenciar configurações de agentes de IA
+      url: "/manage-agent-settings.html"
   - title: Painéis personalizados
     links:
     - title: Saiba mais sobre painéis personalizados

@@ -20,6 +20,9 @@ Você pode configurar o serviço de notificações do NetApp Workload Factory pa
 
 Você pode configurar as notificações do Workload Factory usando o NetApp Console ou o console do Workload Factory.
 
+
+IMPORTANT: Ao configurar notificações no NetApp Console, ele assume o controle do envio de notificações e as opções de notificação do console do Workload Factory são desativadas e exibidas em modo somente leitura. Uma dica de ferramenta informa que as notificações são gerenciadas a partir do NetApp Console. Você só pode gerenciar notificações a partir do NetApp Console.
+
 Opções para receber notificações incluem:
 
 
@@ -37,12 +40,7 @@ Opções para receber notificações incluem:
 [[workload-factory-console]]
 === Console da Workload Factory
 
-* *E-mail*: Habilite as notificações por e-mail no console do Workload Factory para receber notificações em qualquer endereço de e-mail associado à conta, sem a necessidade de configuração do Amazon SNS.
-* *Amazon SNS*: configure o Workload Factory para enviar notificações a um tópico do Amazon SNS usando o console do Workload Factory.
-
-
-
-IMPORTANT: Ao configurar notificações no NetApp Console, ele assume o controle do envio de notificações e as opções de notificação do console do Workload Factory são desativadas e exibidas em modo somente leitura. Uma dica de ferramenta informa que as notificações são gerenciadas a partir do NetApp Console. Você só pode gerenciar notificações a partir do NetApp Console.
+*Amazon SNS*: configure o Workload Factory para enviar notificações a um tópico do Amazon SNS usando o console do Workload Factory.
 
 .Antes de começar
 Os seguintes pré-requisitos aplicam-se apenas à configuração de notificações do Amazon SNS:
@@ -78,9 +76,8 @@ Depois de criar o tópico, copie o ARN do tópico e insira-o no campo *ARN do t�
 .Passos
 . Faça login nolink:https://console.workloads.netapp.com["Console da Workload Factory"^] .
 . No menu do console do Workload Factory, selecione *Cargas de trabalho*, *Administração* e, em seguida, *Configuração de notificações*.
-. Ative um ou mais dos seguintes tipos de notificação:
 +
-** *Notificações por e-mail*: selecione *Ativar notificações por e-mail*. Todos os endereços de e-mail associados à conta são exibidos em modo somente leitura.
+** *Notificações por e-mail*: Para receber notificações por e-mail, configure os destinatários das notificações e as preferências de severidade nas link:link:https://console.netapp.com["Console NetApp"^]configurações de notificação.
 ** *Notificações do Amazon SNS*: selecione *Ativar notificações do SNS* e siga as instruções para configurar o Amazon SNS no console do Amazon SNS.
 +
 Depois de verificar a configuração enviando uma notificação de teste, selecione *Aplicar*.
