@@ -77,7 +77,7 @@ Depois de criar o tópico, copie o ARN do tópico e insira-o no campo *ARN do t�
 . Faça login nolink:https://console.workloads.netapp.com["Console da Workload Factory"^] .
 . No menu do console do Workload Factory, selecione *Cargas de trabalho*, *Administração* e, em seguida, *Configuração de notificações*.
 +
-** *Notificações por e-mail*: Para receber notificações por e-mail, configure os destinatários das notificações e as preferências de severidade nas link:link:https://console.netapp.com["Console NetApp"^]configurações de notificação.
+** *Notificações por e-mail*: Para receber notificações por e-mail, configure os destinatários das notificações e as preferências de severidade nas link:https://console.netapp.com["Console NetApp"^]configurações de notificação.
 ** *Notificações do Amazon SNS*: selecione *Ativar notificações do SNS* e siga as instruções para configurar o Amazon SNS no console do Amazon SNS.
 +
 Depois de verificar a configuração enviando uma notificação de teste, selecione *Aplicar*.

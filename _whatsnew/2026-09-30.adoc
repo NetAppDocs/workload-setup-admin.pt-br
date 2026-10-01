@@ -23,9 +23,9 @@ Esses controles adicionais oferecem mais visibilidade e supervisão. No modo de 
 
 Os agentes também são compatíveis com ambientes de múltiplas contas e facilitam a configuração. Um único agente pode operar com segurança em várias contas da AWS usando diversas credenciais.
 
-link:learn-agent.html["Saiba mais sobre agentes de IA"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/learn-agent.html["Saiba mais sobre agentes de IA"]
 
-link:manage-agent-settings.html["Gerenciar configurações dos agentes"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-agent-settings.html["Gerenciar configurações dos agentes"]
 
 
 
@@ -40,7 +40,7 @@ Exemplos de prompts:
 * Liste todos os sistemas de arquivos do AWS FSx acessíveis a cada hora para manter um inventário atualizado.
 
 
-link:workload-factory-overview.html#features["Saiba mais sobre Ask Me"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html#features["Saiba mais sobre Ask Me"]
 
 
 
@@ -49,7 +49,7 @@ link:workload-factory-overview.html#features["Saiba mais sobre Ask Me"]
 
 O Ask Me agora é compatível com o FSx para ONTAP e sistemas ONTAP locais. Use a mesma experiência de chat para obter respostas e insights em toda a sua infraestrutura ONTAP.
 
-link:workload-factory-overview.html#features["Saiba mais sobre Ask Me"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html#features["Saiba mais sobre Ask Me"]
 
 
 

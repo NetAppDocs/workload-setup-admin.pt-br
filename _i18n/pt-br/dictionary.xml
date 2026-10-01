@@ -1858,15 +1858,12 @@
   <block id="72c9ca3fa9790aabd5a7a741dfe036e9" category="paragraph">Esses controles adicionais oferecem mais visibilidade e supervisão. No modo de leitura e gravação, os agentes precisam da sua aprovação antes de fazer alterações na AWS, ONTAP ou em APIs compatíveis. Você também pode escolher o nível de detalhamento das respostas, incluindo informações sobre o raciocínio do agente e, no Slack, sua atividade com as ferramentas.</block>
   <block id="8b4711746b3adfa755ed575da3759c69" category="paragraph">Os agentes também são compatíveis com ambientes de múltiplas contas e facilitam a configuração. Um único agente pode operar com segurança em várias contas da AWS usando diversas credenciais.</block>
   <block id="ff2cb9e669640d8f287be7fc339c4d78" category="inline-link-macro">Saiba mais sobre agentes de IA</block>
-  <block id="fd0b6331664a65cf7a31ea72bbff0ad8" category="paragraph"><block ref="fd0b6331664a65cf7a31ea72bbff0ad8" category="inline-link-macro-rx"></block></block>
   <block id="718a428bd3b2faadb3c143efe186c19c" category="inline-link-macro">Gerenciar configurações dos agentes</block>
-  <block id="f96519dcd31d8fc6ae26fb065d41298c" category="paragraph"><block ref="f96519dcd31d8fc6ae26fb065d41298c" category="inline-link-macro-rx"></block></block>
   <block id="3cfde347b20875f3299e4bc85cde4012" category="section-title">Tarefas agendadas no Ask Me</block>
   <block id="ed6bda88b37dd9ee0232de291a362174" category="paragraph">Agora você pode personalizar um prompt no chat do Ask Me para criar tarefas agendadas. Use tarefas agendadas para solicitar que o Ask Me execute verificações recorrentes e envie atualizações no chat de acordo com a programação que você definir.</block>
   <block id="ff51f1512e81cb44e19946405c4c3751" category="paragraph">Exemplos de prompts:</block>
   <block id="9c51276de03bc7f0cc89565810a9583c" category="list-text">Verifique o status de integridade e do ciclo de vida de todos os sistemas de arquivos FSx for NetApp ONTAP a cada hora para detectar problemas precocemente.</block>
   <block id="7c232a692347d9efae9eafb444b454ef" category="list-text">Liste todos os sistemas de arquivos do AWS FSx acessíveis a cada hora para manter um inventário atualizado.</block>
-  <block id="21acc05c94ffdfe8d543fc22e8162a92" category="paragraph"><block ref="21acc05c94ffdfe8d543fc22e8162a92" category="inline-link-macro-rx"></block></block>
   <block id="fcc3c37c09c2649e94509997e3e32ace" category="section-title">Suporte ao ONTAP no Ask Me</block>
   <block id="5887518ab4bafe0e2cd30ee6d85ca830" category="paragraph">O Ask Me agora é compatível com o FSx para ONTAP e sistemas ONTAP locais. Use a mesma experiência de chat para obter respostas e insights em toda a sua infraestrutura ONTAP.</block>
   <block id="61ac51994f4e558eb3be753f892d08aa" category="section-title">Atualização de notificações</block>
@@ -1879,7 +1876,6 @@
   <block id="44268d176d67be14130038589d76e779" category="paragraph">O Workload Factory agora avisa você quando um link do Lambda não está usando a imagem mais recente disponível. Se as atualizações automáticas não forem compatíveis com um link, a notificação mostra quando uma versão mais recente está disponível.</block>
   <block id="36be3d9219f21557e17dda1fb159e09d" category="paragraph">Você pode visualizar as instruções de atualização na página Links. As instruções explicam como atualizar manualmente a imagem do link do Lambda e ativar as atualizações automáticas quando disponíveis. Manter os links atualizados dá a você acesso aos recursos mais recentes, corrige problemas conhecidos e aplica as atualizações de segurança mais recentes.</block>
   <block id="14bda382780d759b676db8bd277841a9" category="paragraph">Você também recebe um alerta no painel do FSx for ONTAP quando uma versão mais recente do link está disponível para um link que não oferece suporte a atualizações automáticas.</block>
-  <block id="0354b0d97d0b0a9757874cd60afce03c" category="list-text">*Notificações por e-mail*: Para receber notificações por e-mail, configure os destinatários das notificações e as preferências de severidade nas <block ref="ee6417f6e84445088f5a293850cbcb2f" category="inline-link-macro-rx"></block>configurações de notificação.</block>
   <block id="2c8d2ace24ab724b2b9846dfbd1113fb" category="summary">Descubra como os agentes de IA do Workload Factory podem analisar seu ambiente, identificar riscos e maneiras de melhorar o desempenho e tomar medidas por você com sua aprovação.</block>
   <block id="a4988f1624f7fc0b4eaabf35a45c6593" category="doc">Saiba mais sobre os agentes de IA no NetApp Workload Factory</block>
   <block id="44930f32325dbab8392ff7743e877c7e" category="paragraph">O Workload Factory AIOps usa IA para analisar seu ambiente e recomendar melhorias. Se você aprovar, ele também poderá executar ações usando as credenciais e permissões que você configurou.</block>
@@ -1978,4 +1974,7 @@
   <block id="64f2f595f7dd037774e1dbd99cb2ab7b" category="sidebar">Gerenciar configurações de agentes de IA</block>
   <block id="737f86fc6a3bb3563670dac4c0b49585" category="sidebar">O Workload Factory AIOps</block>
   <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">30 de setembro de 2026</block>
+  <block id="92ef509d26c2f4b8f1eafc483dafc514" category="paragraph"><block ref="92ef509d26c2f4b8f1eafc483dafc514" category="inline-link-macro-rx"></block></block>
+  <block id="ff60e6cb69fa35fc765fb6716dc86a1d" category="paragraph"><block ref="ff60e6cb69fa35fc765fb6716dc86a1d" category="inline-link-macro-rx"></block></block>
+  <block id="5ff6cb415ca5edb6088a3bb92aadbf41" category="list-text">*Notificações por e-mail*: Para receber notificações por e-mail, configure os destinatários das notificações e as preferências de severidade nas <block ref="7532dfde8c533672ea63a5b546224a97" category="inline-link-macro-rx"></block>configurações de notificação.</block>
 </blocks>
