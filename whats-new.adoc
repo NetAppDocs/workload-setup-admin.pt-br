@@ -60,10 +60,10 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overvie
 
 
 
-[[ontap-support-in-ask-me]]
-=== Suporte ao ONTAP no Ask Me
+[[storage-support-in-ask-me]]
+=== Suporte de armazenamento no Ask Me
 
-O Ask Me agora é compatível com o FSx para ONTAP e sistemas ONTAP locais. Use a mesma experiência de chat para obter respostas e insights em toda a sua infraestrutura ONTAP.
+O Ask Me agora é compatível com o FSx for ONTAP e o Google Cloud NetApp Volumes. Use a mesma experiência de chat para obter respostas e insights em todos os seus ambientes de armazenamento compatíveis.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html#features["Saiba mais sobre Ask Me"]
 

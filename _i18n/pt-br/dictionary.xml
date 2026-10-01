@@ -1864,8 +1864,6 @@
   <block id="ff51f1512e81cb44e19946405c4c3751" category="paragraph">Exemplos de prompts:</block>
   <block id="9c51276de03bc7f0cc89565810a9583c" category="list-text">Verifique o status de integridade e do ciclo de vida de todos os sistemas de arquivos FSx for NetApp ONTAP a cada hora para detectar problemas precocemente.</block>
   <block id="7c232a692347d9efae9eafb444b454ef" category="list-text">Liste todos os sistemas de arquivos do AWS FSx acessíveis a cada hora para manter um inventário atualizado.</block>
-  <block id="fcc3c37c09c2649e94509997e3e32ace" category="section-title">Suporte ao ONTAP no Ask Me</block>
-  <block id="5887518ab4bafe0e2cd30ee6d85ca830" category="paragraph">O Ask Me agora é compatível com o FSx para ONTAP e sistemas ONTAP locais. Use a mesma experiência de chat para obter respostas e insights em toda a sua infraestrutura ONTAP.</block>
   <block id="61ac51994f4e558eb3be753f892d08aa" category="section-title">Atualização de notificações</block>
   <block id="02796e8ea898eccf4fc1ec43b8c9a990" category="paragraph">As notificações do NetApp Console agora estão ativadas por padrão. Os usuários do NetApp Console receberão automaticamente notificações do Workload Factory sem necessidade de configuração adicional.</block>
   <block id="21342e11f90d32dc68b1110fcbb8adc2" category="inline-link-macro">Notificações do Workload Factory</block>
@@ -1889,7 +1887,6 @@
   <block id="f41dc5b513f7a5678f949fafbb672e71" category="list-text">Identificar riscos e oportunidades de otimização.</block>
   <block id="45747fdf81b9f650b9ab26706866db24" category="list-text">Solucione problemas e execute ações aprovadas em um único fluxo de trabalho.</block>
   <block id="6fd44b1c4edd80ad7b595f1fcb4c7483" category="list-text">Execute verificações agendadas e receba atualizações no histórico do chat.</block>
-  <block id="e974804a88a47e4bcdb4ff1c718951bc" category="list-text">Trabalhe em ambientes do FSx for ONTAP e do ONTAP locais.</block>
   <block id="4eeb2bca1dddd7a796d908c266d60075" category="section-title">Acesse os agentes de IA</block>
   <block id="e6478bab5c49062e219e1290c4442eed" category="list-text">Da homepage Ask Me</block>
   <block id="b3c72178808d9fa6e9c876b76d5d1928" category="list-text">Na página inicial do Ask Me, selecione *Explore Agents*. O painel lateral dos agentes de IA é aberto com uma mensagem de boas-vindas apresentando os recursos dos agentes.</block>
@@ -1966,7 +1963,6 @@
   <block id="5af9190832e86a39b32955d77e972b2e" category="list-text">Selecione as opções de detalhamento que você deseja ativar.</block>
   <block id="17f306dd010c4f9182635b5f5e336fa1" category="paragraph">O Workload Factory inclui diversos recursos com tecnologia de IA que aprimoram sua experiência, como o Ask Me, agentes de IA, painéis personalizados, o Rule builder e analisadores para EMS, logs de banco de dados e latência.</block>
   <block id="cbdbc1bacc2d0ff55d93219e225f857a" category="list-text">Desativa todos os recursos de IA. Os usuários não poderão mais usar o Ask Me, o AI Agent, analisadores, painéis personalizados, o criador de regras ou outras ferramentas com tecnologia de IA.</block>
-  <block id="346e26a9cf03697a4cc5fa74d552d528" category="list-text">Faça perguntas ao assistente de IA sobre como gerenciar e executar o FSx for ONTAP e os sistemas de arquivos ONTAP locais. O Ask Me se conecta com segurança ao seu ambiente e usa APIs para fornecer respostas com base na sua configuração de armazenamento.</block>
   <block id="c04236280596e42d063458cddb934506" category="list-text">Agentes de IA</block>
   <block id="3189c2a21a0d40fdf4391d22fec8b33c" category="inline-link-macro">Saiba mais sobre os agentes de IA</block>
   <block id="b91ab34707ef60b3cb9e7b43383594ea" category="list-text">O Workload Factory AIOps usa IA para analisar seu ambiente e recomendar melhorias. Se você aprovar, ele também poderá executar ações usando as credenciais e permissões que você configurou. Os agentes de IA ajudam o Ask Me a fornecer insights usando suas contas conectadas. Abra a seção "Explore Agents" no Ask Me para obter respostas rápidas, identificar riscos e oportunidades, solucionar problemas e receber recomendações. Por padrão, os agentes só podem visualizar informações. No modo de leitura e gravação, eles podem executar ações na AWS, no ONTAP e nas APIs compatíveis somente após a sua aprovação. Você também pode usar credenciais de várias contas da AWS, adicionar prompts personalizados e escolher quanto detalhe incluir nas respostas, incluindo justificativas e atividade da ferramenta no Slack. <block ref="4688d09efacd50ccc7831795bcbb59e1" category="inline-link-macro-rx"></block>.</block>
@@ -1977,4 +1973,8 @@
   <block id="92ef509d26c2f4b8f1eafc483dafc514" category="paragraph"><block ref="92ef509d26c2f4b8f1eafc483dafc514" category="inline-link-macro-rx"></block></block>
   <block id="ff60e6cb69fa35fc765fb6716dc86a1d" category="paragraph"><block ref="ff60e6cb69fa35fc765fb6716dc86a1d" category="inline-link-macro-rx"></block></block>
   <block id="5ff6cb415ca5edb6088a3bb92aadbf41" category="list-text">*Notificações por e-mail*: Para receber notificações por e-mail, configure os destinatários das notificações e as preferências de severidade nas <block ref="7532dfde8c533672ea63a5b546224a97" category="inline-link-macro-rx"></block>configurações de notificação.</block>
+  <block id="d757afa220ac7f97f408903182fddee2" category="section-title">Suporte de armazenamento no Ask Me</block>
+  <block id="541644294bd888a59c4f26e19102bfb2" category="paragraph">O Ask Me agora é compatível com o FSx for ONTAP e o Google Cloud NetApp Volumes. Use a mesma experiência de chat para obter respostas e insights em todos os seus ambientes de armazenamento compatíveis.</block>
+  <block id="54ba8fb885319acf274731794ecf9b35" category="list-text">Trabalhe em ambientes do FSx for ONTAP e do Google Cloud NetApp Volumes.</block>
+  <block id="3ddb8c8ba0ebed85a3c1d3ddf7cc424c" category="list-text">Faça perguntas ao assistente de IA sobre como gerenciar e executar o FSx para ONTAP e o Google Cloud NetApp Volumes. O Ask Me se conecta com segurança ao seu ambiente e usa APIs para fornecer respostas com base na sua configuração de armazenamento.</block>
 </blocks>
