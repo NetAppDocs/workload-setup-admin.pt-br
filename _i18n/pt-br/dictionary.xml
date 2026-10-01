@@ -1970,7 +1970,6 @@
   <block id="5af9190832e86a39b32955d77e972b2e" category="list-text">Selecione as opções de detalhamento que você deseja ativar.</block>
   <block id="17f306dd010c4f9182635b5f5e336fa1" category="paragraph">O Workload Factory inclui diversos recursos com tecnologia de IA que aprimoram sua experiência, como o Ask Me, agentes de IA, painéis personalizados, o Rule builder e analisadores para EMS, logs de banco de dados e latência.</block>
   <block id="cbdbc1bacc2d0ff55d93219e225f857a" category="list-text">Desativa todos os recursos de IA. Os usuários não poderão mais usar o Ask Me, o AI Agent, analisadores, painéis personalizados, o criador de regras ou outras ferramentas com tecnologia de IA.</block>
-  <block id="301497b54979bb49bba5249c4f44b4ad" category="section-title">27 de setembro de 2026</block>
   <block id="346e26a9cf03697a4cc5fa74d552d528" category="list-text">Faça perguntas ao assistente de IA sobre como gerenciar e executar o FSx for ONTAP e os sistemas de arquivos ONTAP locais. O Ask Me se conecta com segurança ao seu ambiente e usa APIs para fornecer respostas com base na sua configuração de armazenamento.</block>
   <block id="c04236280596e42d063458cddb934506" category="list-text">Agentes de IA</block>
   <block id="3189c2a21a0d40fdf4391d22fec8b33c" category="inline-link-macro">Saiba mais sobre os agentes de IA</block>
@@ -1978,4 +1977,5 @@
   <block id="4b448c1a229bebc97e97cee06ea0fced" category="admonition">Os administradores da conta podem ativar ou desativar os recursos de IA. Se um administrador os desativar, o assistente Ask Me AI e os agentes de IA não estarão disponíveis. <block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block>.</block>
   <block id="64f2f595f7dd037774e1dbd99cb2ab7b" category="sidebar">Gerenciar configurações de agentes de IA</block>
   <block id="737f86fc6a3bb3563670dac4c0b49585" category="sidebar">O Workload Factory AIOps</block>
+  <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">30 de setembro de 2026</block>
 </blocks>
