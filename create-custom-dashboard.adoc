@@ -59,6 +59,7 @@ Após a criação, você pode:
 
 * Altere a visibilidade do painel para compartilhar com sua equipe
 * Atualize os dados do painel para ver as informações mais recentes
+* Edite os painéis para alterar o que eles exibem, incluindo métricas, gráficos e intervalos de tempo
 * Exclua painéis que você não precisa mais
 * Veja os detalhes do painel, incluindo quem o criou e quando foi atualizado pela última vez
 

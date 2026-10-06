@@ -1,0 +1,28 @@
+= Atualizações do dashboard personalizado
+:allow-uri-read: 
+
+
+
+
+[[custom-dashboard-updates]]
+=== Atualizações do dashboard personalizado
+
+Painéis personalizados agora facilitam o gerenciamento do seu trabalho.
+
+Você pode editar painéis diretamente do catálogo, incluindo métricas, gráficos e intervalos de tempo.
+
+Ao editar um painel, o Workload Factory reabre o chat com seus prompts e mensagens anteriores. Você pode então atualizar o painel, salvar suas alterações ou restaurar a versão anterior.
+
+Somente o criador do painel pode editá-lo. Enquanto você estiver editando, outros usuários não poderão ver suas alterações até que você as salve.
+
+O catálogo de dashboards agora inclui mais filtros para ajudar você a encontrar dashboards rapidamente com base na categoria e no status.
+
+Se o seu administrador desativar os recursos de IA ou se o seu limite de crédito mensal for atingido, a criação e a edição do painel serão desativadas.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/learn-custom-dashboards.html["Saiba mais sobre painéis personalizados"]
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-custom-dashboard.html["Crie um painel personalizado"]
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-custom-dashboards.html["Gerencie painéis personalizados"]
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/troubleshoot-custom-dashboards.html["Solucionar problemas de painéis personalizados"]

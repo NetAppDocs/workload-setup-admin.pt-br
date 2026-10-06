@@ -1433,15 +1433,6 @@
   <block id="dffad8b6380340c5079727deb13bb3f2" category="list-text">Revise a lista do dashboard.</block>
   <block id="9e3f16aef1d22400bdae48c5cb77b00f" category="section-title">Atualizar dados do dashboard</block>
   <block id="4e424a1ad37782627141d4d50f79b586" category="paragraph">Os dados do painel são carregados quando você abre um painel. Você pode atualizá-lo para ver as informações mais recentes.</block>
-  <block id="6835e72df37e141c78401ea8d4bfcf90" category="paragraph">O painel de controle recarrega os dados das suas cargas de trabalho. A hora da última atualização muda para mostrar quando os dados foram atualizados.</block>
-  <block id="74ee9feffcb1603b7eeb47c099c0e5a5" category="section-title">Excluir um dashboard</block>
-  <block id="e54360b7371199d6607f76cd1ae6ad17" category="paragraph">Exclua os painéis que você não precisa mais. Essa ação é permanente e não pode ser desfeita.</block>
-  <block id="3325f3a5c13a73bb87ed2dabebb0b6a3" category="list-text">Na página *Painéis personalizados*, localize o painel que você deseja remover.</block>
-  <block id="0ce6306187e44bdf505a14f5d0676bb6" category="list-text">No menu suspenso *Ações* desse painel, selecione *Excluir*.</block>
-  <block id="b26a5fa549c938ffb56d20623c3f69c0" category="list-text">Confirme a exclusão.</block>
-  <block id="22e8351c82677bcc78bd23d6fb170bc8" category="paragraph">O painel de controle é removido permanentemente da sua conta do Workload Factory e todos os usuários perdem o acesso a ele.</block>
-  <block id="9537d9160ef701530bdd875698475957" category="inline-link-macro">Crie painéis personalizados adicionais</block>
-  <block id="1258b44f1520a3cf10d648fb08dbf72e" category="list-text"><block ref="1258b44f1520a3cf10d648fb08dbf72e" category="inline-link-macro-rx"></block></block>
   <block id="0c5896a9e6c8d2cff1b4d007852b1732" category="paragraph">Use essas informações para resolver problemas comuns que você pode encontrar ao criar ou usar painéis personalizados.</block>
   <block id="2e00365fe32c89b1fd1ad214f291ca85" category="section-title">Falha na criação do dashboard</block>
   <block id="09a8c59ab236b488dde6ce993a012c63" category="paragraph">**Problema:** Você vê a mensagem de erro "Falha ao entender a solicitação e gerar o código" ao criar um painel.</block>
@@ -1977,4 +1968,28 @@
   <block id="541644294bd888a59c4f26e19102bfb2" category="paragraph">O Ask Me agora é compatível com o FSx for ONTAP e o Google Cloud NetApp Volumes. Use a mesma experiência de chat para obter respostas e insights em todos os seus ambientes de armazenamento compatíveis.</block>
   <block id="54ba8fb885319acf274731794ecf9b35" category="list-text">Trabalhe em ambientes do FSx for ONTAP e do Google Cloud NetApp Volumes.</block>
   <block id="3ddb8c8ba0ebed85a3c1d3ddf7cc424c" category="list-text">Faça perguntas ao assistente de IA sobre como gerenciar e executar o FSx para ONTAP e o Google Cloud NetApp Volumes. O Ask Me se conecta com segurança ao seu ambiente e usa APIs para fornecer respostas com base na sua configuração de armazenamento.</block>
+  <block id="77c39d029270c567ae2816d2c688ea3b" category="doc">Atualizações do dashboard personalizado</block>
+  <block id="b4a3fedd52cfe46140994157b6fa12ec" category="paragraph">Painéis personalizados agora facilitam o gerenciamento do seu trabalho.</block>
+  <block id="5d95426dd9834d03b33e051ae7f9fb5c" category="paragraph">Você pode editar painéis diretamente do catálogo, incluindo métricas, gráficos e intervalos de tempo.</block>
+  <block id="e57137dc0ab44a9b0797700e3e8c851c" category="paragraph">Ao editar um painel, o Workload Factory reabre o chat com seus prompts e mensagens anteriores. Você pode então atualizar o painel, salvar suas alterações ou restaurar a versão anterior.</block>
+  <block id="8f44990f66d79c05eb2b8e612e7e18b5" category="paragraph">Somente o criador do painel pode editá-lo. Enquanto você estiver editando, outros usuários não poderão ver suas alterações até que você as salve.</block>
+  <block id="14dd0ad1c8f18e92cbbc77ecf3a2645b" category="paragraph">O catálogo de dashboards agora inclui mais filtros para ajudar você a encontrar dashboards rapidamente com base na categoria e no status.</block>
+  <block id="fb1ecdb5253f537a735a53d5e9e2eba6" category="paragraph">Se o seu administrador desativar os recursos de IA ou se o seu limite de crédito mensal for atingido, a criação e a edição do painel serão desativadas.</block>
+  <block id="f736e966e4394f88a05cee94fdba57ff" category="paragraph"><block ref="f736e966e4394f88a05cee94fdba57ff" category="inline-link-macro-rx"></block></block>
+  <block id="e703f5c9737234e07b6d50b473d03d31" category="paragraph"><block ref="e703f5c9737234e07b6d50b473d03d31" category="inline-link-macro-rx"></block></block>
+  <block id="a6624b6c8238a8d2fecbcab00748683a" category="paragraph"><block ref="a6624b6c8238a8d2fecbcab00748683a" category="inline-link-macro-rx"></block></block>
+  <block id="6690aacdf8125a25e4539caa3239e86f" category="paragraph"><block ref="6690aacdf8125a25e4539caa3239e86f" category="inline-link-macro-rx"></block></block>
+  <block id="b2174789d5314bb12b464a8d03a18be6" category="list-text">Edite os painéis para alterar o que eles exibem, incluindo métricas, gráficos e intervalos de tempo</block>
+  <block id="0d4c6d4cadfc35e450177a6f124a12ce" category="admonition">Se o administrador da sua conta desativou os recursos de IA, você verá uma mensagem e não poderá criar ou editar painéis. Entre em contato com seu administrador ou <block ref="51cc9b1bceb3cdf8e5a226d8fb6d37eb" category="inline-link-macro-rx"></block>.</block>
+  <block id="3dacf374ca39e9d1e2ccd73b21e8d75a" category="paragraph">Você pode editar painéis do catálogo e atualizar o nome, a descrição, a categoria ou a solicitação de monitoramento do painel antes de decidir se deseja salvar a versão revisada.</block>
+  <block id="09716803bbab78d4545cc7210ae61d90" category="paragraph">O painel de controle recarrega os dados das suas cargas de trabalho.</block>
+  <block id="d2258a9653c6a977efeeb955b27c66e9" category="section-title">Editar painéis</block>
+  <block id="4e2f12e496523d85bae4a969657d45aa" category="paragraph">Você pode editar um painel para alterar o que ele exibe, incluindo as métricas, os gráficos e os intervalos de tempo.</block>
+  <block id="b13bad0dcb6df4e403e8e2af9058dfe5" category="list-text">Na página *Painéis personalizados*, localize o painel que você deseja editar.</block>
+  <block id="d431f68c965a7131bbc2f48128983c25" category="list-text">No menu *Ações* desse dashboard, selecione *Editar dashboard*.</block>
+  <block id="63f40ecf20824ff6d561a306d3a25fd1" category="list-text">Na caixa de diálogo com a IA, descreva as alterações que você deseja fazer.</block>
+  <block id="3184c7e78934ef4b37ea845f1d56789a" category="paragraph">Esse processo é semelhante à criação de um novo painel. Você pode alterar as cargas de trabalho, métricas ou intervalos de tempo que o painel monitora.</block>
+  <block id="f66306510aaf399aef8bdf649739a15e" category="list-text">Revise as alterações e selecione **Salvar**.</block>
+  <block id="89806ea6a9ed9b0bb6cb322f912aff65" category="paragraph">O painel de controle é atualizado com suas alterações. A data da última modificação também é atualizada.</block>
+  <block id="6cd19393862a5a23e39bb63b43a86baa" category="section-title">04 de outubro de 2026</block>
 </blocks>

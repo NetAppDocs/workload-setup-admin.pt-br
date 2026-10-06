@@ -18,7 +18,7 @@ Painéis personalizados usam IA para criar visualizações personalizadas do seu
 Todos os membros da sua conta do Workload Factory podem visualizar todos os painéis personalizados. Essa configuração compartilhada ajuda as equipes a colaborar e a visualizar as mesmas informações operacionais em toda a sua organização.
 
 
-NOTE: Se o administrador da sua conta desativou os recursos de IA, você verá uma mensagem e não poderá criar painéis. Entre em contato com seu administrador ou link:manage-genai-features.html["Aprenda sobre administração de IA"].
+NOTE: Se o administrador da sua conta desativou os recursos de IA, você verá uma mensagem e não poderá criar ou editar painéis. Entre em contato com seu administrador ou link:manage-genai-features.html["Aprenda sobre administração de IA"].
 
 
 
@@ -46,6 +46,11 @@ Durante a configuração, o diálogo guiado por IA ajuda você a definir:
 * Visualizações por região, carga de trabalho ou outras categorias
 * Regras ou requisitos que você precisa acompanhar e exibir
 
+
+Você pode editar painéis do catálogo e atualizar o nome, a descrição, a categoria ou a solicitação de monitoramento do painel antes de decidir se deseja salvar a versão revisada.
+
+
+NOTE: Somente o criador do painel pode editá-lo. Enquanto você estiver editando, outros usuários não poderão ver suas alterações até que você as salve.
 
 
 
