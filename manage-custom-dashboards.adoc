@@ -86,3 +86,28 @@ Esse processo é semelhante à criação de um novo painel. Você pode alterar a
 
 .Resultado
 O painel de controle é atualizado com suas alterações. A data da última modificação também é atualizada.
+
+
+
+[[delete-a-dashboard]]
+== Excluir um dashboard
+
+Exclua os painéis que você não precisa mais. Essa ação é permanente e não pode ser desfeita.
+
+.Passos
+. Na página *Painéis personalizados*, localize o painel que você deseja remover.
+. No menu suspenso *Ações* desse painel, selecione *Excluir*.
+. Confirme a exclusão.
+
+
+.Resultado
+O painel de controle é removido permanentemente da sua conta do Workload Factory e todos os usuários perdem o acesso a ele.
+
+
+
+[[related-information]]
+== Informações relacionadas
+
+* link:create-custom-dashboard.html["Crie painéis personalizados adicionais"]
+* link:troubleshoot-custom-dashboards.html["Solucionar problemas de painéis personalizados"]
+
