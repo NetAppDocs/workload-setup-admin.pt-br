@@ -2000,4 +2000,5 @@
   <block id="22e8351c82677bcc78bd23d6fb170bc8" category="paragraph">O painel de controle é removido permanentemente da sua conta do Workload Factory e todos os usuários perdem o acesso a ele.</block>
   <block id="9537d9160ef701530bdd875698475957" category="inline-link-macro">Crie painéis personalizados adicionais</block>
   <block id="1258b44f1520a3cf10d648fb08dbf72e" category="list-text"><block ref="1258b44f1520a3cf10d648fb08dbf72e" category="inline-link-macro-rx"></block></block>
+  <block id="9a90fd93ba397d5f48de07251acc1808" category="list-text">Detalhamento dos componentes para eventos de latência</block>
 </blocks>

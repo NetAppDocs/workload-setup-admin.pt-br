@@ -74,6 +74,7 @@ As funcionalidades que requerem um link incluem:
 * Criação e gerenciamento de clones instantâneos e no local para clonagem de dados
 * Exibindo métricas adicionais diretamente do ONTAP, como a versão do ONTAP
 * Exibindo detalhes da LIF da storage VM e do cluster, incluindo funções, endpoints, nós, endereços IP e status
+* Detalhamento dos componentes para eventos de latência
 
 
 
