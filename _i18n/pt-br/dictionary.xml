@@ -1527,7 +1527,6 @@
   <block id="93abc3800cadb3c84e6ebb4f337cb663" category="paragraph"><block ref="fe356bc0877a3688c38625a5a5fa7c4e" category="inline-link-macro-rx"></block>.</block>
   <block id="c7084515fd41cf4b219b3c9bc1bf874a" category="list-text">Não é possível compartilhar dashboards fora da sua conta do Workload Factory. Todo compartilhamento de dashboards é limitado a usuários dentro da mesma conta do Workload Factory.</block>
   <block id="3ba405e1d72777e360f3b281ce3ba5b9" category="paragraph">Gerencie seus painéis personalizados a partir do catálogo de painéis. Lá, você pode visualizar detalhes, compartilhar painéis, atualizar dados ou excluir painéis que não precisa mais.</block>
-  <block id="6ef261950960e68b5c274dbb2ad858c2" category="paragraph">Você pode visualizar e gerenciar dashboards personalizados no catálogo de dashboards. Dashboards privados são visíveis apenas para você, enquanto dashboards públicos são visíveis para todos os usuários da sua conta do Workload Factory. Cada dashboard exibe detalhes básicos, como o nome do criador, a data de criação e um rótulo de visibilidade (Privado ou Público).</block>
   <block id="8471f69a4146258ee48a6b85bff6fa31" category="section-title">Alterar a visibilidade do dashboard</block>
   <block id="434e902a308729311c26bf05cd3a3e42" category="paragraph">Torne o painel público para compartilhá-lo com sua equipe. Torne-o privado para parar de compartilhá-lo.</block>
   <block id="bccfa88da47be219216832061b161e9d" category="list-text">Na página *Painéis personalizados*, localize o painel que você deseja atualizar.</block>
@@ -1536,9 +1535,7 @@
   <block id="d87198500f0d81b0ca147bc5b2a09622" category="list-text">*Compartilhar painel* - Torna o painel visível para todos os usuários da sua conta do Workload Factory</block>
   <block id="939742a8d44add9f4ad62a0fc3824a6e" category="list-text">*Alterar para painel privado* - Torna o painel visível apenas para você</block>
   <block id="7e3cce2609a225eafd019dfc30a9437a" category="paragraph">O painel de controle é atualizado imediatamente. O indicador de visibilidade no cartão do painel mostra o status atual.</block>
-  <block id="f7b22a19823cae9bc6664fece0b96115" category="summary">Controle o acesso aos recursos de IA baseados em Bedrock no Workload Factory. Você pode desativar os recursos de IA ou usar o AWS Bedrock gerenciado pela NetApp.</block>
   <block id="ebd4b28f0632a0dc47fff6d0e28857b1" category="doc">Gerencie recursos de IA</block>
-  <block id="13bb649429b18adc1dadc0ed391c5bc2" category="paragraph">Controle o acesso aos recursos de IA no Workload Factory. Você pode desativar os recursos de IA ou usar o AWS Bedrock gerenciado por NetApp.</block>
   <block id="00e95115c994386ef85f1864db952bca" category="section-title">Sobre os recursos de IA</block>
   <block id="46918c8c585299e7a785eed266de3f97" category="paragraph">Como administrador do Workload Factory, você pode controlar como esses recursos usam IA na página de configurações de IA.</block>
   <block id="50f33d14f129e4548c1c270fd6725a78" category="section-title">Opções de configuração</block>
@@ -1551,15 +1548,10 @@
   <block id="1ee78c04d8b078adcb0fca6be60af5a2" category="list-text">Recursos do GenAI desativados</block>
   <block id="396640080b08108896efb48796063406" category="list-text">Recomendamos que um administrador da conta configure os recursos de IA.</block>
   <block id="6b7af6c72f84f0f7380106617c11be78" category="section-title">Configurar recursos de IA</block>
-  <block id="3f0879fc8845a02f07ea71a0a584847e" category="list-text">No menu, selecione *Administração* e depois *Configurações de IA*.</block>
-  <block id="ef1f959eefc1f11cf2aec294261e066f" category="list-text">Na página *Configurações de IA*, selecione sua configuração preferida:</block>
   <block id="7530dc640ec2dd92a9e70b8484867369" category="list-text">*NetApp-managed Bedrock (Recomendado)*: use o NetApp-managed AWS Bedrock.</block>
-  <block id="053d266af64b45b2a2fbc0eeccc99297" category="list-text">*Recursos de IA desativados*: Desative todos os recursos de IA.</block>
-  <block id="cbab3ffec133396f2f907f9faa5a4337" category="list-text">Selecione *Salvar preferências*.</block>
   <block id="1f19237677d2459e3c32c18ad28d89c4" category="paragraph">Suas configurações são salvas e aplicadas imediatamente a todos os recursos de IA no Workload Factory. Você pode ver no Tracker quem atualizou as configurações pela última vez e quando.</block>
   <block id="e8d0b42b043c438b67550c55202181fe" category="paragraph">Se os recursos de IA estiverem desativados, os usuários veem uma mensagem ao tentarem usar recursos com tecnologia de IA. A interface permanece visível e mostra claramente que o recurso está indisponível.</block>
   <block id="c5a072ef0376df4bfe60ecf20f43c427" category="section-title">Controles orçamentários e limites de crédito</block>
-  <block id="e622f31b01cf42245970bf4f82c9e127" category="paragraph">NetApp gerencia os controles de orçamento para recursos de IA ao usar a configuração padrão gerenciada pela NetApp.</block>
   <block id="583513a0baae6b087a0f3c846b3f742a" category="section-title">Limites de crédito mensais</block>
   <block id="c9f9c41c2d00489aef5b70d1c80be3d1" category="paragraph">Cada conta possui um limite de gastos mensal para cada recurso de IA ao usar o Bedrock gerenciado pela NetApp.</block>
   <block id="dfc84788c4742cd3e802820d33f9aeca" category="section-title">Quando o orçamento for atingido</block>
@@ -2001,4 +1993,26 @@
   <block id="9537d9160ef701530bdd875698475957" category="inline-link-macro">Crie painéis personalizados adicionais</block>
   <block id="1258b44f1520a3cf10d648fb08dbf72e" category="list-text"><block ref="1258b44f1520a3cf10d648fb08dbf72e" category="inline-link-macro-rx"></block></block>
   <block id="9a90fd93ba397d5f48de07251acc1808" category="list-text">Detalhamento dos componentes para eventos de latência</block>
+  <block id="b680b1a7fd35564d77eb715d3c89f5cb" category="doc">Use sua própria instância do Amazon Bedrock para ferramentas de IA</block>
+  <block id="aefffefabafd2a723ba252259d49413b" category="paragraph">O Workload Factory agora inclui mais uma opção na página de configurações de IA que permite aos clientes usar sua própria instância do Amazon Bedrock.</block>
+  <block id="59071a98cbd118cd70a7342fac20edee" category="paragraph">Essa opção está disponível no Bedrock gerenciado pelo cliente para ferramentas de IA e é compatível com todos os serviços de IA do Workload Factory.</block>
+  <block id="723b7f36410bdffd1d79fc26537b0350" category="paragraph">Depois que você se conecta, o Workload Factory informa se a conexão foi bem-sucedida.</block>
+  <block id="4765f204e5de83ae87fec00c7c5b7589" category="paragraph">Você pode visualizar e gerenciar dashboards personalizados no catálogo de dashboards. Dashboards privados são visíveis apenas para você, enquanto dashboards públicos são visíveis para todos os usuários da sua conta do Workload Factory. Cada dashboard exibe detalhes básicos, como o nome do criador, a data de criação e um rótulo de visibilidade (Privado ou Público).</block>
+  <block id="55c9e8516766e9331175c24a58463351" category="summary">Controle o acesso aos recursos de IA baseados no Bedrock no Workload Factory. Você pode desativar os recursos de IA ou usar o Bedrock gerenciado pela NetApp ou pelo cliente.</block>
+  <block id="fdb1959aef23285e43fe2cdcd4f28fee" category="paragraph">Controle o acesso aos recursos de IA no Workload Factory. Você pode desativar os recursos de IA ou usar o AWS Bedrock gerenciado pela NetApp ou pela sua organização.</block>
+  <block id="6f5403c75b81b8b52cd43cae97fcf772" category="list-text">Bedrock gerenciado pelo cliente</block>
+  <block id="c18ad30e2ef4050c256483f9a51ad2de" category="list-text">Use sua própria configuração do AWS Bedrock.</block>
+  <block id="edf60b9bc6b08bdb2aa52c67c9ff0924" category="list-text">Para obter os melhores resultados, NetApp recomenda usar o Anthropic Claude Sonnet 4.5 ou 4.6 com sua configuração do Amazon Bedrock</block>
+  <block id="4580e55cbed2076f7b001c4793810627" category="list-text">Se você usa o Bedrock gerenciado pelo cliente, atualize a política da AWS para as credenciais vinculadas à função IAM do Workload Factory.</block>
+  <block id="42f8e0cc53973b95fb8c5ab1b1940d45" category="admonition">Adicione as permissões necessárias à política da AWS para as credenciais vinculadas à função IAM do Workload Factory.</block>
+  <block id="d8180f5e900b1f6f9e24a34bcc5df784" category="list-text">No menu, selecione *Administração* &gt; *Configurações* &gt; *Ferramentas de IA*.</block>
+  <block id="e63e52d33b8423358a13ed6f555c8f70" category="list-text">Na página *AI tools*, selecione sua configuração preferida:</block>
+  <block id="cd805e2fc37a5ef0e58d5bcce3784800" category="list-text">*Bedrock gerenciado pelo cliente*:</block>
+  <block id="21311647ca0330ee847f5cb2e10ea926" category="list-text">Selecione as credenciais da AWS e a região associadas à função do IAM do Workload Factory</block>
+  <block id="f531442bfdac6ffe5ebf928d9259db20" category="list-text">Forneça o perfil de inferência que deseja usar</block>
+  <block id="ca232c88bdf38a766c6b82ced2c60df3" category="list-text">Selecione *Validar configuração*.</block>
+  <block id="5a79cccf92e71cd2b96cbbe67a02e898" category="paragraph">O Workload Factory exibe uma notificação indicando se a conexão foi bem-sucedida ou falhou</block>
+  <block id="43d91f7086bfc8e0d64b9a83a049c1f0" category="list-text">*Recursos GenAI desativados*: desative todos os recursos de IA.</block>
+  <block id="94278b8c4b4aa1c1469e62f89ce7d460" category="paragraph">NetApp gerencia os controles de orçamento para recursos de IA somente quando você usa a configuração padrão gerenciada pela NetApp.</block>
+  <block id="f535eb1278ad100b4d323539a7942781" category="section-title">14 de outubro de 2026</block>
 </blocks>
