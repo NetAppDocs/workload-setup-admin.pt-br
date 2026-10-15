@@ -82,6 +82,8 @@ sidebar:
       url: "/use-cloudshell.html"
     - title: Remover credenciais
       url: "/manage-credentials.html"
+  - title: Perguntas frequentes
+    url: "/faq-workload-factory.html"
   - title: Conhecimento e apoio
     entries:
     - title: Registre-se para obter suporte
