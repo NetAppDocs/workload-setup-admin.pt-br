@@ -16,7 +16,7 @@ Crie painéis personalizados descrevendo o que você deseja monitorar em linguag
 .Sobre esta tarefa
 Os painéis personalizados utilizam um diálogo guiado por IA para entender o que você deseja visualizar. Você descreve suas necessidades de monitoramento em linguagem natural, e o sistema faz perguntas para esclarecer e garantir que o painel atenda aos seus requisitos.
 
-Depois de criado, você pode atualizar o painel para ver os dados atualizados.
+Após a criação, você poderá verificar quando as métricas do seu dashboard foram atualizadas pela última vez e solicitar uma atualização sob demanda link:manage-custom-dashboards.html#refresh-dashboard-data["Aprenda como atualizar os dados do painel"].
 
 Lembre-se de que os painéis personalizados são, por definição, somente leitura e não podem fazer alterações nas configurações de armazenamento ou de workload.
 
@@ -58,10 +58,10 @@ Você receberá uma notificação quando seu painel estiver pronto. Caso não se
 Após a criação, você pode:
 
 * Altere a visibilidade do painel para compartilhar com sua equipe
+* Verifique o carimbo de data/hora da *Última Atualização* e selecione *Atualizar dados* para solicitar métricas atualizadas
 * Atualize os dados do painel para ver as informações mais recentes
 * Edite os painéis para alterar o que eles exibem, incluindo métricas, gráficos e intervalos de tempo
 * Exclua painéis que você não precisa mais
-* Veja os detalhes do painel, incluindo quem o criou e quando foi atualizado pela última vez
 
 
 

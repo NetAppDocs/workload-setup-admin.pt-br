@@ -1,0 +1,54 @@
+= Verifique e atualize os dados do painel personalizado
+:allow-uri-read: 
+
+
+
+
+[[check-and-refresh-custom-dashboard-data]]
+=== Verifique e atualize os dados do painel personalizado
+
+Agora você pode ver quando as métricas do seu painel personalizado foram atualizadas pela última vez e atualizá-las manualmente. Passe o cursor sobre *Atualizar dados* para ver a data e a hora da última atualização.
+
+Selecione *Atualizar dados* para iniciar uma nova verificação. Um banner confirma que a verificação foi iniciada, e o botão fica desativado até que a verificação seja concluída.
+
+Quando novos dados estiverem disponíveis, selecione *Carregar agora* no banner de notificação para atualizar o painel.
+
+Tanto *Atualizar dados* quanto *Carregar agora* criam eventos de coleta de dados no Tracker.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-custom-dashboards.html#refresh-dashboard-data["Aprenda como atualizar os dados do painel personalizado"]
+
+
+
+[[specify-regions-for-custom-dashboards]]
+=== Especifique regiões para painéis personalizados
+
+Agora, os painéis personalizados solicitam que você selecione uma ou mais regiões caso sua solicitação não as inclua. Os dados do painel ficam limitados às regiões selecionadas.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-custom-dashboard.html["Aprenda a criar um painel personalizado"]
+
+
+
+[[iam-policy-for-link-creation]]
+=== Política IAM para criação de links
+
+O modelo do CloudFormation e o código Terraform para criar links agora usam uma política do IAM em vez de permissões inline do Lambda.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["Saiba como criar um link"]
+
+
+
+[[audit-and-tracking-for-ai-agent-actions]]
+=== Auditoria e rastreamento das ações do agente de IA
+
+Agora você pode usar o Tracker para revisar as alterações nas configurações do agente de IA e, no modo de leitura e gravação, cada solicitação de aprovação, incluindo a pergunta do agente e a resposta do usuário.
+
+As alterações de recursos feitas por meio das APIs do Workload Factory são registradas pelo serviço do Workload Factory que executa a operação.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/learn-agent.html#audit-and-tracking-for-agent-actions["Saiba mais sobre auditoria e rastreamento de ações de agentes"]
+
+
+
+[[link-creation-improvements]]
+=== Melhorias na criação de links
+
+A Workload Factory atualizou a saída do Codebox para a criação de links, substituindo as permissões inline do Lambda pela política do IAM para o modelo do CloudFormation e o Terraform.

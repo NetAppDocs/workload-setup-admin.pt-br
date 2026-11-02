@@ -69,6 +69,17 @@ link:manage-custom-dashboards.html#change-dashboard-visibility["Aprenda como alt
 
 
 
+[[check-if-the-data-is-up-to-date]]
+== Verifique se os dados estão atualizados
+
+Você pode verificar quando os dados do seu painel foram atualizados pela última vez e solicitar uma atualização a qualquer momento. Uma dica de ferramenta mostra a data e a hora da última atualização.
+
+Selecione *Atualizar dados* para iniciar uma nova verificação. O botão fica indisponível enquanto uma verificação estiver em andamento. Quando novos dados estiverem prontos, um banner aparecerá com a opção de atualizar o painel.
+
+link:manage-custom-dashboards.html#refresh-dashboard-data["Aprenda como atualizar os dados do painel"].
+
+
+
 [[considerations-and-limitations]]
 == Considerações e limitações
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: manage-custom-dashboards.html 
-keywords: manage dashboards, delete dashboard, refresh dashboard, dashboard catalog 
+keywords: manage dashboards, delete dashboard, refresh dashboard, dashboard catalog, refresh data, load data, last updated 
 summary: Acesse seu catálogo de dashboards para visualizar, atualizar e excluir dashboards personalizados no Workload Factory. 
 ---
 = Gerencie painéis personalizados no NetApp Workload Factory
@@ -60,9 +60,28 @@ O painel de controle é atualizado imediatamente. O indicador de visibilidade no
 [[refresh-dashboard-data]]
 == Atualizar dados do dashboard
 
-Os dados do painel são carregados quando você abre um painel. Você pode atualizá-lo para ver as informações mais recentes.
+Verifique quando seu painel foi atualizado pela última vez e solicite uma varredura sob demanda quando precisar de dados atuais.
 
-O painel de controle recarrega os dados das suas cargas de trabalho.
+.Sobre esta tarefa
+A dica de ferramenta *Atualizar dados* exibe um registro de data e hora da *Última atualização*, indicando a data e a hora em que o painel foi atualizado pela última vez. Esse registro se refere aos dados coletados, e não à última vez em que a configuração do painel foi alterada.
+
+Selecionar *Atualizar dados* inicia uma nova verificação. Enquanto uma verificação estiver em andamento, o botão ficará desativado e sua dica de ferramenta indicará que uma verificação está em curso.
+
+O Workload Factory registra um evento no Tracker quando você seleciona *Atualizar dados* ou *Carregar agora*. link:monitor-operations.html["Aprenda sobre monitoramento de operações com o Tracker"].
+
+.Passos
+. No catálogo de dashboards, abra o dashboard que deseja visualizar.
+. Passe o cursor sobre *Atualizar dados* para verificar a data e hora da *Última atualização*.
+. Para solicitar métricas atualizadas, selecione *Atualizar dados*.
++
+Um banner indica que a verificação foi iniciada. Aguarde a conclusão da verificação.
+
+. Quando novos dados estiverem disponíveis, um banner exibirá a seguinte mensagem: "novos dados estão disponíveis. Carregue-os agora ou clique em Atualizar dados a qualquer momento para atualizar a visualização."
+. Selecione *Carregar agora* no banner para carregar os dados disponíveis no painel. Como alternativa, selecione *Atualizar dados* para atualizar a visualização.
+
+
+.Resultado
+O painel exibe as métricas atualizadas.
 
 
 

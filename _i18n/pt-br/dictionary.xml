@@ -1363,7 +1363,6 @@
   <block id="dfc2a77d9b383cd28cba1a1e99f9a378" category="doc">Crie um painel personalizado</block>
   <block id="43d2bb31c641fd8b871b835572bc7441" category="paragraph">Crie painéis personalizados descrevendo o que você deseja monitorar em linguagem simples. A IA guia você pela configuração para que seus painéis correspondam às suas cargas de trabalho e prioridades.</block>
   <block id="463a1f1058198f82800c115a2a913de5" category="paragraph">Os painéis personalizados utilizam um diálogo guiado por IA para entender o que você deseja visualizar. Você descreve suas necessidades de monitoramento em linguagem natural, e o sistema faz perguntas para esclarecer e garantir que o painel atenda aos seus requisitos.</block>
-  <block id="5af1607522ddad534f7fc3e5976684e5" category="paragraph">Depois de criado, você pode atualizar o painel para ver os dados atualizados.</block>
   <block id="a8f8e9b8eb3f376a4b560c169094087e" category="paragraph">Lembre-se de que os painéis personalizados são, por definição, somente leitura e não podem fazer alterações nas configurações de armazenamento ou de workload.</block>
   <block id="1490f3908001d2cdf7587ba480973340" category="section-title">Crie um painel de controle</block>
   <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">O ícone do menu hambúrguer é usado para navegar até cargas de trabalho como armazenamento, eda, ai, bancos de dados, vmware e administração.</block>
@@ -1381,7 +1380,6 @@
   <block id="fb3b6f147b0a44a08f4c961dc053571e" category="paragraph">Após a criação, você pode:</block>
   <block id="a5c04615d2baa4c3104d2afbb5b85c59" category="list-text">Atualize os dados do painel para ver as informações mais recentes</block>
   <block id="7bff2130a08698224667671d85a34ed4" category="list-text">Exclua painéis que você não precisa mais</block>
-  <block id="ed5184af3d39b3e314759db5b95ba675" category="list-text">Veja os detalhes do painel, incluindo quem o criou e quando foi atualizado pela última vez</block>
   <block id="d10995cac5dfc264a5da7f4abec9025d" category="inline-link-macro">Gerencie seus painéis personalizados</block>
   <block id="1c028f2c092927e5beff0c52bcc2456a" category="list-text"><block ref="1c028f2c092927e5beff0c52bcc2456a" category="inline-link-macro-rx"></block></block>
   <block id="1703fc0755f2533bd9d727fa0298c500" category="inline-link-macro">Solucionar problemas de painéis personalizados</block>
@@ -1432,7 +1430,6 @@
   <block id="04b69ec1d9e5301be209cb2b652a1602" category="paragraph">O catálogo de dashboards mostra todos os dashboards personalizados da sua conta do Workload Factory.</block>
   <block id="dffad8b6380340c5079727deb13bb3f2" category="list-text">Revise a lista do dashboard.</block>
   <block id="9e3f16aef1d22400bdae48c5cb77b00f" category="section-title">Atualizar dados do dashboard</block>
-  <block id="4e424a1ad37782627141d4d50f79b586" category="paragraph">Os dados do painel são carregados quando você abre um painel. Você pode atualizá-lo para ver as informações mais recentes.</block>
   <block id="0c5896a9e6c8d2cff1b4d007852b1732" category="paragraph">Use essas informações para resolver problemas comuns que você pode encontrar ao criar ou usar painéis personalizados.</block>
   <block id="2e00365fe32c89b1fd1ad214f291ca85" category="section-title">Falha na criação do dashboard</block>
   <block id="09a8c59ab236b488dde6ce993a012c63" category="paragraph">**Problema:** Você vê a mensagem de erro "Falha ao entender a solicitação e gerar o código" ao criar um painel.</block>
@@ -1974,7 +1971,6 @@
   <block id="b2174789d5314bb12b464a8d03a18be6" category="list-text">Edite os painéis para alterar o que eles exibem, incluindo métricas, gráficos e intervalos de tempo</block>
   <block id="0d4c6d4cadfc35e450177a6f124a12ce" category="admonition">Se o administrador da sua conta desativou os recursos de IA, você verá uma mensagem e não poderá criar ou editar painéis. Entre em contato com seu administrador ou <block ref="51cc9b1bceb3cdf8e5a226d8fb6d37eb" category="inline-link-macro-rx"></block>.</block>
   <block id="3dacf374ca39e9d1e2ccd73b21e8d75a" category="paragraph">Você pode editar painéis do catálogo e atualizar o nome, a descrição, a categoria ou a solicitação de monitoramento do painel antes de decidir se deseja salvar a versão revisada.</block>
-  <block id="09716803bbab78d4545cc7210ae61d90" category="paragraph">O painel de controle recarrega os dados das suas cargas de trabalho.</block>
   <block id="d2258a9653c6a977efeeb955b27c66e9" category="section-title">Editar painéis</block>
   <block id="4e2f12e496523d85bae4a969657d45aa" category="paragraph">Você pode editar um painel para alterar o que ele exibe, incluindo as métricas, os gráficos e os intervalos de tempo.</block>
   <block id="b13bad0dcb6df4e403e8e2af9058dfe5" category="list-text">Na página *Painéis personalizados*, localize o painel que você deseja editar.</block>
@@ -2147,4 +2143,50 @@
   <block id="fb28d89a6b0c6ce8708edc67fed69652" category="paragraph-title">O que preciso ter em funcionamento para criar e usar painéis personalizados?</block>
   <block id="548b72381df096d33b738a36b3370ab7" category="paragraph">O administrador da sua conta deve habilitar os recursos de IA. Você precisa de credenciais da AWS com acesso de leitura aos serviços que deseja monitorar. Você precisa de um Link para se conectar aos sistemas de arquivos FSx for ONTAP. Os painéis são somente leitura e não podem alterar suas configurações de armazenamento ou carga de trabalho.</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">Perguntas frequentes</block>
+  <block id="d5700d6fbdfdaa11c8c6dcbd565d8446" category="doc">Verifique e atualize os dados do painel personalizado</block>
+  <block id="a2ace9589bb1ff3e1b64e40ba9982721" category="paragraph">Agora você pode ver quando as métricas do seu painel personalizado foram atualizadas pela última vez e atualizá-las manualmente. Passe o cursor sobre *Atualizar dados* para ver a data e a hora da última atualização.</block>
+  <block id="6497706c70a607634590a156941b4e50" category="paragraph">Selecione *Atualizar dados* para iniciar uma nova verificação. Um banner confirma que a verificação foi iniciada, e o botão fica desativado até que a verificação seja concluída.</block>
+  <block id="2895998bd3d7c5fdb39e7fddc2bd608a" category="paragraph">Quando novos dados estiverem disponíveis, selecione *Carregar agora* no banner de notificação para atualizar o painel.</block>
+  <block id="f418ba29e821ca3da1b907e6156d2db5" category="paragraph">Tanto *Atualizar dados* quanto *Carregar agora* criam eventos de coleta de dados no Tracker.</block>
+  <block id="0b62b5947fe6e091e6c0c1e387e32e69" category="inline-link-macro">Aprenda como atualizar os dados do painel personalizado</block>
+  <block id="348426e840eb5ae32d612438487c2065" category="paragraph"><block ref="348426e840eb5ae32d612438487c2065" category="inline-link-macro-rx"></block></block>
+  <block id="524f9b4ee818c419ee1585959e10855c" category="section-title">Especifique regiões para painéis personalizados</block>
+  <block id="9aca8419896ce9b5d75b523be971bafb" category="paragraph">Agora, os painéis personalizados solicitam que você selecione uma ou mais regiões caso sua solicitação não as inclua. Os dados do painel ficam limitados às regiões selecionadas.</block>
+  <block id="35a63836682befdc98086e583b61298a" category="inline-link-macro">Aprenda a criar um painel personalizado</block>
+  <block id="c41b815c81909f8ff39eb5b52d29746d" category="paragraph"><block ref="c41b815c81909f8ff39eb5b52d29746d" category="inline-link-macro-rx"></block></block>
+  <block id="cc2d0ca75f186230ede0faa3f7692c06" category="section-title">Política IAM para criação de links</block>
+  <block id="20721709cc5df2882070722a30cc34c3" category="paragraph">O modelo do CloudFormation e o código Terraform para criar links agora usam uma política do IAM em vez de permissões inline do Lambda.</block>
+  <block id="38b63c1d391fa52af61b987953824171" category="paragraph"><block ref="38b63c1d391fa52af61b987953824171" category="inline-link-macro-rx"></block></block>
+  <block id="b3e7d6d7f8501adc86f1a7337ebfb531" category="section-title">Auditoria e rastreamento das ações do agente de IA</block>
+  <block id="fc5902f94dd3899ad0ce791954b6f521" category="paragraph">Agora você pode usar o Tracker para revisar as alterações nas configurações do agente de IA e, no modo de leitura e gravação, cada solicitação de aprovação, incluindo a pergunta do agente e a resposta do usuário.</block>
+  <block id="25d50a8630b3c335d684f59cca6d3ace" category="paragraph">As alterações de recursos feitas por meio das APIs do Workload Factory são registradas pelo serviço do Workload Factory que executa a operação.</block>
+  <block id="db0781c4ffb5f26ba7ad4f2ffe3dfdbd" category="inline-link-macro">Saiba mais sobre auditoria e rastreamento de ações de agentes</block>
+  <block id="9b06f95ad3e4fc8477f2ca89d854a603" category="paragraph"><block ref="9b06f95ad3e4fc8477f2ca89d854a603" category="inline-link-macro-rx"></block></block>
+  <block id="3714dde7378ac290c154f62d9c080369" category="section-title">Melhorias na criação de links</block>
+  <block id="73501dc89cd2fc3be142f43eaffe971b" category="paragraph">A Workload Factory atualizou a saída do Codebox para a criação de links, substituindo as permissões inline do Lambda pela política do IAM para o modelo do CloudFormation e o Terraform.</block>
+  <block id="0e43f192242267f4b6ae5962e9f5b38c" category="inline-link-macro">Aprenda como atualizar os dados do painel</block>
+  <block id="05aeb0d0c1502e57f980bbf322cf31a6" category="paragraph">Após a criação, você poderá verificar quando as métricas do seu dashboard foram atualizadas pela última vez e solicitar uma atualização sob demanda <block ref="831e74ba37d5e8d2f1bf86cd0b468bf4" category="inline-link-macro-rx"></block>.</block>
+  <block id="a0029b147e3a4c22ba57efcbb020c23e" category="list-text">Verifique o carimbo de data/hora da *Última Atualização* e selecione *Atualizar dados* para solicitar métricas atualizadas</block>
+  <block id="6d852ab3090e66a5f1f1a6d5675164cb" category="paragraph-title">Onde as configurações e ações do agente aparecem para auditoria?</block>
+  <block id="0f679622d131d4b9f3abef96c35743be" category="paragraph">O rastreador registra as alterações nas configurações do agente e, no modo de leitura e gravação, cada solicitação de aprovação, incluindo a pergunta do agente e a resposta do usuário. As alterações de recursos feitas por meio das APIs do Workload Factory são registradas pelo serviço do Workload Factory que executa a operação.</block>
+  <block id="4c1cd3a1bad23fecc0286da543614cd7" category="paragraph"><block ref="bc36590c397b325a073c2ae9b60e53fd" category="inline-link-macro-rx"></block>.</block>
+  <block id="b70a9e9de689b4f17365d6060076d3b8" category="section-title">Auditoria e rastreamento das ações do agente</block>
+  <block id="774a23889a059a060f089bac423f3b00" category="paragraph">No modo de leitura e gravação, o Tracker registra cada solicitação de aprovação, incluindo a pergunta do agente e a resposta do usuário. As alterações de recursos feitas por meio das APIs do Workload Factory são registradas pelo serviço do Workload Factory que executa a operação. Por exemplo, um volume criado por meio do Workload Factory aparece na tag de serviço *Storage*, e não em *Agent*.</block>
+  <block id="1c25d10ad7fe7b9def7bd90be9bb63ac" category="section-title">Verifique se os dados estão atualizados</block>
+  <block id="40d839f036c0870ce0f44a810dc01fd9" category="paragraph">Você pode verificar quando os dados do seu painel foram atualizados pela última vez e solicitar uma atualização a qualquer momento. Uma dica de ferramenta mostra a data e a hora da última atualização.</block>
+  <block id="3943baa01d778cb77042aa99b8829491" category="paragraph">Selecione *Atualizar dados* para iniciar uma nova verificação. O botão fica indisponível enquanto uma verificação estiver em andamento. Quando novos dados estiverem prontos, um banner aparecerá com a opção de atualizar o painel.</block>
+  <block id="80aab7a96b15f6ce5d375faafb077b13" category="paragraph"><block ref="831e74ba37d5e8d2f1bf86cd0b468bf4" category="inline-link-macro-rx"></block>.</block>
+  <block id="4561b6d16c60561c7dfef3363842359b" category="paragraph">Verifique quando seu painel foi atualizado pela última vez e solicite uma varredura sob demanda quando precisar de dados atuais.</block>
+  <block id="cb19e9f8b4fdf3bf166690f03f0888ff" category="paragraph">A dica de ferramenta *Atualizar dados* exibe um registro de data e hora da *Última atualização*, indicando a data e a hora em que o painel foi atualizado pela última vez. Esse registro se refere aos dados coletados, e não à última vez em que a configuração do painel foi alterada.</block>
+  <block id="34839e5b2cbe60267b78999786be488f" category="paragraph">Selecionar *Atualizar dados* inicia uma nova verificação. Enquanto uma verificação estiver em andamento, o botão ficará desativado e sua dica de ferramenta indicará que uma verificação está em curso.</block>
+  <block id="13ab1a7b5cd6ff60fb50525984ba6258" category="inline-link-macro">Aprenda sobre monitoramento de operações com o Tracker</block>
+  <block id="b6b3389b8e77a02f15ea3aba7cce028e" category="paragraph">O Workload Factory registra um evento no Tracker quando você seleciona *Atualizar dados* ou *Carregar agora*. <block ref="74993bbdd897b4c73c70c66a0dd88655" category="inline-link-macro-rx"></block>.</block>
+  <block id="b2f99e18989e76354ebba4fd4d399227" category="list-text">No catálogo de dashboards, abra o dashboard que deseja visualizar.</block>
+  <block id="b01e2768b9cf649d978bf4ea1879ea19" category="list-text">Passe o cursor sobre *Atualizar dados* para verificar a data e hora da *Última atualização*.</block>
+  <block id="669bf0e2d3a5223b736f207a1738dcea" category="list-text">Para solicitar métricas atualizadas, selecione *Atualizar dados*.</block>
+  <block id="2c40fb628cd47c18fe14a2939979ebf9" category="paragraph">Um banner indica que a verificação foi iniciada. Aguarde a conclusão da verificação.</block>
+  <block id="dd2142eca6bec99aaba2fbc5a1fef1f5" category="list-text">Quando novos dados estiverem disponíveis, um banner exibirá a seguinte mensagem: "novos dados estão disponíveis. Carregue-os agora ou clique em Atualizar dados a qualquer momento para atualizar a visualização."</block>
+  <block id="f5f7ef3c1692aa4447b9fb26ad98940c" category="list-text">Selecione *Carregar agora* no banner para carregar os dados disponíveis no painel. Como alternativa, selecione *Atualizar dados* para atualizar a visualização.</block>
+  <block id="abff96b75117f320254f372b6518244b" category="paragraph">O painel exibe as métricas atualizadas.</block>
+  <block id="8b253c1d4259c21c8314fc85adcb31d6" category="section-title">01 de novembro de 2026</block>
 </blocks>
