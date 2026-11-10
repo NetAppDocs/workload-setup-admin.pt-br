@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: learn-agent.html 
-keywords: agent, ai agent, aiops, ask me, explore agent, ai assistant, environment-aware, read-only, read-write, agents settings 
+keywords: agent, ai agent, aiops, ask me, explore agent, ai assistant, environment-aware, read-only, read, write, agents settings 
 summary: Descubra como os agentes de IA do Workload Factory podem analisar seu ambiente, identificar riscos e maneiras de melhorar o desempenho e tomar medidas por você com sua aprovação. 
 ---
 = Saiba mais sobre os agentes de IA no NetApp Workload Factory
@@ -11,7 +11,7 @@ summary: Descubra como os agentes de IA do Workload Factory podem analisar seu a
 
 
 [role="lead"]
-O Workload Factory AIOps usa IA para analisar seu ambiente e recomendar melhorias. Se você aprovar, ele também poderá executar ações usando as credenciais e permissões que você configurou.
+O Workload Factory AIOps utiliza agentes de IA para analisar seu ambiente, identificar riscos e recomendar melhorias. Com sua aprovação, os agentes também podem executar ações usando as credenciais e permissões que você configurar.
 
 
 NOTE: Se o administrador da sua conta desativou os recursos de IA, você verá uma mensagem e não poderá usar os agentes. Entre em contato com seu administrador ou link:manage-genai-features.html["Aprenda sobre administração de IA"].
@@ -21,7 +21,7 @@ NOTE: Se o administrador da sua conta desativou os recursos de IA, você verá u
 [[before-you-begin]]
 == Antes de começar
 
-Certifique-se de que sua conta do Workload Factory tenha credenciais da AWS e as permissões do IAM de que os agentes precisam para os recursos que acessam. Se você habilitar o modo de leitura e gravação, essas permissões também deverão permitir alterações compatíveis.
+Certifique-se de que sua conta do Workload Factory tenha credenciais da AWS e as permissões do IAM de que os agentes precisam para os recursos que acessam. Se você habilitar o modo de leitura/gravação, essas permissões também deverão permitir alterações compatíveis.
 
 link:add-credentials.html["Aprenda como adicionar credenciais da AWS e configurar permissões do IAM"^].
 
@@ -52,7 +52,7 @@ Os agentes de IA ajudam você a trabalhar com mais eficiência no Workload Facto
 == Acesse os agentes de IA
 
 Da homepage Ask Me:: Na página inicial do Ask Me, selecione *Explore Agents*. O painel lateral dos agentes de IA é aberto com uma mensagem de boas-vindas apresentando os recursos dos agentes.
-A partir dos links de redirecionamento dos agentes:: Ao usar o **Ask Me** ou outros recursos, você poderá ver links que redirecionam você para os agentes para obter assistência mais avançada.
+A partir dos links de redirecionamento dos agentes:: Ao usar o **Ask Me** ou outros recursos, você poderá ver links que o redirecionam para os agentes para obter assistência mais avançada.
 
 
 
@@ -65,7 +65,7 @@ A partir dos links de redirecionamento dos agentes:: Ao usar o **Ask Me** ou out
 [[how-agents-access-your-environment]]
 === Como os agentes acessam seu ambiente
 
-Os agentes só podem acessar recursos quando estiverem incluídos no seu escopo atual do Workload Factory e forem compatíveis com as credenciais selecionadas em link:manage-agent-settings.html["Configurações dos agentes"]. Os agentes só podem operar onde ambos os controles se aplicam. Os recursos que eles podem acessar também dependem das permissões atribuídas às suas credenciais da AWS. Por padrão, todas as credenciais são selecionadas, mas você pode reduzir isso a um subconjunto das suas credenciais configuradas.
+Os agentes só podem acessar recursos quando esses recursos estiverem incluídos no seu escopo atual do Workload Factory e forem compatíveis com as credenciais selecionadas em link:manage-agent-settings.html["Configurações dos agentes"]. Os agentes só podem operar onde ambos os controles se aplicam. Os recursos que eles podem acessar também dependem das permissões atribuídas às suas credenciais da AWS. Por padrão, todas as credenciais são selecionadas, mas você pode limitar a seleção a um subconjunto das suas credenciais configuradas.
 
 Suas atribuições atuais incluem:
 
@@ -97,10 +97,10 @@ Eles não podem alterar recursos no modo somente leitura. Se você solicitar uma
 
 
 
-[[read-write-mode-opt-in]]
-=== Modo de leitura e gravação (opcional)
+[[readwrite-mode-opt-in]]
+=== Modo de leitura/gravação (opcional)
 
-Você pode habilitar os recursos de leitura e gravação em link:manage-agent-settings.html["Configurações dos agentes"]. Nesse modo, os agentes explicam cada ação compatível e exigem sua aprovação antes de fazer qualquer alteração.
+Você pode habilitar os recursos de leitura/gravação em link:manage-agent-settings.html["Configurações dos agentes"]. Nesse modo, os agentes explicam cada ação compatível e exigem sua aprovação antes de fazer qualquer alteração.
 
 Esse processo de aprovação se aplica a todas as experiências do agente, incluindo integrações com o Slack e o NetApp Console.
 
@@ -109,9 +109,7 @@ Esse processo de aprovação se aplica a todas as experiências do agente, inclu
 [[audit-and-tracking-for-agent-actions]]
 === Auditoria e rastreamento das ações do agente
 
-No modo de leitura e gravação, o Tracker registra cada solicitação de aprovação, incluindo a pergunta do agente e a resposta do usuário. As alterações de recursos feitas por meio das APIs do Workload Factory são registradas pelo serviço do Workload Factory que executa a operação. Por exemplo, um volume criado por meio do Workload Factory aparece na tag de serviço *Storage*, e não em *Agent*.
-
-link:manage-agent-settings.html#audit-and-tracking-for-agent-actions["Saiba mais sobre auditoria e rastreamento de ações de agentes"].
+No modo de leitura/gravação, o Tracker registra cada solicitação de aprovação, incluindo a pergunta do agente e a resposta do usuário. O serviço do Workload Factory que executa a operação registra as alterações de recursos feitas por meio das APIs do Workload Factory. Por exemplo, um volume criado por meio do Workload Factory aparece na tag de serviço *Storage*, e não em *Agent*.
 
 
 

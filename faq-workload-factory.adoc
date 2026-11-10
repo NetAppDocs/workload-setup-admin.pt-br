@@ -231,7 +231,7 @@ link:manage-genai-features.html["Gerencie recursos de IA"].
 .Onde as configurações e ações do agente aparecem para auditoria?
 O rastreador registra as alterações nas configurações do agente e, no modo de leitura e gravação, cada solicitação de aprovação, incluindo a pergunta do agente e a resposta do usuário. As alterações de recursos feitas por meio das APIs do Workload Factory são registradas pelo serviço do Workload Factory que executa a operação.
 
-link:manage-agent-settings.html#audit-and-tracking-for-agent-actions["Saiba mais sobre auditoria e rastreamento de ações de agentes"].
+link:learn-agent.html["Saiba mais sobre auditoria e rastreamento de ações de agentes"].
 
 .Existe algum limite para o uso de IA?
 Sim. Com o Bedrock gerenciado pela NetApp, cada conta tem um limite mensal de gastos para cada recurso de IA. Quando o limite é atingido, o Workload Factory desativa os recursos de IA, acinzenta as partes relacionadas da interface e exibe uma dica de ferramenta. Para obter mais créditos, entre em contato com seu representante da NetApp.
